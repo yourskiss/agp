@@ -1,0 +1,27 @@
+
+.bannerhome {
+     width: 100%; float: left; background:$ong1; 
+    .bannerhomeslider { 
+        position:relative; width: 100%; float: left; margin: 0 !important;
+        .slides { 
+            position:relative; width: 100%; float: left;
+            img { width: 100%;}
+            .bannerhomescontent { 
+                z-index: 2; position:absolute; left:50%; top:40%; transform: translateX(-50%); width: 96%;max-width: 1640px;float: none;margin: 0 auto;  
+                div {
+                    float: left; width: auto;
+                    h2 { float: left; width: 100%; text-align: left; font-family:'eurostilebold'; font-size: 57px; color: $wht1; font-weight: bold; text-transform: uppercase; line-height: 1; letter-spacing:4px }
+                    h3 {float: left; width: 100%; margin: 1rem 0 2rem 0; text-align: left; font-size: 19px; color: $wht1; font-weight: bold; text-transform: uppercase;  }
+                    p { 
+                        float: left; width: 100%;text-align: left;
+                        a { 
+                            display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$blu1; color: $wht1; font-family:'eurostilebold'; font-size:16px; text-transform: uppercase;
+                            &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+                        }
+                    }
+                }
+            }
+        } 
+        
+    }
+}

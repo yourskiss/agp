@@ -1,0 +1,51 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+} 
+
+@import "parts/_normalize.scss";
+@import "parts/_fonts.scss";
+@import "parts/_var.scss";
+@import "parts/_mixin.scss"; 
+
+body {
+    margin:0; 
+    padding:0; 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:400; 
+    line-height:1.2; 
+    color: $blk1;
+    background-color: $wht1;
+}
+main {
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+.wrapper { 
+    display: flow-root;
+    width: 96%;
+    max-width: 1640px;
+    float: none;
+    margin: 0 auto; 
+}
+
+@media only screen and (max-width:1255px) 
+{
+  main { display: none; }
+}
+
+@import "parts/_header.scss";
+@import "parts/_footer.scss";
+@import "parts/_wishtoconnect.scss";
+@import "parts/_banners.scss";
+@import "parts/_breadcrumbs.scss"; 
+@import "parts/_slick.scss";
+
+
+
+
+@import "pages/_home.scss";

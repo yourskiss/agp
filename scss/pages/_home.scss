@@ -1,0 +1,122 @@
+ 
+
+
+
+.highlightservices {
+    z-index: 2; position: relative; margin-top: -80px; width: 100%; float: left; padding: 0 0 4rem 0; background: $wht1;
+    .highlightcontent {
+        width: 100%; float: left; @include fBS(); 
+        .highlight {
+            float: left;  width: auto;
+            &.png { 
+                width:56%;
+                ul{
+                    li { width: 23%;}
+                }
+            }
+            &.lpg { 
+                width:42%;
+                ul{
+                    li { width: 31.3%;}
+                }
+            }
+
+            h2 { 
+                width: 100%; float: left;
+                span {  display: inline-block; background-color: $blu1; padding: 10px 20px; text-align: center; color: $wht1;  font-size:14px; }
+            }
+            ul {
+                width: 100%; float: left;   @include fBS(); 
+                li {
+                    list-style: none; padding: 1rem;  background-color: $wht1; border-bottom: solid 2px $ong1; border-radius:0 0 3px 3px; cursor: pointer;@include outT();
+                    aside {
+                        width: 100%; float: left;  text-align: center; 
+                        img { max-width: 100%; filter:none;  @include outT(); }
+                    }
+                    p { width: 100%; float: left; margin-top: 0.7rem; text-align: center;  color:$blu1; font-size:16px; font-weight: bold;  @include outT(); }
+                    &:hover { 
+                        border-color: $blu1; background-color: $blu1; @include inT();
+                        img { filter: brightness(0) invert(1);  @include inT();  }
+                        p { color:$wht1; @include inT(); }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+.infomain {
+    width: 100%; float: left; background-color: $ong1; padding: 2rem 0;
+    .wrapper {
+            h2 { width: 100%; float: left; text-align: center; font-family:'eurostilebold';  color:$wht1; font-size:26px;  }
+            h3 { 
+                width: 100%; float: left; margin: 1rem 0 2rem 0; text-align: center; color:$wht1; font-size:18px; font-weight: 400; 
+                span { display: block; margin-top: 5px; font-weight: bold;}
+            }
+            ul {
+                width: 100%; float: left; @include fCS();
+                li {
+                    list-style: none; 
+                    aside { 
+                        width: 100%; float: left;  text-align: center;
+                        img { max-width: 100%; }
+                    }
+                    p { margin-top: 1rem; width: 100%; float: left;  text-align: center; color:$wht1; font-size:20px; font-weight: bold;   } 
+                }
+            }
+    }
+}
+
+
+
+
+
+
+.weoffers {
+    width: 100%; float: left; background-color: $wht1; padding: 3rem 0;
+    .wrapper {
+        h2 { 
+            width: 100%; float: left; text-align: left; @include fSC(); 
+            span { font-family:'eurostilebold';  color:$blk1; font-size:28px; letter-spacing: 2px; font-weight: bolder;  }
+            img { margin-left:5px; max-width: 100%;}
+        }
+    }
+}
+
+
+
+
+
+
+
+.knowledgeresources {
+    width: 100%; float: left; background-color: $wht1; padding: 3rem 0;
+    .wrapper {
+        h2 { 
+            width: 100%; float: left; text-align: left; @include fSC(); 
+            span { font-family:'eurostilebold';  color:$blk1; font-size:28px; letter-spacing: 2px; font-weight: bolder; }
+            img { margin-left:5px; max-width: 100%;}
+        }
+        h3 { width: 100%; float: left; margin:0.5rem 0 1rem 0; text-align: left; color:$blk1; font-size:18px; font-weight:400; }
+        .knowledgeresourcesslider {
+            width: 100%; float: left; 
+            .items { 
+                width: 100%; float: left; 
+                img { width: 100%; }
+                h4 { width: 100%; float: left; padding:1.5rem 1rem 0 1rem; text-align: left; color:$blk1; font-size:22px; font-weight:bold;  }
+                p { width: 100%; float: left; padding:1rem; text-align: left; color:$blk2; font-size:18px; font-weight:400;  }
+                a { 
+                    float: left; width: auto; padding:0 1rem 1.5rem 1rem; clear: both; text-decoration: none; color: $blu1; font-size:18px; font-weight:bold;   @include fSC();
+                    span { text-decoration: none;  @include outT(); }
+                    i.fa { margin-left: 5px;  @include outT(); }
+                    &:hover {
+                        span { text-decoration: underline;  @include inT(); }
+                        i.fa { margin-left: 10px;  @include inT(); }
+                    }
+                }
+            }
+        }
+    }
+}
