@@ -1948,7 +1948,7 @@ main {
   background: none;
 }
 .satisfactionwrap .wrapper .satisfactionLarge .satisfactionVideo span {
-  display: none;
+  display: block;
   z-index: 5;
   position: absolute;
   right: -7px;
@@ -1959,14 +1959,14 @@ main {
   font-size: 21px;
   line-height: 30px;
   border-radius: 0;
-  background: #233D4D;
+  background: #F2662C;
   border: 0;
   color: #FFFFFF;
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
 .satisfactionwrap .wrapper .satisfactionLarge .satisfactionVideo span:hover {
-  background: #F2662C;
+  background: #233D4D;
   color: #FFFFFF;
   transition: all 0.4s ease-in;
 }
