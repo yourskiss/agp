@@ -83,7 +83,7 @@ $(function($)
             infinite: false,
             adaptiveHeight: false,
             centerMode: false,
-            centerPadding: '0',
+            centerPadding: '10px',
             initialSlide:0,
             responsive:
             [
