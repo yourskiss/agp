@@ -1371,64 +1371,6 @@ main {
   display: none;
 }
 
-/* arrows */
-.slick-slider .slick-arrow {
-  z-index: 3;
-  opacity: 1;
-  display: block;
-  top: auto;
-  bottom: 0;
-  width: 40px;
-  height: 14px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  line-height: 1;
-}
-
-.slick-slider .slick-arrow.slick-disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.slick-slider .slick-next {
-  right: 50%;
-  transform: translate(200px, 20px);
-}
-
-.slick-slider .slick-prev {
-  left: 50%;
-  transform: translate(-200px, 20px);
-}
-
-.slick-slider .slick-arrow:before {
-  color: #333;
-  font-size: 36px;
-  line-height: 0;
-}
-
-.slick-slider .slick-next:before {
-  content: "⟶";
-  text-align: right;
-}
-
-.slick-slider .slick-prev:before {
-  content: "⟵";
-  text-align: left;
-}
-
-.slick-slider .slick-arrow:hover:before {
-  color: #132963;
-}
-
-.slick-slider .slick-arrow.slick-disabled {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  pointer-events: none;
-}
-
 /* dots */
 .bannerhomeslider.slick-slider .slick-dots {
   z-index: 3;
@@ -1489,6 +1431,69 @@ main {
 
 .knowledgeresourcesslider.slick-slider .slick-dots li button {
   display: none;
+}
+
+/* arrows */
+.satisfactionNav .slick-arrow {
+  z-index: 3;
+  opacity: 1;
+  top: auto;
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-out;
+}
+
+.satisfactionNav .slick-arrow:hover {
+  background-color: #233D4D;
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+
+.satisfactionNav .slick-arrow.slick-disabled {
+  opacity: 0.5;
+  background-color: #3E3E3E;
+  pointer-events: none;
+}
+
+.satisfactionNav .slick-next {
+  right: 0;
+}
+
+.satisfactionNav .slick-prev {
+  left: 0;
+}
+
+.satisfactionNav .slick-arrow:before {
+  text-align: center;
+  font-size: 24px;
+  line-height: 0;
+  font-family: "fontawesome";
+}
+
+.satisfactionNav .slick-next:before {
+  content: "\f101";
+}
+
+.satisfactionNav .slick-prev:before {
+  content: "\f100";
+}
+
+.satisfactionNav .slick-arrow.slick-disabled {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .highlightservices {
@@ -1650,6 +1655,7 @@ main {
   width: 100%;
   float: left;
   text-align: left;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1669,7 +1675,7 @@ main {
   width: 100%;
   float: left;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-auto-rows: minmax(auto, auto);
 }
 .weoffers .wrapper .offergrid .itemgrid {
@@ -1686,7 +1692,6 @@ main {
   position: absolute;
   background-color: #FFFFFF;
   padding: 2rem 1.5rem;
-  width: 450px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
 }
 .weoffers .wrapper .offergrid .itemgrid section h2 {
@@ -1735,6 +1740,7 @@ main {
   grid-row: 1;
 }
 .weoffers .wrapper .offergrid .itemgrid.one section {
+  width: 550px;
   top: 35%;
   left: 90%;
 }
@@ -1747,6 +1753,7 @@ main {
   float: right;
 }
 .weoffers .wrapper .offergrid .itemgrid.two section {
+  width: 450px;
   top: 35%;
   left: 0%;
 }
@@ -1755,6 +1762,7 @@ main {
   grid-row: 3;
 }
 .weoffers .wrapper .offergrid .itemgrid.four section {
+  width: 550px;
   top: auto;
   bottom: -15px;
   left: 90%;
@@ -1768,6 +1776,7 @@ main {
   grid-column-end: 2;
 }
 .weoffers .wrapper .offergrid .itemgrid.three section {
+  width: 440px;
   top: -100px;
   left: 5%;
 }
@@ -1854,30 +1863,43 @@ main {
   color: #FFFFFF;
 }
 
-.ourmission {
+.satisfactionwrap {
   width: 100%;
   float: left;
   background-color: #FFFFFF;
   padding: 4rem 0 7rem 0;
 }
-.ourmission .wrapper h2 {
+.satisfactionwrap .wrapper h2 {
   width: 100%;
   float: left;
+  margin-bottom: 1.5rem;
   text-align: left;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.ourmission .wrapper h2 span {
+.satisfactionwrap .wrapper h2 span {
   font-family: "eurostilebold";
   color: #000000;
   font-size: 28px;
   letter-spacing: 2px;
   font-weight: bolder;
 }
-.ourmission .wrapper h2 img {
+.satisfactionwrap .wrapper h2 img {
   margin-left: 5px;
   max-width: 100%;
+}
+.satisfactionwrap .wrapper .satisfactionSlider {
+  width: 100%;
+  float: left;
+}
+.satisfactionwrap .wrapper .satisfactionSlider .slick-slide {
+  background-color: #233D4D;
+}
+.satisfactionwrap .wrapper .satisfactionNav {
+  width: 80%;
+  float: left;
+  margin: 0 10%;
 }
 
 .knowledgeresources {

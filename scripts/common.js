@@ -94,6 +94,46 @@ $(function($)
             ]
         });
     }
+    
+    if($(".satisfactionwrap").length > 0)
+    {
+        $('.satisfactionSlider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:false,
+            fade: true,
+            asNavFor: '.satisfactionNav'
+        });
+        $('.satisfactionNav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.satisfactionSlider',
+            dots: true,
+            arrows:true,
+            centerMode: true,
+            centerPadding: '10px',
+            focusOnSelect: true,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 559,
+                    settings: {
+                        vertical: false,
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 380,
+                    settings: {
+                        vertical: false,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+    }
+
 
     
 

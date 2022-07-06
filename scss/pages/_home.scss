@@ -3,7 +3,7 @@
 
 
 .highlightservices {
-    z-index: 2; position: relative; margin-top: -80px; width: 100%; float: left; padding: 0 0 4rem 0; background: $wht1;
+    z-index: 2; position: relative; margin-top: -80px; width: 100%; float: left; padding: 0 0 4rem 0;
     .highlightcontent {
         width: 100%; float: left; @include fBS(); 
         .highlight {
@@ -48,7 +48,7 @@
 
 
 .infomain {
-    width: 100%; float: left; background-color: $ong1; padding: 2rem 0;
+    width: 100%; float: left; background-color: $ong1; padding: 3rem 0;
     .wrapper {
             h2 { width: 100%; float: left; text-align: center; font-family:'eurostilebold';  color:$wht1; font-size:26px;  }
             h3 { 
@@ -72,51 +72,133 @@
 
 
 
-
-
 .weoffers {
-    width: 100%; float: left; background-color: $wht1; padding: 3rem 0;
+    width: 100%; float: left; background-color: $wht1; padding:6rem 0;
     .wrapper {
         h2 { 
-            width: 100%; float: left; text-align: left; @include fSC(); 
+            width: 100%; float: left; text-align: left; margin-bottom: 1.5rem; @include fSC(); 
             span { font-family:'eurostilebold';  color:$blk1; font-size:28px; letter-spacing: 2px; font-weight: bolder;  }
             img { margin-left:5px; max-width: 100%;}
+        }
+        .offergrid { 
+            width:100%; float:left; display: grid; gap:1rem; grid-auto-rows: minmax(auto, auto);
+            .itemgrid { 
+                background:transparent; display: block; position: relative;
+                img { width: 100%; float: left; }
+                section { 
+                    z-index: 2; position:absolute; background-color: $wht1; padding:2rem 1.5rem;  box-shadow: 0px 6px 12px #00000014;
+                    h2 { width: 100%; float: left; text-align: left; color:$blk1; font-size:22px;  font-weight: bolder; }
+                    p { width: 100%; float: left;  margin:0.5rem 0 1rem 0;  text-align:left; color:$blk2; font-size:18px; font-weight: 400;  }
+                    aside {
+                        width: 100%; float: left; text-align: left;
+                        a { 
+                            display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; font-family:'eurostilebold'; font-size:16px; text-transform: uppercase;
+                            &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+                        }
+                    }
+                }
+                &.one { 
+                    grid-column:1;grid-row:1; 
+                    section { width: 550px; top:35%; left:90%; }
+                 }
+                &.two { 
+                    grid-column: 1; grid-row: 2; 
+                    img { width: 85%; float: right; }
+                    section { width: 450px; top:35%; left:0%; }
+                }
+                &.four { 
+                    grid-column: 1; grid-row:3;
+                    section { width: 550px; top: auto; bottom:-15px; left:90%; }
+                }
+                &.three {
+                     margin-top: 100px; margin-bottom: -100px; grid-row-start: 2; grid-row-end:3; grid-column-start:2; grid-column-end:2;
+                     section { width: 440px; top: -100px; left: 5%; }
+                 }
+                
+            }
+        }
+    }
+}
+
+
+.safetyispriority{
+    width: 100%; float: left; background-color:$wht1; position: relative;
+    img { width: 100%;}
+    .wrapper {
+        padding:3rem 0 3rem 0; position:absolute; z-index:1; left: 50%; top: 50%; transform: translate(-50%, -50%);
+        h2 { width: 100%; float: left; text-align: center; font-family:'eurostilebold';  color:$wht1; font-size:28px;  text-shadow: 0px 3px 6px #00000077;
+            text-transform: uppercase; font-weight: bolder; }
+        h3 { width: 100%; float: left; margin: 0.5rem 0 1rem 0; text-align: center; color:$wht1; font-size:18px; text-shadow: 0px 3px 6px #0000003d; font-weight: 400; line-height: 1.4; }
+        p { 
+            width: 100%; float: left; text-align: center; color:$wht1; font-size:22px; font-weight: bold; text-shadow: 0px 3px 6px #00000041;
+            a {
+                text-decoration: none; color: $wht1;
+                &:hover { text-decoration: underline; color: $wht1; }
+            }
+        }
+        aside {
+            width: 100%; float: left; margin: 1rem 0 0 0;  text-align: center;
+            a { 
+                display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; font-family:'eurostilebold'; font-size:16px; text-transform: uppercase;
+                &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+            }
         }
     }
 }
 
 
 
-
+.satisfactionwrap {
+    width: 100%; float: left; background-color:$wht1; padding:4rem 0 7rem 0;
+    .wrapper {
+        h2 { 
+            width: 100%; float: left; margin-bottom: 1.5rem; text-align: left; @include fSC(); 
+            span { font-family:'eurostilebold';  color:$blk1; font-size:28px; letter-spacing: 2px; font-weight: bolder; }
+            img { margin-left:5px; max-width: 100%;}
+        }
+        .satisfactionSlider { 
+            width: 100%; float: left;
+            .slick-slide { background-color: $blu1;}
+         }
+        .satisfactionNav { width:80%; float: left; margin:0 10%; }
+    }
+}
 
 
 
 .knowledgeresources {
-    width: 100%; float: left; background-color: $wht1; padding: 3rem 0;
+    width: 100%; float: left; background-color:$wht3; padding:4rem 0 7rem 0;
     .wrapper {
         h2 { 
             width: 100%; float: left; text-align: left; @include fSC(); 
             span { font-family:'eurostilebold';  color:$blk1; font-size:28px; letter-spacing: 2px; font-weight: bolder; }
             img { margin-left:5px; max-width: 100%;}
         }
-        h3 { width: 100%; float: left; margin:0.5rem 0 1rem 0; text-align: left; color:$blk1; font-size:18px; font-weight:400; }
+        h3 { width: 100%; float: left; margin:0.7rem 0 1.5rem 0; text-align: left; color:$blk1; font-size:18px; font-weight:400; }
         .knowledgeresourcesslider {
-            width: 100%; float: left; 
-            .items { 
-                width: 100%; float: left; 
-                img { width: 100%; }
-                h4 { width: 100%; float: left; padding:1.5rem 1rem 0 1rem; text-align: left; color:$blk1; font-size:22px; font-weight:bold;  }
-                p { width: 100%; float: left; padding:1rem; text-align: left; color:$blk2; font-size:18px; font-weight:400;  }
-                a { 
-                    float: left; width: auto; padding:0 1rem 1.5rem 1rem; clear: both; text-decoration: none; color: $blu1; font-size:18px; font-weight:bold;   @include fSC();
-                    span { text-decoration: none;  @include outT(); }
-                    i.fa { margin-left: 5px;  @include outT(); }
-                    &:hover {
-                        span { text-decoration: underline;  @include inT(); }
-                        i.fa { margin-left: 10px;  @include inT(); }
+            width: 100%; float: left; margin-bottom: 0 !important; padding-bottom: 20px;
+            .slick-slide { 
+                background-color: $wht1; box-shadow: 0px 6px 12px #00000014; margin:15px 10px; overflow: hidden;
+                .items { 
+                    width: 100%; float: left; 
+                    img { width: 100%; }
+                    h4 { width: 100%; float: left; padding:1.5rem 2rem 0 2rem; text-align: left; color:$blk1; font-size:22px; font-weight:bold;  }
+                    p { width: 100%; float: left; padding:1rem 2rem; text-align: left; color:$blk2; font-size:18px; font-weight:400;  }
+                    a { 
+                        float: left; width: auto; padding:0 2rem 1.5rem 2rem; clear: both; text-decoration: none; color: $blu1; font-size:18px; font-weight:bold;   @include fSC();
+                        span { text-decoration: none;  @include outT(); }
+                        i.fa { margin-left: 5px;  @include outT(); }
+                        &:hover {
+                            span { text-decoration: underline;  @include inT(); }
+                            i.fa { margin-left: 10px;  @include inT(); }
+                        }
                     }
                 }
             }
         }
     }
 }
+
+.knowledgeresourcesslider .slick-list{ margin:0px !important; }
+.knowledgeresourcesslider .slick-track{display: flex !important; justify-content:space-between; }
+ 
