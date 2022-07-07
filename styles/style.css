@@ -441,18 +441,49 @@ template {
 }
 
 @font-face {
+  font-family: "arial";
+  src: url("../fonts/arial.woff2") format("woff2"), url("../fonts/arial.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "arialmedium";
+  src: url("../fonts/arial-medium.woff2") format("woff2"), url("../fonts/arial-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "arialbold";
+  src: url("../fonts/arial-bold.woff2") format("woff2"), url("../fonts/arial-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "eurostilebold";
   src: url("../fonts/eurostile-bold.woff2") format("woff2"), url("../fonts/eurostile-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
+  font-display: swap;
 }
+/*
+  @include Arial();
+  @include aMedium();
+  @include aBold();
+  @include eurostile();
+*/
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -515,8 +546,9 @@ main {
   float: left;
   text-align: left;
   color: #FFFFFF;
-  font-weight: 400;
   font-size: 16px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .nav .wrapper ul {
   display: flex;
@@ -528,16 +560,20 @@ main {
 }
 .nav .wrapper ul li.line {
   margin: 0 12px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #FFFFFF;
   font-size: 16px;
 }
 .nav .wrapper ul li a {
   text-decoration: none;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
 .nav .wrapper ul li a.callat {
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
 }
 .nav .wrapper ul li a.callat i.fa.fa-mobile {
@@ -606,7 +642,8 @@ main {
 }
 .navigation .wrapper ul li a {
   text-decoration: none;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #000000;
   font-size: 20px;
   transition: all 0.4s ease-out;
@@ -659,7 +696,8 @@ main {
   width: 5%;
   text-align: right;
   cursor: pointer;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #3C3C3C;
   font-size: 24px;
   transition: all 0.4s ease-out;
@@ -683,7 +721,8 @@ main {
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul li a {
   text-decoration: none;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #3C3C3C;
   font-size: 18px;
   transition: all 0.4s ease-out;
@@ -695,6 +734,7 @@ main {
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul li h2 {
   width: 100%;
   float: left;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
@@ -715,7 +755,8 @@ main {
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul li ul li a {
   text-decoration: none;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #3C3C3C;
   font-size: 18px;
   transition: all 0.4s ease-out;
@@ -775,7 +816,8 @@ main {
   border: solid 2px #F2662C;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -799,7 +841,8 @@ main {
   border: solid 2px #F2662C;
   background-color: #FFFFFF;
   color: #F2662C;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -838,7 +881,8 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 12px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .footer .footerinner .footerright {
   width: 100%;
@@ -860,6 +904,7 @@ main {
   width: 100%;
   float: left;
   padding: 0 0 5px 0;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   color: #233D4D;
   font-size: 16px;
@@ -885,7 +930,8 @@ main {
 }
 .footer .footerinner .footerright ul li ul li a {
   text-decoration: none;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   color: #3C3C3C;
   font-size: 16px;
   transition: all 0.4s ease-out;
@@ -923,9 +969,9 @@ main {
   width: 100%;
   float: left;
   text-align: left;
-  font-family: "eurostilebold";
   font-size: 28px;
   color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -937,6 +983,7 @@ main {
   margin: 0.5rem 0 1.5rem 0;
   font-size: 18px;
   color: #FFFFFF;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul {
@@ -968,7 +1015,8 @@ main {
   margin-top: 5px;
   font-size: 14px;
   color: #000000;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   text-align: left;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=text] {
@@ -982,7 +1030,8 @@ main {
   text-align: left;
   font-size: 18px;
   color: #FFFFFF;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=text]::-moz-placeholder {
   color: #FFFFFF;
@@ -1015,7 +1064,8 @@ main {
   text-align: left;
   font-size: 18px;
   color: #FFFFFF;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li select option {
   color: #000000;
@@ -1030,7 +1080,8 @@ main {
   border: none;
   background-color: #233D4D;
   color: #FFFFFF;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
@@ -1079,10 +1130,10 @@ main {
   float: left;
   width: 100%;
   text-align: left;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 57px;
   color: #FFFFFF;
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 4px;
@@ -1094,6 +1145,7 @@ main {
   text-align: left;
   font-size: 19px;
   color: #FFFFFF;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -1112,7 +1164,8 @@ main {
   border: none;
   background-color: #233D4D;
   color: #FFFFFF;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1567,6 +1620,8 @@ main {
   padding: 10px 20px;
   text-align: center;
   color: #FFFFFF;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   font-size: 14px;
 }
 .highlightservices .highlightcontent .highlight ul {
@@ -1602,6 +1657,7 @@ main {
   text-align: center;
   color: #233D4D;
   font-size: 16px;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   transition: all 0.4s ease-out;
 }
@@ -1629,7 +1685,8 @@ main {
   width: 100%;
   float: left;
   text-align: center;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   color: #FFFFFF;
   font-size: 26px;
 }
@@ -1639,13 +1696,14 @@ main {
   margin: 1rem 0 2rem 0;
   text-align: center;
   color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .infomain .wrapper h3 span {
   display: block;
   margin-top: 5px;
-  font-weight: bold;
+  font-family: "arialmedium", Arial, sans-serif;
+  font-weight: 500;
 }
 .infomain .wrapper ul {
   width: 100%;
@@ -1672,6 +1730,7 @@ main {
   text-align: center;
   color: #FFFFFF;
   font-size: 20px;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -1691,11 +1750,11 @@ main {
   align-items: center;
 }
 .weoffers .wrapper h2 span {
-  font-family: "eurostilebold";
   color: #000000;
   font-size: 28px;
   letter-spacing: 2px;
-  font-weight: bolder;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
 }
 .weoffers .wrapper h2 img {
   margin-left: 5px;
@@ -1730,7 +1789,8 @@ main {
   text-align: left;
   color: #000000;
   font-size: 22px;
-  font-weight: bolder;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
 }
 .weoffers .wrapper .offergrid .itemgrid section p {
   width: 100%;
@@ -1739,7 +1799,8 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .weoffers .wrapper .offergrid .itemgrid section aside {
   width: 100%;
@@ -1756,7 +1817,8 @@ main {
   border: none;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1832,12 +1894,12 @@ main {
   width: 100%;
   float: left;
   text-align: center;
-  font-family: "eurostilebold";
   color: #FFFFFF;
   font-size: 28px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4666666667);
   text-transform: uppercase;
-  font-weight: bolder;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
 }
 .safetyispriority .wrapper h3 {
   width: 100%;
@@ -1847,7 +1909,8 @@ main {
   color: #FFFFFF;
   font-size: 18px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   line-height: 1.4;
 }
 .safetyispriority .wrapper p {
@@ -1856,6 +1919,7 @@ main {
   text-align: center;
   color: #FFFFFF;
   font-size: 22px;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2549019608);
 }
@@ -1883,7 +1947,8 @@ main {
   border: none;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "eurostilebold";
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1909,11 +1974,11 @@ main {
   align-items: center;
 }
 .satisfactionwrap .wrapper h2 span {
-  font-family: "eurostilebold";
   color: #000000;
   font-size: 28px;
   letter-spacing: 2px;
-  font-weight: bolder;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
 }
 .satisfactionwrap .wrapper h2 img {
   margin-left: 5px;
@@ -2059,10 +2124,12 @@ main {
   position: relative;
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
   line-height: 1.4;
 }
 .satisfactionwrap .wrapper .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb p b {
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
 }
 .satisfactionwrap .wrapper .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb p:after {
@@ -2142,11 +2209,11 @@ main {
   align-items: center;
 }
 .knowledgeresources .wrapper h2 span {
-  font-family: "eurostilebold";
   color: #000000;
   font-size: 28px;
   letter-spacing: 2px;
-  font-weight: bolder;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
 }
 .knowledgeresources .wrapper h2 img {
   margin-left: 5px;
@@ -2159,7 +2226,8 @@ main {
   text-align: left;
   color: #000000;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .knowledgeresources .wrapper .knowledgeresourcesslider {
   width: 100%;
@@ -2187,6 +2255,7 @@ main {
   text-align: left;
   color: #000000;
   font-size: 22px;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
 }
 .knowledgeresources .wrapper .knowledgeresourcesslider .slick-slide .items p {
@@ -2196,7 +2265,8 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .knowledgeresources .wrapper .knowledgeresourcesslider .slick-slide .items a {
   float: left;
@@ -2206,6 +2276,7 @@ main {
   text-decoration: none;
   color: #233D4D;
   font-size: 18px;
+  font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
