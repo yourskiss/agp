@@ -6,16 +6,16 @@
     width: 100%; height:auto; float: left; padding:0; background:$blk6; 
     .wrapper { 
         position: relative; height:36px; padding-right:30px; @include fBC();
-        p { width: auto; float: left; text-align: left; color:$wht1; font-weight: 400; font-size: 16px; }
+        p { width: auto; float: left; text-align: left; color:$wht1; font-size: 16px; @include Arial(); }
         ul{
             @include fSC(); 
             li {
-                list-style:none;
-                &.line { margin:0 12px; font-weight: 400; color:$wht1;  font-size: 16px;  }
+                list-style:none; 
+                &.line { margin:0 12px; @include Arial(); color:$wht1;  font-size: 16px;  }
                 a {  
-                    text-decoration: none; color:$wht1;  @include outT();
+                    text-decoration: none; @include Arial(); color:$wht1;  @include outT();
                     &.callat {  
-                        font-weight: bold;
+                        @include aBold();
                         i.fa.fa-mobile { margin-right: 5px; }
                     }
                     &:hover { color:$ong1; @include inT(); }
@@ -23,7 +23,7 @@
             }
         }
         i.fa.fa-search { 
-            position: absolute;right: 0;top: 50%; transform: translateY(-50%); color: $wht1;  font-size:16px; cursor: pointer; @include outT();
+            position: absolute;right: 0;top: 50%; transform: translateY(-50%); color: $wht1; font-size:16px; cursor: pointer; @include outT();
             &:hover  { color:$ong1; @include inT(); }
         }
     }
@@ -43,7 +43,7 @@
                     &:after { content: ''; position: absolute; bottom:0; left:0; height: 4px; width:100%; background-color:$ong1; border-radius: 4px;}
                 }
                 a { 
-                    text-decoration: none; font-weight: 400; color:$blk1;  font-size: 20px;  @include outT();
+                    text-decoration: none;  @include Arial(); color:$blk1;  font-size: 20px; line-height: 45px; @include outT();
                     &:hover { color:$ong1; @include inT(); }
                     i.fa.fa-angle-down, i.fa.fa-angle-up  { margin-left:10px; }
                 }
@@ -60,24 +60,24 @@
                    .dropdowninner { 
                          position: relative; width: 96%;max-width: 1640px;float: none;margin: 0 auto;  @include fBS(); 
                         .dropdownclose {  width: 5%; text-align: right;
-                            cursor: pointer; font-weight: 400; color:$blk2;  font-size: 24px;  @include outT(); 
+                            cursor: pointer;  @include Arial(); color:$blk2;  font-size: 24px;  @include outT(); 
                             &:hover { color:$ong1; @include inT(); }
                          }
                         ul { 
-                            width: 63%; float: left; @include fSC(); flex-wrap: wrap;
+                            width: 63%; float: left; @include fSS(); flex-wrap: wrap;
                             li { 
-                                width: 30.3%; margin:0 3% 15px 0; display: inline-block;
+                                width: 30.3%; margin:0 3% 4px 0; display: inline-block;
                                 a { 
-                                    text-decoration: none; font-weight: 400; color:$blk2;  font-size: 18px;  @include outT();
+                                    text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px;  @include outT();
                                     &:hover { color:$ong1; @include inT(); }
                                 }
-                                h2 { width: 100%; float: left; font-weight: bold; color:$blk1;  font-size: 18px; }
+                                h2 { width: 100%; float: left; margin-bottom: 5px;  @include aBold(); color:$blk1;  font-size: 18px; }
                                 ul {
                                     width: 100%; float: left; @include fSS(); flex-direction: column;
                                     li { 
-                                        list-style: none; margin:6px 0; width: 100%; float: left;
+                                        list-style: none; margin:10px 0; width: 100%; float: left;
                                         a { 
-                                            text-decoration: none; font-weight: 400; color:$blk2;  font-size: 18px;  @include outT();
+                                            text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 20px;  @include outT();
                                             &:hover { color:$ong1; @include inT(); }
                                         } 
                                     }

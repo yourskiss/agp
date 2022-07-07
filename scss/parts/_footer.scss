@@ -15,14 +15,14 @@
                 dt { 
                     width: 100%; float: left; margin-bottom:0.6rem;
                     a { 
-                        display: inline-block; width:190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$ong1; color: $wht1; font-family:'eurostilebold'; font-size:14px; text-transform: uppercase;
+                        display: inline-block; width:190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$ong1; color: $wht1; @include eurostile(); font-size:14px; text-transform: uppercase;
                         &:hover {  @include inT(); background-color:$blu1; border-color:$blu1; color: $wht1; }
                     }
                 }
                 dd { 
                     width: 100%; float: left;
                     a { 
-                        display: inline-block; width: 190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$wht1; color: $ong1; font-family:'eurostilebold'; font-size:14px;  text-transform: uppercase;
+                        display: inline-block; width: 190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$wht1; color: $ong1; @include eurostile(); font-size:14px;  text-transform: uppercase;
                         &:hover {  @include inT(); background-color:$blu1; border-color:$blu1; color: $wht1; }
                     }
                 }
@@ -37,7 +37,7 @@
                     }
                 }
             }
-            p { width: 100%; float: left; margin-top: 1rem; text-align: left; color: $blk2; font-size: 12px; font-weight: 400; }
+            p { width: 100%; float: left; margin-top: 1rem; text-align: left; color: $blk2; font-size: 12px; @include Arial(); }
         }
         .footerright {
             width:100%; float:right;
@@ -46,7 +46,7 @@
                 li{
                     list-style: none; width:25%; padding:0.5rem 0;
                     h2 { 
-                        width: 100%; float: left;  padding:0 0 5px 0; font-weight: bold; color:$blu1;  font-size: 16px; 
+                        width: 100%; float: left;  padding:0 0 5px 0; @include aBold(); color:$blu1;  font-size: 16px; 
                         a { 
                             text-decoration: none; color:$blu1; @include outT();  
                             &:hover { color:$ong1; @include inT(); }
@@ -57,7 +57,7 @@
                         li { 
                             list-style: none; width: 100%; float: left; padding:3px 0;
                             a { 
-                                text-decoration: none; font-weight: 400; color:$blk2;  font-size: 16px;   @include outT();  
+                                text-decoration: none; @include Arial(); color:$blk2;  font-size: 16px;   @include outT();  
                                 &:hover { color:$ong2; @include inT(); }
                             }
                          }

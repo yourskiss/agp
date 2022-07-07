@@ -12,11 +12,13 @@
 body {
     margin:0; 
     padding:0; 
-    font-family:Arial, Helvetica, sans-serif; 
-    font-weight:400; 
+    @include Arial();
     line-height:1.2; 
+    letter-spacing: normal;
+    letter-spacing: normal;
     color: $blk1;
     background-color: $wht1;
+    box-sizing:border-box;
 }
 main {
   display: block;
@@ -44,6 +46,9 @@ main {
 @import "parts/_banners.scss";
 @import "parts/_breadcrumbs.scss"; 
 @import "parts/_slick.scss";
+@import "parts/_quicklinks.scss";
+@import "parts/_satisfaction-slider.scss";
+@import "parts/_knowledge-and-resources.scss";
 
 
 

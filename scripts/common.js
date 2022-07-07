@@ -13,6 +13,8 @@ $(window).on('load', function()
 });
 /* onLoad === end */
 
+
+/* dropdown header menu === start */
 $(".navigation .wrapper ul li.megamenu a").click(function()
 {
     if($(this).parent().hasClass('active'))
@@ -41,6 +43,39 @@ $(".dropdownclose").click(function()
     $(".navigation .wrapper ul li.megamenu a i.fa").removeClass("fa-angle-up").addClass("fa-angle-down");
     $("body").css('overflow','auto');
 });
+/* dropdown header menu === end */
+
+/* quick link menu === start */
+$("#quicklinkToggle").click(function()
+{
+    $("#quicklinkBG").fadeIn(500);
+    $("#quicklink").animate({right: "0"});
+    $("#quicklinkToggle").addClass("active")
+});
+$("#quicklinkBG").click(function()
+{
+    $("#quicklinkBG").fadeOut(500);
+    $("#quicklink").animate({right: "-265px"});
+    $("#quicklinkToggle").removeClass("active")
+});
+$(document).scroll(function() 
+{
+    var heightlocation = $(this).scrollTop();
+    if(!$("#quicklinkToggle").hasClass('active'))
+    {
+        if (heightlocation > 600) 
+        {
+          $('#quicklinkToggle').css('opacity','1');
+        } 
+        else 
+        {
+            $('#quicklinkToggle').css('opacity','0');
+        }
+    }
+});
+/* quick link menu === end */
+
+
 
 
 
@@ -49,6 +84,7 @@ $(function($)
 {
     if($("#bannerhome").length > 0)
     {
+        // homepage main banner
         $('.bannerhomeslider').slick({
             slidesToShow:1,
             slidesToScroll: 1,
@@ -73,12 +109,13 @@ $(function($)
 
     if($(".knowledgeresources").length > 0)
     {
+        // homepage knowledg slider
         $('.knowledgeresourcesslider').slick({
             slidesToShow:3,
             slidesToScroll: 1,
             dots: true,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             infinite: false,
             adaptiveHeight: false,
@@ -97,12 +134,14 @@ $(function($)
     
     if($(".satisfactionwrap").length > 0)
     {
+        // homepage satisfaction slider
         $('.satisfactionSlider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
             dots:false,
             fade: true,
+            autoplay: false,
             asNavFor: '.satisfactionNav'
         });
         $('.satisfactionNav').slick({
@@ -112,6 +151,7 @@ $(function($)
             dots: true,
             arrows:true,
             centerMode: true,
+            autoplay: false,
             centerPadding: '10px',
             focusOnSelect: true,
             infinite: true,
@@ -133,10 +173,6 @@ $(function($)
             ]
         });
     }
-
-
-    
-
 });
 /* ############################ sliders === end ############################ */
 

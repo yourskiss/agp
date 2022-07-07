@@ -1,0 +1,57 @@
+.quicklinkBG { display:none;  z-index:4; position: fixed; top:0; left: 0; width: 100%; height: 100%; background-color: $blk1; opacity: 0.1; }
+.quicklink { z-index: 5; position: fixed; top: 50%; right:-265px; transform: translateY(-50%); display:block; width: 265px; float: left; padding:2rem; box-shadow: 0px 0px 6px #00000029; background-color: $wht1;
+    aside {  
+        position: absolute; top:50%; left:-50px; transform: translateY(-50%); width: 50px; height: 50px; background-color: $ong1; @include fCC();  @include outT(); opacity: 0;
+        img { max-width: 100%;}
+        &:hover { cursor: pointer; background-color: $ong3; @include outT(); }
+    }
+    h2 { 
+        width: 100%; float: left; text-align: left; @include fSC(); 
+        span {  color:$blk1; font-size:28px; letter-spacing: 0.66px; line-height: 26px; @include eurostile(); }
+        img { margin-left:5px; max-width: 100%;}
+    }
+    h3 {  width: 100%; float: left; margin: 2rem 0 0.5rem 0; text-align: left; color:$blu1; font-size:18px;  line-height: 28px; @include aBold(); }
+    p { 
+        width: 100%; float: left; text-align: left; @include fSC(); 
+        span { color: $ong1; font-size: 18px; line-height: 21px; @include aBold(); }
+        a { 
+            text-decoration: none; color: $ong1; font-size: 18px; line-height: 21px; @include aBold(); @include outT(); 
+            &:hover { color: $blk1; @include inT();  }
+        }
+    }
+    h4 { width: 100%; float: left; text-align: left; margin: 1.5rem 0 0.5rem 0; padding: 10px 15px; border-radius:0 4px 0 4px; background-color: $ong1; color: $wht1;  font-size:16px;  line-height: 24px; @include aBold(); }
+    ul {
+        width: 100%; float: left;
+        li {
+            list-style: none; width: 100%; float: left; margin:0.6rem 0; 
+            a{
+                text-decoration: none; @include fSC();
+                span {  
+                    width:23px; height: 20px; float: left; margin-right:6px; background:transparent url('../Images/icons.png') no-repeat;  
+                    &.ql_connection { background-position:0 0; }
+                    &.ql_availability { background-position:0px -20px; }
+                    &.ql_ratecard { background-position:0px -40px; }
+                    &.ql_billpay { background-position:0px -60px; }
+                    &.ql_stations { background-position:0px -80px; }
+                    &.ql_calculator { background-position:0px -100px; }
+                    &.ql_referral { background-position:0px -120px; }
+                    &.ql_offers { background-position:0px -140px; }
+                }
+                b {font-size: 16px; line-height: 24px; border-bottom: solid 1px  $blu1; @include Arial(); color: $blu1; @include outT(); }
+                &:hover {
+                    span {
+                        &.ql_connection { background-position:-23px 0; }
+                        &.ql_availability { background-position:-23px -20px; }
+                        &.ql_ratecard { background-position:-23px -40px; }
+                        &.ql_billpay { background-position:-23px -60px; }
+                        &.ql_stations { background-position:-23px -80px; }
+                        &.ql_calculator { background-position:-23px -100px; }
+                        &.ql_referral { background-position:-23px -120px; }
+                        &.ql_offers { background-position:-23px -140px; }
+                    }
+                    b { border-bottom-color:$ong4; color: $ong4; @include inT(); }
+                }
+            }
+        }
+    }
+}
