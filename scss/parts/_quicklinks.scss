@@ -139,7 +139,7 @@
 @media only screen and (min-device-width :500px) and (max-device-width :1000px) and (orientation : landscape)
 {
     .quicklink { 
-        width: 340px;
+        width: 380px; padding: 1rem 2rem;
         h6 { 
              margin-bottom: 0;  
         }

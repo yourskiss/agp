@@ -2,8 +2,8 @@
 
 .footer { 
     width: 100%; float: left; padding:3rem 0; background-color: $wht1;
-    .footerinner { 
-        width: 96%;max-width: 1440px;float: none;margin: 0 auto; @include fBS();
+    .wrapper { 
+         max-width: 1440px; @include fBS();
         .footerleft {
             width: 300px; float: left; margin-right: 50px;
             aside { 
@@ -37,7 +37,7 @@
                     }
                 }
             }
-            p { width: 100%; float: left; margin-top: 1rem; text-align: left; color: $blk2; font-size: 12px; @include Arial(); }
+            p { display: block; width: 100%; float: left; margin-top: 1rem; text-align: left; color: $blk2; font-size: 12px; @include Arial(); }
         }
         .footerright {
             width:100%; float:right;
@@ -45,7 +45,8 @@
                 width: 100%; @include fSS(); flex-wrap: wrap;
                 li{
                     list-style: none; width:25%; padding:0.5rem 0;
-                    h2 { 
+                    h2 { width: 100%; float: left;  padding:0 0 5px 0; @include aBold(); color:$blu1;  font-size: 16px; }
+                    h3 { 
                         width: 100%; float: left;  padding:0 0 5px 0; @include aBold(); color:$blu1;  font-size: 16px; 
                         a { 
                             text-decoration: none; color:$blu1; @include outT();  
@@ -63,6 +64,64 @@
                          }
                     }
                 }
+            }
+            h4{
+               display: none;  width: 100%; float: left; margin-top:2.5rem; @include fSC();
+                a { 
+                    margin:0 25px 0 0; text-decoration: none; @include outT(); color: $blu1; font-size: 24px; 
+                    &:hover {  @include inT(); color:$ong1; }
+                }
+            }
+            p { display: none; width: 100%; float: left; margin-top: 1rem; text-align: left; color: $blk2; font-size: 12px; @include Arial(); }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+    .footer { 
+        .wrapper { 
+            flex-wrap: wrap;
+            .footerleft {
+                width: 100%;   margin-right: 0; margin-bottom: 1rem;
+                aside {
+                    img { width: 96px; }
+                }
+                dl {  margin-top: 0.5rem; }
+                ul{ display: none; }
+                p { display: none;  }
+            }
+            .footerright {
+                ul{
+                    li{
+                        width:100%; padding:0; 
+                        h2 { 
+                            position: relative; padding:10px 0; border-bottom: solid 1px $blk8; color: $blk2; line-height:24px; text-indent: 0.3rem;
+                            &:after { content: "\f067"; position: absolute; right:0.5rem; top: 50%; transform: translateY(-50%); font-size: 20px; color:$blk2; @include FA(); }
+                            &.active { 
+                                color: $ong1; border-bottom: none;
+                                &:after { content: "\f068"; color: $ong1; }
+                            }
+                        }
+                        h3 { 
+                              padding:10px 0; border-bottom: solid 1px $blk8; color: $blk2;  line-height: 24px;  text-indent: 0.3rem;
+                              &:last-child { border-bottom: none; }
+                        }
+                        ul {
+                            display: none; padding: 0 0.3rem; margin-bottom: 0.5rem;
+                            li { 
+                                list-style: none; width: 100%; float: left; padding:3px 0;
+                                a { 
+                                    text-decoration: none; @include Arial(); color:$blk2;  font-size: 16px;   @include outT();  
+                                    &:hover { color:$ong2; @include inT(); }
+                                }
+                             }
+                        }
+                    }
+                }
+                h4{ display: flex; }
+                p { display: block;  }
             }
         }
     }

@@ -517,6 +517,10 @@ main {
   main {
     padding: 102px 0 0 0;
   }
+
+  .wrapper {
+    width: 92%;
+  }
 }
 @media only screen and (max-width: 479px) {
   main {
@@ -889,38 +893,35 @@ main {
   padding: 3rem 0;
   background-color: #FFFFFF;
 }
-.footer .footerinner {
-  width: 96%;
+.footer .wrapper {
   max-width: 1440px;
-  float: none;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.footer .footerinner .footerleft {
+.footer .wrapper .footerleft {
   width: 300px;
   float: left;
   margin-right: 50px;
 }
-.footer .footerinner .footerleft aside {
+.footer .wrapper .footerleft aside {
   width: 100%;
   float: left;
 }
-.footer .footerinner .footerleft aside img {
+.footer .wrapper .footerleft aside img {
   max-width: 100%;
 }
-.footer .footerinner .footerleft dl {
+.footer .wrapper .footerleft dl {
   width: 100%;
   float: left;
   margin-top: 1.5rem;
 }
-.footer .footerinner .footerleft dl dt {
+.footer .wrapper .footerleft dl dt {
   width: 100%;
   float: left;
   margin-bottom: 0.6rem;
 }
-.footer .footerinner .footerleft dl dt a {
+.footer .wrapper .footerleft dl dt a {
   display: inline-block;
   width: 190px;
   text-align: center;
@@ -935,17 +936,17 @@ main {
   font-size: 14px;
   text-transform: uppercase;
 }
-.footer .footerinner .footerleft dl dt a:hover {
+.footer .wrapper .footerleft dl dt a:hover {
   transition: all 0.4s ease-in;
   background-color: #233D4D;
   border-color: #233D4D;
   color: #FFFFFF;
 }
-.footer .footerinner .footerleft dl dd {
+.footer .wrapper .footerleft dl dd {
   width: 100%;
   float: left;
 }
-.footer .footerinner .footerleft dl dd a {
+.footer .wrapper .footerleft dl dd a {
   display: inline-block;
   width: 190px;
   text-align: center;
@@ -960,13 +961,13 @@ main {
   font-size: 14px;
   text-transform: uppercase;
 }
-.footer .footerinner .footerleft dl dd a:hover {
+.footer .wrapper .footerleft dl dd a:hover {
   transition: all 0.4s ease-in;
   background-color: #233D4D;
   border-color: #233D4D;
   color: #FFFFFF;
 }
-.footer .footerinner .footerleft ul {
+.footer .wrapper .footerleft ul {
   width: 100%;
   float: left;
   margin-top: 2.5rem;
@@ -974,21 +975,22 @@ main {
   justify-content: flex-start;
   align-items: center;
 }
-.footer .footerinner .footerleft ul li {
+.footer .wrapper .footerleft ul li {
   list-style: none;
   margin: 0 25px 0 0;
 }
-.footer .footerinner .footerleft ul li a {
+.footer .wrapper .footerleft ul li a {
   text-decoration: none;
   transition: all 0.4s ease-out;
   color: #233D4D;
   font-size: 24px;
 }
-.footer .footerinner .footerleft ul li a:hover {
+.footer .wrapper .footerleft ul li a:hover {
   transition: all 0.4s ease-in;
   color: #F2662C;
 }
-.footer .footerinner .footerleft p {
+.footer .wrapper .footerleft p {
+  display: block;
   width: 100%;
   float: left;
   margin-top: 1rem;
@@ -998,23 +1000,23 @@ main {
   font-family: "arial", Arial, sans-serif;
   font-weight: 300;
 }
-.footer .footerinner .footerright {
+.footer .wrapper .footerright {
   width: 100%;
   float: right;
 }
-.footer .footerinner .footerright ul {
+.footer .wrapper .footerright ul {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.footer .footerinner .footerright ul li {
+.footer .wrapper .footerright ul li {
   list-style: none;
   width: 25%;
   padding: 0.5rem 0;
 }
-.footer .footerinner .footerright ul li h2 {
+.footer .wrapper .footerright ul li h2 {
   width: 100%;
   float: left;
   padding: 0 0 5px 0;
@@ -1023,26 +1025,35 @@ main {
   color: #233D4D;
   font-size: 16px;
 }
-.footer .footerinner .footerright ul li h2 a {
+.footer .wrapper .footerright ul li h3 {
+  width: 100%;
+  float: left;
+  padding: 0 0 5px 0;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  color: #233D4D;
+  font-size: 16px;
+}
+.footer .wrapper .footerright ul li h3 a {
   text-decoration: none;
   color: #233D4D;
   transition: all 0.4s ease-out;
 }
-.footer .footerinner .footerright ul li h2 a:hover {
+.footer .wrapper .footerright ul li h3 a:hover {
   color: #F2662C;
   transition: all 0.4s ease-in;
 }
-.footer .footerinner .footerright ul li ul {
+.footer .wrapper .footerright ul li ul {
   width: 100%;
   float: left;
 }
-.footer .footerinner .footerright ul li ul li {
+.footer .wrapper .footerright ul li ul li {
   list-style: none;
   width: 100%;
   float: left;
   padding: 3px 0;
 }
-.footer .footerinner .footerright ul li ul li a {
+.footer .wrapper .footerright ul li ul li a {
   text-decoration: none;
   font-family: "arial", Arial, sans-serif;
   font-weight: 300;
@@ -1050,11 +1061,134 @@ main {
   font-size: 16px;
   transition: all 0.4s ease-out;
 }
-.footer .footerinner .footerright ul li ul li a:hover {
+.footer .wrapper .footerright ul li ul li a:hover {
   color: #F0632A;
   transition: all 0.4s ease-in;
 }
+.footer .wrapper .footerright h4 {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .wrapper .footerright h4 a {
+  margin: 0 25px 0 0;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  color: #233D4D;
+  font-size: 24px;
+}
+.footer .wrapper .footerright h4 a:hover {
+  transition: all 0.4s ease-in;
+  color: #F2662C;
+}
+.footer .wrapper .footerright p {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 1rem;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 12px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
 
+@media only screen and (max-width: 1255px) {
+  .footer .wrapper {
+    flex-wrap: wrap;
+  }
+  .footer .wrapper .footerleft {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .footer .wrapper .footerleft aside img {
+    width: 96px;
+  }
+  .footer .wrapper .footerleft dl {
+    margin-top: 0.5rem;
+  }
+  .footer .wrapper .footerleft ul {
+    display: none;
+  }
+  .footer .wrapper .footerleft p {
+    display: none;
+  }
+  .footer .wrapper .footerright ul li {
+    width: 100%;
+    padding: 0;
+  }
+  .footer .wrapper .footerright ul li h2 {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: solid 1px #969696;
+    color: #3C3C3C;
+    line-height: 24px;
+    text-indent: 0.3rem;
+  }
+  .footer .wrapper .footerright ul li h2:after {
+    content: "\f067";
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #3C3C3C;
+    font-family: "FontAwesome";
+    font-weight: 400;
+  }
+  .footer .wrapper .footerright ul li h2.active {
+    color: #F2662C;
+    border-bottom: none;
+  }
+  .footer .wrapper .footerright ul li h2.active:after {
+    content: "\f068";
+    color: #F2662C;
+  }
+  .footer .wrapper .footerright ul li h3 {
+    padding: 10px 0;
+    border-bottom: solid 1px #969696;
+    color: #3C3C3C;
+    line-height: 24px;
+    text-indent: 0.3rem;
+  }
+  .footer .wrapper .footerright ul li h3:last-child {
+    border-bottom: none;
+  }
+  .footer .wrapper .footerright ul li ul {
+    display: none;
+    padding: 0 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer .wrapper .footerright ul li ul li {
+    list-style: none;
+    width: 100%;
+    float: left;
+    padding: 3px 0;
+  }
+  .footer .wrapper .footerright ul li ul li a {
+    text-decoration: none;
+    font-family: "arial", Arial, sans-serif;
+    font-weight: 300;
+    color: #3C3C3C;
+    font-size: 16px;
+    transition: all 0.4s ease-out;
+  }
+  .footer .wrapper .footerright ul li ul li a:hover {
+    color: #F0632A;
+    transition: all 0.4s ease-in;
+  }
+  .footer .wrapper .footerright h4 {
+    display: flex;
+  }
+  .footer .wrapper .footerright p {
+    display: block;
+  }
+}
 .wishtoconnect {
   width: 100%;
   float: left;
@@ -1624,7 +1758,8 @@ main {
 }
 @media only screen and (min-device-width: 500px) and (max-device-width: 1000px) and (orientation: landscape) {
   .quicklink {
-    width: 340px;
+    width: 380px;
+    padding: 1rem 2rem;
   }
   .quicklink h6 {
     margin-bottom: 0;
@@ -1868,7 +2003,7 @@ main {
 .mobilemenu .menusocial {
   width: 100%;
   float: left;
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 3rem 1.5rem 1rem 1.5rem;
 }
 .mobilemenu .menusocial h5 {
   width: 100%;

@@ -47,7 +47,27 @@ $(".dropdownclose").click(function()
 
 
 
-
+/* footer menu === start */
+$(".footer .wrapper .footerright ul li h2").click(function()
+{
+    if($(window).width() < 1255)
+    {
+        if($(this).hasClass('active'))
+        {
+            $(".footer .wrapper .footerright ul li ul").slideUp(300);
+            $(".footer .wrapper .footerright ul li h2").removeClass("active");
+        }
+        else 
+        {
+            $(".footer .wrapper .footerright ul li ul").slideUp(300);
+            $(".footer .wrapper .footerright ul li h2").removeClass("active");
+    
+            $(this).addClass("active");
+            $(this).next("ul").slideDown(300);
+        }
+    }
+});
+/* footer menu === end */
 
 /* mobile main menu === start */
 $("#mainmenu").click(function()
@@ -82,7 +102,6 @@ $(".mobilemenu ul li h2").click(function()
         $(this).next("ul").slideDown(300);
     }
 });
-
 /* mobile main menu === end */
 
 
