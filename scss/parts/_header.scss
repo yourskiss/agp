@@ -1,5 +1,4 @@
-.header { width: 100%; float: left; }
-.headerFixed { z-index:7; position:fixed; top:0; left:0; right: 0; max-width:1920px;  margin:0 auto; float:none; display:inline-block; }
+.header {  z-index:6; position:fixed; top:0; left:0; right: 0; width: 100%;  max-width:1920px; margin:0 auto; float:none; display: flow-root; }
 
 
 .nav { 
@@ -35,6 +34,7 @@
     .wrapper { 
         position: relative; height:100px; @include fBC();
         .logo { max-width: 100%; }
+        aside { display: none; }
         ul {
             @include fEC(); align-items: stretch;height: 100%;
             li {
@@ -66,18 +66,18 @@
                         ul { 
                             width: 63%; float: left; @include fSS(); flex-wrap: wrap;
                             li { 
-                                width: 30.3%; margin:0 3% 4px 0; display: inline-block;
+                                width: 30.3%; margin:0 3% 5px 0; display: inline-block;
                                 a { 
-                                    text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px;  @include outT();
+                                    text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 30px;  @include outT();
                                     &:hover { color:$ong1; @include inT(); }
                                 }
                                 h2 { width: 100%; float: left; margin-bottom: 5px;  @include aBold(); color:$blk1;  font-size: 18px; }
                                 ul {
                                     width: 100%; float: left; @include fSS(); flex-direction: column;
                                     li { 
-                                        list-style: none; margin:10px 0; width: 100%; float: left;
+                                        list-style: none; margin:5px 0; width: 100%; float: left;
                                         a { 
-                                            text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 20px;  @include outT();
+                                            text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 24px;  @include outT();
                                             &:hover { color:$ong1; @include inT(); }
                                         } 
                                     }
@@ -92,3 +92,83 @@
     }
  }
  
+
+ @media only screen and (max-width:1565px) 
+ {
+    .nav { 
+        .wrapper { height:32px; }
+    }
+
+    .navigation {
+        .wrapper { 
+            height:80px; 
+            ul {
+                li {
+                    .dropdownmenu {  top: 112px;  }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+@media only screen and (max-width:1255px) 
+{
+
+
+    .nav { 
+        .wrapper { 
+            p { font-size: 14px; }
+            ul{ display: none;}
+            i.fa.fa-search { font-size:16px; }
+        }
+    }
+    
+    .navigation {
+        .wrapper { 
+            height: 70px;
+            .logo { max-width:260px; }
+            aside { 
+                width: auto; float: right; @include fEC();
+                .quickmenu { width: 32px; height: 32px; background-color: $ong1; @include fCC();  @include outT();  
+                    img { max-width: 60%;}
+                    &:hover { cursor: pointer; background-color: $ong3; @include inT(); }
+                }
+                .mainmenu { 
+                    margin-left:1rem;  font-size: 36px; color: $blk1;  @include outT();
+                    i.fa { font-weight: 400; line-height: 1;  }
+                    &:hover { cursor: pointer; color: $ong3; @include inT(); }
+                }
+            }
+            ul {
+                display: none;
+            }
+        }
+     }
+
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    .nav { 
+        .wrapper { 
+            height: 27px;
+            p { font-size: 12px; }
+            i.fa.fa-search { font-size:14px; }
+        }
+    }
+    .navigation {
+        .wrapper { 
+            height: 60px;
+            .logo { max-width:190px; }
+            aside { 
+                .quickmenu { width: 24px; height: 24px;  }
+                .mainmenu {  font-size: 28px; }
+            }
+        }
+     }
+}

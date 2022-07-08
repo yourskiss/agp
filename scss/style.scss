@@ -25,7 +25,8 @@ main {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 0 0 0;
+  padding: 136px 0 0 0;
+  overflow: hidden;
 }
 .wrapper { 
     display: flow-root;
@@ -35,9 +36,18 @@ main {
     margin: 0 auto; 
 }
 
+@media only screen and (max-width:1565px) 
+{
+  main { padding:112px 0 0 0; }
+}
+
 @media only screen and (max-width:1255px) 
 {
-  main { display: none; }
+  main { padding:102px 0 0 0; }
+}
+@media only screen and (max-width:479px) 
+{
+  main { padding:87px 0 0 0; }
 }
 
 @import "parts/_header.scss";
@@ -45,8 +55,9 @@ main {
 @import "parts/_wishtoconnect.scss";
 @import "parts/_banners.scss";
 @import "parts/_breadcrumbs.scss"; 
-@import "parts/_slick.scss";
 @import "parts/_quicklinks.scss";
+@import "parts/_header-menu.scss";
+@import "parts/_slick.scss";
 @import "parts/_satisfaction-slider.scss";
 @import "parts/_knowledge-and-resources.scss";
 

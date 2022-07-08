@@ -95,20 +95,20 @@
                 }
                 &.one { 
                     grid-column:1;grid-row:1; 
-                    section { width: 550px; top:35%; left:90%; }
+                    section { width: 580px; top:30%; left:90%; }
                  }
                 &.two { 
                     grid-column: 1; grid-row: 2; 
                     img { width: 85%; float: right; }
-                    section { width: 450px; top:35%; left:0%; }
+                    section { width: 450px; top:25%; left:0%; }
                 }
                 &.four { 
                     grid-column: 1; grid-row:3;
-                    section { width: 550px; top: auto; bottom:-15px; left:90%; }
+                    section { width: 550px; top: auto; bottom:-20px; left:90%; }
                 }
                 &.three {
                      margin-top: 100px; margin-bottom: -100px; grid-row-start: 2; grid-row-end:3; grid-column-start:2; grid-column-end:2;
-                     section { width: 440px; top: -100px; left: 5%; }
+                     section { width: 450px; top: -90px; left: 6%; }
                  }
                 
             }

@@ -7,11 +7,11 @@
             position:relative; width: 100%; float: left;
             img { width: 100%;}
             .bannerhomescontent { 
-                z-index: 2; position:absolute; left:50%; top:40%; transform: translateX(-50%); width: 96%;max-width: 1640px;float: none;margin: 0 auto;  
+                z-index: 2; position:absolute; left:50%; top:35%; transform: translateX(-50%); width: 96%;max-width: 1640px;float: none;margin: 0 auto;  
                 div {
                     float: left; width: auto;
                     h2 { float: left; width: 100%; text-align: left; @include eurostile(); font-size: 56px; line-height:1.2; letter-spacing:3.36px; color: $wht1;  text-transform: uppercase;  }
-                    h3 {float: left; width: 100%; margin: 1rem 0 2rem 0; text-align: left; font-size: 19px; line-height: 34px; color: $wht1; @include aBold(); text-transform: uppercase;  }
+                    h3 {float: left; width: 100%; margin:0.3rem 0 1rem 0; text-align: left; font-size: 20px; line-height:60px; color: $wht1; @include aBold(); text-transform: uppercase;  }
                     p { 
                         float: left; width: 100%;text-align: left;
                         a { 
