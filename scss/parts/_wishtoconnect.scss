@@ -1,5 +1,3 @@
-
-
 .wishtoconnect { 
     width: 100%; float: left; padding:3rem 0; background-color:$ong1;
     .wrapper { 
@@ -27,8 +25,11 @@
                         &::-ms-input-placeholder { color: $wht1; opacity: 0.9;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 18px;  line-height: 24px; color: $wht1;  @include Arial();
-                        option { color: $blk1; }
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 18px;  line-height: 24px; color: $wht1;  @include Arial(); opacity:0.9;
+                        option { 
+                            color: $blk1;      
+                            &:disabled { user-select: none; pointer-events: none; }
+                        }
                     }
                     input[type='submit'], input[type='button'] { 
                         display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$blu1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase; cursor: pointer;
@@ -38,4 +39,89 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width:1565px) 
+{
+    .wishtoconnect { 
+        .wrapper { 
+            .wishtoconnectposter {width: 35%; float: left; margin-right:5%; }
+            .wishtoconnectcontent {width: 60%; float:left;}
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+    .wishtoconnect { 
+        .wrapper { 
+            .wishtoconnectposter {width: 32%; margin-right:3%; }
+            .wishtoconnectcontent {width: 65%;  }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:1023px) 
+{
+    .wishtoconnect { 
+        padding:2rem 0; 
+        .wrapper { 
+            .wishtoconnectposter { display: none;}
+            .wishtoconnectcontent {width: 100%; }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:599px) 
+{
+    .wishtoconnect { 
+        .wrapper { 
+            .wishtoconnectcontent {
+                ul {
+                    li {
+                        margin:0 0 2rem 0;
+                        &.width25 { width: 100%; }
+                        &.width75 { width: 100%; }
+                        &:last-child { width: 100%; margin: 0; }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    .wishtoconnect { 
+        .wrapper { 
+            flex-wrap: wrap;
+            .wishtoconnectposter { display: block; width: 100%; margin-bottom: 2rem; }
+            .wishtoconnectcontent {
+                h2 {  font-size: 23px; letter-spacing:1.32px; line-height:28px; }
+                p { margin: 0.5rem 0 1.5rem 0;font-size: 16px;line-height: 24px; }
+                ul {
+                    li {
+                        margin:0 0 1.5rem 0;
+                        input[type='text'] {  
+                            font-size: 16px; 
+                            &::placeholder { color: $wht1; opacity: 0.7; }      
+                            &:-ms-input-placeholder { color: $wht1; opacity: 0.7; }
+                            &::-ms-input-placeholder { color: $wht1; opacity: 0.7;  }
+                        }
+                        select {  font-size: 16px; opacity:0.7; }
+                        input[type='submit'], input[type='button'] { font-size:14px; letter-spacing:0.35px; line-height: 17px; }
+                    }
+                }
+            }
+        }
+    }
+    
 }
