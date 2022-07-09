@@ -132,15 +132,21 @@
             height: 70px;
             .logo { max-width:260px; }
             aside { 
-                width: auto; float: right; @include fEC();
+                width: auto; float: right; @include fCC();
                 .quickmenu { width: 32px; height: 32px; background-color: $ong1; @include fCC();  @include outT();  
                     img { max-width: 60%;}
                     &:hover { cursor: pointer; background-color: $ong3; @include inT(); }
                 }
                 .mainmenu { 
-                    margin-left:1rem;  font-size: 36px; color: $blk1;  @include outT();
-                    i.fa { font-weight: 400; line-height: 1;  }
-                    &:hover { cursor: pointer; color: $ong3; @include inT(); }
+                    margin-left:1rem; margin-bottom: -4px;
+                    i.fa { 
+                        font-weight: 400; line-height: 1;  font-size: 36px; color: $blk1;  @include outT(); cursor: pointer; 
+                        &:hover { color: $ong3; @include inT(); }
+                     }
+                    img { 
+                        width: 42px; cursor: pointer;@include outT();
+                        &:hover {  @include inT(); }
+                    }
                 }
             }
             ul {
@@ -167,7 +173,11 @@
             .logo { max-width:190px; }
             aside { 
                 .quickmenu { width: 24px; height: 24px;  }
-                .mainmenu {  font-size: 28px; }
+                .mainmenu { 
+                    margin-left: 0.5rem; margin-bottom: -5px; 
+                    i.fa {  font-size: 28px;} 
+                    img { width: 32px;}
+                }
             }
         }
      }

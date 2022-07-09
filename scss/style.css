@@ -827,7 +827,7 @@ main {
     width: auto;
     float: right;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   .navigation .wrapper aside .quickmenu {
@@ -849,17 +849,26 @@ main {
   }
   .navigation .wrapper aside .mainmenu {
     margin-left: 1rem;
-    font-size: 36px;
-    color: #000000;
-    transition: all 0.4s ease-out;
+    margin-bottom: -4px;
   }
   .navigation .wrapper aside .mainmenu i.fa {
     font-weight: 400;
     line-height: 1;
-  }
-  .navigation .wrapper aside .mainmenu:hover {
+    font-size: 36px;
+    color: #000000;
+    transition: all 0.4s ease-out;
     cursor: pointer;
+  }
+  .navigation .wrapper aside .mainmenu i.fa:hover {
     color: #ED4C1D;
+    transition: all 0.4s ease-in;
+  }
+  .navigation .wrapper aside .mainmenu img {
+    width: 42px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .navigation .wrapper aside .mainmenu img:hover {
     transition: all 0.4s ease-in;
   }
   .navigation .wrapper ul {
@@ -888,7 +897,14 @@ main {
     height: 24px;
   }
   .navigation .wrapper aside .mainmenu {
+    margin-left: 0.5rem;
+    margin-bottom: -5px;
+  }
+  .navigation .wrapper aside .mainmenu i.fa {
     font-size: 28px;
+  }
+  .navigation .wrapper aside .mainmenu img {
+    width: 32px;
   }
 }
 .footer {
@@ -1409,7 +1425,7 @@ main {
     margin-bottom: 2rem;
   }
   .wishtoconnect .wrapper .wishtoconnectcontent h2 {
-    font-size: 23px;
+    font-size: 22px;
     letter-spacing: 1.32px;
     line-height: 28px;
   }
@@ -1881,9 +1897,18 @@ main {
     font-size: 25px;
     color: #000000;
     transition: all 0.4s ease-out;
+    cursor: pointer;
   }
   .quicklink h6 i.fa:hover {
     color: #F2662C;
+    transition: all 0.4s ease-in;
+  }
+  .quicklink h6 img {
+    max-width: 22px;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+  }
+  .quicklink h6 img:hover {
     transition: all 0.4s ease-in;
   }
   .quicklink h2 span {
@@ -1988,9 +2013,18 @@ main {
   font-size: 25px;
   color: #000000;
   transition: all 0.4s ease-out;
+  cursor: pointer;
 }
 .mobilemenu aside i.fa:hover {
   color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.mobilemenu aside img {
+  max-width: 22px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.mobilemenu aside img:hover {
   transition: all 0.4s ease-in;
 }
 .mobilemenu h4 {
