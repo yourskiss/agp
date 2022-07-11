@@ -561,9 +561,16 @@ main {
 .nav .wrapper ul li a.callat {
   font-family: "arialbold", Arial, sans-serif;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.nav .wrapper ul li a.callat i.fa.fa-mobile {
-  margin-right: 5px;
+.nav .wrapper ul li a.callat span {
+  margin-left: 3px;
+  padding-top: 4px;
+}
+.nav .wrapper ul li a.callat img {
+  width: 14px;
 }
 .nav .wrapper ul li a:hover {
   color: #F2662C;
@@ -683,17 +690,14 @@ main {
   align-items: flex-start;
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner .dropdownclose {
-  width: 5%;
+  filter: brightness(0%);
+  width: 27px;
   text-align: right;
   cursor: pointer;
-  font-family: "arial", Arial, sans-serif;
-  font-weight: 300;
-  color: #3C3C3C;
-  font-size: 24px;
   transition: all 0.4s ease-out;
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner .dropdownclose:hover {
-  color: #F2662C;
+  filter: brightness(100%);
   transition: all 0.4s ease-in;
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul {
@@ -758,7 +762,7 @@ main {
   color: #F2662C;
   transition: all 0.4s ease-in;
 }
-.navigation .wrapper ul li .dropdownmenu .dropdowninner img {
+.navigation .wrapper ul li .dropdownmenu .dropdowninner .dropdownimg {
   max-width: 30%;
 }
 
@@ -5817,6 +5821,487 @@ main {
     top: 10%;
     font-size: 16px;
     letter-spacing: 0.65px;
+    line-height: 24px;
+  }
+}
+.csrbutton {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 12px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.csrbutton:hover {
+  transition: all 0.4s ease-in;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* ######################## csrWrap ######################## */
+.csrWrap {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 4rem;
+  background-color: #FFFFFF;
+}
+.csrWrap .csrAbout {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.csrWrap .csrAbout .csrAboutLeft {
+  width: 50%;
+  float: left;
+}
+.csrWrap .csrAbout .csrAboutLeft p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.csrWrap .csrAbout .csrAboutLeft aside {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-top: 2rem;
+}
+.csrWrap .csrAbout .csrAboutLeft aside a.csrbutton {
+  background: #F2662C;
+  color: #FFFFFF;
+}
+.csrWrap .csrAbout .csrAboutLeft aside a.csrbutton:hover {
+  background: #F0632A;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+}
+.csrWrap .csrAbout .csrAboutRight {
+  width: auto;
+  float: right;
+}
+.csrWrap .csrAbout .csrAboutRight ul {
+  width: 100%;
+  float: left;
+}
+.csrWrap .csrAbout .csrAboutRight ul li {
+  list-style: none;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.csrWrap .csrAbout .csrAboutRight ul li aside {
+  width: auto;
+  float: left;
+  text-align: left;
+}
+.csrWrap .csrAbout .csrAboutRight ul li aside img {
+  max-width: 100%;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p {
+  width: auto;
+  margin: 0 0 0 1rem;
+  float: left;
+  text-align: center;
+  color: #233D4D;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p span {
+  display: inline-block;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p i.fa {
+  display: inline-block;
+  padding: 0 5px;
+  transition: all 0.4s ease-out;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p:hover {
+  transition: all 0.4s ease-in;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p:hover i.fa {
+  padding: 0 0 0 10px;
+  transition: all 0.4s ease-in;
+}
+.csrWrap .csrAbout .csrAboutBottom {
+  display: none;
+}
+.csrWrap .csrAbout .csrAboutBottom a.csrbutton {
+  background: #F2662C;
+  color: #FFFFFF;
+}
+.csrWrap .csrAbout .csrAboutBottom a.csrbutton:hover {
+  background: #F0632A;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+}
+
+/* ######################## csrwrap ######################## */
+.commitmentsWrap {
+  width: 100%;
+  float: left;
+  padding: 4rem 0 5rem 0;
+  background-color: #F4F7F8;
+}
+.commitmentsWrap h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.commitmentsWrap h2 span {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.commitmentsWrap h2 img {
+  margin-left: 5px;
+  max-width: 100%;
+}
+.commitmentsWrap .commitmentsTabs {
+  width: 100%;
+  float: left;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.commitmentsWrap .commitmentsTabs ul {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #888888;
+}
+.commitmentsWrap .commitmentsTabs ul.disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.commitmentsWrap .commitmentsTabs ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 2rem 5px 2rem;
+  color: #888888;
+  font-size: 22px;
+  line-height: 45px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  transition: all 0.4s ease-out;
+}
+.commitmentsWrap .commitmentsTabs ul li.active {
+  border-bottom-color: #233D4D;
+  color: #233D4D;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.4s ease-in;
+  position: relative;
+  user-select: none;
+  pointer-events: none;
+}
+.commitmentsWrap .commitmentsTabs ul li.active:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #233D4D;
+  line-height: 0;
+  font-size: 1px;
+}
+.commitmentsWrap .commitmentsContainer {
+  width: 100%;
+  float: left;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox {
+  display: none;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin: 1.5rem 0;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft {
+  float: left;
+  width: 50%;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft img {
+  width: 100%;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  min-height: 60%;
+  padding: 3rem 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2px;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+  width: 100%;
+  float: left;
+  margin: 0.7rem 0 0.5rem 0;
+  text-align: left;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsLeft {
+  float: right;
+}
+.commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsRight {
+  right: auto;
+  left: 0;
+}
+
+@media only screen and (max-width: 1565px) {
+  /* ######################## csrWrap ######################## */
+  .csrWrap .csrAbout .csrAboutLeft p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li {
+    list-style: none;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /* ######################## csrwrap ######################## */
+  .commitmentsWrap .commitmentsTabs ul li {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox {
+    margin: 1rem 0;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+    width: 60%;
+    padding: 2rem;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+    font-size: 14px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1255px) {
+  /* ######################## csrwrap ######################## */
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+    width: 70%;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* ######################## csrWrap ######################## */
+  .csrWrap {
+    padding: 2rem 0 3rem 0;
+  }
+  .csrWrap .csrAbout .csrAboutLeft {
+    width: 100%;
+  }
+  .csrWrap .csrAbout .csrAboutLeft aside {
+    display: none;
+  }
+  .csrWrap .csrAbout .csrAboutRight {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li {
+    margin: 0.7rem 0;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li aside img {
+    max-width: 50px;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li aside p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .csrWrap .csrAbout .csrAboutBottom {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .csrWrap .csrAbout .csrAboutBottom a.csrbutton {
+    background: #F2662C;
+    color: #FFFFFF;
+  }
+  .csrWrap .csrAbout .csrAboutBottom a.csrbutton:hover {
+    background: #F0632A;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+  }
+  /* ######################## csrwrap ######################## */
+  .commitmentsWrap {
+    padding: 3rem 0;
+  }
+  .commitmentsWrap .commitmentsTabs ul li {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .commitmentsWrap .commitmentsContainer h2 span {
+    font-size: 24px;
+    letter-spacing: 0.92px;
+    line-height: 30px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox {
+    margin: 1rem 0;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft {
+    width: 100%;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+    margin-top: -80px;
+    width: 85%;
+    padding: 3rem 2rem;
+    float: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+    font-size: 14px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsRight {
+    float: left;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* ######################## csrwrap ######################## */
+  .commitmentsWrap .commitmentsTabs {
+    margin: 1rem 0;
+  }
+  .commitmentsWrap .commitmentsTabs ul {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+  .commitmentsWrap .commitmentsTabs ul li {
+    width: 100%;
+    float: left;
+    padding: 1rem;
+    background: #FAFAFA;
+    margin: 2px 0;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .commitmentsWrap .commitmentsTabs ul li.active {
+    background: #233D4D;
+    color: #FFFFFF;
+    border-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* ######################## csrWrap ######################## */
+  .csrWrap .csrAbout .csrAboutRight {
+    width: 100%;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li aside img {
+    max-width: 35px;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li p {
+    margin: 0 0 0 0.5rem;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* ######################## csrwrap ######################## */
+  .commitmentsWrap {
+    padding: 3rem 0 6rem 0;
+  }
+  .commitmentsWrap h2 span {
+    font-size: 22px;
+    letter-spacing: 0.92px;
+    line-height: 38px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+    padding: 1.5rem;
+    margin-top: -40px;
+    width: 90%;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+    font-size: 14px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+    font-size: 16px;
     line-height: 24px;
   }
 }

@@ -14,8 +14,9 @@
                 a {  
                     text-decoration: none; @include Arial(); color:$wht1;  @include outT();
                     &.callat {  
-                        @include aBold();
-                        i.fa.fa-mobile { margin-right: 5px; }
+                        @include aBold(); @include fCC();
+                        span { margin-left:3px; padding-top: 4px; }
+                        img { width: 14px;  }
                     }
                     &:hover { color:$ong1; @include inT(); }
                 }
@@ -59,9 +60,8 @@
                     display: none; z-index:4; position: fixed; top: 136px; left:0; padding: 3rem 0; width: 100%; background: $wht6; box-shadow: 0px 0px 6px #00000014;
                    .dropdowninner { 
                          position: relative; width: 96%;max-width: 1640px;float: none;margin: 0 auto;  @include fBS(); 
-                        .dropdownclose {  width: 5%; text-align: right;
-                            cursor: pointer;  @include Arial(); color:$blk2;  font-size: 24px;  @include outT(); 
-                            &:hover { color:$ong1; @include inT(); }
+                        .dropdownclose { filter:brightness(0%); width:27px; text-align: right; cursor: pointer; @include outT(); 
+                            &:hover { filter: brightness(100%); @include inT(); }
                          }
                         ul { 
                             width: 63%; float: left; @include fSS(); flex-wrap: wrap;
@@ -84,7 +84,7 @@
                                 }
                             }
                         }
-                        img { max-width: 30%;}
+                        .dropdownimg { max-width: 30%;}
                     }
                 }
             }

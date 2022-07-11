@@ -368,3 +368,37 @@ function whychoosemore()
     $("#whychooselist li").slideDown();
 }
 /* ############################ services === end ############################ */
+
+
+
+/* ############################ csr === start ############################ */
+if($(".commitmentsContainer").length > 0)
+{
+    $("#commitmentstitletabs li").click(function(){
+        $("#commitmentstitletabs").addClass("disabled")
+        let getname = $(this).attr("data-id");
+        $("#commitmentstitletabs  li").removeClass("active");
+        $(".commitmentsContainer .commitmentsBox").slideUp(500);
+
+        $(this).addClass("active");
+        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(500);
+        setTimeout(function(){ $("#commitmentstitletabs").removeClass('disabled'); }, 500);
+    });
+}
+if($(".csrAbout").length > 0)
+{
+    $(".csrAboutRight ul li").click(function(){
+        let jumpdiv = 0;
+        if($(window).width() > 1565) jumpdiv = 136;
+        else if($(window).width() < 1565 && $(window).width() > 1255) jumpdiv = 112;
+        else if($(window).width() < 1255 && $(window).width() > 479) jumpdiv = 102;
+        else jumpdiv = 87;
+        $('html, body').animate({scrollTop: $("#commitmentstitletabs").offset().top  - jumpdiv }, 500);
+        let getname = $(this).attr("data-name");
+        $("#commitmentstitletabs li").removeClass("active");
+        $(".commitmentsContainer .commitmentsBox").slideUp(500);
+        $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
+        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(500);
+    });
+}
+/* ############################ csr === end ############################ */
