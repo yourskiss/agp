@@ -29,7 +29,15 @@
     font-weight:bold; 
     font-style:normal;
     font-stretch:normal;
-    font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'), url('../fonts/HelveticaNeue.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch:normal;
 }
 
 
@@ -50,6 +58,13 @@
     font-weight: bold;
   }
 
+  @mixin hnr {
+    font-family:'HelveticaNeue', Helvetica, sans-serif;
+    font-weight: 500;
+  }
+
+
+
   @mixin FA {
     font-family: 'FontAwesome';
     font-weight: 400;
@@ -59,5 +74,6 @@
   @include aMedium();
   @include aBold();
   @include eurostile();
+  @include hnr();
   @include FA();
 */

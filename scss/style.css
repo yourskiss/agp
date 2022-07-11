@@ -14,12 +14,9 @@
  *    IE on Windows Phone and in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -60,8 +57,7 @@ h1 {
  */
 figcaption,
 figure,
-main {
-  /* 1 */
+main { /* 1 */
   display: block;
 }
 
@@ -77,12 +73,9 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -90,10 +83,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -103,10 +94,8 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
 }
 
 /**
@@ -114,12 +103,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -145,10 +131,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -236,14 +220,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -251,8 +231,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -261,8 +240,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -275,8 +253,7 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -314,18 +291,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -333,10 +304,8 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -352,10 +321,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -371,10 +338,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -390,10 +355,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -469,13 +432,20 @@ template {
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
 }
 /*
   @include Arial();
   @include aMedium();
   @include aBold();
   @include eurostile();
+  @include hnr();
   @include FA();
 */
 body {
@@ -517,7 +487,6 @@ main {
   main {
     padding: 102px 0 0 0;
   }
-
   .wrapper {
     width: 92%;
   }
@@ -526,7 +495,6 @@ main {
   main {
     padding: 87px 0 0 0;
   }
-
   .wrapper {
     width: 90%;
   }
@@ -798,7 +766,6 @@ main {
   .nav .wrapper {
     height: 32px;
   }
-
   .navigation .wrapper {
     height: 80px;
   }
@@ -816,7 +783,6 @@ main {
   .nav .wrapper i.fa.fa-search {
     font-size: 16px;
   }
-
   .navigation .wrapper {
     height: 70px;
   }
@@ -885,7 +851,6 @@ main {
   .nav .wrapper i.fa.fa-search {
     font-size: 14px;
   }
-
   .navigation .wrapper {
     height: 60px;
   }
@@ -1544,6 +1509,35 @@ main {
   color: #FFFFFF;
 }
 
+.banners {
+  position: relative;
+  width: 100%;
+  float: left;
+  background: #F2662C;
+}
+.banners img {
+  width: 100%;
+}
+.banners .wrapper {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.banners .wrapper h2 {
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 1.2;
+  letter-spacing: 3.36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1565px) {
   .bannerhome .bannerhomeslider .slides .wrapper {
     top: 30%;
@@ -1556,18 +1550,13 @@ main {
     font-size: 16px;
     line-height: 40px;
   }
+  .banners .wrapper h2 {
+    font-size: 42px;
+  }
 }
 @media only screen and (max-width: 1255px) {
   .bannerhome .bannerhomeslider .slides .wrapper {
     top: 20%;
-  }
-  .bannerhome .bannerhomeslider .slides .wrapper .banenrtext h2 {
-    font-size: 42px;
-  }
-  .bannerhome .bannerhomeslider .slides .wrapper .banenrtext h3 {
-    margin: 0.2rem 0 1rem 0;
-    font-size: 16px;
-    line-height: 40px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -1591,6 +1580,10 @@ main {
     letter-spacing: 0.35px;
     line-height: 18px;
   }
+  .banners .wrapper h2 {
+    font-size: 26px;
+    letter-spacing: 1.56px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .bannerhome .bannerhomeslider .slides .wrapper {
@@ -1603,13 +1596,64 @@ main {
     margin: 0.5rem 0 1rem 0;
     font-size: 16px;
   }
+  .banners .wrapper {
+    top: 65%;
+  }
+  .banners .wrapper h2 {
+    font-size: 24px;
+    letter-spacing: 1.44px;
+    line-height: 34px;
+  }
 }
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 479px) and (max-width: 359px) {
   .bannerhome .bannerhomeslider .slides .wrapper .banenrtext h2 {
     font-size: 22px;
   }
   .bannerhome .bannerhomeslider .slides .wrapper .banenrtext h3 {
     font-size: 14px;
+  }
+}
+.breadcrumbs {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.breadcrumbs li {
+  list-style: none;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 34px;
+}
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #707070;
+  transition: all 0.4s ease-out;
+}
+.breadcrumbs li a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.breadcrumbs li i.fa {
+  margin: 0 1rem;
+  font-weight: 400;
+}
+.breadcrumbs li span {
+  color: #233C4C;
+  padding-bottom: 1px;
+  border-bottom: solid 1px #233C4C;
+}
+
+@media only screen and (max-width: 1023px) {
+  .breadcrumbs li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .breadcrumbs li i.fa {
+    margin: 0 0.5rem;
   }
 }
 .quicklinkBG {
@@ -1760,7 +1804,7 @@ main {
   height: 20px;
   float: left;
   margin-right: 6px;
-  background: transparent url("../Images/icons.png") no-repeat;
+  background: transparent url("../Images/menu/icons.png") no-repeat;
 }
 .quicklink .qlservice ul li a span.ql_connection {
   background-position: 0 0;
@@ -1796,28 +1840,28 @@ main {
   transition: all 0.4s ease-out;
 }
 .quicklink .qlservice ul li a:hover span.ql_connection {
-  background-position: -23px 0;
+  background-position: -22px 0;
 }
 .quicklink .qlservice ul li a:hover span.ql_availability {
-  background-position: -23px -20px;
+  background-position: -22px -20px;
 }
 .quicklink .qlservice ul li a:hover span.ql_ratecard {
-  background-position: -23px -40px;
+  background-position: -22px -40px;
 }
 .quicklink .qlservice ul li a:hover span.ql_billpay {
-  background-position: -23px -60px;
+  background-position: -22px -60px;
 }
 .quicklink .qlservice ul li a:hover span.ql_stations {
-  background-position: -23px -80px;
+  background-position: -22px -80px;
 }
 .quicklink .qlservice ul li a:hover span.ql_calculator {
-  background-position: -23px -100px;
+  background-position: -22px -100px;
 }
 .quicklink .qlservice ul li a:hover span.ql_referral {
-  background-position: -23px -120px;
+  background-position: -22px -120px;
 }
 .quicklink .qlservice ul li a:hover span.ql_offers {
-  background-position: -23px -140px;
+  background-position: -22px -140px;
 }
 .quicklink .qlservice ul li a:hover b {
   border-bottom-color: #F1652C;
@@ -1873,7 +1917,6 @@ main {
   .quicklinkBG {
     background: rgba(0, 0, 0, 0.9);
   }
-
   .quicklink {
     display: none;
     right: 0px;
@@ -2243,6 +2286,226 @@ main {
 @media only screen and (max-width: 359px) {
   .mobilemenu {
     width: 100%;
+  }
+}
+.infocontent {
+  width: 100%;
+  float: left;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.infocontent img {
+  width: 100%;
+}
+.infocontent .wrapper {
+  padding: 3rem 0 3rem 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.infocontent .wrapper h2 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 44px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4666666667);
+  text-transform: uppercase;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.infocontent .wrapper h3 {
+  width: 100%;
+  float: left;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 28px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.infocontent .wrapper h3 span {
+  display: block;
+}
+.infocontent .wrapper h4 {
+  width: 100%;
+  float: left;
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 28px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.infocontent .wrapper h4 span {
+  display: block;
+}
+.infocontent .wrapper p {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2549019608);
+}
+.infocontent .wrapper p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.infocontent .wrapper p a:hover {
+  color: #233D4D;
+}
+.infocontent .wrapper aside {
+  width: 100%;
+  float: left;
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+.infocontent .wrapper aside a {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.infocontent .wrapper aside a:hover {
+  transition: all 0.4s ease-in;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1565px) {
+  .infocontent .wrapper {
+    padding: 2rem 0;
+  }
+  .infocontent .wrapper h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .infocontent .wrapper h3 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .infocontent .wrapper h3 span {
+    display: inline;
+  }
+  .infocontent .wrapper h3 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .infocontent .wrapper p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .infocontent .wrapper {
+    padding: 2rem 0;
+  }
+  .infocontent .wrapper h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .infocontent .wrapper h3 {
+    margin: 0.3rem 0 0.7rem 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .infocontent .wrapper h4 {
+    margin: 0.3rem 0 0.7rem 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .infocontent .wrapper p {
+    display: none;
+  }
+  .infocontent .wrapper aside {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .infocontent .wrapper {
+    padding: 1.5rem 0;
+  }
+  .infocontent .wrapper h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .infocontent .wrapper h3 {
+    margin: 0.2rem 0 0.5rem 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .infocontent .wrapper h4 {
+    margin: 0.2rem 0 0.5rem 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .infocontent .wrapper h4 span {
+    display: inline;
+  }
+  .infocontent .wrapper p {
+    display: none;
+  }
+  .infocontent .wrapper aside {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .infocontent .wrapper {
+    padding: 1.7rem 0;
+  }
+  .infocontent .wrapper h2 {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 28px;
+  }
+  .infocontent .wrapper h3 {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "arialbold", Arial, sans-serif;
+    font-weight: bold;
+  }
+  .infocontent .wrapper h4 {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "arialbold", Arial, sans-serif;
+    font-weight: bold;
+  }
+  .infocontent .wrapper p {
+    display: none;
+  }
+  .infocontent .wrapper aside {
+    margin: 0;
+  }
+  .infocontent .wrapper aside a {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 17px;
   }
 }
 /* slick-theme 1.9.0 */
@@ -2820,7 +3083,6 @@ main {
   .bannerhomeslider.slick-slider .slick-dots {
     top: 5%;
   }
-
   .bannerhomeslider.slick-slider .slick-dots li {
     width: 30px;
     height: 5px;
@@ -2833,13 +3095,11 @@ main {
     top: 35%;
     width: 90%;
   }
-
   .bannerhomeslider.slick-slider .slick-dots li {
     width: 20px;
     height: 3px;
     margin: 0 5px 0 0;
   }
-
   /* knowledgeresources  === dots */
   .knowledgeresourcesslider.slick-slider .slick-dots {
     bottom: -7px;
@@ -3033,7 +3293,7 @@ main {
 .satisfactionwrap .satisfactionThumb {
   width: 80%;
   float: left;
-  margin: 2rem 10% 0 10%;
+  margin: 1rem 10% 0 10%;
 }
 .satisfactionwrap .satisfactionThumb .satisfactionNav {
   position: relative;
@@ -3247,11 +3507,9 @@ main {
   .satisfactionwrap .satisfactionThumb {
     display: none;
   }
-
   .satisfactionSlider .slick-list {
     overflow: visible;
   }
-
   .satisfactionSlider .slick-slide {
     margin: 0 20px 0 0;
   }
@@ -3526,7 +3784,6 @@ main {
     font-size: 18px;
     line-height: 21px;
   }
-
   .knowledgeresourcesslider .slick-list {
     overflow: visible;
   }
@@ -3839,97 +4096,6 @@ main {
   left: 6%;
 }
 
-.safetyispriority {
-  width: 100%;
-  float: left;
-  background-color: #FFFFFF;
-  position: relative;
-}
-.safetyispriority img {
-  width: 100%;
-}
-.safetyispriority .wrapper {
-  padding: 3rem 0 3rem 0;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.safetyispriority .wrapper h2 {
-  width: 100%;
-  float: left;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 28px;
-  line-height: 44px;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4666666667);
-  text-transform: uppercase;
-  font-family: "eurostilebold", Helvetica, sans-serif;
-  font-weight: bold;
-}
-.safetyispriority .wrapper h3 {
-  width: 100%;
-  float: left;
-  margin: 0.5rem 0 1rem 0;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 18px;
-  line-height: 28px;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
-  font-family: "arial", Arial, sans-serif;
-  font-weight: 300;
-}
-.safetyispriority .wrapper h3 span {
-  display: block;
-}
-.safetyispriority .wrapper p {
-  width: 100%;
-  float: left;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 26px;
-  font-family: "arialbold", Arial, sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2549019608);
-}
-.safetyispriority .wrapper p a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.safetyispriority .wrapper p a:hover {
-  color: #233D4D;
-}
-.safetyispriority .wrapper aside {
-  width: 100%;
-  float: left;
-  margin: 1rem 0 0 0;
-  text-align: center;
-}
-.safetyispriority .wrapper aside a {
-  display: inline-block;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.4s ease-out;
-  padding: 10px 25px;
-  border: none;
-  background-color: #F2662C;
-  color: #FFFFFF;
-  font-family: "eurostilebold", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.4px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-.safetyispriority .wrapper aside a:hover {
-  transition: all 0.4s ease-in;
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
 @media only screen and (max-width: 1565px) {
   .weoffers {
     padding: 4rem 0 5rem 0;
@@ -3961,26 +4127,6 @@ main {
     width: 450px;
     top: -90px;
     left: 6%;
-  }
-
-  .safetyispriority .wrapper {
-    padding: 2rem 0;
-  }
-  .safetyispriority .wrapper h2 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  .safetyispriority .wrapper h3 {
-    margin: 0.5rem 0 1rem 0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .safetyispriority .wrapper h3 span {
-    display: inline;
-  }
-  .safetyispriority .wrapper p {
-    font-size: 18px;
-    line-height: 24px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -4059,7 +4205,6 @@ main {
     width: auto;
     text-align: left;
   }
-
   .infomain h2 {
     font-size: 22px;
     letter-spacing: 0.78px;
@@ -4078,7 +4223,6 @@ main {
     font-size: 16px;
     line-height: 24px;
   }
-
   .weoffers {
     padding: 3rem 0;
   }
@@ -4162,7 +4306,6 @@ main {
     font-size: 14px;
     line-height: 24px;
   }
-
   .infomain {
     padding: 2rem 0;
   }
@@ -4176,50 +4319,11 @@ main {
     margin: 0.6rem 0;
     width: 35%;
   }
-
-  .safetyispriority .wrapper {
-    padding: 2rem 0;
-  }
-  .safetyispriority .wrapper h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .safetyispriority .wrapper h3 {
-    margin: 0.3rem 0 0.7rem 0;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .safetyispriority .wrapper p {
-    display: none;
-  }
-  .safetyispriority .wrapper aside {
-    margin: 0;
-  }
 }
 @media only screen and (max-width: 599px) {
   .highlightservices {
     margin-top: 0px;
   }
-
-  .safetyispriority .wrapper {
-    padding: 1.5rem 0;
-  }
-  .safetyispriority .wrapper h2 {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  .safetyispriority .wrapper h3 {
-    margin: 0.2rem 0 0.5rem 0;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .safetyispriority .wrapper p {
-    display: none;
-  }
-  .safetyispriority .wrapper aside {
-    margin: 0;
-  }
-
   .weoffers {
     padding: 2.5rem 0;
   }
@@ -4255,7 +4359,6 @@ main {
     font-size: 12px;
     line-height: 30px;
   }
-
   .infomain {
     padding: 2rem 0;
   }
@@ -4292,31 +4395,1428 @@ main {
     margin-top: 0;
     margin-left: 1rem;
   }
+}
+.servicebutton {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 12px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.servicebutton:hover {
+  transition: all 0.4s ease-in;
+  background-color: #000000;
+  color: #FFFFFF;
+}
 
-  .safetyispriority .wrapper {
-    padding: 1.7rem 0;
+/* ######################## servicewrap ######################## */
+.servicewrap {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 5rem;
+  background-color: #FFFFFF;
+}
+.servicewrap .serviceAbout {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.servicewrap .serviceAbout .serviceAboutLeft {
+  width: 45%;
+  float: left;
+}
+.servicewrap .serviceAbout .serviceAboutLeft p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+.servicewrap .serviceAbout .serviceAboutRight {
+  width: 45%;
+  float: right;
+}
+.servicewrap .serviceAbout .serviceAboutRight ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.servicewrap .serviceAbout .serviceAboutRight ul li {
+  list-style: none;
+  width: 33%;
+  margin: 0 0 4rem 0;
+}
+.servicewrap .serviceAbout .serviceAboutRight ul li aside {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.servicewrap .serviceAbout .serviceAboutRight ul li aside img {
+  max-width: 100%;
+}
+.servicewrap .serviceAbout .serviceAboutRight ul li p {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  float: left;
+  text-align: center;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.servicewrap .serviceAbout .serviceAboutBottom {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.servicewrap .serviceAbout .serviceAboutBottom a.servicebutton {
+  background: #F2662C;
+  color: #FFFFFF;
+}
+.servicewrap .serviceAbout .serviceAboutBottom a.servicebutton:hover {
+  background: #F0632A;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+}
+.servicewrap .serviceHighlight {
+  width: 100%;
+  float: left;
+  padding: 3rem 0 0 0;
+}
+.servicewrap .serviceHighlight ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: stretch;
+}
+.servicewrap .serviceHighlight ul li {
+  list-style: none;
+  width: 15.5%;
+  height: inherit;
+}
+.servicewrap .serviceHighlight ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  float: left;
+  border-bottom: solid 2px #F2662C;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 3px 3px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  background-color: #FFFFFF;
+  background: linear-gradient(to left, #FFFFFF 50%, #233D4D 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+}
+.servicewrap .serviceHighlight ul li a aside {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.servicewrap .serviceHighlight ul li a aside img {
+  max-width: 100%;
+  filter: none;
+  transition: all 0.4s ease-out;
+}
+.servicewrap .serviceHighlight ul li a p {
+  width: 100%;
+  float: left;
+  margin-top: 0.4rem;
+  text-align: center;
+  white-space: nowrap;
+  color: #233D4D;
+  font-size: 16px;
+  line-height: 36px;
+  white-space: normal;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+}
+.servicewrap .serviceHighlight ul li a:hover {
+  background-color: #233D4D;
+  border-color: #233D4D;
+  border-radius: 0px 0px 3px 3px;
+  background-position: left bottom;
+  transition: all 0.4s ease-in;
+}
+.servicewrap .serviceHighlight ul li a:hover img {
+  filter: brightness(0) invert(1);
+  transition: all 0.4s ease-in;
+}
+.servicewrap .serviceHighlight ul li a:hover p {
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+.servicewrap .serviceWhychoose {
+  width: 100%;
+  float: left;
+  padding: 4rem 0;
+  text-align: center;
+}
+.servicewrap .serviceWhychoose h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicewrap .serviceWhychoose h2 span {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.servicewrap .serviceWhychoose h2 img {
+  margin-left: 5px;
+  max-width: 100%;
+}
+.servicewrap .serviceWhychoose h3 {
+  width: 100%;
+  margin: 0.3rem 0 2rem 0;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .serviceWhychoose section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: stretch;
+}
+.servicewrap .serviceWhychoose section img {
+  width: 450px;
+}
+.servicewrap .serviceWhychoose section ul {
+  width: 520px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.servicewrap .serviceWhychoose section ul li {
+  list-style: none;
+}
+.servicewrap .serviceWhychoose section ul li h4 {
+  width: 100%;
+  margin: 0;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .serviceWhychoose section ul li p {
+  width: 100%;
+  margin: 0.1rem 0;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+.servicewrap .serviceWhychoose section aside {
+  display: none;
+}
+.servicewrap .servicePricebyarea {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaRight {
+  width: 60%;
+  float: right;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaRight img {
+  width: 100%;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft {
+  width: 50%;
+  min-height: 65%;
+  float: left;
+  background: #FFFFFF;
+  padding: 3rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft h2 span {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft h2 img {
+  margin-left: 5px;
+  max-width: 100%;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft p {
+  width: 100%;
+  margin: 0.5rem 0 2rem 0;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section h3 {
+  width: auto;
+  margin-right: 1rem;
+  float: left;
+  text-align: left;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 28px;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section h4 {
+  width: auto;
+  padding: 0 0.6rem;
+  margin-right: 1rem;
+  float: left;
+  border: solid 1px #F2662C;
+  text-align: left;
+  color: #F2662C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange {
+  width: 135px;
+  margin-right: 1rem;
+  float: left;
+  display: none;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  float: left;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange aside input[type=text] {
+  width: 90px;
+  float: left;
+  padding: 0;
+  border: solid 1px #ED4C1D;
+  outline: 0;
+  background: #FFFFFF;
+  text-align: center;
+  color: #000000;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange aside input[type=submit] {
+  width: 45px;
+  float: left;
+  padding: 0;
+  border: solid 1px #ED4C1D;
+  outline: 0;
+  background: #F2662C;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange aside input[type=submit]:hover {
+  background: #000000;
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange span {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 3px;
+  text-align: left;
+  color: #F2662C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section img {
+  max-width: 100%;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: all 0.4s ease-out;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft section img:hover {
+  filter: grayscale(0);
+  transition: all 0.4s ease-in;
+}
+.servicewrap .servicePricebyarea .servicePricebyareaLeft h5 {
+  width: 100%;
+  margin: 1rem 0 0 0;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-family: "HelveticaNeue", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1.2;
+}
+.servicewrap .serviceFuelsavings {
+  width: 100%;
+  float: left;
+  padding: 4rem 0;
+  position: relative;
+}
+.servicewrap .serviceFuelsavings img {
+  width: 100%;
+}
+.servicewrap .serviceFuelsavings section {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+  float: left;
+}
+.servicewrap .serviceFuelsavings section h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.servicewrap .serviceFuelsavings section p {
+  width: 100%;
+  margin: 0.7rem 0 1.5rem 0;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .serviceFuelsavings section aside {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.servicewrap .serviceFuelsavings section aside a.servicebutton {
+  text-decoration: none;
+  text-decoration: none;
+}
+.servicewrap .serviceFuelsavings section aside a.servicebutton:hover {
+  text-decoration: none;
+}
+.servicewrap .servicePipelineAvailable {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableRight {
+  width: 60%;
+  float: left;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableRight img {
+  width: 100%;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+  width: 50%;
+  min-height: 65%;
+  float: left;
+  background: #FFFFFF;
+  padding: 3rem 2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 span {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 img {
+  margin-left: 5px;
+  max-width: 100%;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h3 {
+  width: 100%;
+  margin: 0.5rem 0 1.5rem 0;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h4 {
+  width: 100%;
+  margin: 0 0 0.7rem 0;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section {
+  width: 75%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside {
+  width: 47%;
+  float: left;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput {
+  width: 100%;
+  float: left;
+  padding: 5px 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #3C3C3C;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "HelveticaNeue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect {
+  width: 100%;
+  float: left;
+  padding: 5px 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #3C3C3C;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "HelveticaNeue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect option {
+  color: #707070;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .errormsg {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 3px;
+  text-align: left;
+  color: #F2662C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 18px;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h5 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-top: 1rem;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h5 .gosubmit {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h5 .gosubmit:hover {
+  transition: all 0.4s ease-in;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-top: 2rem;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a {
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  font-size: 18px;
+  line-height: 28px;
+  color: #233D4D;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a span {
+  border-bottom: solid 1px #233D4D;
+  padding-bottom: 1px;
+  text-align: left;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a i.fa {
+  font-weight: 400;
+  margin-left: 5px;
+  transition: all 0.4s ease-out;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a:hover span {
+  border-bottom-color: #000000;
+}
+.servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a:hover i.fa {
+  margin-left: 10px;
+  transition: all 0.4s ease-in;
+}
+
+/* ######################## serviceothers ######################## */
+.serviceothers {
+  width: 100%;
+  float: left;
+  padding: 5rem 0 6rem 0;
+  background-color: #F4F7F8;
+}
+.serviceothers .serviceotherslider {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.serviceothers .serviceotherslider .items {
+  width: 49.5%;
+  float: left;
+  position: relative;
+}
+.serviceothers .serviceotherslider .items img {
+  width: 100%;
+}
+.serviceothers .serviceotherslider .items h2 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 1.92px;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  text-align: left;
+}
+.serviceothers .serviceotherslider .items a.servicebutton {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  white-space: nowrap;
+}
+.serviceothers .serviceotherslider .items a.servicebutton:hover {
+  transition: all 0.4s ease-in;
+}
+.serviceothers h3 {
+  width: 100%;
+  float: left;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #233D4D;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.serviceothers h3 b {
+  font-weight: normal;
+}
+.serviceothers h3 a {
+  text-decoration: none;
+  color: #233D4D;
+  transition: all 0.4s ease-out;
+}
+.serviceothers h3 a span {
+  padding: 0 5px;
+  transition: all 0.4s ease-out;
+}
+.serviceothers h3 a:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+.serviceothers h3 a:hover span {
+  padding: 0 0 0 10px;
+  transition: all 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1565px) {
+  /* ######################## servicewrap ######################## */
+  .servicewrap {
+    padding: 2rem 0 4rem;
   }
-  .safetyispriority .wrapper h2 {
+  .servicewrap .serviceAbout .serviceAboutLeft {
+    width: 48%;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight {
+    width: 48%;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li {
+    margin: 0 0 3rem 0;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li p {
+    font-size: 18px;
+  }
+  .servicewrap .serviceHighlight ul li a {
+    padding: 0.7rem;
+  }
+  .servicewrap .serviceHighlight ul li a p {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .servicewrap .serviceWhychoose {
+    padding: 3rem 0;
+  }
+  .servicewrap .serviceWhychoose h2 span {
+    font-size: 24px;
+    letter-spacing: 0.92px;
+    line-height: 35px;
+  }
+  .servicewrap .serviceWhychoose h3 {
+    margin: 0.2rem 0 1.5rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .serviceWhychoose section ul li h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .serviceWhychoose section ul li p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft {
+    padding: 2rem 1.5rem;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h2 span {
+    font-size: 24px;
+    letter-spacing: 0.92px;
+    line-height: 30px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h5 {
+    font-size: 66px;
+  }
+  .servicewrap .serviceFuelsavings {
+    padding: 4rem 0;
+  }
+  .servicewrap .serviceFuelsavings section {
+    width: 400px;
+  }
+  .servicewrap .serviceFuelsavings section h2 {
+    font-size: 24px;
+    letter-spacing: 0.92px;
+    line-height: 30px;
+  }
+  .servicewrap .serviceFuelsavings section p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+    padding: 2rem 1.5rem;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 span {
+    font-size: 24px;
+    letter-spacing: 0.92px;
+    line-height: 30px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h3 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section {
+    width: 100%;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside {
+    width: 48%;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 {
+    margin-top: 1rem;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1255px) {
+  /* ######################## servicewrap ######################## */
+  .servicewrap .serviceWhychoose {
+    padding: 3rem 0;
+  }
+  .servicewrap .serviceWhychoose section {
+    max-width: 942px;
+  }
+  .servicewrap .serviceWhychoose section img {
+    width: 445px;
+  }
+  .servicewrap .serviceWhychoose section ul {
+    width: 480px;
+  }
+  .servicewrap .serviceWhychoose section ul li p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft {
+    padding: 1rem;
+    width: 65%;
+  }
+  .servicewrap .serviceFuelsavings {
+    padding: 5rem 0;
+  }
+  .servicewrap .serviceFuelsavings section {
+    width: 350px;
+  }
+  .servicewrap .serviceFuelsavings section aside a.servicebutton {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+    padding: 1rem;
+    width: 65%;
+  }
+  /* ######################## serviceothers ######################## */
+  .serviceothers {
+    padding: 3rem 0 5rem 0;
+  }
+  .serviceothers .serviceotherslider .items h2 {
+    left: 5%;
+    top: 8%;
+    width: 90%;
+    font-size: 24px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+  }
+  .serviceothers .serviceotherslider .items a.servicebutton {
+    padding: 8px 15px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+  }
+  .serviceothers h3 {
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* ######################## servicewrap ######################## */
+  .servicewrap .serviceAbout {
+    padding: 1.5rem 0 0 0;
+    flex-wrap: wrap;
+  }
+  .servicewrap .serviceAbout .serviceAboutLeft {
+    width: 100%;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li {
+    margin: 1rem 0;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li aside img {
+    max-width: 55px;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li p {
+    font-size: 16px;
+    margin: 0.5rem 0 0 0;
+  }
+  .servicewrap .serviceAbout .serviceAboutBottom {
+    margin-top: 1rem;
+  }
+  .servicewrap .serviceHighlight ul {
+    flex-wrap: wrap;
+  }
+  .servicewrap .serviceHighlight ul li {
+    width: 31%;
+    margin: 7px 0;
+  }
+  .servicewrap .serviceWhychoose {
+    padding: 3rem 0;
+  }
+  .servicewrap .serviceWhychoose section {
+    max-width: 100%;
+  }
+  .servicewrap .serviceWhychoose section img {
+    display: none;
+  }
+  .servicewrap .serviceWhychoose section ul {
+    width: 100%;
+  }
+  .servicewrap .serviceWhychoose section ul li {
+    margin-bottom: 1rem;
+  }
+  .servicewrap .serviceWhychoose section ul li h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .servicewrap .serviceWhychoose section ul li p {
+    position: relative;
+    padding-left: 88px;
+    margin: 0.2rem 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .serviceWhychoose section ul li p:before, .servicewrap .serviceWhychoose section ul li p:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #233D4D;
+    height: 6px;
+    border-radius: 10px;
+    line-height: 0;
+    font-size: 1px;
+  }
+  .servicewrap .serviceWhychoose section ul li p:before {
+    width: 68px;
+    top: 10px;
+  }
+  .servicewrap .serviceWhychoose section ul li p:after {
+    width: 58px;
+    top: 22px;
+    opacity: 0.34;
+  }
+  .servicewrap .serviceWhychoose section ul li:last-child {
+    margin-bottom: 0;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaRight {
+    width: 100%;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft {
+    margin-top: -100px;
+    padding: 1.5rem;
+    transform: none;
+    width: 85%;
+    float: right;
+    position: relative;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h2 {
+    display: block;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h2 span {
+    display: inline;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h2 img {
+    display: inline;
+    margin: 0 0 -3px 0px;
+  }
+  .servicewrap .serviceFuelsavings {
+    padding: 5rem 0;
+  }
+  .servicewrap .serviceFuelsavings section {
+    width: 350px;
+  }
+  .servicewrap .serviceFuelsavings section aside a.servicebutton {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableRight {
+    width: 100%;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+    margin-top: -100px;
+    padding: 1.5rem;
+    transform: none;
+    width: 85%;
+    float: right;
+    position: relative;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 {
+    display: block;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 span {
+    display: inline;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 img {
+    display: inline;
+    margin: 0 0 -3px 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* ######################## servicewrap ######################## */
+  .servicewrap .serviceHighlight ul li a {
+    padding: 0.5rem;
+  }
+  .servicewrap .serviceHighlight ul li a aside img {
+    max-width: 30px;
+  }
+  .servicewrap .serviceHighlight ul li a p {
+    margin-top: 0.2rem;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft {
+    width: 92%;
+  }
+  .servicewrap .serviceFuelsavings {
+    padding: 4rem 0;
+  }
+  .servicewrap .serviceFuelsavings section {
+    width: 290px;
+  }
+  .servicewrap .serviceFuelsavings section h2 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .servicewrap .serviceFuelsavings section p {
+    margin: 0.1rem 0 0.7rem 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .servicewrap .serviceFuelsavings section aside a.servicebutton {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+    width: 92%;
+  }
+  /* ######################## serviceothers ######################## */
+  .serviceothers {
+    padding: 3rem 0;
+  }
+  .serviceothers .serviceotherslider .items a.servicebutton {
+    bottom: -1px;
+  }
+  .serviceothers h3 {
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .serviceotherslider .slick-list {
+    overflow: hidden;
+  }
+  .serviceotherslider .slick-track {
+    overflow: hidden;
+  }
+  .serviceotherslider .slick-slide {
+    margin: 0 10px 0 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* ######################## servicewrap ######################## */
+  .servicewrap {
+    padding: 2rem 0 3rem 0;
+  }
+  .servicewrap .serviceAbout {
+    padding: 2rem 0 0 0;
+  }
+  .servicewrap .serviceAbout .serviceAboutLeft p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #3C3C3C;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul {
+    width: 98%;
+    margin: 0 1%;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li aside {
+    width: auto;
+    text-align: left;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li aside img {
+    max-width: 38px;
+  }
+  .servicewrap .serviceAbout .serviceAboutRight ul li p {
+    width: auto;
+    margin: 0 0 0 1rem;
+    text-align: left;
+    font-size: 16px;
+    line-height: 45px;
+    color: #3C3C3C;
+  }
+  .servicewrap .serviceAbout .serviceAboutBottom {
+    margin-top: 0.5rem;
+  }
+  .servicewrap .serviceAbout .serviceAboutBottom a.servicebutton {
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 17px;
+  }
+  .servicewrap .serviceHighlight {
+    padding: 3rem 0 0 0;
+  }
+  .servicewrap .serviceHighlight ul li {
+    width: 48%;
+  }
+  .servicewrap .serviceHighlight ul li a {
+    padding: 0.7rem;
+    border-bottom-width: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .servicewrap .serviceHighlight ul li a aside {
+    width: auto;
+    text-align: left;
+  }
+  .servicewrap .serviceHighlight ul li a aside img {
+    max-width: 28px;
+  }
+  .servicewrap .serviceHighlight ul li a p {
+    width: auto;
+    margin: 0 0 0 0.6rem;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: break-spaces;
+  }
+  .servicewrap .serviceWhychoose {
+    padding: 3rem 0;
+  }
+  .servicewrap .serviceWhychoose h2 span {
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .servicewrap .serviceWhychoose h2 img {
+    margin-left: 3px;
+  }
+  .servicewrap .serviceWhychoose h3 {
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .servicewrap .serviceWhychoose section {
+    flex-wrap: wrap;
+  }
+  .servicewrap .serviceWhychoose section ul li {
+    display: none;
+  }
+  .servicewrap .serviceWhychoose section ul li h4 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .servicewrap .serviceWhychoose section ul li p {
+    margin: 0.2rem 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .servicewrap .serviceWhychoose section ul li:nth-of-type(1), .servicewrap .serviceWhychoose section ul li:nth-of-type(2), .servicewrap .serviceWhychoose section ul li:nth-of-type(3), .servicewrap .serviceWhychoose section ul li:nth-of-type(4) {
+    display: block;
+  }
+  .servicewrap .serviceWhychoose section aside {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .servicewrap .serviceWhychoose section aside span {
+    display: inline-block;
+    color: #233D4D;
+    font-family: "arialbold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+  }
+  .servicewrap .serviceWhychoose section aside span i.fa {
+    margin-left: 5px;
+  }
+  .servicewrap .serviceWhychoose section aside span:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft {
+    width: 85%;
+    padding: 1.5rem;
+    margin-top: -50px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h2 span {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft p {
+    margin: 0.5rem 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft section {
+    flex-wrap: wrap;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft section h3 {
+    width: 100%;
+    margin: 0;
+    font-size: 11px;
+    line-height: 28px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft section h4 {
+    width: auto;
+    padding: 0 1.5rem;
+    margin: 0 1rem 0 0;
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft section .servicepinchange {
+    margin: 0;
+  }
+  .servicewrap .servicePricebyarea .servicePricebyareaLeft h5 {
+    font-size: 40px;
+  }
+  .servicewrap .serviceFuelsavings {
+    padding: 3rem 0;
+  }
+  .servicewrap .serviceFuelsavings section {
+    left: 10%;
+    width: 80%;
+  }
+  .servicewrap .serviceFuelsavings section h2 {
     font-size: 22px;
     letter-spacing: 1.32px;
     line-height: 28px;
   }
-  .safetyispriority .wrapper h3 {
-    margin: 1rem 0 1.5rem 0;
+  .servicewrap .serviceFuelsavings section p {
+    margin: 0.7rem 0 1rem 0;
     font-size: 16px;
-    line-height: 22px;
-    font-family: "arialbold", Arial, sans-serif;
-    font-weight: bold;
+    line-height: 26px;
   }
-  .safetyispriority .wrapper p {
+  .servicewrap .serviceFuelsavings section aside a.servicebutton {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
+    width: 85%;
+    padding: 1.5rem;
+    margin-top: -50px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h2 span {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h3 {
+    margin: 0.5rem 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h4 {
+    margin: 0 0 0.2rem 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section {
+    flex-wrap: wrap;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .pincodeinput {
+    padding: 6px 5px;
+    border-bottom-color: #535353;
+    color: #535353;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect {
+    padding: 6px 1px;
+    border-bottom-color: #535353;
+    color: #535353;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h5 {
+    margin-top: 0.5rem;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h5 .gosubmit {
+    font-size: 14px;
+    letter-spacing: 0.33px;
+    line-height: 18px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 {
+    margin-top: 2rem;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a span {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  /* ######################## serviceothers ######################## */
+  .serviceothers {
+    padding: 3rem 0 6rem 0;
+  }
+  .serviceothers .serviceotherslider .items h2 {
+    top: 15%;
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 30px;
+  }
+  .serviceothers h3 {
     display: none;
   }
-  .safetyispriority .wrapper aside {
-    margin: 0;
-  }
-  .safetyispriority .wrapper aside a {
-    font-size: 14px;
-    letter-spacing: 0.35px;
-    line-height: 17px;
+}
+@media only screen and (max-width: 359px) {
+  /* ######################## serviceothers ######################## */
+  .serviceothers .serviceotherslider .items h2 {
+    top: 10%;
+    font-size: 16px;
+    letter-spacing: 0.65px;
+    line-height: 24px;
   }
 }

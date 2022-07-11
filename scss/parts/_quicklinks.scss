@@ -30,7 +30,7 @@
                 a{
                     text-decoration: none; @include fSC();
                     span {  
-                        width:23px; height: 20px; float: left; margin-right:6px; background:transparent url('../Images/icons.png') no-repeat;  
+                        width:23px; height: 20px; float: left; margin-right:6px; background:transparent url('../Images/menu/icons.png') no-repeat;  
                         &.ql_connection { background-position:0 0; }
                         &.ql_availability { background-position:0px -20px; }
                         &.ql_ratecard { background-position:0px -40px; }
@@ -43,14 +43,14 @@
                     b {font-size: 16px; line-height: 24px; border-bottom: solid 1px  $blu1; @include Arial(); color: $blu1; @include outT(); }
                     &:hover {
                         span {
-                            &.ql_connection { background-position:-23px 0; }
-                            &.ql_availability { background-position:-23px -20px; }
-                            &.ql_ratecard { background-position:-23px -40px; }
-                            &.ql_billpay { background-position:-23px -60px; }
-                            &.ql_stations { background-position:-23px -80px; }
-                            &.ql_calculator { background-position:-23px -100px; }
-                            &.ql_referral { background-position:-23px -120px; }
-                            &.ql_offers { background-position:-23px -140px; }
+                            &.ql_connection { background-position:-22px 0; }
+                            &.ql_availability { background-position:-22px -20px; }
+                            &.ql_ratecard { background-position:-22px -40px; }
+                            &.ql_billpay { background-position:-22px -60px; }
+                            &.ql_stations { background-position:-22px -80px; }
+                            &.ql_calculator { background-position:-22px -100px; }
+                            &.ql_referral { background-position:-22px -120px; }
+                            &.ql_offers { background-position:-22px -140px; }
                         }
                         b { border-bottom-color:$ong4; color: $ong4; @include inT(); }
                     }

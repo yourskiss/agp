@@ -257,7 +257,7 @@ $(function($)
                 },
                 {
                     breakpoint: 599,
-                    settings: { centerPadding: '10px', adaptiveHeight: true, dots: true, arrows: true, }
+                    settings: { centerPadding: '10px', adaptiveHeight: false, dots: true, arrows: true, }
                 }
             ]
         });
@@ -288,6 +288,35 @@ $(function($)
             ]
         });
     }
+
+    if($(".serviceotherslider").length > 0)
+    {
+        // homepage knowledg slider
+        $('.serviceotherslider').slick({
+            slidesToShow:2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            infinite: true,
+            adaptiveHeight: false,
+            centerMode: true,
+            centerPadding: '5px',
+            initialSlide:0,
+            responsive:
+            [
+                {
+                    breakpoint: 99999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 767,
+                    settings: { slidesToShow:1 }
+                }
+            ]
+        });
+    }
 });
 /* ############################ sliders === end ############################ */
 
@@ -305,3 +334,37 @@ function satisfactionHideVideo() // video close
     $(".satisfactionVideo iframe").attr('src', '');
 }
 /* ############################ satisfaction  video === end ############################ */
+
+
+/* ############################ services === start ############################ */
+function changepincode()
+{
+    $("#pinCurrent").slideUp(300);
+    $("#pinNew").slideDown(300);
+    $("#pinChange").hide();
+}
+function shwopincode()
+{
+    if($("#pinchangeInput").val() == '')
+    {
+        $("#pinChangeError").show().html("Enter Pincode");
+    }
+    else if($("#pinchangeInput").val().length != 6)
+    {
+        $("#pinChangeError").show().html("Invalide Pincode");
+    }
+    else 
+    {
+        $("#pinCurrent").slideDown(300);
+        $("#pinNew").slideUp(300);
+        $("#pinChange").show();
+        $("#pinChangeError").hide();
+    }
+}
+
+function whychoosemore()
+{
+    $("#whychoosemore").hide();
+    $("#whychooselist li").slideDown();
+}
+/* ############################ services === end ############################ */
