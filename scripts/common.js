@@ -402,3 +402,69 @@ if($(".csrAbout").length > 0)
     });
 }
 /* ############################ csr === end ############################ */
+
+
+/* ############################ team === start ############################ */
+if($("#teamTabs").length > 0 ||  $("#teamContainer").length > 0)
+{
+    $("#teamTabs ul li, #teamContainer .teamheader").click(function()
+    {
+        let tagname = $(this).attr("data-name");
+        $("#teamTabs ul li").removeClass("active");
+        $("#teamContainer .teamheader").removeClass("active");
+        $("#teamContainer .teamsection").slideUp(500);
+        $("#teamTabs ul").addClass("disabled")
+
+        $("#teamTabs ul li[data-name='" + tagname + "']").addClass("active");
+        $("#teamContainer .teamheader[data-name='" + tagname + "']").addClass("active");
+        $("#teamContainer .teamsection[data-id='" + tagname + "']").slideDown(500);
+        setTimeout(function(){ $("#teamTabs ul").removeClass('disabled'); }, 500);
+    });
+}
+function viewprofiles(val)
+{
+    let getval = parseInt(val);
+    $(".viewprofilesBG").fadeIn(300);
+    $(".viewprofilesPopup").fadeIn(500);
+    // $("body").css("overflow","hidden");
+}
+function closeprofiles()
+{
+    $(".viewprofilesBG").fadeOut(500);
+    $(".viewprofilesPopup").fadeOut(300);
+    // $("body").css("overflow","visible");
+}
+
+
+ 
+$(function($) 
+{
+    if($(".viewprofilesPopup").length > 0)
+    {
+        $('.profilescroller').slimScroll({ 
+            width: "100%",
+            height: "100%",
+            size: "4px",
+            color: "#F2662C",
+            position: "right",
+            distance: "0",
+            start: "top",
+            opacity: 1,
+            alwaysVisible: false,
+            disableFadeOut: true,
+            railVisible: true,
+            allowPageScroll: false,
+            railColor: "#000000",
+            railOpacity: 0,
+            railDraggable: true,
+            railClass: "profilescrollerRail",
+            barClass: "profilescrollerBar",
+            wrapperClass: "profilescrollerContainer",
+            wheelStep: 10,
+            touchScrollStep: 100,
+            borderRadius: "5px",
+            railBorderRadius: "5px"
+        });
+    }
+});
+/* ############################ team === end ############################ */

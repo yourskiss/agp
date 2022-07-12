@@ -1,0 +1,122 @@
+
+
+
+/* #################### viewprofiles  #################### */
+.viewprofilesBG { 
+    display:none; z-index:8; position: fixed; left: 0; top: 0; height:100%; width: 100%;  background-color:$blk1; background: rgba(0,0,0,0.9); background-color: #00000099; 
+    img { 
+        display: none; max-width:24px; filter: brightness(0) invert(1);  @include outT();  
+        &:hover { filter: brightness(100%) invert(0); @include inT(); }
+    }
+}
+.viewprofilesPopup { 
+    display: none;  z-index:9; position:fixed; left:50%; top:50%; transform: translate(-50%, -50%); width: 96%; max-width: 1640px; height:auto; background-color:$wht1;  border-radius:0px; margin:0 auto; padding:0;  
+    aside { 
+         position:fixed; right:0px; top:-35px; width:auto; height:auto; border-radius:0; padding: 0; @include fCC(); line-height: 1; background:transparent; text-align: center; border: none; color: $wht1; cursor: pointer; @include outT();
+        img { max-width:32px; filter: brightness(0) invert(1);  @include outT(); }
+        &:hover { 
+            background:none;  @include inT();
+            img { filter: brightness(100%) invert(0); @include inT(); }
+        }
+    } 
+    .viewprofilecontainer { 
+        width:100%; float:left; 
+        .viewprofileinner { 
+            width:100%; float:left; padding:5% 0; @include fCS();
+            article {
+                width:370px; float: left; margin-right:3rem; 
+                img { width:100%; padding:5px; border: solid 2px $ong1; }
+            }
+            
+            section { 
+                width:50%; float: right;
+                h2 { width: 100%; float: left; text-align: left;  font-size: 26px; line-height: 28px; color: $blk1; @include aBold(); }
+                h3 { opacity: 0.7; width: 100%; float: left;  margin:0.2rem 0 1rem 0; text-align: left;  font-size: 18px; line-height: 28px; color:$blk2; @include Arial(); }
+                p { width: 100%; float: left; text-align: left;  font-size: 18px; line-height: 26px; color:$blk2; @include Arial(); }
+            }
+        }
+        
+    }
+}
+.profilescrollerContainerslimscrollerHolder { 
+    z-index:2;  float: left; margin:0 ; padding:0 8px 0  0; border:none; background:none; overflow: hidden; 
+    .profilescroller {   float: left; margin:0; padding: 0; border:none; background:none; overflow: hidden; }
+}
+ 
+ 
+@media only screen and (max-width:1565px)
+{
+    .viewprofilesPopup { 
+        .viewprofilecontainer { 
+            .viewprofileinner { 
+                padding:5%;  
+                article { width:350px;  margin-right:4rem;  }
+                section { 
+                    h2 { font-size: 22px;  }
+                    h3 { font-size: 16px;  }
+                    p {  font-size: 16px;  }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1255px)
+{
+    .viewprofilesPopup { 
+        max-width: 350px; height: 85%; transform: translate(-50%, -46%);
+        .viewprofilecontainer { 
+            .viewprofileinner { 
+                padding:1.5rem; flex-wrap: wrap;
+                article {
+                    width:100%;  margin:0; text-align: center;
+                    img { width:100%; }
+                }
+                section { width:100%; margin-top: 1.5rem; }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px)
+{
+
+}
+
+
+@media only screen and (max-width:767px)
+{
+
+}
+
+
+@media only screen and (max-width:599px)
+{
+
+}
+
+
+
+@media only screen and (max-width:479px)
+{
+
+}
+
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1023px) and (orientation : landscape)
+{
+    .viewprofilesPopup { 
+        height: 80%; 
+        .viewprofilecontainer { 
+            .viewprofileinner { 
+                padding:1.5rem; 
+                article {
+                    img { width:210px; }
+                }
+            }
+        }
+    }
+}
+
+
