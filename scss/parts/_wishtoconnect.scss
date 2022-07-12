@@ -65,14 +65,22 @@
     }
     
 }
-
+ 
 @media only screen and (max-width:1023px) 
 {
     .wishtoconnect { 
         padding:2rem 0; 
         .wrapper { 
             .wishtoconnectposter { display: none;}
-            .wishtoconnectcontent {width: 100%; }
+            .wishtoconnectcontent {
+                width: 100%;
+                ul {
+                    li {
+                        &.width25 { width: 48%; }
+                        &.width75 { width: 48%; }
+                    }
+                }
+            }
         }
     }
     

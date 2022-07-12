@@ -1,5 +1,5 @@
 .breadcrumbs { 
-        width: 100%; float: left; @include fSC();
+        width: 100%; float: left; @include fSC(); margin-bottom: 2rem;
         li {
             list-style: none; color: $blk7; @include Arial(); font-size: 16px; line-height: 34px;
             a { 
