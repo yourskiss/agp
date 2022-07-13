@@ -149,15 +149,16 @@
 
 
 <!-- banner  =====  start -->
-<div class="banners">
+<div class="banners bannerfaqs">
     <picture>
-        <source media="(min-width: 768px)" srcset="images/service/household-banner-web.jpg" type="image/jpg">
-        <source media="(min-width: 480px) and (max-width:767px) " srcset="images/service/household-banner-ipad.jpg" type="image/jpg">
-        <source media="(max-width: 479px)" srcset="images/service/household-banner-mobile.jpg" type="image/jpg"> 
-        <img  src="images/service/household-banner-mobile.jpg" alt="PNG Household"  />
+        <source media="(min-width: 768px)" srcset="images/faqs/banner-web.jpg" type="image/jpg">
+        <source media="(min-width: 480px) and (max-width:767px) " srcset="images/faqs/banner-ipad.jpg" type="image/jpg">
+        <source media="(max-width: 479px)" srcset="images/faqs/banner-mobile.jpg" type="image/jpg"> 
+        <img  src="images/faqs/banner-mobile.jpg" alt="faqs"  />
     </picture>
     <div class="wrapper">
-            <h2>CONVENIENT COOKING<br>AND STRONGER BONDS</h2>
+        <h2>LOOKING FOR<br>SOMETHING SPECIFIC?</h2>
+        <input type="text" name="faqssearch" id="faqssearch" placeholder="Enter your keyword here" />
     </div>
 </div>
 <!-- banner  =====  end -->
@@ -166,101 +167,320 @@
 
 
 
-<!-- d  =====  start -->
-<div class="ddd">
-    FAQs  
-</div>
-<!-- d  =====  end -->
+<!-- faqs =====  start -->
+<div class="faqsWrap">
+    <div class="wrapper">
 
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><span>FAQs</span></li>
+        </ul>
+
+        <div class="faqsAbout">
+            <h2>
+                <span>WE WILL ADDRESS ALL YOUR QUERIES HERE</span>
+                <img src="images/icon.png" alt="about" />
+            </h2>
+            <p>
+                Our team at AG&P Pratham works together to resolve your natural gas connection, installation, and safety issues. We are also here to help you with your queries regarding CNG and PNG, and even AG&P Pratham. You can always reach out to our customer support team or you can find your answers below.
+            </p>
+        </div>
+
+        
+        <div class="popularquestions">
+            <h2>Popular Questions</h2>
+            <div class="popularquestionsSlider">
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>PNG | CNG</h5>
+                    <p>How are PNG and CNG safe?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>CNG</h5>
+                    <p>How does CNG help with vehicle performance?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>PNG</h5>
+                    <p>How is PNG different from LPG?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>PNG</h5>
+                    <p>How does PNG help with savings?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>PNG</h5>
+                    <p>How is PNG delivered to factories?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>PNG</h5>
+                    <p>Why should I switch to PNG?</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Lorem Ipsum is simply dummy </p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Text of the printing</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Lorem Ipsum is simply </p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Dummy text of the printing</p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Lorem Ipsum is simply </p>
+                </div>
+                <div class="itmes">
+                    <aside><img src="images/faqs/popularquestions.png" alt="popularquestions" /></aside>
+                    <h5>Lorem | Ipsum</h5>
+                    <p>Dummy text of the printing</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="faqsTabs" id="faqsTabs">
+            <h2>Enabling On-Point Solutions</h2>
+            <ul>
+                <li data-name="about" class="active">About AG&P</li>
+                <li data-name="cng">CNG</li>
+                <li data-name="connections">Connections</li>
+                <li data-name="png">PNG</li>
+                <li data-name="billingpayments">Billing & Payments</li>
+                <li data-name="refunds">Refunds</li>
+                <li data-name="referrals">Referrals</li>
+            </ul>
+        </div>
+        <div class="faqsContainer" id="faqsContainer">
+
+            <!-- about == start -->
+            <div class="faqsheader active" data-name="about">About AG&P</div>
+            <div class="faqssection" data-id="about" style="display:block">
+                <ul>
+                    <li>
+                         <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>
+                    <li>
+                         <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>   
+                </ul>
+            </div>
+            <!-- about == end -->
+
+            <!-- CNG == start -->
+            <div class="faqsheader" data-name="cng">CNG</div>
+            <div class="faqssection" data-id="cng">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- CNG == end -->
+
+            <!-- Connections == start -->
+            <div class="faqsheader" data-name="connections">Connections</div>
+            <div class="faqssection" data-id="connections">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- Connections == end -->
+
+            <!-- PNG == start -->
+            <div class="faqsheader" data-name="png">PNG</div>
+            <div class="faqssection" data-id="png">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- PNG == end -->
+
+            <!-- Billing & Payments == start -->
+            <div class="faqsheader" data-name="billingpayments">Billing & Payments</div>
+            <div class="faqssection" data-id="billingpayments">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- Billing & Payments == end -->
+
+            <!-- Refunds == start -->
+            <div class="faqsheader" data-name="refunds">Refunds</div>
+            <div class="faqssection" data-id="refunds">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- Refunds == end -->
+            
+
+            <!-- Referrals == start -->
+            <div class="faqsheader" data-name="referrals">Referrals</div>
+            <div class="faqssection" data-id="referrals">
+                <ul>
+                    <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                        <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                   <li>
+                       <h4>Lorem Ipsum is simply dummy text of the printing?</h4>
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   </li>
+                </ul>
+            </div>
+            <!-- Referrals == end -->
+
+        </div>
+
+        
+
+
+
+
+
+    </div>
+</div>
+<!-- faqs =====  start -->
 
    
  
-
-<!-- knowledgeresources  =====  start -->
-<div class="knowledgeresources">
-    <div class="wrapper">
-        <h2>
-            <span>KNOWLEDGE AND RESOURCES</span>
-            <img src="images/icon.png" alt="KNOWLEDGE AND RESOURCES" />
-        </h2>
-        <h3>
-            All you need to know about natural gas, its uses, benefits, and industry trends is here. Our repository will provide you with the basic and advanced information on the fuel industry
-        </h3>
-        <div class="knowledgeresourcesslider">
-            <div class="items">
-                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
-                <h4>Transition to cleaner energy</h4>
-                <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-            <div class="items">
-                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
-                <h4>What to do when you fear gas leak?</h4>
-                <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-            <div class="items">
-                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
-                <h4>CNG and your pocket</h4>
-                <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-            <div class="items">
-                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
-                <h4>Transition to cleaner energy</h4>
-                <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-            <div class="items">
-                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
-                <h4>What to do when you fear gas leak?</h4>
-                <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-            <div class="items">
-                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
-                <h4>CNG and your pocket</h4>
-                <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
-                <aside>
-                    <a href="#">
-                        <span>Know more</span>
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </a>
-                </aside>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- knowledgeresources  =====  end -->
-
-
-
-
 <!-- wishtoconnect  =====  start -->
 <footer class="wishtoconnect">
     <div class="wrapper">

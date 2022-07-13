@@ -71,6 +71,13 @@
 .satisfactionSlider.slick-slider .slick-dots li.slick-active { transform: scale(1); background:$ong2; }
 .satisfactionSlider.slick-slider .slick-dots li button { display: none; }
 
+
+/* popularquestionsSlider  === dots */
+.popularquestionsSlider.slick-slider .slick-dots { z-index:2; bottom: -30px;  text-align: center; }
+.popularquestionsSlider.slick-slider .slick-dots li { position: relative; display: inline-block; width:12px; height:12px; margin: 0 4px; padding: 0; border: none; cursor: pointer; background:$wht4; border-radius:50%; }
+.popularquestionsSlider.slick-slider .slick-dots li.slick-active { transform: scale(1); background:$ong2; }
+.popularquestionsSlider.slick-slider .slick-dots li button { display: none; }
+
  
 
 @media only screen and (max-width:1565px) 

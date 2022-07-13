@@ -170,6 +170,41 @@ $(document).scroll(function()
 
 
 
+ 
+/* ############################ Scroller === start ############################ */
+$(function($) 
+{
+    // team profile
+    if($(".viewprofilesPopup").length > 0)
+    {
+        $('.profilescroller').slimScroll({ 
+            width: "100%",
+            height: "100%",
+            size: "4px",
+            color: "#F2662C",
+            position: "right",
+            distance: "0",
+            start: "top",
+            opacity: 1,
+            alwaysVisible: false,
+            disableFadeOut: true,
+            railVisible: true,
+            allowPageScroll: false,
+            railColor: "#000000",
+            railOpacity: 0,
+            railDraggable: true,
+            railClass: "profilescrollerRail",
+            barClass: "profilescrollerBar",
+            wrapperClass: "profilescrollerContainer",
+            wheelStep: 10,
+            touchScrollStep: 100,
+            borderRadius: "5px",
+            railBorderRadius: "5px"
+        });
+    }
+});
+/* ############################ Scroller === end ############################ */
+
 
 
 /* ############################ sliders === start ############################ */
@@ -317,6 +352,50 @@ $(function($)
             ]
         });
     }
+
+    if($(".popularquestions").length > 0)
+    {
+        // faqs
+        $('.popularquestionsSlider').slick({
+            slidesToShow:6,
+            slidesToScroll: 6,
+            dots: true,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            infinite: false,
+            adaptiveHeight: false,
+            centerMode: false,
+            centerPadding: '12px',
+            initialSlide:0,
+            responsive:
+            [
+                {
+                    breakpoint: 1565,
+                    settings: { slidesToShow:5, slidesToScroll:5 }
+                },
+                {
+                    breakpoint: 1255,
+                    settings: { slidesToShow:4, slidesToScroll:4 }
+                },
+                {
+                    breakpoint: 1023,
+                    settings: { slidesToShow:3, slidesToScroll:3 }
+                },
+                {
+                    breakpoint: 599,
+                    settings: { slidesToShow:2, slidesToScroll:2 }
+                },
+                {
+                    breakpoint: 479,
+                    settings: { centerPadding: '5px', slidesToShow:2, slidesToScroll:2 }
+                }
+            ]
+        });
+    }
+    
+
+
 });
 /* ############################ sliders === end ############################ */
 
@@ -393,19 +472,22 @@ if($(".csrAbout").length > 0)
         else if($(window).width() < 1565 && $(window).width() > 1255) jumpdiv = 112;
         else if($(window).width() < 1255 && $(window).width() > 479) jumpdiv = 102;
         else jumpdiv = 87;
-        $('html, body').animate({scrollTop: $("#commitmentstitletabs").offset().top  - jumpdiv }, 500);
+        setTimeout(function(){ 
+            $('html, body').animate({scrollTop: $("#commitmentstitletabs").offset().top  - jumpdiv },250);
+        }, 300);
+        
         let getname = $(this).attr("data-name");
         $("#commitmentstitletabs li").removeClass("active");
-        $(".commitmentsContainer .commitmentsBox").slideUp(500);
+        $(".commitmentsContainer .commitmentsBox").slideUp(300);
         $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
-        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(500);
+        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(300);
     });
 }
 /* ############################ csr === end ############################ */
 
 
 /* ############################ team === start ############################ */
-if($("#teamTabs").length > 0 ||  $("#teamContainer").length > 0)
+if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
 {
     $("#teamTabs ul li, #teamContainer .teamheader").click(function()
     {
@@ -434,37 +516,44 @@ function closeprofiles()
     $(".viewprofilesPopup").fadeOut(300);
     // $("body").css("overflow","visible");
 }
-
-
- 
-$(function($) 
-{
-    if($(".viewprofilesPopup").length > 0)
-    {
-        $('.profilescroller').slimScroll({ 
-            width: "100%",
-            height: "100%",
-            size: "4px",
-            color: "#F2662C",
-            position: "right",
-            distance: "0",
-            start: "top",
-            opacity: 1,
-            alwaysVisible: false,
-            disableFadeOut: true,
-            railVisible: true,
-            allowPageScroll: false,
-            railColor: "#000000",
-            railOpacity: 0,
-            railDraggable: true,
-            railClass: "profilescrollerRail",
-            barClass: "profilescrollerBar",
-            wrapperClass: "profilescrollerContainer",
-            wheelStep: 10,
-            touchScrollStep: 100,
-            borderRadius: "5px",
-            railBorderRadius: "5px"
-        });
-    }
-});
 /* ############################ team === end ############################ */
+
+
+/* ############################ faqs === start ############################ */
+if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
+{
+    $("#faqsTabs ul li, #faqsContainer .faqsheader").click(function()
+    {
+        let tagname = $(this).attr("data-name");
+        $("#faqsTabs ul li").removeClass("active");
+        $("#faqsContainer .faqsheader").removeClass("active");
+        $("#faqsContainer .faqssection").slideUp(500);
+        $("#faqsTabs ul").addClass("disabled")
+
+        $("#faqsTabs ul li[data-name='" + tagname + "']").addClass("active");
+        $("#faqsContainer .faqsheader[data-name='" + tagname + "']").addClass("active");
+        $("#faqsContainer .faqssection[data-id='" + tagname + "']").slideDown(500);
+        setTimeout(function(){ $("#faqsTabs ul").removeClass('disabled'); }, 500);
+    });
+
+    $("#faqsContainer .faqssection ul li h4").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $("#faqsContainer .faqssection ul li").removeClass("active");
+            $("#faqsContainer .faqssection ul li h4").removeClass("active");
+            $("#faqsContainer .faqssection ul li p").slideUp(300);
+        }
+        else 
+        {
+            $("#faqsContainer .faqssection ul li").removeClass("active");
+            $("#faqsContainer .faqssection ul li h4").removeClass("active");
+            $("#faqsContainer .faqssection ul li p").slideUp(300);
+            $(this).parent().addClass("active");
+            $(this).addClass("active");
+            $(this).next("p").slideDown(500);
+        }
+    });
+}
+
+/* ############################ faqs === end ############################ */
