@@ -591,7 +591,7 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 /* ############################ contact us === start ############################ */
 if($(".adresscontainer").length > 0)
 {
-    var mapheight = $(".adressmap").innerHeight();
+    var mapheight = $(".adressmap").height();
     $(".adresslist").css("height", mapheight+"px");
 }
 /* ############################ contact us === end ############################ */
