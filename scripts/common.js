@@ -589,7 +589,7 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 /* ############################ faqs === end ############################ */
 
 /* ############################ contact us === start ############################ */
-$(function($) 
+$(window).on('load', function() 
 {
     if($(".adresscontainer").length > 0)
     {
