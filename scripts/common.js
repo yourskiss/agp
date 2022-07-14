@@ -597,7 +597,7 @@ $(window).on('load', function()
     if($(".adresscontainer").length > 0)
     {
         var mapheight = $(".adressmap").height();
-        if($(window).width() > 12023) { $(".adresslist").css("height", mapheight+"px"); }
+        if($(window).width() > 1023) { $(".adresslist").css("height", mapheight+"px"); }
     }
 });
 
