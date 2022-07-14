@@ -588,13 +588,57 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 }
 /* ############################ faqs === end ############################ */
 
+
+
+
 /* ############################ contact us === start ############################ */
 $(window).on('load', function() 
 {
     if($(".adresscontainer").length > 0)
     {
         var mapheight = $(".adressmap").height();
-        $(".adresslist").css("height", mapheight+"px");
+        if($(window).width() > 12023) { $(".adresslist").css("height", mapheight+"px"); }
     }
 });
+
+if($("#addresssearchToggle").length > 0 && $("#addresssearchClose").length > 0)
+{
+    $("#addresssearchToggle").click(function()
+    {
+        $("#addresssearchInput").animate({left: "0"});
+    });
+    $("#addresssearchClose").click(function()
+    {
+        $("#addresssearchInput").animate({left: "100%"});
+        $('#geographicalareasearch').val("").trigger("keyup");
+    });
+}
+
+if($(".addressheading").length > 0 && $(".adresslist").length > 0)
+{
+    $('#geographicalareasearch').on('keypress', function (e) 
+    {
+        if (e.keyCode == '13' || e.charCode == '13') return false;
+    });
+    $("#geographicalareasearch").keyup(function() {
+        selectjob();
+    });
+    selectjob = function() {
+        var designationtitle = $("#geographicalareasearch").val();
+
+        $('#geographicalarea li').hide();
+        var tablerow = $('#geographicalarea li').filter(function(index) {
+          return ($(this).text().toLowerCase().indexOf(designationtitle.toLowerCase()) >= 0 )
+        });
+        if(tablerow == '' || tablerow.length == 0)
+        {
+            $("#geographicalareanotavailable").show();    
+        }
+        else 
+        {
+            $("#geographicalareanotavailable").hide();
+            tablerow.show();
+        }
+    }
+}
 /* ############################ contact us === end ############################ */

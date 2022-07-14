@@ -1,5 +1,5 @@
 @font-face {
-    font-family:'arial';
+    font-family:'Arial';
     src: url('../fonts/arial.woff2') format('woff2'), url('../fonts/arial.woff') format('woff');
     font-weight:300; 
     font-style:normal;
@@ -7,7 +7,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family:'arialmedium';
+    font-family:'Arial-Medium';
     src: url('../fonts/arial-medium.woff2') format('woff2'), url('../fonts/arial-medium.woff') format('woff');
     font-weight:500; 
     font-style:normal;
@@ -15,7 +15,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family:'arialbold';
+    font-family:'Arial-Bold';
     src: url('../fonts/arial-bold.woff2') format('woff2'), url('../fonts/arial-bold.woff') format('woff');
     font-weight:bold; 
     font-style:normal;
@@ -24,16 +24,16 @@
 }
 
 @font-face {
-    font-family:'eurostilebold';
+    font-family:'Eurostile-Bold';
     src: url('../fonts/eurostile-bold.woff2') format('woff2'), url('../fonts/eurostile-bold.woff') format('woff');
     font-weight:bold; 
     font-style:normal;
     font-stretch:normal;
 }
-
+ 
 
 @font-face {
-  font-family: 'HelveticaNeue';
+  font-family: 'Helvetica-Neue';
   src: url('../fonts/HelveticaNeue.woff2') format('woff2'), url('../fonts/HelveticaNeue.woff') format('woff');
   font-weight: 500;
   font-style: normal;
@@ -41,25 +41,26 @@
 }
 
 
+
+
   @mixin Arial {
-    font-family:'arial', Arial, sans-serif;
+    font-family:'Arial', Arial, sans-serif;
     font-weight: 300;
   }
   @mixin aMedium {
-    font-family:'arialmedium', Arial, sans-serif;
+    font-family:'Arial-Medium', Arial, sans-serif;
     font-weight: 500;
   }
   @mixin aBold {
-    font-family:'arialbold', Arial, sans-serif;
+    font-family:'Arial-Bold', Arial, sans-serif;
     font-weight: bold;
   }
   @mixin eurostile {
-    font-family:'eurostilebold', Helvetica, sans-serif;
+    font-family:'Eurostile-Bold', Helvetica, sans-serif;
     font-weight: bold;
   }
-
   @mixin hnr {
-    font-family:'HelveticaNeue', Helvetica, sans-serif;
+    font-family: 'Helvetica-Neue', Helvetica, sans-serif;
     font-weight: 500;
   }
 
