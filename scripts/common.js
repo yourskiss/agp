@@ -589,9 +589,12 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 /* ############################ faqs === end ############################ */
 
 /* ############################ contact us === start ############################ */
-if($(".adresscontainer").length > 0)
+$(function($) 
 {
-    var mapheight = $(".adressmap").height();
-    $(".adresslist").css("height", mapheight+"px");
-}
+    if($(".adresscontainer").length > 0)
+    {
+        var mapheight = $(".adressmap").height();
+        $(".adresslist").css("height", mapheight+"px");
+    }
+});
 /* ############################ contact us === end ############################ */
