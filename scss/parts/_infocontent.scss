@@ -1,9 +1,9 @@
 
 .infocontent{
-    width: 100%; float: left; background-color:$wht1; position: relative;
-    img { width: 100%;}
+    width: 100%; float: left; background-color:$wht1; position: relative; overflow: hidden;
+    img { width: 100%; min-height: 100%; animation:zoomIN 30s infinite; z-index:1; position:absolute;}
     .wrapper {
-        padding:3rem 0 3rem 0; position:absolute; z-index:1; left: 50%; top: 50%; transform: translate(-50%, -50%);
+        padding:4rem 0; z-index:2; position: relative;  
         h2 { width: 100%; float: left; text-align: center;  color:$wht1; font-size:28px; line-height: 44px; text-shadow: 0px 3px 6px #00000077;
             text-transform: uppercase; @include eurostile(); }
         h3 { 
@@ -31,13 +31,21 @@
     }
 }
 
+@keyframes zoomIN {
+	0% {  transform: scale(1);  }
+	46% { transform: scale(1.4);  }
+    54% { transform: scale(1.4);  }
+	100% { transform: scale(1);  }
+}
+
+ 
+
 
 @media only screen and (max-width:1565px) 
 {
 
     .infocontent{
         .wrapper {
-            padding:2rem 0;
             h2 {font-size:24px; line-height: 36px; }
             h3 {  margin: 0.5rem 0 1rem 0; font-size:16px; line-height: 24px; 
                 span { display:inline;}
@@ -52,16 +60,21 @@
 }
 
 
-
+@media only screen and (max-width:1023px) 
+{
+    .infocontent{
+        .wrapper {
+            padding:3rem 0;
+        }
+    }
+}
 
 @media only screen and (max-width:767px) 
 {
-    
 
 
     .infocontent{
         .wrapper {
-            padding:2rem 0;
             h2 {font-size:24px; line-height: 30px; }
             h3 {  margin: 0.3rem 0 0.7rem 0; font-size:16px; line-height: 20px; }
             h4 {  margin: 0.3rem 0 0.7rem 0; font-size:16px; line-height: 20px; }
@@ -82,7 +95,7 @@
     
     .infocontent{
         .wrapper {
-            padding:1.5rem 0;
+            padding:2.5rem 0;
             h2 {font-size:20px; line-height: 26px; }
             h3 {  margin: 0.2rem 0 0.5rem 0; font-size:14px; line-height: 18px; }
             h4 {  
@@ -103,7 +116,7 @@
 
     .infocontent{
         .wrapper {
-            padding:1.7rem 0;
+            padding:2rem 0;
             h2 {font-size:22px; letter-spacing: 1.32px; line-height: 28px; }
             h3 {  margin:1rem 0 1.5rem 0; font-size:16px; line-height: 22px; @include aBold(); }
             h4 {  margin:1rem 0 1.5rem 0; font-size:16px; line-height: 22px; @include aBold(); }

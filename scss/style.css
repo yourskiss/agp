@@ -510,9 +510,6 @@ main {
   margin: 0 auto;
   float: none;
   display: flow-root;
-}
-
-.doanddontpage .header {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
@@ -1656,8 +1653,11 @@ main {
     letter-spacing: 1.44px;
     line-height: 34px;
   }
+  .banners.bannerfaqs .wrapper {
+    top: 55%;
+  }
 }
-@media only screen and (max-width: 479px) and (max-width: 359px) {
+@media only screen and (max-width: 359px) {
   .bannerhome .bannerhomeslider .slides .wrapper .banenrtext h2 {
     font-size: 22px;
   }
@@ -2347,17 +2347,19 @@ main {
   float: left;
   background-color: #FFFFFF;
   position: relative;
+  overflow: hidden;
 }
 .infocontent img {
   width: 100%;
+  min-height: 100%;
+  animation: zoomIN 30s infinite;
+  z-index: 1;
+  position: absolute;
 }
 .infocontent .wrapper {
-  padding: 3rem 0 3rem 0;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding: 4rem 0;
+  z-index: 2;
+  position: relative;
 }
 .infocontent .wrapper h2 {
   width: 100%;
@@ -2448,10 +2450,21 @@ main {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 1565px) {
-  .infocontent .wrapper {
-    padding: 2rem 0;
+@keyframes zoomIN {
+  0% {
+    transform: scale(1);
   }
+  46% {
+    transform: scale(1.4);
+  }
+  54% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 1565px) {
   .infocontent .wrapper h2 {
     font-size: 24px;
     line-height: 36px;
@@ -2474,10 +2487,12 @@ main {
     line-height: 24px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .infocontent .wrapper {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
+}
+@media only screen and (max-width: 767px) {
   .infocontent .wrapper h2 {
     font-size: 24px;
     line-height: 30px;
@@ -2501,7 +2516,7 @@ main {
 }
 @media only screen and (max-width: 599px) {
   .infocontent .wrapper {
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
   }
   .infocontent .wrapper h2 {
     font-size: 20px;
@@ -2529,7 +2544,7 @@ main {
 }
 @media only screen and (max-width: 479px) {
   .infocontent .wrapper {
-    padding: 1.7rem 0;
+    padding: 2rem 0;
   }
   .infocontent .wrapper h2 {
     font-size: 22px;
@@ -4001,22 +4016,28 @@ main {
   font-weight: 300;
 }
 
-.profilescrollerContainerslimscrollerHolder {
+.profilescrollerContainer {
   z-index: 2;
-  float: left;
-  margin: 0;
-  padding: 0 8px 0 0;
-  border: none;
-  background: none;
-  overflow: hidden;
-}
-.profilescrollerContainerslimscrollerHolder .profilescroller {
   float: left;
   margin: 0;
   padding: 0;
   border: none;
   background: none;
   overflow: hidden;
+}
+.profilescrollerContainer .profilescroller {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+}
+.profilescrollerContainer .profilescrollerRail {
+  visibility: hidden;
+}
+.profilescrollerContainer .profilescrollerBar {
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 1565px) {
@@ -4058,6 +4079,12 @@ main {
   .viewprofilesPopup .viewprofilecontainer .viewprofileinner section {
     width: 100%;
     margin-top: 1.5rem;
+  }
+  .profilescrollerContainer .profilescrollerRail {
+    visibility: visible;
+  }
+  .profilescrollerContainer .profilescrollerBar {
+    visibility: visible;
   }
 }
 @media screen and (min-device-width: 480px) and (max-device-width: 1023px) and (orientation: landscape) {
@@ -8090,4 +8117,441 @@ main {
   .doanddontWrap .doanddontAbout h2 span {
     font-size: 22px;
   }
+}
+/* ######################## contactWrap ######################## */
+.contactWrap {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 4rem 0;
+  background: #FFFFFF;
+}
+.contactWrap .contactContainer {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contactWrap .contactContainer .contactInfo {
+  width: 45%;
+  float: left;
+}
+.contactWrap .contactContainer .contactInfo p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.contactWrap .contactContainer .contactInfo h2 {
+  margin-top: 2rem;
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 22px;
+  line-height: 44px;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.contactWrap .contactContainer .contactInfo address {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contactWrap .contactContainer .contactInfo address a {
+  text-decoration: none;
+  color: #3C3C3C;
+  transition: all 0.4s ease-out;
+}
+.contactWrap .contactContainer .contactInfo address a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.contactWrap .contactContainer .contactInfo dl {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  width: auto;
+  float: left;
+  text-align: left;
+  background: #F2662C;
+}
+.contactWrap .contactContainer .contactInfo dl dt {
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 1;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.contactWrap .contactContainer .contactInfo dl dd {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.contactWrap .contactContainer .contactInfo dl dd i.fa {
+  margin-right: 10px;
+}
+.contactWrap .contactContainer .contactInfo dl dd a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.4s ease-out;
+}
+.contactWrap .contactContainer .contactInfo dl dd a:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+.contactWrap .contactContainer .contactForm {
+  width: 45%;
+  float: left;
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: 3rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.contactWrap .contactContainer .contactForm h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.contactWrap .contactContainer .contactForm h2 span {
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+  color: #000000;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contactWrap .contactContainer .contactForm h2 img {
+  max-width: 100%;
+}
+.contactWrap .contactContainer .contactForm p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3C3C3C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.contactWrap .contactContainer .contactForm ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.contactWrap .contactContainer .contactForm ul li {
+  list-style: none;
+  width: 100%;
+  float: left;
+  margin-bottom: 1.9rem;
+}
+.contactWrap .contactContainer .contactForm ul li:last-child {
+  margin-bottom: 0;
+}
+.contactWrap .contactContainer .contactForm ul li .errorMsg {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #F2662C;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=text] {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.contactWrap .contactContainer .contactForm ul li select {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.contactWrap .contactContainer .contactForm ul li select option {
+  color: #000000;
+}
+.contactWrap .contactContainer .contactForm ul li select option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=submit], .contactWrap .contactContainer .contactForm ul li input[type=button] {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "eurostilebold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contactWrap .contactContainer .contactForm ul li input[type=submit]:hover, .contactWrap .contactContainer .contactForm ul li input[type=button]:hover {
+  transition: all 0.4s ease-in;
+  background-color: #F2662C;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+  color: #FFFFFF;
+}
+
+/* ######################## adresswrap ######################## */
+.adresswrap {
+  background: #FAFAFA;
+  width: 100%;
+  float: left;
+  padding: 4rem 0;
+}
+.adresswrap .addressheading {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.adresswrap .addressheading h2 {
+  width: auto;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.adresswrap .addressheading h2 span {
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.adresswrap .addressheading aside {
+  width: auto;
+  float: right;
+  text-align: right;
+}
+.adresswrap .addressheading aside input[type=text] {
+  background: transparent url("../Images/search-black.png") no-repeat;
+  background-position: right 8px top 50%;
+  margin: 0;
+  width: 280px;
+  float: right;
+  border: none;
+  border-bottom: solid 1px #707070;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 18px;
+  line-height: 1;
+  color: #707070;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.adresswrap .addressheading aside input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.adresswrap .addressheading aside input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.adresswrap .addressheading aside input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.adresswrap .adresscontainer {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.adresswrap .adresscontainer .adressmap {
+  width: auto;
+  max-width: 100%;
+  float: left;
+  line-height: 0;
+  overflow: hidden;
+}
+.adresswrap .adresscontainer .adressmap img {
+  width: 100%;
+}
+.adresswrap .adresscontainer .adresslist {
+  width: 390px;
+  float: left;
+  overflow: hidden;
+}
+.adresswrap .adresscontainer .adresslist ul {
+  width: 100%;
+  float: left;
+  padding: 1px 0 0 10px;
+}
+.adresswrap .adresscontainer .adresslist ul li {
+  list-style: none;
+  width: 100%;
+  float: left;
+  margin: 0 0 0.8rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 0px 0px 8px 8px;
+}
+.adresswrap .adresscontainer .adresslist ul li h3 {
+  position: relative;
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #707070;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.adresswrap .adresscontainer .adresslist ul li h3:before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 8px;
+  background: url("../images/contact/icon.png") no-repeat;
+  background-size: 100% 100%;
+  width: 8px;
+  height: 12px;
+}
+.adresswrap .adresscontainer .adresslist ul li h4 {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "arialbold", Arial, sans-serif;
+  font-weight: bold;
+}
+.adresswrap .adresscontainer .adresslist ul li h5 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.adresswrap .adresscontainer .adresslist ul li h6 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.adresswrap .adresscontainer .adresslist ul li p {
+  margin-top: 0.2rem;
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.adresswrap .adresscontainer .adresslist ul li p i.fa {
+  margin-right: 6px;
+  transform: rotate(30deg);
+}
+.adresswrap .adresscontainer .adresslist ul li p span {
+  margin-left: 3px;
+}
+.adresswrap .adresscontainer .adresslist ul li p a {
+  text-decoration: none;
+  color: #3C3C3C;
+  transition: all 0.4s ease-out;
+}
+.adresswrap .adresscontainer .adresslist ul li p a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.adresswrap .addressscrollContainer {
+  z-index: 2;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+}
+.adresswrap .addressscrollContainer .adresscontainer {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+}
+.adresswrap .addressscrollContainer .addressscrollRail {
+  visibility: visible;
+}
+.adresswrap .addressscrollContainer .addressscrollBar {
+  visibility: visible;
 }

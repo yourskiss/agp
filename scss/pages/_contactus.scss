@@ -1,0 +1,148 @@
+/* ######################## contactWrap ######################## */
+.contactWrap { 
+    width: 100%; float: left; padding:2rem 0 4rem 0; background: $wht1;
+
+    .contactContainer {
+        width: 100%; float: left; @include fBS();
+        .contactInfo {
+            width: 45%; float: left;
+            p { width: 100%; float: left; text-align:left; color:$blk2; font-size:18px; line-height: 28px; @include Arial();  }
+            h2 { margin-top: 2rem; width: 100%; float: left; text-align:left; color:$blk1; font-size:22px; line-height: 44px; @include aBold();  }
+            address { 
+                width: 100%; float: left; text-align:left; color:$blk2; font-size:18px; line-height: 28px; @include Arial(); font-style: normal;
+                a { 
+                    text-decoration: none; color:$blk2; @include outT(); 
+                    &:hover { color:$ong1; @include inT();  }
+                } 
+            }
+            dl { 
+                margin-top:2rem; padding:1.5rem; width: auto; float: left; text-align:left;  background: $ong1;
+                dt { 
+                   margin-bottom: 1rem; text-align:left; color:$wht1; font-size:26px; line-height: 1; @include aBold();   
+                }
+                dd { 
+                   text-align:left; color:$wht1; font-size:22px; line-height:36px; @include Arial();   
+                    i.fa { margin-right: 10px; }
+                    a { 
+                        text-decoration: none; color:$wht1; @include outT(); 
+                        &:hover { color:$blk1; @include inT();  }
+                    } 
+                }
+            }
+        }
+        .contactForm {
+            width: 45%; float: left; padding:4rem 2rem 2rem 2rem; margin-top:3rem; box-shadow: 0px 6px 12px #00000014;
+            h2 {
+                width: 100%; float: left; text-align: left;
+                span {   font-size: 28px; letter-spacing:1.68px; line-height: 35px; color: $blk1; @include eurostile(); text-transform: uppercase;  }
+                img { max-width: 100%; }
+             }
+            p {width: 100%; float: left; text-align: left; margin:0.5rem 0 1rem 0;  font-size: 18px; line-height: 28px;  color: $blk2;  @include Arial();  }
+            ul {
+                width: 100%; float: left; @include fSS(); flex-wrap: wrap;
+                li {
+                    list-style: none; width: 100%; float: left; margin-bottom:1.9rem;
+                    &:last-child { margin-bottom: 0; }
+                    .errorMsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
+                    input[type='text'] {  
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px; line-height: 24px; color:$blk7; @include Arial();
+                        &::placeholder { color: $blk7; opacity: 1; }      
+                        &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                        &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                    }
+                    select {  
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); opacity:0.9;
+                        option { 
+                            color: $blk1;      
+                            &:disabled { user-select: none; pointer-events: none; }
+                        }
+                    }
+                    input[type='submit'], input[type='button'] { 
+                        display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* ######################## adresswrap ######################## */
+.adresswrap { 
+    background:$wht6; width: 100%; float: left; padding:4rem 0;
+
+    .addressheading { 
+        width: 100%; float: left; @include fBC(); margin-bottom: 2rem;
+        h2 {
+            width: auto; float: left; text-align: left; color: $blk1; font-size:26px; line-height: 1; @include aBold();
+            span { @include Arial(); font-size: 14px; }
+        }
+        aside {
+            width: auto; float: right; text-align: right; 
+            input[type='text'] { 
+                background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:280px; float: right; border:none; border-bottom: solid 1px $blk7; outline:none; padding:0.5rem 0.5rem;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
+                &::placeholder { color: $blk7; opacity: 1; }      
+                &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+            } 
+        }
+    }
+
+
+
+    .adresscontainer {
+        width: 100%; float: left; @include fSS();  
+        .adressmap { 
+            width: auto; max-width: 100%; float: left; line-height:0; overflow: hidden; 
+            img { width: 100%; }
+        }
+        .adresslist { 
+            width:390px; float: left;  overflow: hidden;
+            ul { 
+                width: 100%; float: left; padding:1px 0 0 10px;
+                li { 
+                    list-style: none; width: 100%; float: left; margin:0 0 0.8rem 0; padding:1.5rem 1.5rem 1.5rem 2rem; background:$wht1; box-shadow: 0px 6px 12px #00000029; border-radius: 0px 0px 8px 8px;
+                    h3 { 
+                       position: relative; width: 100%; float: left; text-align: left; color: $blk7; font-size: 14px; line-height: 28px; @include Arial();
+                       &:before { content: ''; position:absolute; left: -14px; top: 8px; background: url('../images/contact/icon.png') no-repeat; background-size: 100% 100%;  width: 8px; height:12px; }
+                    }
+                    h4 { margin-bottom: 0.5rem; width: 100%; float: left; text-align: left; color: $blk1; font-size: 18px; line-height: 28px; @include aBold(); }
+                    h5 { width: 100%; float: left; text-align: left; color: $blk2; font-size: 16px; line-height: 24px; @include Arial(); }
+                    h6 { width: 100%; float: left;  text-align: left; color: $blk2; font-size: 16px; line-height: 24px; @include Arial(); }
+                    p { 
+                       margin-top: 0.2rem;  width: 100%; float: left;  text-align: left; color: $blk2; font-size: 16px; line-height: 24px; @include Arial(); 
+                        i.fa { margin-right: 6px; transform: rotate(30deg); }
+                        span { margin-left: 3px; } 
+                        a { 
+                            text-decoration: none; color: $blk2;  @include outT();
+                            &:hover { color: $ong1; @include inT(); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .addressscrollContainer { 
+        z-index:2;  float: left; margin:0 ; padding:0; border:none; background:none; overflow: hidden;  
+        .adresscontainer {   float: left; margin:0; padding: 0; border:none; background:none; overflow: hidden; }
+        .addressscrollRail { visibility: visible; }
+        .addressscrollBar {  visibility: visible; }
+    }
+
+
+
+
+}
+ 
+
+
+
+
+@media only screen and (max-width:1300px) 
+{
+
+}

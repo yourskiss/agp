@@ -202,6 +202,37 @@ $(function($)
             railBorderRadius: "5px"
         });
     }
+
+    // address list
+    if($(".adresscontainer").length > 0)
+    {
+        $('.addressscroll').slimScroll({ 
+            width: "100%",
+            height: "100%",
+            size: "4px",
+            color: "#F2662C",
+            position: "right",
+            distance: "0",
+            start: "top",
+            opacity: 0,
+            alwaysVisible: true,
+            disableFadeOut: true,
+            railVisible: true,
+            allowPageScroll: false,
+            railColor: "#000000",
+            railOpacity: 0,
+            railDraggable: true,
+            railClass: "addressscrollRail",
+            barClass: "addressscrollBar",
+            wrapperClass: "addressscrollContainer",
+            wheelStep: 10,
+            touchScrollStep: 100,
+            borderRadius: "5px",
+            railBorderRadius: "5px"
+        });
+    }
+    
+
 });
 /* ############################ Scroller === end ############################ */
 
@@ -555,5 +586,12 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
         }
     });
 }
-
 /* ############################ faqs === end ############################ */
+
+/* ############################ contact us === start ############################ */
+if($(".adresscontainer").length > 0)
+{
+    var mapheight = $(".adressmap").innerHeight();
+    $(".adresslist").css("height", mapheight+"px");
+}
+/* ############################ contact us === end ############################ */

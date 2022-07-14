@@ -155,10 +155,20 @@
    }
 
    .banners { 
-    .wrapper { 
-        top: 65%;
-        h2 { font-size: 24px; letter-spacing: 1.44px; line-height: 34px; }            
+        .wrapper { 
+            top: 65%;
+            h2 { font-size: 24px; letter-spacing: 1.44px; line-height: 34px; }            
+        }
+        
     }
+
+
+    .banners.bannerfaqs  { 
+        .wrapper { top: 55%; }
+    }
+
+ 
+
 }
 
 
@@ -178,6 +188,4 @@
    }
 
    
-}
-
 }

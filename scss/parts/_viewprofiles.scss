@@ -38,9 +38,11 @@
         
     }
 }
-.profilescrollerContainerslimscrollerHolder { 
-    z-index:2;  float: left; margin:0 ; padding:0 8px 0  0; border:none; background:none; overflow: hidden; 
+.profilescrollerContainer { 
+    z-index:2;  float: left; margin:0 ; padding:0; border:none; background:none; overflow: hidden; 
     .profilescroller {   float: left; margin:0; padding: 0; border:none; background:none; overflow: hidden; }
+    .profilescrollerRail { visibility: hidden; }
+    .profilescrollerBar {  visibility: hidden; }
 }
  
  
@@ -77,11 +79,15 @@
             }
         }
     }
+    .profilescrollerContainer { 
+        .profilescrollerRail { visibility:visible; }
+        .profilescrollerBar {  visibility:visible; }
+    }
 }
 
 @media only screen and (max-width:1023px)
 {
-
+    
 }
 
 
