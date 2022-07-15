@@ -1699,6 +1699,9 @@ main {
   padding-bottom: 1px;
   border-bottom: solid 1px #233C4C;
 }
+.breadcrumbs.pngavailabilitybedc {
+  padding-left: 1%;
+}
 
 @media only screen and (max-width: 1023px) {
   .breadcrumbs li {
@@ -8522,7 +8525,7 @@ main {
   position: absolute;
   left: -14px;
   top: 7px;
-  background: url("../images/contact/icon.png") no-repeat;
+  background: url("../images/icon2.png") no-repeat;
   background-size: 100% 100%;
   width: 8px;
   height: 12px;
@@ -8858,5 +8861,602 @@ main {
   }
   .adresswrap .adresscontainer .adresslist {
     height: 525px;
+  }
+}
+.pngavailabilityWrap {
+  width: 100%;
+  float: left;
+  background: #FFFFFF;
+}
+.pngavailabilityWrap .wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: stretch;
+}
+.pngavailabilityWrap .pngavailability {
+  width: 65%;
+  float: left;
+  padding: 2rem 2.5rem 0 0;
+  background-color: #fff;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  margin-bottom: 2rem;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
+  width: auto;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside {
+  width: 220px;
+  float: right;
+  text-align: right;
+  border-bottom: solid 1px #707070;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside span {
+  display: none;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text] {
+  background: transparent url("../Images/search-black.png") no-repeat;
+  background-position: right 8px top 50%;
+  margin: 0;
+  width: 100%;
+  float: right;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 18px;
+  line-height: 1;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationHeading p {
+  display: none;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter {
+  width: 100%;
+  float: left;
+  padding: 0 1%;
+  margin-bottom: 2rem;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter h2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li {
+  list-style: none;
+  width: 18%;
+  margin: 0 2rem 0 0;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li:last-child {
+  margin-right: 0;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li .erromsg {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #F2662C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text] {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li select {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li select option {
+  color: #000000;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li select option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=submit], .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=button] {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 25px;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=submit]:hover, .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=button]:hover {
+  transition: all 0.4s ease-in;
+  background-color: #F2662C;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+  color: #FFFFFF;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist {
+  width: 100%;
+  float: left;
+  height: 680px;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist .pnglocationscrollContainer, .pngavailabilityWrap .pngavailability .pnglocationlist .pnglocationscroll {
+  overflow: visible;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist .pnglocationnoresult {
+  display: none;
+  float: left;
+  width: 98%;
+  margin: 1rem 1%;
+  padding: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li {
+  list-style: none;
+  width: 48%;
+  margin: 10px 1%;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h2 {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h2:after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 7px;
+  height: 12px;
+  width: 8px;
+  background: url("../images/icon2.png") no-repeat;
+  background-position: left 0px top 0px;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3::before {
+  content: "\f017";
+  font-family: "FontAwesome";
+  font-weight: 300;
+  line-height: 1;
+  padding-right: 5px;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3.png_comingsoon {
+  color: #002293;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3.png_unavailable {
+  color: #002293;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3.png_immediateavailability {
+  color: #047704;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h3.png_openforregistration {
+  color: #002293;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 {
+  width: 100%;
+  float: left;
+  margin-top: 0.3rem;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3A4E5C;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 a {
+  text-decoration: none;
+  color: #3A4E5C;
+  transition: all 0.4s ease-out;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 a i.fa {
+  padding: 0 5px;
+  transition: all 0.4s ease-out;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 a:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+.pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 a:hover i.fa {
+  padding: 0 0 0 10px;
+  transition: all 0.4s ease-in;
+}
+.pngavailabilityWrap .pnggetconnection {
+  width: 35%;
+  float: left;
+  background-color: #233D4D;
+}
+.pngavailabilityWrap .pnggetconnection .pnggetconnectionimg {
+  width: 100%;
+  float: left;
+}
+.pngavailabilityWrap .pnggetconnection section {
+  width: 100%;
+  float: left;
+  padding: 2rem;
+}
+.pngavailabilityWrap .pnggetconnection section h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pnggetconnection section h3 {
+  width: 100%;
+  float: left;
+  margin: 0.4rem 0 1.5rem 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pnggetconnection section dl {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.pngavailabilityWrap .pnggetconnection section dl dt {
+  width: 25%;
+}
+.pngavailabilityWrap .pnggetconnection section dl dt aside {
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  color: #233D4D;
+}
+.pngavailabilityWrap .pnggetconnection section dl dt p {
+  width: 100%;
+  float: left;
+  margin: 0.6rem 0 0 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pnggetconnection section dl dt p span {
+  display: block;
+}
+.pngavailabilityWrap .pnggetconnection section dl dd {
+  position: relative;
+  width: 12.5%;
+  top: 20px;
+}
+.pngavailabilityWrap .pnggetconnection section dl dd span {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+.pngavailabilityWrap .pnggetconnection section dl dd:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  left: -130%;
+  height: 1px;
+  width: 230%;
+  background: #FFFFFF;
+}
+.pngavailabilityWrap .pnggetconnection section h4 {
+  width: 100%;
+  float: left;
+  margin: 2rem 0 0.8rem 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.pngavailabilityWrap .pnggetconnection section ul {
+  width: 100%;
+  float: left;
+}
+.pngavailabilityWrap .pnggetconnection section ul li {
+  list-style: none;
+  background: transparent url("../images/icon2.png") no-repeat;
+  background-position: top 7px left 0px;
+  padding: 0 0 0 20px;
+  margin: 5px 0;
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1700px) {
+  .pngavailabilityWrap .wrapper {
+    padding-left: 2%;
+  }
+}
+@media only screen and (max-width: 1565px) {
+  .pngavailabilityWrap .pngavailability {
+    padding: 2rem 2rem 0 0;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
+    font-size: 22px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
+    font-size: 12px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li {
+    width: 25%;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li:last-child {
+    width: auto;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text] {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 575px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li {
+    width: 48%;
+    margin: 10px 1%;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2:after {
+    top: 5px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 1.5rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt {
+    width: 26%;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h4 {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pnggetconnection section ul li {
+    margin: 3px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 420px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .pngavailabilityWrap .pngavailability {
+    width: 62%;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 420px;
+  }
+  .pngavailabilityWrap .pnggetconnection {
+    width: 38%;
+  }
+}
+@media only screen and (max-width: 1255px) {
+  .pngavailabilityWrap .pngavailability {
+    width: 60%;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 480px;
+  }
+  .pngavailabilityWrap .pnggetconnection {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .pngavailabilityWrap .wrapper {
+    padding: 0 2%;
+    flex-wrap: wrap;
+  }
+  .pngavailabilityWrap .pngavailability {
+    width: 100%;
+    padding: 1rem 0rem 0 0;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 425px;
+  }
+  .pngavailabilityWrap .pnggetconnection {
+    width: 98%;
+    margin: 3rem 1%;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt {
+    width: 19%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 480px;
   }
 }

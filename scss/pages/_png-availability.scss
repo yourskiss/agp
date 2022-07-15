@@ -1,0 +1,281 @@
+.pngavailabilityWrap { 
+    width: 100%; float: left; background: $wht1;
+    .wrapper {  width: 100%; max-width: 100%; padding-left:7%; @include fSS(); align-items: stretch; }
+    .pngavailability {
+        width: 65%; float: left;  padding:2rem 2.5rem 0 0; background-color: #fff;    
+
+        .pnglocationHeading { 
+            width: 100%; float: left; @include fBC(); padding:0 1%; margin-bottom: 2rem;
+            h2 {
+                width: auto; float: left; text-align: left; color: $blk1; font-size:26px; line-height: 1; @include aBold();
+                span { @include Arial(); font-size: 14px; }
+            }
+            aside {
+                width: 220px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
+                span { display: none; }
+                input[type='text'] { 
+                    background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0.5rem;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
+                    &::placeholder { color: $blk7; opacity: 1; }      
+                    &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                    &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                } 
+            }
+            p { display:none;}
+        }
+        .pnglocationfilter { 
+            width: 100%; float: left; padding:0 1%; margin-bottom: 2rem;
+            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:18px; line-height:28px; @include aBold(); }
+            ul { 
+                width: 100%; float: left; @include fSC(); 
+                li { 
+                    list-style: none; width: 18%; margin: 0 2rem 0 0;
+                    &:last-child { margin-right: 0; }
+                    .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
+                    input[type='text'] {  
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px; line-height: 24px; color:$blk7; @include Arial();
+                        &::placeholder { color: $blk7; opacity: 1; }      
+                        &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                        &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                    }
+                    select {  
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); opacity:0.9;
+                        option { 
+                            color: $blk1;      
+                            &:disabled { user-select: none; pointer-events: none; }
+                        }
+                    }
+                    input[type='submit'], input[type='button'] { 
+                        display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                    }
+                }
+            }
+        }
+        .pnglocationlist {
+            width: 100%; float: left; height: 680px;  
+            .pnglocationscrollContainer, .pnglocationscroll { overflow: visible; }
+            .pnglocationnoresult { display: none; float: left; width:98%; margin:1rem 1%; padding:2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px; text-align: center; color: $blk1; font-size: 18px; line-height: 1;  @include aBold();  }
+            ul { 
+                width: 100%; float: left; @include fSS(); flex-wrap: wrap;
+                li { 
+                    list-style: none; width:48%; margin:10px 1%; padding:1.5rem 1.5rem 1.5rem  2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px;
+                    h2 { 
+                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  text-align: left; color: $blk1; font-size: 18px; line-height: 28px; @include aBold();  
+                        &:after { content: ''; position:absolute; left: -15px; top: 7px; height: 12px; width: 8px; background: url('../images/icon2.png') no-repeat; background-position: left 0px top 0px; }
+                    }
+                    p { width: 100%; float: left; text-align: left;  color: $blk2; font-size: 16px; line-height: 24px; @include Arial();  }
+                    h3 { 
+                        width: 100%; float: left; text-align: left;  font-size: 16px; line-height: 26px; @include Arial(); 
+                        &::before { content: "\f017"; @include FA(); padding-right: 5px; }
+                        &.png_comingsoon {  color:#002293; }
+                        &.png_unavailable { color:#002293; }
+                        &.png_immediateavailability { color:#047704; }
+                        &.png_openforregistration { color:#002293; }
+                    }
+                    h4 { 
+                        width: 100%; float: left; margin-top: 0.3rem; text-align: left; font-size: 18px; line-height: 28px; color:$blu3; @include aBold();  
+                        a { 
+                            text-decoration: none; color:$blu3;  @include outT();
+                            i.fa { padding: 0 5px; @include outT(); }
+                            &:hover { 
+                                color:$blk1; @include inT();
+                                i.fa { padding: 0  0 0 10px; @include inT(); }
+                             }
+                        }
+                    }
+                }
+            }
+        }
+     
+            
+    }
+
+
+    .pnggetconnection {
+        width: 35%; float: left; background-color:$blu1;    
+        .pnggetconnectionimg { width: 100%; float: left; }
+        section { 
+            width: 100%; float: left; padding: 2rem;
+            h2 { width: 100%; float: left; text-align: left; color: $wht1; font-size: 22px; line-height: 26px; @include aBold();  }
+            h3 { width: 100%; float: left; margin: 0.4rem 0 1.5rem 0; text-align: left;  color: $wht1; font-size: 18px; line-height: 28px; @include Arial();  }
+            dl { 
+                width: 100%; float: left; @include fSS();
+                dt { 
+                    width: 25%;
+                    aside { position: relative; z-index: 2; height: 48px; width: 48px; border-radius: 50%; background: $wht1; @include fCC(); @include eurostile(); font-size:32px; line-height: 1; color: $blu1; }
+                    p {  
+                        width: 100%; float: left; margin:0.6rem 0 0 0; text-align: left;  color: $wht1; font-size: 14px; line-height: 22px; @include Arial(); 
+                        span { display: block; }
+                     }
+                }
+                dd { 
+                    position: relative;  width: 12.5%; top: 20px;
+                    span {  position: absolute; top:0; left:-15%; height: 10px; width: 10px; border-radius: 50%; background: $wht1;  }
+                    &:before { content: ''; z-index: 1; position: absolute; top: 5px; left:-130%; height: 1px; width:230%; background: $wht1; }
+                }
+            }
+            h4 { width: 100%; float: left; margin:2rem 0 0.8rem 0; text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include aBold(); }
+            ul { 
+                width: 100%; float: left; 
+                li { 
+                   list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 20px; margin: 5px 0; width: 50%; float: left;  text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include Arial(); 
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width:1700px) 
+{
+    .pngavailabilityWrap { 
+        .wrapper { padding-left: 2%; }
+    }
+}
+
+
+@media only screen and (max-width:1565px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            padding:2rem 2rem 0 0;
+            .pnglocationHeading { 
+                h2 {
+                    font-size:22px; 
+                    span { font-size: 12px; }
+                }
+            }
+            .pnglocationfilter { 
+                h2 { font-size:16px; line-height:26px;   }
+                ul { 
+                    li { 
+                         width: 25%; 
+                        &:last-child { width: auto; }
+                        input[type='text'] {   font-size: 16px;   }
+                        select {   font-size: 16px; }
+                    }
+                }
+            }
+            .pnglocationlist {
+               height: 575px;  
+                ul { 
+                    li { 
+                        width:48%; margin:10px 1%; padding:1rem 1rem 1rem  1.5rem;  
+                        h2 { 
+                           font-size:16px; line-height: 26px; 
+                            &:after { top: 5px;  }
+                        }
+                        p { font-size: 14px; line-height: 22px;  }
+                        h3 { font-size: 16px; line-height: 22px;  }
+                        h4 { font-size: 16px; line-height: 26px; }
+                    }
+                }
+            }
+         
+                
+        }
+
+        .pnggetconnection {  
+            section { 
+                padding:1.5rem;
+                h3 {  font-size: 18px; line-height: 26px;   }
+                h4 {  font-size: 16px;  line-height: 24px;  }
+                dl { 
+                    dt { 
+                        width:26%;
+                        p {   font-size: 12px; line-height:18px; }
+                    }
+                }
+                h4 {  font-size: 16px;   }
+                ul { 
+                    li { margin: 3px 0; font-size: 16px; line-height: 24px;   }
+                }
+            }
+        }
+        
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width:1300px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            .pnglocationlist {height: 420px;  }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1300px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            width: 62%;
+            .pnglocationlist {height: 420px;  }
+        }
+        .pnggetconnection {
+            width: 38%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            width: 60%;
+            .pnglocationlist {height: 480px;  }
+        }
+        .pnggetconnection {
+            width: 40%;
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    .pngavailabilityWrap { 
+       
+        .wrapper { padding:0 2%;  flex-wrap: wrap; }
+
+        .pngavailability {
+            width: 100%;     padding: 1rem 0rem 0 0;
+            .pnglocationlist {height: 425px;  }
+        }
+        .pnggetconnection {
+            width: 98%; margin:3rem 1%;
+            section dl dt { width: 19%;}
+        }
+
+    }
+}
+
+
+@media only screen and (max-width:1023px) 
+{
+    .pngavailabilityWrap { 
+       
+        .pngavailability {
+            .pnglocationlist {height: 480px;  }
+        }
+
+    }
+}

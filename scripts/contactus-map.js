@@ -15,7 +15,8 @@ window.onload = function() {
     center: center,
     zoomControl: true,
     hybrid: true,
-    
+    search: true,
+    location:true,
     zoom: 9
   });
  
@@ -58,3 +59,7 @@ function addMarker(position, icon, title)
   map.addLayer(mk);
   return mk;
 }
+
+var rmnpIcon  = new H.map.Icon("https://cdn0.iconfinder.com/data/icons/travel-filled-line-4/64/Travel-Filled-12-512.png", {size: {w: 40, h: 40}});
+        // Create a custom marker:
+        var marker  = new H.map.Marker(rmnpCoords, { icon: rmnpIcon });
