@@ -115,12 +115,16 @@
                 }
             }
             h4 { width: 100%; float: left; margin:2rem 0 0.8rem 0; text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include aBold(); }
-            ul { 
+            .connectiondocumentsrequired {
                 width: 100%; float: left; 
-                li { 
-                   list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 20px; margin: 5px 0; width: 50%; float: left;  text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include Arial(); 
+                ul { 
+                    width: 100%; float: left; 
+                    li { 
+                       list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 20px; margin: 5px 0; width: 50%; float: left;  text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include Arial(); 
+                    }
                 }
             }
+            
         }
     }
 
@@ -170,8 +174,8 @@
                             &:after { top: 5px;  }
                         }
                         p { font-size: 14px; line-height: 22px;  }
-                        h3 { font-size: 16px; line-height: 22px;  }
-                        h4 { font-size: 16px; line-height: 26px; }
+                        h3 { font-size: 16px; line-height: 18px; margin-top: 0.3rem; }
+                        h4 { font-size: 16px; line-height: 28px; }
                     }
                 }
             }
@@ -182,8 +186,8 @@
         .pnggetconnection {  
             section { 
                 padding:1.5rem;
-                h3 {  font-size: 18px; line-height: 26px;   }
-                h4 {  font-size: 16px;  line-height: 24px;  }
+                h2 {  font-size: 18px; line-height: 26px;   }
+                h3 {  font-size: 16px;  line-height: 24px;  }
                 dl { 
                     dt { 
                         width:26%;
@@ -191,8 +195,10 @@
                     }
                 }
                 h4 {  font-size: 16px;   }
-                ul { 
-                    li { margin: 3px 0; font-size: 16px; line-height: 24px;   }
+                .connectiondocumentsrequired {
+                    ul { 
+                        li { margin: 3px 0; font-size: 16px; line-height: 24px;   }
+                    }
                 }
             }
         }
@@ -277,5 +283,104 @@
             .pnglocationlist {height: 480px;  }
         }
 
+    }
+}
+
+
+
+@media only screen and (max-width:599px) 
+{
+    .pngavailabilityWrap { 
+        .pngavailability {
+            .pnglocationHeading {width: 96%; margin: 0 2% 1rem 2%;  padding:0 0 12px 0; position: relative; overflow: hidden;
+                h2 {
+                   font-size:24px;  
+                    span { font-size: 14px; }
+                }
+                aside {
+                    position: absolute; top: 0; left: 100%; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht1; 
+                    span { 
+                        display:block; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
+                        &:hover { color: $blk1; @include inT(); }
+                    }
+                    input[type='text'] {  padding: 0.5rem 3rem 0.5rem 1rem;} 
+                }
+                p { 
+                     display: block; font-size: 24px;color:$blu1; cursor: pointer; @include outT();
+                    &:hover { color: $blk1; @include inT(); }
+                }
+            }
+
+            .pnglocationfilter { 
+                margin-bottom: 1rem;
+                ul { 
+                    justify-content: space-between;  flex-wrap: wrap;
+                    li { 
+                        list-style: none; width: 46%; margin:1px 0;
+                        &:nth-of-type(3) { width: 72%; }
+                        &:last-child { width: 25%; margin: 1rem 0; text-align: right;}
+                    }
+                }
+            }
+            .pnglocationlist {
+                height: 580px;  
+                ul {
+                     li {width: 96%;margin: 10px 2%;padding: 1rem 1.5rem 1rem 2rem;}
+                }
+            }
+         
+                
+        }
+    
+    
+        .pnggetconnection {
+            section { 
+                dl { 
+                    dt { width: 25%;}
+                }
+            }
+        }
+    
+
+        
+    }
+
+
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    .pngavailabilityWrap { 
+        .pnggetconnection {  
+            section { 
+                padding:1.5rem;
+                h2{  font-size: 20px; line-height: 26px;   }
+                h3 {  font-size: 16px;  line-height: 22px;  }
+                dl { 
+                    flex-wrap: wrap; justify-content:flex-end;
+                    dt { 
+                        width:100%; float: left; @include fSC();
+                        aside {top: -2px;  margin-right: 1.5rem; }
+                        p { margin: 0; width: auto; max-width: 75%;  font-size: 14px; line-height:22px; @include aBold(); }
+                    }
+                    dd {  position: relative; top: 0;
+                        width:92%; height: 50px; float: right; border-left:solid 1px $wht1;
+                        &::before { display: none; }
+                        span { 
+                            position: absolute; top: 40%; left:-5px;
+                        }
+                    }
+                }
+                h4 { margin: 2.5rem 0 1rem 0; font-size: 18px;  line-height: 24px;   }
+                .connectiondocumentsrequired {
+                    overflow: hidden; overflow-x: scroll;
+                    ul { 
+                        width: 400px;
+                        li { margin: 4px 0; font-size: 16px; line-height: 24px;   }
+                    }
+                }
+            }
+        }
     }
 }

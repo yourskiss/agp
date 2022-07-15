@@ -9303,11 +9303,15 @@ main {
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
 }
-.pngavailabilityWrap .pnggetconnection section ul {
+.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired {
   width: 100%;
   float: left;
 }
-.pngavailabilityWrap .pnggetconnection section ul li {
+.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul {
+  width: 100%;
+  float: left;
+}
+.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
   list-style: none;
   background: transparent url("../images/icon2.png") no-repeat;
   background-position: top 7px left 0px;
@@ -9375,20 +9379,21 @@ main {
   }
   .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 18px;
+    margin-top: 0.3rem;
   }
   .pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 28px;
   }
   .pngavailabilityWrap .pnggetconnection section {
     padding: 1.5rem;
   }
-  .pngavailabilityWrap .pnggetconnection section h3 {
+  .pngavailabilityWrap .pnggetconnection section h2 {
     font-size: 18px;
     line-height: 26px;
   }
-  .pngavailabilityWrap .pnggetconnection section h4 {
+  .pngavailabilityWrap .pnggetconnection section h3 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -9402,7 +9407,7 @@ main {
   .pngavailabilityWrap .pnggetconnection section h4 {
     font-size: 16px;
   }
-  .pngavailabilityWrap .pnggetconnection section ul li {
+  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
     margin: 3px 0;
     font-size: 16px;
     line-height: 24px;
@@ -9458,5 +9463,157 @@ main {
 @media only screen and (max-width: 1023px) {
   .pngavailabilityWrap .pngavailability .pnglocationlist {
     height: 480px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .pngavailabilityWrap .pngavailability .pnglocationHeading {
+    width: 96%;
+    margin: 0 2% 1rem 2%;
+    padding: 0 0 12px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
+    font-size: 24px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
+    font-size: 14px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading aside {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 1px 0;
+    background: #FFFFFF;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading aside span {
+    display: block;
+    font-size: 22px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading aside span:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text] {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading p {
+    display: block;
+    font-size: 24px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading p:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter {
+    margin-bottom: 1rem;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li {
+    list-style: none;
+    width: 46%;
+    margin: 1px 0;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li:nth-of-type(3) {
+    width: 72%;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li:last-child {
+    width: 25%;
+    margin: 1rem 0;
+    text-align: right;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 580px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li {
+    width: 96%;
+    margin: 10px 2%;
+    padding: 1rem 1.5rem 1rem 2rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 1.5rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt aside {
+    top: -2px;
+    margin-right: 1.5rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt p {
+    margin: 0;
+    width: auto;
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Arial-Bold", Arial, sans-serif;
+    font-weight: bold;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dd {
+    position: relative;
+    top: 0;
+    width: 92%;
+    height: 50px;
+    float: right;
+    border-left: solid 1px #FFFFFF;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dd::before {
+    display: none;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dd span {
+    position: absolute;
+    top: 40%;
+    left: -5px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h4 {
+    margin: 2.5rem 0 1rem 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul {
+    width: 400px;
+  }
+  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
+    margin: 4px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

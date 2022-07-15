@@ -662,3 +662,20 @@ if($(".addressheading").length > 0 && $(".adresslist").length > 0)
     }
 }
 /* ############################ contact us === end ############################ */
+
+
+
+/* ############################ png available location === start ############################ */
+if($("#locationsearchToggle").length > 0 && $("#locationsearchClose").length > 0 && $("#pnglocationsearch").length > 0)
+{
+    $("#locationsearchToggle").click(function()
+    {
+        $("#pnglocationsearch").animate({left: "0"});
+    });
+    $("#locationsearchClose").click(function()
+    {
+        $("#pnglocationsearch").animate({left: "100%"});
+        $('#locationsearchInput').val("").trigger("keyup");
+    });
+}
+/* ############################ png available location === end ############################ */
