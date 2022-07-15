@@ -8435,23 +8435,45 @@ main {
 .adresswrap .adresscontainer {
   width: 100%;
   float: left;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row-reverse;
 }
 .adresswrap .adresscontainer .adressmap {
+  position: relative;
   width: 74%;
-  float: left;
+  float: right;
+  height: 754px;
   line-height: 0;
   overflow: hidden;
 }
-.adresswrap .adresscontainer .adressmap img {
+.adresswrap .adresscontainer .adressmap .contactusmapmyindia {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.adresswrap .adresscontainer .adressmap .contactusmapmyindia .mapinfo {
+  padding: 3px;
+}
+.adresswrap .adresscontainer .adressmap .contactusmapmyindia .mapinfo h5 {
+  font-size: 14px;
+  color: #000000;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.adresswrap .adresscontainer .adressmap .contactusmapmyindia .mapinfo h6 {
+  font-size: 13px;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist {
   width: 26%;
   float: left;
+  height: 754px;
   overflow: hidden;
 }
 .adresswrap .adresscontainer .adresslist .addresssnotavailable {
@@ -8591,9 +8613,11 @@ main {
   /* ######################## adresswrap ######################## */
   .adresswrap .adresscontainer .adressmap {
     width: 72%;
+    height: 650px;
   }
   .adresswrap .adresscontainer .adresslist {
     width: 28%;
+    height: 650px;
   }
   .adresswrap .adresscontainer .adresslist ul li {
     padding: 0.7rem 0.7rem 0.7rem 1.5rem;
@@ -8689,18 +8713,22 @@ main {
   }
   .adresswrap .adresscontainer .adressmap {
     width: 70%;
+    height: 650px;
   }
   .adresswrap .adresscontainer .adresslist {
     width: 30%;
+    height: 650px;
   }
 }
 @media only screen and (max-width: 1255px) {
   /* ######################## adresswrap ######################## */
   .adresswrap .adresscontainer .adressmap {
     width: 68%;
+    height: 483px;
   }
   .adresswrap .adresscontainer .adresslist {
     width: 32%;
+    height: 483px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -8761,7 +8789,11 @@ main {
   }
   .adresswrap .adresscontainer .adressmap {
     width: 100%;
-    padding: 0 10px;
+    height: 300px;
+  }
+  .adresswrap .adresscontainer .adressmap .contactusmapmyindia {
+    left: 1%;
+    width: 98%;
   }
   .adresswrap .adresscontainer .adresslist {
     width: 100%;
@@ -8791,18 +8823,39 @@ main {
     margin-top: 2rem;
   }
   /* ######################## adresswrap ######################## */
+  .adresswrap .adresscontainer .adressmap {
+    height: 280px;
+  }
+  .adresswrap .adresscontainer .adressmap .contactusmapmyindia {
+    left: 1.5%;
+    width: 97%;
+  }
   .adresswrap .adresscontainer .adresslist {
     height: 430px;
   }
 }
 @media only screen and (max-width: 599px) {
   /* ######################## adresswrap ######################## */
+  .adresswrap .adresscontainer .adressmap {
+    height: 260px;
+  }
+  .adresswrap .adresscontainer .adressmap .contactusmapmyindia {
+    left: 2%;
+    width: 96%;
+  }
   .adresswrap .adresscontainer .adresslist {
     height: 450px;
   }
 }
 @media only screen and (max-width: 479px) {
   /* ######################## adresswrap ######################## */
+  .adresswrap .adresscontainer .adressmap {
+    height: 220px;
+  }
+  .adresswrap .adresscontainer .adressmap .contactusmapmyindia {
+    left: 2.5%;
+    width: 95%;
+  }
   .adresswrap .adresscontainer .adresslist {
     height: 525px;
   }

@@ -592,15 +592,6 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 
 
 /* ############################ contact us === start ############################ */
-$(window).on('load', function() 
-{
-    if($(".adresscontainer").length > 0)
-    {
-        var mapheight = $(".adressmap").height();
-        if($(window).width() > 1023) { $(".adresslist").css("height", mapheight+"px"); }
-    }
-});
-
 if($("#addresssearchToggle").length > 0 && $("#addresssearchClose").length > 0)
 {
     $("#addresssearchToggle").click(function()
