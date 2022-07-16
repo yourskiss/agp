@@ -291,6 +291,36 @@ $(function($)
          });
      }
 
+
+     // emergency contact list
+     if($(".emergencycontactlist").length > 0)
+     {
+         $('.emergencycontactscroll').slimScroll({ 
+             width: "100%",
+             height: "100%",
+             size: "4px",
+             color: "#F2662C",
+             position: "right",
+             distance: "0",
+             start: "top",
+             opacity: 0,
+             alwaysVisible: true,
+             disableFadeOut: true,
+             railVisible: true,
+             allowPageScroll: false,
+             railColor: "#000000",
+             railOpacity: 0,
+             railDraggable: true,
+             railClass: "emergencycontactscrollRail",
+             barClass: "emergencycontactscrollBar",
+             wrapperClass: "emergencycontactscrollContainer",
+             wheelStep: 10,
+             touchScrollStep: 100,
+             borderRadius: "5px",
+             railBorderRadius: "5px"
+         });
+     }
+
 });
 /* ############################ Scroller === end ############################ */
 
@@ -726,3 +756,25 @@ if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("
     });
 }
 /* ############################  cng station === end ############################ */
+
+
+
+
+/* ############################  Health & Safety === start ############################ */
+if($("#hsdoanddontTabs").length > 0 &&  $("#hsdoanddontBody").length > 0)
+{
+    $("#hsdoanddontTabs ul li, #hsdoanddontBody .hsdoanddontheader").click(function()
+    {
+        let tagname = $(this).attr("data-name");
+        $("#hsdoanddontTabs ul li").removeClass("active");
+        $("#hsdoanddontBody .hsdoanddontheader").removeClass("active");
+        $("#hsdoanddontBody .hsdoanddontsection").slideUp(500);
+        $("#hsdoanddontTabs ul").addClass("disabled")
+
+        $("#hsdoanddontTabs ul li[data-name='" + tagname + "']").addClass("active");
+        $("#hsdoanddontBody .hsdoanddontheader[data-name='" + tagname + "']").addClass("active");
+        $("#hsdoanddontBody .hsdoanddontsection[data-id='" + tagname + "']").slideDown(500);
+        setTimeout(function(){ $("#hsdoanddontTabs ul").removeClass('disabled'); }, 500);
+    });
+}
+/* ############################ Health & Safety === end ############################ */
