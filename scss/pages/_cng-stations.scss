@@ -81,7 +81,7 @@
                         dd { 
                             color:$blk7; text-align: left;  font-size: 14px; line-height: 26px; @include Arial(); 
                             span { 
-                                margin-left: 5px; background:$wht7; padding:5px 10px; border-radius:25px; color:$blu1; text-align: left;  font-size: 14px; line-height: 26px; @include Arial(); 
+                                margin-left: 5px; background:$wht7; padding:5px 10px; border-radius:25px; color:$blu1; text-align: left;  font-size: 14px; line-height: 26px; @include aBold(); 
                                 i.fa { margin-right:3px; }
                             }
                         }
@@ -115,7 +115,7 @@
 
 @media only screen and (max-width:1700px) 
 {
-    .pngavailabilityWrap { 
+    .cngstationWrap { 
         .wrapper { padding-left: 2%; }
     }
 }
@@ -123,115 +123,142 @@
 
 @media only screen and (max-width:1565px) 
 {
-    .pngavailabilityWrap { 
-
-        .pngavailability {
-            padding:2rem 2rem 0 0;
-            .pnglocationHeading { 
-                h2 {
-                    font-size:22px; 
-                    span { font-size: 12px; }
-                }
-            }
-            .pnglocationfilter { 
-                h2 { font-size:16px; line-height:26px;   }
-                ul { 
-                    li { 
-                         width: 25%; 
-                        &:last-child { width: auto; }
-                        input[type='text'] {   font-size: 16px;   }
-                        select {   font-size: 16px; }
-                    }
-                }
-            }
-            .pnglocationlist {
-               height: 575px;  
-                ul { 
-                    li { 
-                        width:48%; margin:10px 1%; padding:1rem 1rem 1rem  1.5rem;  
-                        h2 { 
-                           font-size:16px; line-height: 26px; 
-                            &:after { top: 5px;  }
-                        }
-                        p { font-size: 14px; line-height: 22px;  }
-                        h3 { font-size: 16px; line-height: 18px; margin-top: 0.3rem; }
-                        h4 { font-size: 16px; line-height: 28px; }
-                    }
-                }
-            }
-         
-                
+    
+    .cngstationWrap { 
+        .cngstation { 
+            width: 39%;  
+            .cngstationlist {  height:565px; }
         }
-
-        .pnggetconnection {  
-            section { 
-                padding:1.5rem;
-                h2 {  font-size: 18px; line-height: 26px;   }
-                h3 {  font-size: 16px;  line-height: 24px;  }
-                dl { 
-                    dt { 
-                        width:26%;
-                        p {   font-size: 12px; line-height:18px; }
-                    }
-                }
-                h4 {  font-size: 16px;   }
-                .connectiondocumentsrequired {
-                    ul { 
-                        li { margin: 3px 0; font-size: 16px; line-height: 24px;   }
-                    }
-                }
-            }
-        }
-        
+        .cngstationmap { width: 61%;  height:845px;  }
     }
 
 
 
-
 }
 
 
 
+ 
 
 @media only screen and (max-width:1300px) 
 {
- 
-}
-
-
-@media only screen and (max-width:1300px) 
-{
- 
+    .cngstationWrap { 
+        .cngstation { 
+            width: 43%;  
+            .cngstationlist {  height:565px; }
+        }
+        .cngstationmap { width: 57%;  height:845px;  }
+    }
 }
 
 
 @media only screen and (max-width:1255px) 
 {
+    .cngstationWrap { 
+        .cngstation { 
+            width: 54%;  
+            .cngstationlist {  height:565px; }
+        }
+        .cngstationmap { width: 46%;  height:845px;  }
+    }
 }
 
 
 
 @media only screen and (max-width:1023px) 
 {
- 
+    .cngstationWrap { 
+        .wrapper { padding:0 2%; flex-wrap: wrap; }
+        .cngstation { 
+            width: 100%; padding:2rem 0 0 0;
+            .cngstationlist {  height:490px; }
+        }
+        .cngstationmap { width: 96%; margin:3rem 2%; height:300px;  }
+    }
 }
 
 
-@media only screen and (max-width:1023px) 
+@media only screen and (max-width:767px) 
 {
- 
+    .cngstationWrap { 
+        .cngstation { 
+            .cngstationlist {  height:570px; }
+        }
+    }
 }
 
 
 
 @media only screen and (max-width:599px) 
 {
-  
+    .cngstationWrap { 
+        .cngstation { 
+            .cngstationheading { 
+                width: 96%; margin: 0 2% 1rem 2%;  padding:0 0 12px 0; position: relative; overflow: hidden;
+                h2 { font-size:24px; }
+                aside {
+                    position: absolute; top: 0; left: 100%; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht1; 
+                    span { 
+                        display:block; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
+                        &:hover { color: $blk1; @include inT(); }
+                    }
+                    input[type='text'] {  padding: 0.5rem 3rem 0.5rem 1rem;} 
+                }
+                p { 
+                    display: block; font-size: 24px;color:$blu1; cursor: pointer; @include outT();
+                   &:hover { color: $blk1; @include inT(); }
+               }
+            }
+            .cngstationfilter { 
+                width: 96%; padding:0 1%; margin:0 2% 1rem 2%;
+                h2 {  font-size:16px; line-height:28px; }
+                ul { 
+                    justify-content: space-between;  flex-wrap: wrap;
+                    li { 
+                        list-style: none; width: 46%; margin:1px 0;
+                        &:nth-of-type(3) { width: 72%; }
+                        &:last-child { width: 25%; margin: 1rem 0; text-align: right; }
+                        select { font-size: 16px; }
+                        input[type=text] { font-size: 16px; }
+                    }
+                }
+            }
+            .cngstationlist {
+                height: 625px;  
+                ul {
+                     li {
+                        width: 96%;margin: 10px 2%;padding: 1rem 1rem 1rem 2rem;
+                        h2 { 
+                            font-size: 16px; line-height: 28px; padding-right: 0;
+                            &:after { top: 5px;  }
+                        }
+                        p { font-size: 14px; line-height: 22px; }
+                        h4 { font-size: 14px; line-height: 22px;  }
+                        dl { 
+                            justify-content: flex-start; flex-wrap: wrap;
+                            dt { width: 100%; font-size: 12px; line-height: 26px;  }
+                            dd { 
+                                width: 100%; margin-top: 0.3rem; font-size: 12px; line-height: 26px; 
+                                span { font-size: 12px; line-height: 26px;  }
+                            }
+                        }
+                        h5 { top: auto; bottom: 1rem; font-size: 18px; }
+                    }
+                }
+            }  
+        }
+
+    }
 
 }
 
 
 @media only screen and (max-width:479px) 
 {
- 
+    .cngstationWrap { 
+        .cngstation { 
+            .cngstationlist {  height:642px; }
+        }
+        .cngstationmap { height:200px;  }
+    }
 }

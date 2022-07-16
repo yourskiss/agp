@@ -708,3 +708,21 @@ if($("#locationsearchToggle").length > 0 && $("#locationsearchClose").length > 0
     });
 }
 /* ############################ png available location === end ############################ */
+
+
+
+
+/* ############################  cng station === start ############################ */
+if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("#cngStationSearchClose").length > 0)
+{
+    $("#cngStationToggle").click(function()
+    {
+        $("#cngStationSearch").animate({left: "0"});
+    });
+    $("#cngStationSearchClose").click(function()
+    {
+        $("#cngStationSearch").animate({left: "100%"});
+        $('#cngStationSearchInput').val("").trigger("keyup");
+    });
+}
+/* ############################  cng station === end ############################ */

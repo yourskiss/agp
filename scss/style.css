@@ -1715,6 +1715,9 @@ main {
   .breadcrumbs li i.fa {
     margin: 0 0.5rem;
   }
+  .breadcrumbs.cngstationbedc {
+    margin-bottom: 2rem;
+  }
 }
 .quicklinkBG {
   display: none;
@@ -9958,8 +9961,8 @@ main {
   text-align: left;
   font-size: 14px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
 }
 .cngstationWrap .cngstation .cngstationlist ul li dl dd span i.fa {
   margin-right: 3px;
@@ -10012,88 +10015,202 @@ main {
 }
 
 @media only screen and (max-width: 1700px) {
-  .pngavailabilityWrap .wrapper {
+  .cngstationWrap .wrapper {
     padding-left: 2%;
   }
 }
 @media only screen and (max-width: 1565px) {
-  .pngavailabilityWrap .pngavailability {
-    padding: 2rem 2rem 0 0;
+  .cngstationWrap .cngstation {
+    width: 39%;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 565px;
+  }
+  .cngstationWrap .cngstationmap {
+    width: 61%;
+    height: 845px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .cngstationWrap .cngstation {
+    width: 43%;
+  }
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 565px;
+  }
+  .cngstationWrap .cngstationmap {
+    width: 57%;
+    height: 845px;
+  }
+}
+@media only screen and (max-width: 1255px) {
+  .cngstationWrap .cngstation {
+    width: 54%;
+  }
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 565px;
+  }
+  .cngstationWrap .cngstationmap {
+    width: 46%;
+    height: 845px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .cngstationWrap .wrapper {
+    padding: 0 2%;
+    flex-wrap: wrap;
+  }
+  .cngstationWrap .cngstation {
+    width: 100%;
+    padding: 2rem 0 0 0;
+  }
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 490px;
+  }
+  .cngstationWrap .cngstationmap {
+    width: 96%;
+    margin: 3rem 2%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 570px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .cngstationWrap .cngstation .cngstationheading {
+    width: 96%;
+    margin: 0 2% 1rem 2%;
+    padding: 0 0 12px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .cngstationWrap .cngstation .cngstationheading h2 {
+    font-size: 24px;
+  }
+  .cngstationWrap .cngstation .cngstationheading aside {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 1px 0;
+    background: #FFFFFF;
+  }
+  .cngstationWrap .cngstation .cngstationheading aside span {
+    display: block;
     font-size: 22px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
-    font-size: 12px;
+  .cngstationWrap .cngstation .cngstationheading aside span:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationfilter h2 {
-    font-size: 16px;
-    line-height: 26px;
+  .cngstationWrap .cngstation .cngstationheading aside input[type=text] {
+    padding: 0.5rem 3rem 0.5rem 1rem;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li {
-    width: 25%;
+  .cngstationWrap .cngstation .cngstationheading p {
+    display: block;
+    font-size: 24px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li:last-child {
-    width: auto;
+  .cngstationWrap .cngstation .cngstationheading p:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text] {
-    font-size: 16px;
+  .cngstationWrap .cngstation .cngstationfilter {
+    width: 96%;
+    padding: 0 1%;
+    margin: 0 2% 1rem 2%;
   }
-  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select {
-    font-size: 16px;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist {
-    height: 575px;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li {
-    width: 48%;
-    margin: 10px 1%;
-    padding: 1rem 1rem 1rem 1.5rem;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2 {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2:after {
-    top: 5px;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
-    font-size: 16px;
-    line-height: 18px;
-    margin-top: 0.3rem;
-  }
-  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 {
+  .cngstationWrap .cngstation .cngstationfilter h2 {
     font-size: 16px;
     line-height: 28px;
   }
-  .pngavailabilityWrap .pnggetconnection section {
-    padding: 1.5rem;
+  .cngstationWrap .cngstation .cngstationfilter ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .pngavailabilityWrap .pnggetconnection section h2 {
-    font-size: 18px;
+  .cngstationWrap .cngstation .cngstationfilter ul li {
+    list-style: none;
+    width: 46%;
+    margin: 1px 0;
+  }
+  .cngstationWrap .cngstation .cngstationfilter ul li:nth-of-type(3) {
+    width: 72%;
+  }
+  .cngstationWrap .cngstation .cngstationfilter ul li:last-child {
+    width: 25%;
+    margin: 1rem 0;
+    text-align: right;
+  }
+  .cngstationWrap .cngstation .cngstationfilter ul li select {
+    font-size: 16px;
+  }
+  .cngstationWrap .cngstation .cngstationfilter ul li input[type=text] {
+    font-size: 16px;
+  }
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 625px;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li {
+    width: 96%;
+    margin: 10px 2%;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li h2 {
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 0;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li h2:after {
+    top: 5px;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li dl {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .cngstationWrap .cngstation .cngstationlist ul li dl dt {
+    width: 100%;
+    font-size: 12px;
     line-height: 26px;
   }
-  .pngavailabilityWrap .pnggetconnection section h3 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dt {
-    width: 26%;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dt p {
+  .cngstationWrap .cngstation .cngstationlist ul li dl dd {
+    width: 100%;
+    margin-top: 0.3rem;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 26px;
   }
-  .pngavailabilityWrap .pnggetconnection section h4 {
-    font-size: 16px;
+  .cngstationWrap .cngstation .cngstationlist ul li dl dd span {
+    font-size: 12px;
+    line-height: 26px;
   }
-  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
-    margin: 3px 0;
-    font-size: 16px;
-    line-height: 24px;
+  .cngstationWrap .cngstation .cngstationlist ul li h5 {
+    top: auto;
+    bottom: 1rem;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .cngstationWrap .cngstation .cngstationlist {
+    height: 642px;
+  }
+  .cngstationWrap .cngstationmap {
+    height: 200px;
   }
 }
