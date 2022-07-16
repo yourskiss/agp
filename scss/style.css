@@ -1702,6 +1702,10 @@ main {
 .breadcrumbs.pngavailabilitybedc {
   padding-left: 1%;
 }
+.breadcrumbs.cngstationbedc {
+  padding-left: 1%;
+  margin-bottom: 1rem;
+}
 
 @media only screen and (max-width: 1023px) {
   .breadcrumbs li {
@@ -8440,6 +8444,7 @@ main {
   float: left;
 }
 .adresswrap .adresscontainer .adressmap {
+  z-index: 2;
   position: relative;
   width: 74%;
   float: right;
@@ -9585,7 +9590,7 @@ main {
   }
   .pngavailabilityWrap .pnggetconnection section dl dd {
     position: relative;
-    top: 0;
+    top: -2px;
     width: 92%;
     height: 50px;
     float: right;
@@ -9597,7 +9602,7 @@ main {
   .pngavailabilityWrap .pnggetconnection section dl dd span {
     position: absolute;
     top: 40%;
-    left: -5px;
+    left: -6px;
   }
   .pngavailabilityWrap .pnggetconnection section h4 {
     margin: 2.5rem 0 1rem 0;
@@ -9613,6 +9618,481 @@ main {
   }
   .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
     margin: 4px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.cngstationWrap {
+  width: 100%;
+  float: left;
+  background: #FFFFFF;
+}
+.cngstationWrap .wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: stretch;
+}
+.cngstationWrap .cngstation {
+  width: 30%;
+  float: left;
+  padding: 2rem 1.5rem 0 0;
+  background-color: #FFFFFF;
+}
+.cngstationWrap .cngstation .cngstationheading {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  margin-bottom: 2rem;
+}
+.cngstationWrap .cngstation .cngstationheading h2 {
+  width: auto;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 26px;
+  line-height: 1;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.cngstationWrap .cngstation .cngstationheading h2 span {
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.cngstationWrap .cngstation .cngstationheading aside {
+  width: 200px;
+  float: right;
+  text-align: right;
+  border-bottom: solid 1px #707070;
+}
+.cngstationWrap .cngstation .cngstationheading aside span {
+  display: none;
+}
+.cngstationWrap .cngstation .cngstationheading aside input[type=text] {
+  background: transparent url("../Images/search-black.png") no-repeat;
+  background-position: right 8px top 50%;
+  margin: 0;
+  width: 100%;
+  float: right;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  font-size: 18px;
+  line-height: 1;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationheading aside input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationheading aside input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationheading aside input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationheading p {
+  display: none;
+}
+.cngstationWrap .cngstation .cngstationfilter {
+  width: 100%;
+  float: left;
+  padding: 0 1%;
+  margin-bottom: 2rem;
+}
+.cngstationWrap .cngstation .cngstationfilter h2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  float: left;
+  text-align: left;
+  color: #000000;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.cngstationWrap .cngstation .cngstationfilter ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li {
+  list-style: none;
+  width: 27%;
+  margin: 0 2% 0 0;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li:last-child {
+  width: 14%;
+  margin-right: 0;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li .erromsg {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #F2662C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=text] {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li select {
+  width: 100%;
+  float: left;
+  padding: 0.4rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li select option {
+  color: #000000;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li select option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=submit], .cngstationWrap .cngstation .cngstationfilter ul li input[type=button] {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 0;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cngstationWrap .cngstation .cngstationfilter ul li input[type=submit]:hover, .cngstationWrap .cngstation .cngstationfilter ul li input[type=button]:hover {
+  transition: all 0.4s ease-in;
+  background-color: #F2662C;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+  color: #FFFFFF;
+}
+.cngstationWrap .cngstation .cngstationlist {
+  width: 100%;
+  float: left;
+  height: 565px;
+}
+.cngstationWrap .cngstation .cngstationlist .cngstationnoresult {
+  display: none;
+  float: left;
+  width: 98%;
+  margin: 1rem 1%;
+  padding: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.cngstationWrap .cngstation .cngstationlist ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.cngstationWrap .cngstation .cngstationlist ul li {
+  list-style: none;
+  position: relative;
+  width: 96%;
+  margin: 10px 2%;
+  padding: 1rem 1.5rem 1rem 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h2 {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 0.3rem;
+  padding-right: 20px;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h2:after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 7px;
+  height: 12px;
+  width: 8px;
+  background: url("../images/icon2.png") no-repeat;
+  background-position: left 0px top 0px;
+}
+.cngstationWrap .cngstation .cngstationlist ul li p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h4 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h4 i.fa {
+  padding: 0 5px 0 0;
+  transform: rotate(22deg);
+}
+.cngstationWrap .cngstation .cngstationlist ul li h4 a {
+  text-decoration: none;
+  color: #3C3C3C;
+  transition: all 0.4s ease-out;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h4 a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl dt {
+  color: #233C4C;
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl dt:before {
+  content: "\f017";
+  font-family: "FontAwesome";
+  font-weight: 300;
+  line-height: 1;
+  margin-right: 5px;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl dd {
+  color: #707070;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl dd span {
+  margin-left: 5px;
+  background: #EDF0F2;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: #233D4D;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.cngstationWrap .cngstation .cngstationlist ul li dl dd span i.fa {
+  margin-right: 3px;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h5 {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: auto;
+  float: right;
+  text-align: right;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3A4E5C;
+  transition: all 0.4s ease-out;
+}
+.cngstationWrap .cngstation .cngstationlist ul li h5:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.cngstationWrap .cngstationmap {
+  z-index: 2;
+  position: relative;
+  width: 70%;
+  float: left;
+  background-color: #233D4D;
+  height: 845px;
+}
+.cngstationWrap .cngstationmap .cngstationmapmyindia {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.cngstationWrap .cngstationmap .mapinfo {
+  padding: 3px;
+}
+.cngstationWrap .cngstationmap .mapinfo h5 {
+  font-size: 14px;
+  color: #000000;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.cngstationWrap .cngstationmap .mapinfo h6 {
+  font-size: 13px;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1700px) {
+  .pngavailabilityWrap .wrapper {
+    padding-left: 2%;
+  }
+}
+@media only screen and (max-width: 1565px) {
+  .pngavailabilityWrap .pngavailability {
+    padding: 2rem 2rem 0 0;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
+    font-size: 22px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
+    font-size: 12px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li {
+    width: 25%;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li:last-child {
+    width: auto;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text] {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist {
+    height: 575px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li {
+    width: 48%;
+    margin: 10px 1%;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2:after {
+    top: 5px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 0.3rem;
+  }
+  .pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 1.5rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt {
+    width: 26%;
+  }
+  .pngavailabilityWrap .pnggetconnection section dl dt p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h4 {
+    font-size: 16px;
+  }
+  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
+    margin: 3px 0;
     font-size: 16px;
     line-height: 24px;
   }

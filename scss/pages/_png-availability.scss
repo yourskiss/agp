@@ -364,11 +364,11 @@
                         aside {top: -2px;  margin-right: 1.5rem; }
                         p { margin: 0; width: auto; max-width: 75%;  font-size: 14px; line-height:22px; @include aBold(); }
                     }
-                    dd {  position: relative; top: 0;
+                    dd {  position: relative; top: -2px;
                         width:92%; height: 50px; float: right; border-left:solid 1px $wht1;
                         &::before { display: none; }
                         span { 
-                            position: absolute; top: 40%; left:-5px;
+                            position: absolute; top: 40%; left:-6px;
                         }
                     }
                 }

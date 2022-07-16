@@ -108,7 +108,7 @@
     .adresscontainer {
         width: 100%; float: left;  
         .adressmap { 
-            position: relative; width: 74%; float: right;  height: 754px; line-height:0; overflow: hidden; 
+            z-index: 2; position: relative; width: 74%; float: right;  height: 754px; line-height:0; overflow: hidden; 
              .contactusmapmyindia {
                   z-index: 1; position: absolute; left:0; top: 0; width: 100%; height: 100%; margin: 0; padding: 0; border: none; 
                 .mapinfo { 

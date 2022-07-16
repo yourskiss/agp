@@ -1,9 +1,8 @@
 var map;
 var info = [];
 var visbility = false;
-
 window.onload = function() {
-  var center = new L.latLng(28.549948, 77.268241); /*  default location */
+  var center = new L.latLng(28.949948, 77.268241); /*  default location */
   var pt1 = new L.latLng(28.989948, 76.188241); 
   var pt2 = new L.latLng(28.862232, 78.328941);  
   var pt3 = new L.latLng(28.791748, 77.919022);  
@@ -17,9 +16,8 @@ window.onload = function() {
     hybrid: true,
     search: true,
     location:true,
-    zoom: 9
+    zoom:9
   });
- 
   var mk1 = addMarker(pt1, '', "Address 1").addTo(map);
   var mk2 = addMarker(pt2, '', "Address 2").addTo(map);
   var mk3 = addMarker(pt3, '', "Address 3").addTo(map);
@@ -37,10 +35,8 @@ window.onload = function() {
   mk6.bindPopup("<div class='mapinfo'><h5>Title 6</h5><h6>Description 6</h6><div>");
   mk7.bindPopup("<div class='mapinfo'><h5>Title 7</h5><h6>Description 7</h6><div>");
 };
-
 function addMarker(position, icon, title) 
 {
-
   if (icon == '')
   {
     var mk = new L.Marker(position, {
@@ -59,5 +55,3 @@ function addMarker(position, icon, title)
   map.addLayer(mk);
   return mk;
 }
-
- 
