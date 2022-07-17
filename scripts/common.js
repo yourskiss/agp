@@ -805,4 +805,19 @@ if($("#healthsafetyfaqs").length > 0)
         $("#healthsafetyfaqs div section[data-id='" + faqname + "']").slideDown(500);
     });
 }
+
+        
+
+if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length > 0)
+{
+    $("#emergencycontactToggle").click(function()
+    {
+        $("#emergencycontactsearch").animate({left: "0"});
+    });
+    $("#emergencycontactClose").click(function()
+    {
+        $("#emergencycontactsearch").animate({left: "100%"});
+        $('#emergencycontactinput').val("").trigger("keyup");
+    });
+}
 /* ############################ Health & Safety === end ############################ */

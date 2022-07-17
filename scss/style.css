@@ -10214,3 +10214,1063 @@ main {
     height: 200px;
   }
 }
+/* ######################## faqsWrap ######################## */
+.healthsafetyWrap {
+  width: 100%;
+  float: left;
+  padding: 2rem 0 5rem 0;
+  background-color: #FFFFFF;
+}
+.healthsafetyWrap .healthsafetyAbout {
+  width: 100%;
+  float: left;
+}
+.healthsafetyWrap .healthsafetyAbout article {
+  width: 50%;
+  float: left;
+}
+.healthsafetyWrap .healthsafetyAbout article p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+.healthsafetyWrap .healthsafetyAbout section {
+  width: 430px;
+  float: right;
+  padding: 2rem;
+  background: #F2662C;
+}
+.healthsafetyWrap .healthsafetyAbout section p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+}
+.healthsafetyWrap .healthsafetyAbout section h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1;
+  margin: 0.7rem 0 0.8rem 0;
+}
+.healthsafetyWrap .healthsafetyAbout section h2 i.fa {
+  margin-right: 3px;
+  transform: rotate(29deg);
+  font-size: 90%;
+}
+.healthsafetyWrap .healthsafetyAbout section h2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.4s ease-out;
+}
+.healthsafetyWrap .healthsafetyAbout section h2 a:hover {
+  color: #3C3C3C;
+  transition: all 0.4s ease-in;
+}
+.healthsafetyWrap .healthsafetyAbout section h3 {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.healthsafetyWrap .healthsafetyAbout section h3 span {
+  display: inline-block;
+  border-bottom: solid 1px #FFFFFF;
+  padding-bottom: 3px;
+  color: #FFFFFF;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+}
+.healthsafetyWrap .emergencyheading {
+  width: 100%;
+  float: left;
+  padding: 3rem 0 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.healthsafetyWrap .emergencyheading h2 {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.healthsafetyWrap .emergencyheading h2 span {
+  display: inline;
+  color: #000000;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+}
+.healthsafetyWrap .emergencyheading h2 img {
+  display: inline;
+  margin-bottom: -2px;
+  max-width: 100%;
+}
+.healthsafetyWrap .emergencyheading section {
+  width: 530px;
+  float: right;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsort {
+  width: 200px;
+  float: left;
+  text-align: left;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsort select {
+  width: 100%;
+  float: left;
+  padding: 0.5rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #969696;
+  outline: none;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1;
+  color: #233D4D;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsort select option {
+  color: #233D4D;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsort select option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch {
+  width: 300px;
+  float: left;
+  text-align: left;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch span {
+  display: none;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text] {
+  background: transparent url("../Images/search-black.png") no-repeat;
+  background-position: right 8px top 50%;
+  margin: 0;
+  width: 100%;
+  float: right;
+  border: none;
+  border-bottom: solid 1px #969696;
+  outline: none;
+  padding: 0.5rem 0;
+  font-size: 18px;
+  line-height: 1;
+  color: #233D4D;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.healthsafetyWrap .emergencyAlphabetical {
+  width: 100%;
+  float: left;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.healthsafetyWrap .emergencyAlphabetical ul {
+  width: auto;
+  margin: 0 auto;
+  float: none;
+  display: inline-block;
+  background: #F8F8F8;
+}
+.healthsafetyWrap .emergencyAlphabetical ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0.3rem 5px 0.3rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  border-bottom: solid 4px #F8F8F8;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.healthsafetyWrap .emergencyAlphabetical ul li:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.healthsafetyWrap .emergencyAlphabetical ul li.active {
+  border-bottom-color: #F2662C;
+  color: #F2662C;
+  user-select: none;
+  pointer-events: none;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.healthsafetyWrap .emergencyAlphabetical ul.disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.healthsafetyWrap .emergencycontactlist {
+  width: 100%;
+  float: left;
+  height: 410px;
+}
+.healthsafetyWrap .emergencycontactlist .emergencynoresult {
+  display: none;
+  float: left;
+  width: 90%;
+  margin: 1rem 5%;
+  padding: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.healthsafetyWrap .emergencycontactlist ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.healthsafetyWrap .emergencycontactlist ul li {
+  list-style: none;
+  display: none;
+  position: relative;
+  width: 24%;
+  margin: 10px 0.5%;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 0px 0px 8px 8px;
+}
+.healthsafetyWrap .emergencycontactlist ul li h2 {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-bottom: 0.3rem;
+  padding-top: 12px;
+  text-align: left;
+  color: #000000;
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.healthsafetyWrap .emergencycontactlist ul li h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 14px;
+  width: 14px;
+  background: url("../images/icon3.png") no-repeat left top;
+  background-size: 100% 100%;
+}
+.healthsafetyWrap .emergencycontactlist ul li p {
+  width: 100%;
+  margin-top: 0.1rem;
+  float: left;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #3C3C3C;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.healthsafetyWrap .emergencycontactlist ul li p i.fa {
+  padding: 0 5px 0 0;
+  transform: rotate(22deg);
+}
+.healthsafetyWrap .emergencycontactlist ul li p a {
+  text-decoration: none;
+  color: #3C3C3C;
+  transition: all 0.4s ease-out;
+}
+.healthsafetyWrap .emergencycontactlist ul li p a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.healthsafetyWrap .healthsafetyfaqs {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin: 5rem 0;
+}
+.healthsafetyWrap .healthsafetyfaqs div {
+  width: 47%;
+  float: left;
+  padding: 3rem 10% 3rem 3rem;
+  background: #233D4D;
+}
+.healthsafetyWrap .healthsafetyfaqs div h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.healthsafetyWrap .healthsafetyfaqs div h2 span {
+  display: inline;
+  color: #FFFFFF;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  line-height: 35px;
+}
+.healthsafetyWrap .healthsafetyfaqs div h2 img {
+  display: inline;
+  max-width: 100%;
+}
+.healthsafetyWrap .healthsafetyfaqs div aside {
+  position: relative;
+  background: #233D4D;
+  width: 100%;
+  float: left;
+  padding: 1.2rem 2.5rem 1.2rem 1rem;
+  border-bottom: solid 1px #FFFFFF;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.healthsafetyWrap .healthsafetyfaqs div aside:after {
+  content: "\f105";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "FontAwesome";
+  font-weight: 300;
+  line-height: 1;
+  font-size: 170%;
+}
+.healthsafetyWrap .healthsafetyfaqs div aside.active {
+  background-color: #FFFFFF;
+  color: #233D4D;
+  user-select: none;
+  pointer-events: none;
+}
+.healthsafetyWrap .healthsafetyfaqs div section {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 58%;
+  max-height: 100%;
+  float: left;
+  padding: 3rem 3rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.healthsafetyWrap .healthsafetyfaqs div section p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #3C3C3C;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.healthsafetyWrap .healthsafetyfaqs div section p b {
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+.healthsafetyWrap .healthsafetyfaqs div h3 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  padding: 2rem 0 0 1rem;
+}
+.healthsafetyWrap .healthsafetyfaqs div h3 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #F2662C;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  transition: all 0.4s ease-out;
+}
+.healthsafetyWrap .healthsafetyfaqs div h3 a i.fa {
+  padding: 0 5px;
+  color: #F2662C;
+  transition: all 0.4s ease-out;
+}
+.healthsafetyWrap .healthsafetyfaqs div h3 a:hover {
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+.healthsafetyWrap .healthsafetyfaqs div h3 a:hover i.fa {
+  padding: 0 0 0 10px;
+  color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
+.healthsafetyWrap .hsdoanddontTabs {
+  width: 100%;
+  float: left;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.healthsafetyWrap .hsdoanddontTabs h2 {
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #000000;
+  font-size: 26px;
+  line-height: 54px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.healthsafetyWrap .hsdoanddontTabs ul {
+  width: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #888888;
+}
+.healthsafetyWrap .hsdoanddontTabs ul.disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 0 2rem 5px 2rem;
+  margin: 0 2rem;
+  color: #888888;
+  font-size: 22px;
+  line-height: 54px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #FFFFFF;
+  line-height: 0;
+  font-size: 1px;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li.active {
+  border-bottom-color: #233D4D;
+  color: #233D4D;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.4s ease-in;
+  user-select: none;
+  pointer-events: none;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li.active:after {
+  background: #233D4D;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li:first-child {
+  margin-left: 0;
+}
+.healthsafetyWrap .hsdoanddontTabs ul li:last-child {
+  margin-right: 0;
+}
+.healthsafetyWrap .hsdoanddontBody {
+  width: 100%;
+  float: left;
+  padding: 3rem 0 1rem 0;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontheader {
+  display: none;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection {
+  display: none;
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: stretch;
+  height: 100%;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div {
+  width: 33%;
+  float: left;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div:nth-child(2) {
+  width: 28%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul {
+  width: 100%;
+  float: left;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li {
+  list-style: disc;
+  margin: 0 0 1.2rem 1rem;
+  text-align: left;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li:first-child {
+  display: none;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div section {
+  width: 100%;
+  float: left;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div section img {
+  width: 100%;
+  float: left;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div section p {
+  margin-top: 1rem;
+  width: 100%;
+  float: left;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div section p span {
+  width: 50%;
+  float: left;
+  text-align: center;
+  color: #000000;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions {
+  width: 100%;
+  float: left;
+  padding-top: 2rem;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h2 {
+  width: 100%;
+  float: left;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #000000;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section {
+  width: 100%;
+  float: left;
+  padding: 1.5rem 1rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li {
+  list-style: none;
+  width: 13%;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li aside {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li aside img {
+  max-width: 55px;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li p {
+  margin-top: 1rem;
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h3 {
+  width: 100%;
+  float: left;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: #233D4D;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h3 a {
+  text-decoration: none;
+  color: #233D4D;
+  transition: all 0.4s ease-out;
+}
+.healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h3 a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1300px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap .healthsafetyfaqs div {
+    width: 50%;
+    padding: 2rem 8% 2rem 1.5rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div section {
+    width: 54%;
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1255px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap .healthsafetyAbout article {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .healthsafetyWrap .healthsafetyAbout article p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .healthsafetyWrap .healthsafetyAbout section {
+    width: 100%;
+    max-width: 290px;
+    float: left;
+    padding: 2rem;
+  }
+  .healthsafetyWrap .healthsafetyAbout section p {
+    font-size: 22px;
+  }
+  .healthsafetyWrap .healthsafetyAbout section h2 {
+    font-size: 28px;
+    margin: 0.7rem 0 0.6rem 0;
+  }
+  .healthsafetyWrap .healthsafetyAbout section h3 span {
+    font-size: 14px;
+  }
+  .healthsafetyWrap .emergencyheading {
+    padding: 3rem 0;
+    flex-wrap: wrap;
+  }
+  .healthsafetyWrap .emergencyheading h2 {
+    width: 100%;
+  }
+  .healthsafetyWrap .emergencyheading h2 span {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .healthsafetyWrap .emergencyheading h2 img {
+    margin-bottom: -4px;
+  }
+  .healthsafetyWrap .emergencyheading section {
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort {
+    width: 170px;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort select {
+    font-size: 16px;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch {
+    width: 220px;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text] {
+    font-size: 16px;
+  }
+  .healthsafetyWrap .emergencyAlphabetical ul {
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px 0 10px;
+    float: left;
+  }
+  .healthsafetyWrap .emergencyAlphabetical ul li {
+    padding: 5px;
+    margin: 2px 5px;
+    font-size: 18px;
+  }
+  .healthsafetyWrap .emergencycontactlist {
+    width: 100%;
+    float: left;
+    height: 360px;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li {
+    width: 32.3%;
+    margin: 10px 0.5%;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li h2 {
+    padding-top: 12px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li h2:after {
+    top: -4px;
+    height: 12px;
+    width: 12px;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .healthsafetyWrap .healthsafetyfaqs {
+    margin: 3rem 0;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div h2 {
+    margin-bottom: 1rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div h2 span {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div h2 img {
+    margin-bottom: -2px;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div aside {
+    padding: 1rem 2.5rem 1rem 0.5rem;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div aside:after {
+    right: 0.5rem;
+    font-size: 150%;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div aside.active {
+    border-bottom-color: #233D4D;
+    padding-left: 1rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div section {
+    position: static;
+    top: 0;
+    transform: none;
+    right: 0;
+    width: 100%;
+    max-height: auto;
+    padding: 1rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div section p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div h3 {
+    padding: 1rem 0 0 0.5rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div h3 a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .healthsafetyWrap .hsdoanddontTabs h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .healthsafetyWrap .hsdoanddontTabs ul li {
+    padding: 0 1rem 5px 1rem;
+    margin: 0;
+    font-size: 20px;
+    line-height: 44px;
+  }
+  .healthsafetyWrap .hsdoanddontBody {
+    width: 100%;
+    float: left;
+    padding: 3rem 0 1rem 0;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li {
+    margin: 0 0 1rem 1rem;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div section p span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section {
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul {
+    width: 160%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li {
+    list-style: none;
+    width: 13%;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li aside img {
+    max-width: 40px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap {
+    padding: 2rem 0 2rem 0;
+  }
+  .healthsafetyWrap .emergencycontactlist {
+    height: 360px;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li {
+    width: 46%;
+    margin: 10px 2%;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap {
+    padding: 2rem 0 3rem 0;
+  }
+  .healthsafetyWrap .emergencyheading {
+    padding: 3rem 0 1.5rem 0;
+  }
+  .healthsafetyWrap .emergencyAlphabetical {
+    margin-bottom: 1rem;
+  }
+  .healthsafetyWrap .hsdoanddontTabs ul {
+    display: none;
+  }
+  .healthsafetyWrap .hsdoanddontBody {
+    padding: 0;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    padding: 0.5rem 3rem 0.5rem 0;
+    border-bottom: solid 1px #707070;
+    color: #888888;
+    font-size: 20px;
+    line-height: 45px;
+    font-family: "Arial", Arial, sans-serif;
+    font-weight: 300;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader:after {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 0.6rem;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+    font-weight: 300;
+    line-height: 1;
+    color: #888888;
+    font-size: 28px;
+    transition: all 0.4s ease-out;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active {
+    border-bottom: none;
+    color: #233D4D;
+    font-family: "Arial-Bold", Arial, sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease-in;
+    user-select: none;
+    pointer-events: none;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active:after {
+    content: "\f106";
+    color: #233D4D;
+    transition: all 0.4s ease-in;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection {
+    margin-bottom: 2rem;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer {
+    padding: 0;
+    flex-direction: column;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div {
+    width: 100%;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div:nth-child(2) {
+    display: none;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li {
+    margin: 0 0 1rem 1rem;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li:first-child {
+    display: block;
+    list-style: none;
+    margin-left: 0;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li h2 {
+    font-family: "Arial-Bold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0.5rem;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul {
+    width: 220%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap .emergencycontactlist {
+    height: 520px;
+  }
+  .healthsafetyWrap .emergencycontactlist ul li {
+    width: 97%;
+    margin: 10px 1.5%;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .healthsafetyWrap .healthsafetyfaqs div {
+    padding: 1rem;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul {
+    width: 270%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* ######################## faqsWrap ######################## */
+  .healthsafetyWrap {
+    padding: 2rem 0 5rem 0;
+  }
+  .healthsafetyWrap .emergencyheading section {
+    position: relative;
+    overflow: hidden;
+    width: 96%;
+    margin: 0.5rem 2% 0 2%;
+    padding: 0;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort select {
+    width: 65%;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort span {
+    display: block;
+    font-size: 24px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsort span:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-bottom: solid 1px #969696;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 1px 0;
+    background: #FFFFFF;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text] {
+    border-bottom: none;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch span {
+    display: block;
+    margin-right: 1rem;
+    font-size: 22px;
+    color: #233D4D;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+  }
+  .healthsafetyWrap .emergencyheading section .emergencycontactsearch span:hover {
+    color: #000000;
+    transition: all 0.4s ease-in;
+  }
+  .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions section ul {
+    width: 350%;
+  }
+}
