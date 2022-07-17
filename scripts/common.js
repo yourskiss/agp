@@ -777,4 +777,32 @@ if($("#hsdoanddontTabs").length > 0 &&  $("#hsdoanddontBody").length > 0)
         setTimeout(function(){ $("#hsdoanddontTabs ul").removeClass('disabled'); }, 500);
     });
 }
+
+if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length > 0)
+{
+    $("#emergencyAlphabetical ul li").click(function()
+    {
+        let alphabetname = $(this).attr("data-name");
+
+        $("#emergencyAlphabetical ul li").removeClass("active");
+        $("#emergencycontactlist ul li").slideUp(500);
+        $("#emergencyAlphabetical ul").addClass("disabled")
+
+        $("#emergencyAlphabetical ul li[data-name='" + alphabetname + "']").addClass("active");
+        $("#emergencycontactlist ul li[data-id='" + alphabetname + "']").slideDown(500);
+        setTimeout(function(){ $("#emergencyAlphabetical ul").removeClass('disabled'); }, 500);
+    });
+}
+
+if($("#healthsafetyfaqs").length > 0)
+{
+    $("#healthsafetyfaqs div aside").click(function()
+    {
+        let faqname = $(this).attr("data-name");
+        $("#healthsafetyfaqs div aside").removeClass("active");
+        $("#healthsafetyfaqs div section").slideUp(500);
+        $("#healthsafetyfaqs div aside[data-name='" + faqname + "']").addClass("active");
+        $("#healthsafetyfaqs div section[data-id='" + faqname + "']").slideDown(500);
+    });
+}
 /* ############################ Health & Safety === end ############################ */
