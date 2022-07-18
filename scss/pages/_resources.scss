@@ -3,17 +3,27 @@
     width: 100%; float: left; padding:2rem 0 6rem 0; background: $wht1;
 }
 
+/* icons */ 
+.type_video, .type_blog, .type_ebook, .type_event, .type_pressrelease, .type_webinar { position: relative;}
+.type_video:before, .type_blog:before, .type_ebook:before, .type_event:before, .type_pressrelease:before, .type_webinar:before { content: ''; position: absolute; right: 0; top: 0; height: 30px; width: 30px; float:right; }      
+.type_video:before {background: url('../images/resources/icon_video.png') no-repeat center center;  background-size:100% 100%; }
+.type_blog:before {background: url('../images/resources/icon_blog.png') no-repeat center center;  background-size:100% 100%; }
+.type_ebook:before {background: url('../images/resources/icone_book.png') no-repeat center center;  background-size:100% 100%; }
+.type_event:before {background: url('../images/resources/icon_event.png') no-repeat center center;  background-size:100% 100%; }
+.type_pressrelease:before {background: url('../images/resources/icon_pressrelease.png') no-repeat center center;  background-size:100% 100%; }
+.type_webinar:before {background: url('../images/resources/icon_webinar.png') no-repeat center center;  background-size:100% 100%; }
+
 
 /* details == title */ 
 .resources_title { 
-    width: 100%; float: left; margin-bottom: 2rem;  
+    width: 100%; float: left; margin-bottom: 2.5rem;  
     h2 {
         width: 100%; float: left; text-align: left; 
         span {  display: inline;  color:$blk1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();  }
         img { display: inline; max-width: 100%; margin:0 0 -2px 0; }
     }
     p { 
-        width: 100%; float: left; margin: 0.7rem 0 0.9rem 0; text-align: left; color: $blk6;   font-size:20px; line-height: 28px; @include Arial();  
+        width: 100%; float: left; margin: 0.7rem 0 0.9rem 0; text-align: left; color: $blk6; font-size:20px; line-height: 28px; @include Arial();  
     }
     aside { 
         width: 100%; float: left; text-align: left; 
@@ -35,32 +45,19 @@
     }
 }
 
-/* details == webinar */ 
-.resources_webinar { 
-    width: 100%; float: left;
-    section { 
-        width: 100%; height: 620px; float: left; border: 0; margin: 0; padding:0; 
-        iframe { width: 100%; height: 100%; float: left; border: 0; margin: 0; padding:0; }
-    }
-    h2 { width: 100%; float: left; margin: 2rem 0 1rem 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
-    p { width: 100%; float: left; text-align: left; color: $blk2; font-size:18px; line-height: 28px; @include Arial();  }
-}
+
 
 
 /* details == related or featured post */ 
 .resources_related {
     width: 100%; float: left; 
-    &.featured { margin-top: 2rem; }
+    &.resources_featured { margin-top: 3rem; }
     h2 { width: 100%; float: left; margin:0 0 1.5rem 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
     ul { 
         width: 100%; float: left; padding:2rem; background:$wht7;
         li { 
             list-style: none; position: relative; float: left; width: 100%; padding:2.5rem 2.5rem 2rem 2rem; margin:0 0 1rem 0; background: $wht1;
             &:last-child { margin-bottom: 0px; }
-            &:before { content: ''; position: absolute; right: 0; top: 0; height: 30px; width: 30px; float:right; }      
-            &.typevideo {
-                &:before {background: url('../images/resources/icon4.png') no-repeat center center;  background-size:100% 100%; }
-            }
             h5 { width: 100%; float: left; text-align: left; color: $blk1; font-size:18px; line-height: 30px; @include aBold();  }
             p { 
                 width: 100%; float: left; margin-top: 0.7rem; text-align: left;  font-size:16px; line-height: 1.2; @include aBold(); 
@@ -76,6 +73,37 @@
         }
     }
 }
+
+
+
+
+
+/*  webinar */ 
+.resources_webinar { 
+    width: 100%; float: left;
+    section { 
+        width: 100%; height: 620px; float: left; border: 0; margin: 0; padding:0; 
+        iframe { width: 100%; height: 100%; float: left; border: 0; margin: 0; padding:0; }
+    }
+    h2 { width: 100%; float: left; margin: 2rem 0 1rem 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
+    p { width: 100%; float: left; text-align: left; color: $blk2; font-size:18px; line-height: 28px; @include Arial();  }
+}
+
+
+
+
+/*  blogpost */ 
+.resources_blogpost { 
+    width: 100%; float: left;
+    aside { 
+        width: 100%; float: left; margin: 0 0 1rem 0;
+        img {  width: 100%;  float: left; }
+    }
+    h2 { width: 100%; float: left; margin:0 0 0 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
+    p { width: 100%; float: left; margin:1rem 0;  text-align: left; color: $blk2; font-size:18px; line-height: 28px; @include Arial();  }
+    h4 { width: 100%; float: left; margin:1rem 0 0 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
+}
+
 
 
 
@@ -115,8 +143,9 @@
 
 @media only screen and (max-width:1255px) 
 {
- 
- 
+     
+ /* icons */ 
+.type_video:before, .type_blog:before, .type_ebook:before, .type_event:before, .type_pressrelease:before, .type_webinar:before { height: 28px; width: 28px;  }  
 
 
     /* details == title */ 
@@ -159,11 +188,24 @@
             padding:1rem;  
             li { 
                 padding:2rem 2rem 1rem 1rem; margin:0 0 1rem 0; 
-                &:before { height: 28px; width: 28px;  }      
+                
                 h5 { font-size:16px; line-height:26px; }
                 p { font-size:16px; line-height:1; }
             }
         }
+    }
+
+
+    /*  blogpost */ 
+    .resources_blogpost { 
+        width: 100%; float: left;
+        aside { 
+            width: 100%; float: left; margin: 0 0 1rem 0;
+            img {  width: 100%;  float: left; }
+        }
+        h2 {  font-size:18px; line-height: 26px;  }
+        p { font-size:16px; line-height: 26px; }
+        h4 {  font-size:18px; line-height: 26px;  }
     }
 
 
