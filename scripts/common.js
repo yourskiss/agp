@@ -821,3 +821,13 @@ if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length
     });
 }
 /* ############################ Health & Safety === end ############################ */
+
+
+
+/* ############################  user review comments === start ############################ */
+$(".replycomments").click(function()
+{
+    $(this).parent("h3").hide();
+    $(this).parent("h3").next(".resources_review_comments").show();
+});
+/* ############################ user review comments === end ############################ */

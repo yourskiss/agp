@@ -11563,6 +11563,195 @@ main {
   font-weight: bold;
 }
 
+/*  review */
+.resources_review {
+  width: 100%;
+  float: left;
+  margin-top: 4rem;
+}
+.resources_review .resources_review_header {
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #F0F0F0;
+}
+.resources_review .resources_review_header h2 {
+  text-align: left;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+.resources_review .resources_review_header p {
+  text-align: right;
+  font-size: 16px;
+  line-height: 45px;
+  color: #233D4D;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
+}
+.resources_review .resources_review_header p span {
+  margin-right: 0.7rem;
+}
+.resources_review .resources_review_header p a {
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+  color: #000000;
+}
+.resources_review .resources_review_header p a:hover {
+  transition: all 0.4s ease-in;
+  color: #F2662C;
+}
+.resources_review .resources_review_comments {
+  width: 100%;
+  float: left;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.resources_review .resources_review_comments aside {
+  width: 60px;
+  margin-right: 2rem;
+}
+.resources_review .resources_review_comments aside img {
+  width: 100%;
+  border-radius: 50%;
+}
+.resources_review .resources_review_comments article {
+  float: right;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #F0F0F0;
+}
+.resources_review .resources_review_comments article h2 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #8D8D8D;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_review .resources_review_comments article h2 span {
+  display: inline-block;
+}
+.resources_review .resources_review_comments article p {
+  width: 100%;
+  float: left;
+  margin: 0.2rem 0 0.5rem 0;
+  text-align: left;
+  color: #535353;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_review .resources_review_comments article h3 {
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+.resources_review .resources_review_comments article h3 span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #233D4D;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  transition: all 0.4s ease-out;
+}
+.resources_review .resources_review_comments article h3 span:hover {
+  transition: all 0.4s ease-in;
+  text-decoration: none;
+  color: #F2662C;
+}
+.resources_review .resources_review_comments section {
+  float: right;
+  width: 100%;
+}
+.resources_review .resources_review_comments section textarea {
+  width: 100%;
+  float: left;
+  padding: 1rem 1.5rem;
+  height: 120px;
+  outline: none;
+  border: none;
+  background-color: #F0F0F0;
+  text-align: left;
+  color: #233D4D;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  resize: none;
+}
+.resources_review .resources_review_comments section textarea::placeholder {
+  color: #233D4D;
+  opacity: 0.6;
+}
+.resources_review .resources_review_comments section textarea:-ms-input-placeholder {
+  color: #233D4D;
+  opacity: 0.6;
+}
+.resources_review .resources_review_comments section textarea::-ms-input-placeholder {
+  color: #233D4D;
+  opacity: 0.6;
+}
+.resources_review .resources_review_comments section .errorcomments {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 0.5rem;
+  text-align: left;
+  color: #F2662C;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_review .resources_review_comments section h6 {
+  width: 100%;
+  float: left;
+  margin-top: 0.7rem;
+  text-align: left;
+}
+.resources_review .resources_review_comments section h6 input[type=submit] {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 12px 25px;
+  border: none;
+  background: #F2662C;
+  color: #FFFFFF;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.resources_review .resources_review_comments section h6 input[type=submit]:hover {
+  transition: all 0.4s ease-in;
+  background: #000000;
+  color: #FFFFFF;
+}
+.resources_review .resources_review_comments:last-child article {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 @media only screen and (max-width: 1565px) {
   /* details == webinar */
   .resources_webinar section {
@@ -11685,6 +11874,40 @@ main {
     font-size: 18px;
     line-height: 26px;
   }
+  /*  review */
+  .resources_review {
+    margin-top: 3rem;
+  }
+  .resources_review .resources_review_header h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .resources_review .resources_review_header p {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .resources_review .resources_review_comments aside {
+    width: 30px;
+    margin-right: 1rem;
+  }
+  .resources_review .resources_review_comments article h2 {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .resources_review .resources_review_comments article p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .resources_review .resources_review_comments article h3 span {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .resources_review .resources_review_comments section textarea {
+    height: 100px;
+    padding: 0.7rem 1rem;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   /* ################## resourceswrap ################## */
@@ -11708,6 +11931,19 @@ main {
   /* details == webinar */
   .resources_webinar section {
     height: 310px;
+  }
+  /*  review */
+  .resources_review .resources_review_header {
+    flex-wrap: wrap;
+  }
+  .resources_review .resources_review_header h2 {
+    width: 100%;
+    line-height: 1.4;
+  }
+  .resources_review .resources_review_header p {
+    margin-top: 0.7rem;
+    width: 100%;
+    line-height: 1.4;
   }
 }
 @media only screen and (max-width: 599px) {
