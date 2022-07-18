@@ -1671,6 +1671,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 .breadcrumbs li {
@@ -11274,6 +11275,7 @@ main {
     width: 350%;
   }
 }
+/* ################## resourceswrap ################## */
 .resourceswrap {
   width: 100%;
   float: left;
@@ -11281,6 +11283,7 @@ main {
   background: #FFFFFF;
 }
 
+/* details == title */
 .resources_title {
   width: 100%;
   float: left;
@@ -11333,6 +11336,7 @@ main {
   color: #F2662C;
 }
 
+/* details == container left right */
 .resources_container {
   width: 100%;
   float: left;
@@ -11346,13 +11350,22 @@ main {
   float: right;
 }
 
+/* details == webinar */
 .resources_webinar {
   width: 100%;
   float: left;
 }
-.resources_webinar iframe {
+.resources_webinar section {
   width: 100%;
   height: 620px;
+  float: left;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.resources_webinar section iframe {
+  width: 100%;
+  height: 100%;
   float: left;
   border: 0;
   margin: 0;
@@ -11380,6 +11393,7 @@ main {
   font-weight: 300;
 }
 
+/* details == related or featured post */
 .resources_related {
   width: 100%;
   float: left;
@@ -11470,24 +11484,80 @@ main {
 }
 
 @media only screen and (max-width: 1565px) {
-  .resources_webinar iframe {
+  /* details == webinar */
+  .resources_webinar section {
     height: 495px;
   }
 }
 @media only screen and (max-width: 1300px) {
+  /* details == container left right */
   .resources_container .resources_container_left {
     width: 65%;
   }
   .resources_container .resources_container_right {
     width: 33%;
   }
-  .resources_webinar iframe {
+  /* details == webinar */
+  .resources_webinar section {
     height: 480px;
   }
 }
 @media only screen and (max-width: 1255px) {
-  .resources_webinar iframe {
+  /* details == title */
+  .resources_title {
+    margin-bottom: 1.5rem;
+  }
+  .resources_title h2 span {
+    font-size: 22px;
+    letter-spacing: 1.32px;
+    line-height: 36px;
+  }
+  .resources_title h2 img {
+    margin: 0 0 -2px 0;
+  }
+  .resources_title p {
+    margin: 0.5rem 0 0.7rem 0;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  .resources_title aside a {
+    font-size: 18px;
+    margin-right: 1rem;
+  }
+  /* details == container left right */
+  .resources_container {
+    width: 100%;
+    float: left;
+  }
+  .resources_container .resources_container_left {
+    width: 67%;
+    float: left;
+  }
+  .resources_container .resources_container_right {
+    width: 29%;
+    float: right;
+  }
+  /* details == webinar */
+  .resources_webinar section {
     height: 360px;
+  }
+  .resources_webinar h2 {
+    margin: 2rem 0 1rem 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .resources_webinar p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  /* details == related or featured post */
+  .resources_related {
+    width: 100%;
+    float: left;
+  }
+  .resources_related h2 {
+    font-size: 18px;
+    line-height: 21px;
   }
   .resources_related ul {
     padding: 1rem;
@@ -11496,8 +11566,25 @@ main {
     padding: 2rem 2rem 1rem 1rem;
     margin: 0 0 1rem 0;
   }
+  .resources_related ul li:before {
+    height: 28px;
+    width: 28px;
+  }
+  .resources_related ul li h5 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .resources_related ul li p {
+    font-size: 16px;
+    line-height: 1;
+  }
 }
 @media only screen and (max-width: 1023px) {
+  /* ################## resourceswrap ################## */
+  .resourceswrap {
+    padding-bottom: 3rem;
+  }
+  /* details == container left right */
   .resources_container .resources_container_left {
     width: 100%;
   }
@@ -11505,22 +11592,30 @@ main {
     width: 100%;
     margin-top: 3rem;
   }
-  .resources_webinar iframe {
+  /* details == webinar */
+  .resources_webinar section {
     height: 400px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .resources_webinar iframe {
+  /* details == webinar */
+  .resources_webinar section {
     height: 310px;
   }
 }
 @media only screen and (max-width: 599px) {
-  .resources_webinar iframe {
+  /* details == webinar */
+  .resources_webinar section {
     height: 250px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .resources_webinar iframe {
+  /* ################## resourceswrap ################## */
+  .resourceswrap {
+    padding-bottom: 6rem;
+  }
+  /* details == webinar */
+  .resources_webinar section {
     height: 190px;
   }
 }

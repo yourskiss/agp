@@ -1,7 +1,10 @@
+/* ################## resourceswrap ################## */
 .resourceswrap { 
     width: 100%; float: left; padding:2rem 0 6rem 0; background: $wht1;
 }
 
+
+/* details == title */ 
 .resources_title { 
     width: 100%; float: left; margin-bottom: 2rem;  
     h2 {
@@ -19,8 +22,9 @@
             &:hover {  @include inT(); color:$ong1; }
         }
     }
- 
 }
+
+/* details == container left right */ 
 .resources_container { 
     width: 100%; float: left;
     .resources_container_left { 
@@ -31,13 +35,19 @@
     }
 }
 
+/* details == webinar */ 
 .resources_webinar { 
     width: 100%; float: left;
-    iframe { width: 100%; height: 620px; float: left; border: 0; margin: 0; padding:0; }
+    section { 
+        width: 100%; height: 620px; float: left; border: 0; margin: 0; padding:0; 
+        iframe { width: 100%; height: 100%; float: left; border: 0; margin: 0; padding:0; }
+    }
     h2 { width: 100%; float: left; margin: 2rem 0 1rem 0; text-align: left; color: $blk1; font-size:22px; line-height: 26px; @include aBold();  }
     p { width: 100%; float: left; text-align: left; color: $blk2; font-size:18px; line-height: 28px; @include Arial();  }
 }
 
+
+/* details == related or featured post */ 
 .resources_related {
     width: 100%; float: left; 
     &.featured { margin-top: 2rem; }
@@ -65,7 +75,6 @@
             }
         }
     }
-
 }
 
 
@@ -75,9 +84,9 @@
 
 @media only screen and (max-width:1565px) 
 {
-
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 495px; }
+        section { height: 495px; }
     }
 
 }
@@ -86,7 +95,7 @@
 
 @media only screen and (max-width:1300px) 
 {
-
+    /* details == container left right */ 
     .resources_container { 
         .resources_container_left { 
             width: 65%; 
@@ -95,8 +104,10 @@
             width: 33%; 
         }
     }
+
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 480px; }
+        section { height: 480px; }
     }
 
 }
@@ -104,22 +115,68 @@
 
 @media only screen and (max-width:1255px) 
 {
+ 
+ 
 
-    .resources_webinar { 
-        iframe { height: 360px; }
-    }
 
-    .resources_related {
-        ul { 
-             padding:1rem;  
-            li { padding:2rem 2rem 1rem 1rem; margin:0 0 1rem 0;  }
+    /* details == title */ 
+    .resources_title { 
+        margin-bottom: 1.5rem;  
+        h2 {
+            span { font-size:22px; letter-spacing:1.32px; line-height: 36px; }
+            img { margin:0 0 -2px 0; }
         }
-    
+        p { margin: 0.5rem 0 0.7rem 0; font-size:17px; line-height: 28px;}
+        aside { 
+            a { font-size: 18px; margin-right: 1rem; }
+        }
     }
+
+    /* details == container left right */ 
+    .resources_container { 
+        width: 100%; float: left;
+        .resources_container_left { 
+            width: 67%; float: left; 
+        }
+        .resources_container_right { 
+            width: 29%; float: right; 
+        }
+    }
+
+    /* details == webinar */ 
+    .resources_webinar { 
+        section { height: 360px; }
+        h2 {  margin: 2rem 0 1rem 0; font-size:18px; line-height: 21px; }
+        p { font-size:16px; line-height: 26px;    }
+    }
+
+
+    /* details == related or featured post */ 
+    .resources_related {
+        width: 100%; float: left; 
+        h2 { font-size:18px; line-height: 21px; }
+        ul { 
+            padding:1rem;  
+            li { 
+                padding:2rem 2rem 1rem 1rem; margin:0 0 1rem 0; 
+                &:before { height: 28px; width: 28px;  }      
+                h5 { font-size:16px; line-height:26px; }
+                p { font-size:16px; line-height:1; }
+            }
+        }
+    }
+
+
+
 }
 
 @media only screen and (max-width:1023px) 
 {
+    /* ################## resourceswrap ################## */
+    .resourceswrap {  padding-bottom:3rem; }
+
+
+    /* details == container left right */ 
     .resources_container { 
         .resources_container_left { 
             width: 100%;  
@@ -129,9 +186,9 @@
         }
     }
 
-
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 400px; }
+        section { height: 400px; }
     }
 
 }
@@ -139,9 +196,9 @@
 @media only screen and (max-width:767px) 
 {
  
-
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 310px; }
+        section { height: 310px; }
     }
     
 }
@@ -150,9 +207,9 @@
 @media only screen and (max-width:599px) 
 {
  
-
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 250px; }
+        section { height: 250px; }
     }
     
 }
@@ -161,10 +218,12 @@
 
 @media only screen and (max-width:479px) 
 {
- 
-
+     /* ################## resourceswrap ################## */
+    .resourceswrap {  padding-bottom:6rem; }
+    
+    /* details == webinar */ 
     .resources_webinar { 
-        iframe { height: 190px; }
+        section { height: 190px; }
     }
     
 }
