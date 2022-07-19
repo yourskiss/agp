@@ -868,16 +868,24 @@ if($(".resources_pagination").length > 0)
     });
     $("#resources_pagination div ul li").click(function()
     {
-        $("#resources_pagination div ul").slideUp(300);
-        $("#resources_pagination div ul li").removeClass("active");
-        $(this).addClass("active");
-        var pagenumber = $(this).find("a").text();
-        $("#resources_pagination div h2").text(pagenumber);
+        if($(window).width() < 599)
+        {
+            $("#resources_pagination div ul").slideUp(300);
+            $("#resources_pagination div ul li").removeClass("active");
+            $(this).addClass("active");
+            var pagenumber = $(this).find("a").text();
+            $("#resources_pagination div h2").text(pagenumber);
+        }
+        
     });
 }
 $('.header, .banners, .wishtoconnect, .footer, .resources_about, .resources_filter, .resources_keywords,  .resources_list').click(function() // close on click body
 {     
-    $("#resources_pagination div ul").slideUp(300);
+    if($(window).width() < 599)
+    {
+        $("#resources_pagination div ul").slideUp(300);
+    }
+    
 });
 
 
