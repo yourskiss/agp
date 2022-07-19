@@ -176,7 +176,7 @@
 
 /*  filter */ 
 .resources_filter { 
-    width: 100%; float: left; margin:2rem 0 3rem 0;  @include fBS(); flex-direction: row-reverse;
+    width: 100%; float: left; margin:2rem 0 0 0;  @include fBS(); flex-direction: row-reverse;
     aside { 
         width: 280px; float:left;
         input[type='text'] { 
@@ -189,7 +189,7 @@
     section { 
         width: 800px; float: left; @include fBS();
             div { 
-                list-style: none; width: 24%; margin: 0 2% 0 0;
+                list-style: none; width: 24%; margin: 0 2% 0 0; position: relative;
                 &:last-child { width:22%; margin-right: 0; }
                 .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
                 .clearmsg { 
@@ -203,10 +203,11 @@
                         &:after { top:40%; transform: rotate(45deg); }
                     }
                 }
-                .rt_body { 
-                    display: none;
+                .rt_body {
+                    display: none; z-index: 2; position: absolute; left: 0; top: 35px; padding:0.5rem 1rem;  width: 100%; float: left; background:$wht1; box-shadow: 0px 3px 6px #00000010;
                     li { 
-                        list-style: none;
+                        list-style: none; margin:0.3rem 0;
+                        label { margin-left: 5px; text-align: left; color: $blk6; font-size: 16px; line-height: 1; @include Arial(); }
                     }
                 }
                 select {  
@@ -221,14 +222,32 @@
                     &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
                 }
             }
-    }
-    
-     
+    } 
 }
+
+
+
+
+/*  keywords */ 
+.resources_keywords { 
+    width: 100%; float: left; margin:1rem 0 0 0; 
+    ul {
+        width: 100%; float: left; background:$wht1;  
+        li { 
+            list-style: none; display: inline-block; margin:0 1rem 0 0; padding:0.6rem 1rem;  border: solid 1px $ong1; background: $wht1;  color: $ong1; font-size: 14px; line-height:18px; @include Arial(); 
+            span { margin-right: 5px;   }
+            i.fa {
+                 cursor: pointer;  color: $ong1; @include outT();
+                 &:hover { color: $blk1;  @include inT();  }
+             }
+        }
+    }
+}
+ 
 
 /*  list */ 
 .resources_list { 
-    width: 100%; float: left;   
+    width: 100%; float: left;  margin:2rem 0 0 0;    
     ul {
         width: 100%; float: left; @include fBS(); flex-wrap: wrap;
         li { 
@@ -268,22 +287,33 @@
 
 /*  pagination */ 
 .resources_pagination { 
-    width: 100%; float: left; margin:3rem 0 0 0; 
-    ul { 
-        @include fCC(); width:100%; float: left;
-        li { 
-            list-style: none; background: $wht3; margin:0; padding:8px 16px; font-size:24px; @include aBold();
-            &:last-child { background: $wht1;  font-size:18px; }
-            &:first-child { background: $wht1; font-size:18px; }
-            a { 
-                text-decoration: none; color:$blk4; @include outT();
-                i.fa { padding: 0 5px; }
-                &:hover { color: $ong1; @include inT(); }
-                &.active {  color: $ong1;  user-select: none; pointer-events: none; }
-                
+    width: 100%; float: left; margin:2rem 0 0 0;  @include fCC();
+    p { 
+        background: $wht1;  padding:8px 16px;  font-size:18px; @include aBold();
+        a { 
+            text-decoration: none; color:$blk4; @include outT();
+            i.fa { padding: 0 5px; }
+            &:hover { color: $ong1; @include inT(); }
+        }
+    }
+    div { 
+        h2 { display: none; }
+        ul { 
+            @include fCC(); 
+            li { 
+                list-style: none; background: $wht3; margin:0; padding:8px 16px; font-size:24px; @include aBold();
+                a { 
+                    text-decoration: none; color:$blk4; @include outT();
+                    &:hover { color: $ong1; @include inT(); }
+                    
+                }
+                &.active { 
+                    a  {color: $ong1; user-select: none; pointer-events: none;  }
+                }
             }
         }
     }
+    
 }
 
 
@@ -315,6 +345,80 @@
     .resources_webinar { 
         section { height: 480px; }
     }
+
+
+
+
+    /*  about */ 
+    .resources_about { 
+        p { font-size: 16px; line-height: 28px;  }
+    }
+
+    /*  filter */ 
+    .resources_filter { 
+        aside { 
+            width: 220px; 
+            input[type='text'] { font-size: 16px;  }
+        }
+        section { 
+            width:700px;  
+                div { 
+                    .clearmsg { font-size: 16px; line-height: 18px;  }
+                    .rt_head {  font-size: 16px;  
+                        &:after {padding: 2px; }
+                    }
+                    .rt_body { 
+                        top: 35px; 
+                        li { 
+                            label {font-size: 16px;}
+                        }
+                    }
+                    select {  font-size: 16px; }
+                }
+        } 
+    }
+
+
+
+
+    /*  keywords */ 
+    .resources_keywords { 
+        ul {
+            li { margin:0 0.5rem 0 0; padding:0.5rem;  font-size: 12px; line-height:16px; }
+        }
+    }
+    
+
+    /*  list */ 
+    .resources_list { 
+        ul {
+            li { 
+                width: 31.4%; margin:1rem 0.7%;  
+                section { 
+                    padding:1.5rem;
+                    h4 { font-size: 16px; line-height: 18px;  }
+                    h3{ font-size: 18px; line-height: 26px; }
+                    p { font-size: 16px; line-height: 24px; }
+                    h5 { 
+                        a { font-size: 16px; line-height: 18px;}
+                        span { font-size: 20px; }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*  pagination */ 
+    .resources_pagination { 
+        p { padding:6px 12px; }
+        div { 
+            ul { 
+                li { padding:6px 12px; font-size:22px; }
+            }
+        }
+    }
+
 
 }
 
@@ -434,7 +538,63 @@
         section { height: 400px; }
     }
 
+
+
+
+    
+
+
+    /*  filter */ 
+    .resources_filter { 
+        flex-wrap: wrap;
+        aside { 
+            width: 100%;  margin-bottom: 1rem;
+        }
+        section { 
+            width: 100%; flex-wrap: wrap; justify-content:space-between;    
+                div { 
+                    width: 48%; margin: 0;
+                    &:last-child { width:48%; }
+                    &:nth-child(1) { margin-bottom: 1rem; }
+                    &:nth-child(2) { margin-bottom: 1rem; }
+                    .rt_body { 
+                        top: 35px; 
+                        li { 
+                            label {font-size: 16px;}
+                        }
+                    }
+                    select {  font-size: 16px; }
+                }
+        } 
+    }
+
+    /*  keywords */ 
+    .resources_keywords { 
+        ul {
+            li { margin:0.1rem;  }
+        }
+    }
+
+
+    
+
+
+    /*  list */ 
+    .resources_list { 
+        ul {
+            li { 
+                width: 47%; margin: 1rem 1.5%;
+                section { padding:1rem;}
+            }
+        }
+    }
+
+
+
+
 }
+
+
 
 @media only screen and (max-width:767px) 
 {
@@ -464,6 +624,37 @@
     .resources_webinar { 
         section { height: 250px; }
     }
+
+
+
+    /*  pagination */ 
+    .resources_pagination { 
+        div { 
+            position: relative; width:80px; 
+            h2 { 
+                display: block; width: 100%; float: left; background:$wht3; position: relative; padding:7px 0; margin:0; cursor: pointer; font-size: 24px; @include aBold(); color: $blk2; cursor: pointer; text-align: center;
+                &:after {content: ""; position: absolute;right:9px; top: 40%;transform: rotate(-135deg); padding: 2.5px; border-left: 2px solid $blk3; border-top: 2px solid $blk3; }
+            }
+            ul { 
+                display: none; position: absolute; right: 0; top: 42px; width: 100%; height:120px; float:left; padding:0.2rem 0; border-top: solid 1px $wht6; overflow: hidden; overflow-y: scroll; background:$wht3; flex-direction: column;
+                li { 
+                    width: 100%; float:left; text-align: center; padding: 0.3rem 0; 
+                }
+            }
+        } 
+    }
+
+
+    /*  list */ 
+    .resources_list { 
+        ul {
+            justify-content: center;
+            li { 
+                width: 98%; margin:0.5rem 0;
+                section { padding:1rem;}
+            }
+        }
+    }
     
 }
 
@@ -477,6 +668,26 @@
     /* details == webinar */ 
     .resources_webinar { 
         section { height: 190px; }
+    }
+
+
+    /*  filter */ 
+    .resources_filter { 
+        section {   
+                div { 
+                    width: 100%; margin-bottom: 1rem;
+                    &:last-child { width:100%; }
+                    .rt_body { 
+                        top: 35px; 
+                        li { 
+                            label {font-size: 16px;}
+                        }
+                    }
+                    select {  font-size: 16px; }
+                    input[type=submit], input[type=button] { float: left;  width: 50%; }
+                    .clearmsg { clear: none;float: left;margin-left: 2rem;}
+                }
+        } 
     }
     
 }

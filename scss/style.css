@@ -1729,7 +1729,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .quicklink {
@@ -1979,7 +1979,7 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   .quicklinkBG {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
   }
   .quicklink {
     display: none;
@@ -2092,7 +2092,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .mobilemenu {
@@ -11767,7 +11767,7 @@ main {
 .resources_filter {
   width: 100%;
   float: left;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -11816,6 +11816,7 @@ main {
   list-style: none;
   width: 24%;
   margin: 0 2% 0 0;
+  position: relative;
 }
 .resources_filter section div:last-child {
   width: 22%;
@@ -11888,9 +11889,28 @@ main {
 }
 .resources_filter section div .rt_body {
   display: none;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  float: left;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.062745098);
 }
 .resources_filter section div .rt_body li {
   list-style: none;
+  margin: 0.3rem 0;
+}
+.resources_filter section div .rt_body li label {
+  margin-left: 5px;
+  text-align: left;
+  color: #535353;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
 }
 .resources_filter section div select {
   width: 100%;
@@ -11940,10 +11960,48 @@ main {
   color: #FFFFFF;
 }
 
+/*  keywords */
+.resources_keywords {
+  width: 100%;
+  float: left;
+  margin: 1rem 0 0 0;
+}
+.resources_keywords ul {
+  width: 100%;
+  float: left;
+  background: #FFFFFF;
+}
+.resources_keywords ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  padding: 0.6rem 1rem;
+  border: solid 1px #F2662C;
+  background: #FFFFFF;
+  color: #F2662C;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_keywords ul li span {
+  margin-right: 5px;
+}
+.resources_keywords ul li i.fa {
+  cursor: pointer;
+  color: #F2662C;
+  transition: all 0.4s ease-out;
+}
+.resources_keywords ul li i.fa:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+
 /*  list */
 .resources_list {
   width: 100%;
   float: left;
+  margin: 2rem 0 0 0;
 }
 .resources_list ul {
   width: 100%;
@@ -12057,16 +12115,39 @@ main {
 .resources_pagination {
   width: 100%;
   float: left;
-  margin: 3rem 0 0 0;
-}
-.resources_pagination ul {
+  margin: 2rem 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  float: left;
 }
-.resources_pagination ul li {
+.resources_pagination p {
+  background: #FFFFFF;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.resources_pagination p a {
+  text-decoration: none;
+  color: #3E3E3E;
+  transition: all 0.4s ease-out;
+}
+.resources_pagination p a i.fa {
+  padding: 0 5px;
+}
+.resources_pagination p a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.resources_pagination div h2 {
+  display: none;
+}
+.resources_pagination div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resources_pagination div ul li {
   list-style: none;
   background: #F4F7F8;
   margin: 0;
@@ -12075,27 +12156,16 @@ main {
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
 }
-.resources_pagination ul li:last-child {
-  background: #FFFFFF;
-  font-size: 18px;
-}
-.resources_pagination ul li:first-child {
-  background: #FFFFFF;
-  font-size: 18px;
-}
-.resources_pagination ul li a {
+.resources_pagination div ul li a {
   text-decoration: none;
   color: #3E3E3E;
   transition: all 0.4s ease-out;
 }
-.resources_pagination ul li a i.fa {
-  padding: 0 5px;
-}
-.resources_pagination ul li a:hover {
+.resources_pagination div ul li a:hover {
   color: #F2662C;
   transition: all 0.4s ease-in;
 }
-.resources_pagination ul li a.active {
+.resources_pagination div ul li.active a {
   color: #F2662C;
   user-select: none;
   pointer-events: none;
@@ -12118,6 +12188,82 @@ main {
   /* details == webinar */
   .resources_webinar section {
     height: 480px;
+  }
+  /*  about */
+  .resources_about p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  /*  filter */
+  .resources_filter aside {
+    width: 220px;
+  }
+  .resources_filter aside input[type=text] {
+    font-size: 16px;
+  }
+  .resources_filter section {
+    width: 700px;
+  }
+  .resources_filter section div .clearmsg {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .resources_filter section div .rt_head {
+    font-size: 16px;
+  }
+  .resources_filter section div .rt_head:after {
+    padding: 2px;
+  }
+  .resources_filter section div .rt_body {
+    top: 35px;
+  }
+  .resources_filter section div .rt_body li label {
+    font-size: 16px;
+  }
+  .resources_filter section div select {
+    font-size: 16px;
+  }
+  /*  keywords */
+  .resources_keywords ul li {
+    margin: 0 0.5rem 0 0;
+    padding: 0.5rem;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /*  list */
+  .resources_list ul li {
+    width: 31.4%;
+    margin: 1rem 0.7%;
+  }
+  .resources_list ul li section {
+    padding: 1.5rem;
+  }
+  .resources_list ul li section h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .resources_list ul li section h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .resources_list ul li section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .resources_list ul li section h5 a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .resources_list ul li section h5 span {
+    font-size: 20px;
+  }
+  /*  pagination */
+  .resources_pagination p {
+    padding: 6px 12px;
+  }
+  .resources_pagination div ul li {
+    padding: 6px 12px;
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 1255px) {
@@ -12275,6 +12421,53 @@ main {
   .resources_webinar section {
     height: 400px;
   }
+  /*  filter */
+  .resources_filter {
+    flex-wrap: wrap;
+  }
+  .resources_filter aside {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .resources_filter section {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .resources_filter section div {
+    width: 48%;
+    margin: 0;
+  }
+  .resources_filter section div:last-child {
+    width: 48%;
+  }
+  .resources_filter section div:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+  .resources_filter section div:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+  .resources_filter section div .rt_body {
+    top: 35px;
+  }
+  .resources_filter section div .rt_body li label {
+    font-size: 16px;
+  }
+  .resources_filter section div select {
+    font-size: 16px;
+  }
+  /*  keywords */
+  .resources_keywords ul li {
+    margin: 0.1rem;
+  }
+  /*  list */
+  .resources_list ul li {
+    width: 47%;
+    margin: 1rem 1.5%;
+  }
+  .resources_list ul li section {
+    padding: 1rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* details == webinar */
@@ -12300,6 +12493,69 @@ main {
   .resources_webinar section {
     height: 250px;
   }
+  /*  pagination */
+  .resources_pagination div {
+    position: relative;
+    width: 80px;
+  }
+  .resources_pagination div h2 {
+    display: block;
+    width: 100%;
+    float: left;
+    background: #F4F7F8;
+    position: relative;
+    padding: 7px 0;
+    margin: 0;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: "Arial-Bold", Arial, sans-serif;
+    font-weight: bold;
+    color: #3C3C3C;
+    cursor: pointer;
+    text-align: center;
+  }
+  .resources_pagination div h2:after {
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 40%;
+    transform: rotate(-135deg);
+    padding: 2.5px;
+    border-left: 2px solid #3D3D3D;
+    border-top: 2px solid #3D3D3D;
+  }
+  .resources_pagination div ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 100%;
+    height: 120px;
+    float: left;
+    padding: 0.2rem 0;
+    border-top: solid 1px #FAFAFA;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #F4F7F8;
+    flex-direction: column;
+  }
+  .resources_pagination div ul li {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0.3rem 0;
+  }
+  /*  list */
+  .resources_list ul {
+    justify-content: center;
+  }
+  .resources_list ul li {
+    width: 98%;
+    margin: 0.5rem 0;
+  }
+  .resources_list ul li section {
+    padding: 1rem;
+  }
 }
 @media only screen and (max-width: 479px) {
   /* ################## resourceswrap ################## */
@@ -12309,5 +12565,31 @@ main {
   /* details == webinar */
   .resources_webinar section {
     height: 190px;
+  }
+  /*  filter */
+  .resources_filter section div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .resources_filter section div:last-child {
+    width: 100%;
+  }
+  .resources_filter section div .rt_body {
+    top: 35px;
+  }
+  .resources_filter section div .rt_body li label {
+    font-size: 16px;
+  }
+  .resources_filter section div select {
+    font-size: 16px;
+  }
+  .resources_filter section div input[type=submit], .resources_filter section div input[type=button] {
+    float: left;
+    width: 50%;
+  }
+  .resources_filter section div .clearmsg {
+    clear: none;
+    float: left;
+    margin-left: 2rem;
   }
 }
