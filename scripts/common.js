@@ -825,9 +825,41 @@ if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length
 
 
 /* ############################  user review comments === start ############################ */
-$(".replycomments").click(function()
+if($(".replycomments").length > 0)
 {
-    $(this).parent("h3").hide();
-    $(this).parent("h3").next(".resources_review_comments").show();
-});
+    $(".replycomments").click(function()
+    {
+        $(this).parent("h3").hide();
+        $(this).parent("h3").next(".resources_review_comments").show();
+    });
+}
 /* ############################ user review comments === end ############################ */
+
+
+/* ############################  resources === start ############################ */
+if($(".resources_filter").length > 0)
+{
+    $(".rt_head").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $(this).removeClass("active");
+            $(this).next(".rt_body").slideUp(300);
+        }
+        else
+        {
+            $(this).addClass("active");
+            $(this).next(".rt_body").slideDown(300);
+        }
+    });
+        
+
+    $('.header, .banners, .wishtoconnect, .footer, .resources_about, .resources_list, .resources_pagination').click(function() // close on click body
+    {     
+        $(".rt_head").removeClass("active");
+        $(".rt_body").slideUp(300);
+    });
+
+ }
+/* ############################ resources === end ############################ */
+

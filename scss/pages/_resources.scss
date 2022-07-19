@@ -121,7 +121,6 @@
             }
         }
     }
- 
     .resources_review_comments { 
         width: 100%; float: left; margin:1rem 0; @include fBS();  
         aside { 
@@ -167,6 +166,125 @@
 }
 
 
+
+/*  about */ 
+.resources_about { 
+    width: 100%; float: left; 
+    p { width: 100%; float: left;  text-align: left; font-size: 18px; line-height: 28px;  color:$blk2; @include Arial(); }
+}
+
+
+/*  filter */ 
+.resources_filter { 
+    width: 100%; float: left; margin:2rem 0 3rem 0;  @include fBS(); flex-direction: row-reverse;
+    aside { 
+        width: 280px; float:left;
+        input[type='text'] { 
+            background:transparent url('../Images/search-blue.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  border-bottom: solid 1px $blk7;  outline:none; padding:0.5rem 0.5rem; font-size: 18px; line-height: 1; color:$blu1; @include Arial();
+            &::placeholder { color: $blk7; opacity: 1; }      
+            &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+            &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+        }
+    }
+    section { 
+        width: 800px; float: left; @include fBS();
+            div { 
+                list-style: none; width: 24%; margin: 0 2% 0 0;
+                &:last-child { width:22%; margin-right: 0; }
+                .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
+                .clearmsg { 
+                    margin-top:0.7rem; float: right; clear: both; text-decoration: underline; cursor: pointer; font-size: 16px; line-height: 21px; color:$blu1; @include Arial(); text-align: right;  @include outT(); 
+                    &:hover { color: $ong1; text-decoration: underline; @include inT(); } 
+                }
+                .rt_head { position: relative; width: 100%; float: left; padding:0.5rem;  background:transparent; outline: none; border:none; border-bottom: solid 1px $blk7; text-align: left; font-size: 16px;  line-height: 1.2; color:$blk6; @include Arial(); text-decoration: none; cursor: pointer;  
+                    &:after {content: "";position: absolute;right: 5px;top: 35%;transform: rotate(-135deg); padding: 2.5px; border-left: 2px solid $blk3; border-top: 2px solid $blk3; }
+                    &.active { 
+                        border-bottom-color: $wht1;
+                        &:after { top:40%; transform: rotate(45deg); }
+                    }
+                }
+                .rt_body { 
+                    display: none;
+                    li { 
+                        list-style: none;
+                    }
+                }
+                select {  
+                    width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk7; text-align: left; font-size: 16px;  line-height: 1.2; color:$blk6; @include Arial(); 
+                    option { 
+                        color: $blk1;      
+                        &:disabled { user-select: none; pointer-events: none; }
+                    }
+                }
+                input[type='submit'], input[type='button'] { 
+                    display: inline-block; width:100%; text-align: center; text-decoration: none; @include outT(); padding:10px 0; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:14px; letter-spacing: 0.35px; line-height: 1.2; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                    &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                }
+            }
+    }
+    
+     
+}
+
+/*  list */ 
+.resources_list { 
+    width: 100%; float: left;   
+    ul {
+        width: 100%; float: left; @include fBS(); flex-wrap: wrap;
+        li { 
+            list-style: none; width: 32.1%; margin:1rem .6%; float: left;  align-self: stretch;   background:$wht1; box-shadow: 0px 0px 6px #00000014;
+            aside { 
+                width: 100%; float: left; line-height: 0;
+                img { width: 100%; }
+            }
+            section { 
+                width: 100%; float: left; padding:2rem;
+                h4 { 
+                    width: 100%; float: left; margin-bottom:0.5rem; text-align: left; font-size: 16px; line-height: 18px; color: $blk7; @include Arial();
+                    span { display: inline-block; }
+                }
+                h3{ width: 100%; float: left; margin-bottom:0.5rem; text-align: left; font-size: 18px; line-height: 30px; color: $blk1; @include aBold(); }
+                p { width: 100%; float: left;  margin-bottom:1rem; text-align: left; font-size: 16px; line-height: 24px; color: $blk2; @include Arial(); }
+                h5 { 
+                    width: 100%; float: left; @include fBC();
+                    a { 
+                        text-decoration: none; color: $blu1; @include outT(); font-size: 16px; line-height: 18px; @include aBold();
+                        i.fa { padding:0 5px; color: $blu1;  @include outT(); }
+                        &:hover { 
+                            color: $ong1; @include inT(); 
+                            i.fa { padding:0 0 0 10px; color: $ong1; @include inT(); }
+                        }
+                    }
+                    span { 
+                        color: $blu1;  @include outT(); cursor: pointer; font-size: 20px; line-height: 1;
+                        &:hover { color: $ong1; @include inT(); }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*  pagination */ 
+.resources_pagination { 
+    width: 100%; float: left; margin:3rem 0 0 0; 
+    ul { 
+        @include fCC(); width:100%; float: left;
+        li { 
+            list-style: none; background: $wht3; margin:0; padding:8px 16px; font-size:24px; @include aBold();
+            &:last-child { background: $wht1;  font-size:18px; }
+            &:first-child { background: $wht1; font-size:18px; }
+            a { 
+                text-decoration: none; color:$blk4; @include outT();
+                i.fa { padding: 0 5px; }
+                &:hover { color: $ong1; @include inT(); }
+                &.active {  color: $ong1;  user-select: none; pointer-events: none; }
+                
+            }
+        }
+    }
+}
 
 
 

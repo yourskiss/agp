@@ -8339,7 +8339,6 @@ main {
   color: #707070;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 300;
-  opacity: 0.9;
 }
 .contactWrap .contactContainer .contactForm ul li select option {
   color: #000000;
@@ -8448,7 +8447,7 @@ main {
   float: left;
 }
 .adresswrap .adresscontainer .adressmap {
-  z-index: 2;
+  z-index: 1;
   position: relative;
   width: 74%;
   float: right;
@@ -8457,15 +8456,11 @@ main {
   overflow: hidden;
 }
 .adresswrap .adresscontainer .adressmap .contactusmapmyindia {
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
 }
 .adresswrap .adresscontainer .adressmap .contactusmapmyindia .mapinfo {
   padding: 3px;
@@ -9039,7 +9034,6 @@ main {
   color: #707070;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 300;
-  opacity: 0.9;
 }
 .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select option {
   color: #000000;
@@ -9794,7 +9788,6 @@ main {
   color: #707070;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 300;
-  opacity: 0.9;
 }
 .cngstationWrap .cngstation .cngstationfilter ul li select option {
   color: #000000;
@@ -9987,7 +9980,7 @@ main {
   transition: all 0.4s ease-in;
 }
 .cngstationWrap .cngstationmap {
-  z-index: 2;
+  z-index: 1;
   position: relative;
   width: 70%;
   float: left;
@@ -9997,7 +9990,9 @@ main {
 .cngstationWrap .cngstationmap .cngstationmapmyindia {
   width: 100%;
   height: 100%;
-  float: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 .cngstationWrap .cngstationmap .mapinfo {
   padding: 3px;
@@ -11750,6 +11745,360 @@ main {
 .resources_review .resources_review_comments:last-child article {
   padding-bottom: 0;
   border-bottom: none;
+}
+
+/*  about */
+.resources_about {
+  width: 100%;
+  float: left;
+}
+.resources_about p {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+
+/*  filter */
+.resources_filter {
+  width: 100%;
+  float: left;
+  margin: 2rem 0 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+.resources_filter aside {
+  width: 280px;
+  float: left;
+}
+.resources_filter aside input[type=text] {
+  background: transparent url("../Images/search-blue.png") no-repeat;
+  background-position: right 8px top 50%;
+  margin: 0;
+  width: 100%;
+  float: right;
+  border: none;
+  border-bottom: solid 1px #707070;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 18px;
+  line-height: 1;
+  color: #233D4D;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_filter aside input[type=text]::placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.resources_filter aside input[type=text]:-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.resources_filter aside input[type=text]::-ms-input-placeholder {
+  color: #707070;
+  opacity: 1;
+}
+.resources_filter section {
+  width: 800px;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.resources_filter section div {
+  list-style: none;
+  width: 24%;
+  margin: 0 2% 0 0;
+}
+.resources_filter section div:last-child {
+  width: 22%;
+  margin-right: 0;
+}
+.resources_filter section div .erromsg {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #F2662C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+.resources_filter section div .clearmsg {
+  margin-top: 0.7rem;
+  float: right;
+  clear: both;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
+  color: #233D4D;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  text-align: right;
+  transition: all 0.4s ease-out;
+}
+.resources_filter section div .clearmsg:hover {
+  color: #F2662C;
+  text-decoration: underline;
+  transition: all 0.4s ease-in;
+}
+.resources_filter section div .rt_head {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #707070;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #535353;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+}
+.resources_filter section div .rt_head:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 35%;
+  transform: rotate(-135deg);
+  padding: 2.5px;
+  border-left: 2px solid #3D3D3D;
+  border-top: 2px solid #3D3D3D;
+}
+.resources_filter section div .rt_head.active {
+  border-bottom-color: #FFFFFF;
+}
+.resources_filter section div .rt_head.active:after {
+  top: 40%;
+  transform: rotate(45deg);
+}
+.resources_filter section div .rt_body {
+  display: none;
+}
+.resources_filter section div .rt_body li {
+  list-style: none;
+}
+.resources_filter section div select {
+  width: 100%;
+  float: left;
+  padding: 0.5rem 0;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #707070;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #535353;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_filter section div select option {
+  color: #000000;
+}
+.resources_filter section div select option:disabled {
+  user-select: none;
+  pointer-events: none;
+}
+.resources_filter section div input[type=submit], .resources_filter section div input[type=button] {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  padding: 10px 0;
+  border: none;
+  background-color: #F2662C;
+  color: #FFFFFF;
+  font-family: "Eurostile-Bold", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 1.2;
+  box-shadow: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.resources_filter section div input[type=submit]:hover, .resources_filter section div input[type=button]:hover {
+  transition: all 0.4s ease-in;
+  background-color: #F2662C;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+  color: #FFFFFF;
+}
+
+/*  list */
+.resources_list {
+  width: 100%;
+  float: left;
+}
+.resources_list ul {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.resources_list ul li {
+  list-style: none;
+  width: 32.1%;
+  margin: 1rem 0.6%;
+  float: left;
+  align-self: stretch;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.0784313725);
+}
+.resources_list ul li aside {
+  width: 100%;
+  float: left;
+  line-height: 0;
+}
+.resources_list ul li aside img {
+  width: 100%;
+}
+.resources_list ul li section {
+  width: 100%;
+  float: left;
+  padding: 2rem;
+}
+.resources_list ul li section h4 {
+  width: 100%;
+  float: left;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+  color: #707070;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_list ul li section h4 span {
+  display: inline-block;
+}
+.resources_list ul li section h3 {
+  width: 100%;
+  float: left;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.resources_list ul li section p {
+  width: 100%;
+  float: left;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3C3C3C;
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 300;
+}
+.resources_list ul li section h5 {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resources_list ul li section h5 a {
+  text-decoration: none;
+  color: #233D4D;
+  transition: all 0.4s ease-out;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.resources_list ul li section h5 a i.fa {
+  padding: 0 5px;
+  color: #233D4D;
+  transition: all 0.4s ease-out;
+}
+.resources_list ul li section h5 a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.resources_list ul li section h5 a:hover i.fa {
+  padding: 0 0 0 10px;
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.resources_list ul li section h5 span {
+  color: #233D4D;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+.resources_list ul li section h5 span:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+
+/*  pagination */
+.resources_pagination {
+  width: 100%;
+  float: left;
+  margin: 3rem 0 0 0;
+}
+.resources_pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  float: left;
+}
+.resources_pagination ul li {
+  list-style: none;
+  background: #F4F7F8;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 24px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+.resources_pagination ul li:last-child {
+  background: #FFFFFF;
+  font-size: 18px;
+}
+.resources_pagination ul li:first-child {
+  background: #FFFFFF;
+  font-size: 18px;
+}
+.resources_pagination ul li a {
+  text-decoration: none;
+  color: #3E3E3E;
+  transition: all 0.4s ease-out;
+}
+.resources_pagination ul li a i.fa {
+  padding: 0 5px;
+}
+.resources_pagination ul li a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
+}
+.resources_pagination ul li a.active {
+  color: #F2662C;
+  user-select: none;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 1565px) {

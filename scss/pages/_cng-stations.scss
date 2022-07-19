@@ -39,7 +39,7 @@
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); opacity:0.9;
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); 
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
@@ -97,8 +97,8 @@
 
 
     .cngstationmap {
-        z-index: 2; position: relative; width: 70%; float: left; background-color:$blu1; height:845px;  
-        .cngstationmapmyindia { width: 100%; height: 100%; float: left; }
+        z-index:1; position: relative; width: 70%; float: left; background-color:$blu1; height:845px;  
+        .cngstationmapmyindia { width: 100%; height: 100%; margin: 0; padding: 0; border: 0;  }
         .mapinfo { 
             padding:3px; 
             h5 { font-size: 14px; color:$blk1; @include aBold();  }
