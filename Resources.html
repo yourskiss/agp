@@ -217,8 +217,8 @@
                         <span class="erromsg">Select product type</span>
                     </div>
                     <div>
-                        <select id="sortby" name="sortby">
-                            <option value="0" selected disabled>Sort by</option>
+                        <select id="resourcesortby" name="resourcesortby">
+                            <option value="0" selected>Sort by</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -227,11 +227,23 @@
                     </div>
                     <div>
                         <input type="submit" id="NARROWRESULTS" name="NARROWRESULTS" value="NARROW RESULTS">
-                        <span class="clearmsg">Clear</span>
+                        <span class="clearmsg" onclick="clearresourcefilter();">Clear</span>
                     </div>
             </section>
         </div>
         <!-- resources_filter END -->
+
+
+        <!-- resources_keywords START -->
+        <div class="resources_keywords">
+            <ul>
+                <li><span>Blog</span> <i class="fa fa-times" aria-hidden="true"></i></li>
+                <li><span>Event</span> <i class="fa fa-times" aria-hidden="true"></i></li>
+                <li><span>Press release</span> <i class="fa fa-times" aria-hidden="true"></i></li>
+                <li><span>Video</span> <i class="fa fa-times" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <!-- resources_keywords END -->
 
 
 

@@ -852,14 +852,21 @@ if($(".resources_filter").length > 0)
             $(this).next(".rt_body").slideDown(300);
         }
     });
-        
-
     $('.header, .banners, .wishtoconnect, .footer, .resources_about, .resources_list, .resources_pagination').click(function() // close on click body
     {     
         $(".rt_head").removeClass("active");
         $(".rt_body").slideUp(300);
     });
+ }
 
+ function clearresourcefilter()
+ {
+    $("#resourcesortby option:selected").prop("selected", false);
+    $("#resourcesortby option:first").prop("selected", "selected");
+ 
+    $(".rt_body li input[type='checkbox']").prop('checked',false);
+    $(".rt_head").removeClass("active");
+    $(".rt_body").slideUp(300);
  }
 /* ############################ resources === end ############################ */
 
