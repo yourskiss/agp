@@ -836,11 +836,14 @@ if($(".replycomments").length > 0)
 /* ############################ user review comments === end ############################ */
 
 
+
 /* ############################  resources === start ############################ */
 if($(".resources_filter").length > 0)
 {
-    $(".rt_head").click(function()
+    $(".rt_head").click(function(e)
     {
+        e.preventDefault();
+        e.stopPropagation();
         if($(this).hasClass("active"))
         {
             $(this).removeClass("active");
@@ -852,41 +855,52 @@ if($(".resources_filter").length > 0)
             $(this).next(".rt_body").slideDown(300);
         }
     });
-    $('.header, .banners, .wishtoconnect, .footer, .resources_about, .resources_keywords,  .resources_list, .resources_pagination').click(function() // close on click body
-    {     
-        $(".rt_head").removeClass("active");
-        $(".rt_body").slideUp(300);
+    $('body').click(function(e) // close on click body
+    {    
+        e.stopPropagation();
+        if (e.target != $('.rt_head')  || e.target != $('.rt_body')) 
+        {
+            $(".rt_head").removeClass("active");
+            $(".rt_body").slideUp(300);
+        }
     });
  }
+
+
+
+
 
  /* ############################  resources === start ############################ */
 if($(".resources_pagination").length > 0)
 {
-    $("#resources_pagination div h2").click(function()
+    $("#resources_pagination div h2").click(function(e)
     {
+        e.preventDefault();
+        e.stopPropagation();
         $("#resources_pagination div ul").slideToggle(300);
     });
-    $("#resources_pagination div ul li").click(function()
+    $("#resources_pagination div ul li").click(function(e)
     {
         if($(window).width() < 599)
         {
+            e.preventDefault();
+            e.stopPropagation();
             $("#resources_pagination div ul").slideUp(300);
             $("#resources_pagination div ul li").removeClass("active");
             $(this).addClass("active");
             var pagenumber = $(this).find("a").text();
             $("#resources_pagination div h2").text(pagenumber);
         }
-        
+    });
+    $('body').click(function(e) // close on click body
+    {    
+        e.stopPropagation();
+        if($(window).width() < 599)
+        {
+            $("#resources_pagination div ul").slideUp(300);
+        }
     });
 }
-$('.header, .banners, .wishtoconnect, .footer, .resources_about, .resources_filter, .resources_keywords,  .resources_list').click(function() // close on click body
-{     
-    if($(window).width() < 599)
-    {
-        $("#resources_pagination div ul").slideUp(300);
-    }
-    
-});
 
 
  function clearresourcefilter()

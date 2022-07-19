@@ -11911,6 +11911,7 @@ main {
   line-height: 1;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 300;
+  cursor: pointer;
 }
 .resources_filter section div select {
   width: 100%;
