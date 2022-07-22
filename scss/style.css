@@ -5126,6 +5126,12 @@ main {
   font-size: 80px;
   line-height: 1.2;
 }
+.servicewrap .servicePricebyarea .servicePricebyareaLeft h5 i.fa {
+  margin-right: 5px;
+  line-height: 1;
+  font-size: 90%;
+  font-weight: 300;
+}
 .servicewrap .serviceFuelsavings {
   width: 100%;
   float: left;
@@ -5666,6 +5672,9 @@ main {
   }
   .servicewrap .serviceAbout .serviceAboutBottom {
     margin-top: 1rem;
+  }
+  .servicewrap .serviceHighlight {
+    display: none;
   }
   .servicewrap .serviceHighlight ul {
     flex-wrap: wrap;
@@ -6336,6 +6345,28 @@ main {
 .commitmentsWrap .commitmentsContainer {
   width: 100%;
   float: left;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+.commitmentsWrap .commitmentsContainer .csrloader {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F7F8;
+  text-align: center;
+}
+.commitmentsWrap .commitmentsContainer .csrloader i.fa.fa-spinner {
+  font-weight: 900;
+  color: #F2662C;
+  font-size: 72px;
 }
 .commitmentsWrap .commitmentsContainer .commitmentsBox {
   display: none;
@@ -6445,6 +6476,9 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   /* ######################## csrwrap ######################## */
+  .commitmentsWrap .commitmentsTabs ul {
+    width: 100%;
+  }
   .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
     width: 70%;
     padding: 1rem;
@@ -6471,9 +6505,12 @@ main {
   .csrWrap .csrAbout .csrAboutRight ul li aside img {
     max-width: 50px;
   }
-  .csrWrap .csrAbout .csrAboutRight ul li aside p {
+  .csrWrap .csrAbout .csrAboutRight ul li p {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
+  }
+  .csrWrap .csrAbout .csrAboutRight ul li p i.fa {
+    display: none;
   }
   .csrWrap .csrAbout .csrAboutBottom {
     display: block;
@@ -7225,12 +7262,12 @@ main {
   min-height: 100px;
   overflow: hidden;
 }
-.teamsWrap .teamContainer .teamsection .sectionloader {
+.teamsWrap .teamContainer .teamsection .teamsloader {
   display: none;
   position: absolute;
   left: 0;
-  top: 0;
-  z-index: 999;
+  top: 1rem;
+  z-index: 99;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -7238,9 +7275,9 @@ main {
   background: #FFFFFF;
   text-align: center;
 }
-.teamsWrap .teamContainer .teamsection .sectionloader i.fa.fa-spinner {
+.teamsWrap .teamContainer .teamsection .teamsloader i.fa.fa-spinner {
   font-weight: 900;
-  color: #f76a29;
+  color: #F2662C;
   font-size: 72px;
 }
 .teamsWrap .teamContainer .teamsection ul {
@@ -7675,6 +7712,28 @@ main {
   width: 100%;
   float: left;
   margin: 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+.faqsWrap .faqsContainer .faqssection .faqsloader {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.faqsWrap .faqsContainer .faqssection .faqsloader i.fa.fa-spinner {
+  font-weight: 900;
+  color: #F2662C;
+  font-size: 72px;
 }
 .faqsWrap .faqsContainer .faqssection ul {
   width: 100%;
@@ -7711,7 +7770,7 @@ main {
   font-weight: 300;
   line-height: 1;
   color: #F2662C;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.4s ease-out;
 }
 .faqsWrap .faqsContainer .faqssection ul li P {
@@ -7794,7 +7853,7 @@ main {
   }
   .faqsWrap .faqsTabs h2 {
     margin-bottom: 0;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 0 1rem 0;
   }
   .faqsWrap .faqsTabs ul {
     display: none;
@@ -7836,13 +7895,15 @@ main {
     font-family: "Arial-Bold", Arial, sans-serif;
     font-weight: bold;
     transition: all 0.4s ease-in;
-    user-select: none;
-    pointer-events: none;
   }
   .faqsWrap .faqsContainer .faqsheader.active:after {
     content: "\f106";
     color: #233D4D;
     transition: all 0.4s ease-in;
+  }
+  .faqsWrap .faqsContainer .faqsheader.disabled {
+    user-select: none;
+    pointer-events: none;
   }
   .faqsWrap .faqsContainer .faqssection ul li:last-child {
     border-bottom: solid 1px #707070;
@@ -7850,7 +7911,11 @@ main {
 }
 @media only screen and (max-width: 479px) {
   /* ######################## faqsWrap ######################## */
+  .faqsWrap .faqsAbout {
+    display: none;
+  }
   .faqsWrap .popularquestions {
+    display: none;
     padding: 2rem 0 2rem 0;
   }
   .faqsWrap .popularquestions h2 {
@@ -10209,22 +10274,22 @@ main {
     height: 200px;
   }
 }
-/* ######################## faqsWrap ######################## */
-.healthsafetyWrap {
+/* ######################## healthsafetymain ######################## */
+.healthsafetymain {
   width: 100%;
   float: left;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0 4rem 0;
   background-color: #FFFFFF;
 }
-.healthsafetyWrap .healthsafetyAbout {
+.healthsafetymain .healthsafetyAbout {
   width: 100%;
   float: left;
 }
-.healthsafetyWrap .healthsafetyAbout article {
+.healthsafetymain .healthsafetyAbout article {
   width: 50%;
   float: left;
 }
-.healthsafetyWrap .healthsafetyAbout article p {
+.healthsafetymain .healthsafetyAbout article p {
   width: 100%;
   float: left;
   text-align: left;
@@ -10234,13 +10299,13 @@ main {
   font-size: 18px;
   line-height: 28px;
 }
-.healthsafetyWrap .healthsafetyAbout section {
-  width: 430px;
+.healthsafetymain .healthsafetyAbout section {
+  width: 295px;
   float: right;
-  padding: 2rem;
+  padding: 1.5rem;
   background: #F2662C;
 }
-.healthsafetyWrap .healthsafetyAbout section p {
+.healthsafetymain .healthsafetyAbout section p {
   width: 100%;
   float: left;
   text-align: left;
@@ -10250,37 +10315,37 @@ main {
   font-size: 22px;
   line-height: 1;
 }
-.healthsafetyWrap .healthsafetyAbout section h2 {
+.healthsafetymain .healthsafetyAbout section h2 {
   width: 100%;
   float: left;
   text-align: left;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1;
-  margin: 0.7rem 0 0.8rem 0;
+  margin: 0.7rem 0 0.9rem 0;
 }
-.healthsafetyWrap .healthsafetyAbout section h2 i.fa {
+.healthsafetymain .healthsafetyAbout section h2 i.fa {
   margin-right: 3px;
   transform: rotate(29deg);
   font-size: 90%;
 }
-.healthsafetyWrap .healthsafetyAbout section h2 a {
+.healthsafetymain .healthsafetyAbout section h2 a {
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
-.healthsafetyWrap .healthsafetyAbout section h2 a:hover {
+.healthsafetymain .healthsafetyAbout section h2 a:hover {
   color: #3C3C3C;
   transition: all 0.4s ease-in;
 }
-.healthsafetyWrap .healthsafetyAbout section h3 {
+.healthsafetymain .healthsafetyAbout section h3 {
   width: 100%;
   float: left;
   text-align: left;
 }
-.healthsafetyWrap .healthsafetyAbout section h3 span {
+.healthsafetymain .healthsafetyAbout section h3 span {
   display: inline-block;
   border-bottom: solid 1px #FFFFFF;
   padding-bottom: 3px;
@@ -10289,6 +10354,14 @@ main {
   font-weight: bold;
   font-size: 16px;
   line-height: 1;
+}
+
+/* ######################## faqsWrap ######################## */
+.healthsafetyWrap {
+  width: 100%;
+  float: left;
+  padding: 3rem 0 5rem 0;
+  background-color: #F4F7F8;
 }
 .healthsafetyWrap .emergencyheading {
   width: 100%;
@@ -10353,6 +10426,9 @@ main {
 .healthsafetyWrap .emergencyheading section .emergencycontactsort select option:disabled {
   user-select: none;
   pointer-events: none;
+}
+.healthsafetyWrap .emergencyheading section .emergencycontactsort span {
+  display: none;
 }
 .healthsafetyWrap .emergencyheading section .emergencycontactsearch {
   width: 300px;
@@ -10437,6 +10513,7 @@ main {
   width: 100%;
   float: left;
   height: 410px;
+  position: relative;
 }
 .healthsafetyWrap .emergencycontactlist .emergencynoresult {
   display: none;
@@ -10453,6 +10530,25 @@ main {
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
+}
+.healthsafetyWrap .emergencycontactlist .emergencyloader {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F7F8;
+  text-align: center;
+}
+.healthsafetyWrap .emergencycontactlist .emergencyloader i.fa.fa-spinner {
+  font-weight: 900;
+  color: #F2662C;
+  font-size: 72px;
 }
 .healthsafetyWrap .emergencycontactlist ul {
   width: 100%;
@@ -10697,7 +10793,7 @@ main {
   left: 0;
   width: 100%;
   height: 4px;
-  background: #FFFFFF;
+  background: transparent;
   line-height: 0;
   font-size: 1px;
 }
@@ -10731,7 +10827,28 @@ main {
   display: none;
   width: 100%;
   float: left;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsfaqloader {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 0;
+  background-color: #F4F7F8;
+  text-align: center;
+}
+.healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsfaqloader i.fa.fa-spinner {
+  font-weight: 900;
+  color: #F2662C;
+  font-size: 72px;
 }
 .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer {
   width: 100%;
@@ -10740,7 +10857,6 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   align-items: stretch;
-  height: 100%;
 }
 .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div {
   width: 33%;
@@ -10880,31 +10996,32 @@ main {
   }
 }
 @media only screen and (max-width: 1255px) {
-  /* ######################## faqsWrap ######################## */
-  .healthsafetyWrap .healthsafetyAbout article {
+  /* ######################## healthsafetymain ######################## */
+  .healthsafetymain .healthsafetyAbout article {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .healthsafetyWrap .healthsafetyAbout article p {
+  .healthsafetymain .healthsafetyAbout article p {
     font-size: 16px;
     line-height: 26px;
   }
-  .healthsafetyWrap .healthsafetyAbout section {
+  .healthsafetymain .healthsafetyAbout section {
     width: 100%;
-    max-width: 290px;
+    max-width: 265px;
     float: left;
-    padding: 2rem;
+    padding: 1.5rem;
   }
-  .healthsafetyWrap .healthsafetyAbout section p {
-    font-size: 22px;
+  .healthsafetymain .healthsafetyAbout section p {
+    font-size: 20px;
   }
-  .healthsafetyWrap .healthsafetyAbout section h2 {
+  .healthsafetymain .healthsafetyAbout section h2 {
     font-size: 28px;
     margin: 0.7rem 0 0.6rem 0;
   }
-  .healthsafetyWrap .healthsafetyAbout section h3 span {
+  .healthsafetymain .healthsafetyAbout section h3 span {
     font-size: 14px;
   }
+  /* ######################## faqsWrap ######################## */
   .healthsafetyWrap .emergencyheading {
     padding: 3rem 0;
     flex-wrap: wrap;
@@ -11141,21 +11258,23 @@ main {
     transition: all 0.4s ease-out;
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active {
-    border-bottom: none;
     color: #233D4D;
     font-family: "Arial-Bold", Arial, sans-serif;
     font-weight: bold;
     transition: all 0.4s ease-in;
-    user-select: none;
-    pointer-events: none;
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active:after {
     content: "\f106";
     color: #233D4D;
     transition: all 0.4s ease-in;
   }
+  .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.disabled {
+    user-select: none;
+    pointer-events: none;
+  }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection {
     margin-bottom: 2rem;
+    padding-top: 0.5rem;
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer {
     padding: 0;
@@ -11381,11 +11500,11 @@ main {
   float: left;
 }
 .resources_container .resources_container_left {
-  width: 67%;
+  width: 70%;
   float: left;
 }
 .resources_container .resources_container_right {
-  width: 29%;
+  width: 27%;
   float: right;
 }
 
@@ -11411,7 +11530,7 @@ main {
 .resources_related ul {
   width: 100%;
   float: left;
-  padding: 2rem;
+  padding: 1rem;
   background: #EDF0F2;
 }
 .resources_related ul li {
@@ -11419,7 +11538,7 @@ main {
   position: relative;
   float: left;
   width: 100%;
-  padding: 2.5rem 2.5rem 2rem 2rem;
+  padding: 1.5rem;
   margin: 0 0 1rem 0;
   background: #FFFFFF;
 }
@@ -11430,6 +11549,7 @@ main {
   width: 100%;
   float: left;
   text-align: left;
+  padding-right: 2rem;
   color: #000000;
   font-size: 18px;
   line-height: 30px;
@@ -12178,13 +12298,6 @@ main {
   }
 }
 @media only screen and (max-width: 1300px) {
-  /* details == container left right */
-  .resources_container .resources_container_left {
-    width: 65%;
-  }
-  .resources_container .resources_container_right {
-    width: 33%;
-  }
   /* details == webinar */
   .resources_webinar section {
     height: 480px;
@@ -12303,7 +12416,7 @@ main {
     float: left;
   }
   .resources_container .resources_container_right {
-    width: 29%;
+    width: 30%;
     float: right;
   }
   /* details == webinar */
@@ -12332,7 +12445,7 @@ main {
     padding: 1rem;
   }
   .resources_related ul li {
-    padding: 2rem 2rem 1rem 1rem;
+    padding: 1rem;
     margin: 0 0 1rem 0;
   }
   .resources_related ul li h5 {

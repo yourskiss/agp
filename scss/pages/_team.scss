@@ -41,10 +41,10 @@
         }
         .teamsection { 
             display: none; width: 100%; float: left; margin:0;  position: relative;  min-height: 100px; overflow: hidden;
-            .sectionloader { 
-                display: none; position: absolute; left: 0; top: 0; z-index:999; width: 100%;  height: 100%; margin: 0; padding: 0; background:$wht1; text-align: center; 
-                i.fa.fa-spinner {  font-weight: 900; color:#f76a29; font-size:72px; }
-            }
+            .teamsloader { 
+                display: none; position: absolute; left:0; top: 1rem; z-index:99; width: 100%;  height: 100%; margin: 0; padding: 0; background:$wht1; text-align: center; 
+                i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
+              }
             ul {
                 width: 100%; float: left; @include fCS(); flex-wrap: wrap; justify-content:center;
                 li { 

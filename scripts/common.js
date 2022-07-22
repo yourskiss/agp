@@ -575,6 +575,7 @@ function whychoosemore()
 if($(".commitmentsContainer").length > 0)
 {
     $("#commitmentstitletabs li").click(function(){
+        $(".csrloader").show(50);
         $("#commitmentstitletabs").addClass("disabled")
         let getname = $(this).attr("data-id");
         $("#commitmentstitletabs  li").removeClass("active");
@@ -583,6 +584,7 @@ if($(".commitmentsContainer").length > 0)
         $(this).addClass("active");
         $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(500);
         setTimeout(function(){ $("#commitmentstitletabs").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".csrloader").fadeOut(200); }, 600);
     });
 }
 if($(".csrAbout").length > 0)
@@ -594,14 +596,15 @@ if($(".csrAbout").length > 0)
         else if($(window).width() < 1255 && $(window).width() > 479) jumpdiv = 102;
         else jumpdiv = 87;
         setTimeout(function(){ 
-            $('html, body').animate({scrollTop: $("#commitmentstitletabs").offset().top  - jumpdiv },250);
+            $('html, body').animate({scrollTop: $(".commitmentsWrap").offset().top  - jumpdiv },250);
         }, 300);
-        
+        $(".csrloader").show(50);
         let getname = $(this).attr("data-name");
         $("#commitmentstitletabs li").removeClass("active");
         $(".commitmentsContainer .commitmentsBox").slideUp(300);
         $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
         $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(300);
+        setTimeout(function(){ $(".csrloader").fadeOut(200); }, 600);
     });
 }
 /* ############################ csr === end ############################ */
@@ -612,8 +615,8 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
 {
     $("#teamTabs ul li").click(function()
     {
-        $(".sectionloader").fadeIn(100);
         let tagname = $(this).attr("data-name");
+        $(".teamsloader[data-id='" + tagname + "']").fadeIn(100);
         $("#teamTabs ul li").removeClass("active");
         $("#teamContainer .teamheader").removeClass("active");
         $("#teamContainer .teamsection").fadeOut(300);
@@ -623,7 +626,7 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
         $("#teamContainer .teamheader[data-name='" + tagname + "']").addClass("active");
         $("#teamContainer .teamsection[data-id='" + tagname + "']").fadeIn(300);
         setTimeout(function(){ $("#teamTabs ul, #teamContainer .teamheader").removeClass('disabled'); }, 500);
-        setTimeout(function(){ $(".sectionloader").fadeOut(200); }, 500);
+        setTimeout(function(){ $(".teamsloader").fadeOut(200); }, 500);
     });
     $("#teamContainer .teamheader").click(function()
     {
@@ -632,11 +635,11 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
         {
             $("#teamTabs ul li").removeClass("active");
             $("#teamContainer .teamheader").removeClass("active");
-            $("#teamContainer .teamsection").fadeOut(300);
+            $("#teamContainer .teamsection").slideUp(500);
         }
         else 
         {
-            $(".sectionloader").fadeIn(50);
+            $(".teamsloader[data-id='" + tagname + "']").fadeIn(100);
             $("#teamTabs ul li").removeClass("active");
             $("#teamContainer .teamheader").removeClass("active");
             $("#teamContainer .teamsection").fadeOut(300);
@@ -646,7 +649,7 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
             $("#teamContainer .teamheader[data-name='" + tagname + "']").addClass("active");
             $("#teamContainer .teamsection[data-id='" + tagname + "']").fadeIn(300);
             setTimeout(function(){ $("#teamTabs ul, #teamContainer .teamheader").removeClass('disabled'); }, 500);
-            setTimeout(function(){ $(".sectionloader").fadeOut(200); }, 500);
+            setTimeout(function(){ $(".teamsloader").fadeOut(200); }, 500);
         }
 
     });
@@ -670,18 +673,46 @@ function closeprofiles()
 /* ############################ faqs === start ############################ */
 if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
 {
-    $("#faqsTabs ul li, #faqsContainer .faqsheader").click(function()
+    $("#faqsTabs ul li").click(function()
     {
         let tagname = $(this).attr("data-name");
+        $(".faqsloader[data-id='" + tagname + "']").slideDown(50);
         $("#faqsTabs ul li").removeClass("active");
         $("#faqsContainer .faqsheader").removeClass("active");
-        $("#faqsContainer .faqssection").slideUp(500);
-        $("#faqsTabs ul").addClass("disabled")
+        $("#faqsContainer .faqssection").fadeOut(200);
+        $("#faqsTabs ul, #faqsContainer .faqsheader").addClass("disabled");
 
         $("#faqsTabs ul li[data-name='" + tagname + "']").addClass("active");
         $("#faqsContainer .faqsheader[data-name='" + tagname + "']").addClass("active");
-        $("#faqsContainer .faqssection[data-id='" + tagname + "']").slideDown(500);
-        setTimeout(function(){ $("#faqsTabs ul").removeClass('disabled'); }, 500);
+        $("#faqsContainer .faqssection[data-id='" + tagname + "']").fadeIn(200);
+        setTimeout(function(){ $("#faqsTabs ul, #faqsContainer .faqsheader").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".faqsloader").slideUp(200); }, 500);
+    });
+
+    $("#faqsContainer .faqsheader").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $("#faqsTabs ul li").removeClass("active");
+            $("#faqsContainer .faqsheader").removeClass("active");
+            $("#faqsContainer .faqssection").slideUp(500);
+        }
+        else 
+        {
+            let tagname = $(this).attr("data-name");
+            $(".faqsloader[data-id='" + tagname + "']").slideDown(50);
+            $("#faqsTabs ul li").removeClass("active");
+            $("#faqsContainer .faqsheader").removeClass("active");
+            $("#faqsContainer .faqssection").fadeOut(200);
+            $("#faqsTabs ul, #faqsContainer .faqsheader").addClass("disabled")
+    
+            $("#faqsTabs ul li[data-name='" + tagname + "']").addClass("active");
+            $("#faqsContainer .faqsheader[data-name='" + tagname + "']").addClass("active");
+            $("#faqsContainer .faqssection[data-id='" + tagname + "']").fadeIn(200);
+            setTimeout(function(){ $("#faqsTabs ul, #faqsContainer .faqsheader").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".faqsloader").slideUp(200); }, 500);
+        }
+
     });
 
     $("#faqsContainer .faqssection ul li h4").click(function()
@@ -792,18 +823,45 @@ if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("
 /* ############################  Health & Safety === start ############################ */
 if($("#hsdoanddontTabs").length > 0 &&  $("#hsdoanddontBody").length > 0)
 {
-    $("#hsdoanddontTabs ul li, #hsdoanddontBody .hsdoanddontheader").click(function()
+    $("#hsdoanddontTabs ul li").click(function()
     {
         let tagname = $(this).attr("data-name");
+        $(".hsfaqloader[data-id='" + tagname + "']").slideDown(50);
+        
         $("#hsdoanddontTabs ul li").removeClass("active");
         $("#hsdoanddontBody .hsdoanddontheader").removeClass("active");
-        $("#hsdoanddontBody .hsdoanddontsection").slideUp(500);
-        $("#hsdoanddontTabs ul").addClass("disabled")
+        $("#hsdoanddontBody .hsdoanddontsection").fadeOut(200);
+        $("#hsdoanddontTabs ul, #hsdoanddontBody .hsdoanddontheader").addClass("disabled")
 
         $("#hsdoanddontTabs ul li[data-name='" + tagname + "']").addClass("active");
         $("#hsdoanddontBody .hsdoanddontheader[data-name='" + tagname + "']").addClass("active");
-        $("#hsdoanddontBody .hsdoanddontsection[data-id='" + tagname + "']").slideDown(500);
-        setTimeout(function(){ $("#hsdoanddontTabs ul").removeClass('disabled'); }, 500);
+        $("#hsdoanddontBody .hsdoanddontsection[data-id='" + tagname + "']").fadeIn(200);
+        setTimeout(function(){ $("#hsdoanddontTabs ul, #hsdoanddontBody .hsdoanddontheader").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".hsfaqloader").slideUp(200); }, 500);
+    });
+    $("#hsdoanddontBody .hsdoanddontheader").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $("#hsdoanddontTabs ul li").removeClass("active");
+            $("#hsdoanddontBody .hsdoanddontheader").removeClass("active");
+            $("#hsdoanddontBody .hsdoanddontsection").slideUp(500);
+        }
+        else 
+        {
+            let tagname = $(this).attr("data-name");
+            $(".hsfaqloader[data-id='" + tagname + "']").slideDown(50);
+            $("#hsdoanddontTabs ul li").removeClass("active");
+            $("#hsdoanddontBody .hsdoanddontheader").removeClass("active");
+            $("#hsdoanddontBody .hsdoanddontsection").fadeOut(200);
+            $("#hsdoanddontTabs ul, #hsdoanddontBody .hsdoanddontheader").addClass("disabled")
+    
+            $("#hsdoanddontTabs ul li[data-name='" + tagname + "']").addClass("active");
+            $("#hsdoanddontBody .hsdoanddontheader[data-name='" + tagname + "']").addClass("active");
+            $("#hsdoanddontBody .hsdoanddontsection[data-id='" + tagname + "']").fadeIn(200);
+            setTimeout(function(){ $("#hsdoanddontTabs ul, #hsdoanddontBody .hsdoanddontheader").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".hsfaqloader").slideUp(200); }, 500);
+        }
     });
 }
 
@@ -812,14 +870,15 @@ if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length 
     $("#emergencyAlphabetical ul li").click(function()
     {
         let alphabetname = $(this).attr("data-name");
-
+        $(".emergencyloader").slideDown(50);
         $("#emergencyAlphabetical ul li").removeClass("active");
-        $("#emergencycontactlist ul li").slideUp(500);
+        $("#emergencycontactlist ul li").slideUp(300);
         $("#emergencyAlphabetical ul").addClass("disabled")
 
         $("#emergencyAlphabetical ul li[data-name='" + alphabetname + "']").addClass("active");
-        $("#emergencycontactlist ul li[data-id='" + alphabetname + "']").slideDown(500);
+        $("#emergencycontactlist ul li[data-id='" + alphabetname + "']").slideDown(300);
         setTimeout(function(){ $("#emergencyAlphabetical ul").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".emergencyloader").slideUp(200); }, 500);
     });
 }
 

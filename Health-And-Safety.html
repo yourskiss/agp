@@ -146,25 +146,9 @@
  
 
 
-<!-- banner  =====  start -->
-<div class="banners">
-    <picture>
-        <source media="(min-width: 768px)" srcset="images/health-and-safety/banner-web.jpg" type="image/jpg">
-        <source media="(min-width: 480px) and (max-width:767px) " srcset="images/health-and-safety/banner-ipad.jpg" type="image/jpg">
-        <source media="(max-width: 479px)" srcset="images/health-and-safety/banner-mobile.jpg" type="image/jpg"> 
-        <img  src="images/health-and-safety/banner-mobile.jpg" alt="health and safety"  />
-    </picture>
-    <div class="wrapper">
-        <h2>CREATING VALUE WITH<br>A GOLDEN TEAM</h2>
-    </div>
-</div>
-<!-- banner  =====  end -->
-
-
-
-
-<!-- healthsafetyWrap =====  start -->
-<div class="healthsafetyWrap">
+ 
+<!-- healthsafetymain =====  start -->
+<div class="healthsafetymain">
     <div class="wrapper">
 
         <ul class="breadcrumbs">
@@ -187,7 +171,18 @@
             </section>
         </div>
 
-        
+    </div>
+</div>
+<!-- healthsafetymain =====  end -->
+
+
+
+
+
+<!-- healthsafetyWrap =====  start -->
+<div class="healthsafetyWrap">
+    <div class="wrapper">
+
 
         <div class="emergencyheading">
             <h2>
@@ -197,10 +192,9 @@
             <section>
                 <aside class="emergencycontactsort">
                     <select name="sortemergencycontact" id="sortemergencycontact">
-                        <option value="0" selected disabled>Sort by</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
+                        <option value="0" selected disabled>Sort Alphabetically</option>
+                        <option>A to Z</option>
+                        <option>Z to A</option>
                     </select>
                     <span id="emergencycontactToggle"><i class="fa fa-search" aria-hidden="true"></i></span>
                 </aside>
@@ -252,6 +246,7 @@
         <div class="emergencycontactlist" id="emergencycontactlist"> 
             <div class="emergencycontactscroll">
                 <div class="emergencynoresult">No result found</div>
+                <div class="emergencyloader" data-id="CNG"><i class="fa fa-spinner fa-spin"></i></div>
                 <ul>
                     <li data-id="alphabetA">
                         <h2>City A</h2>
@@ -510,6 +505,7 @@
             <!-- CNG == start -->
             <div class="hsdoanddontheader active" data-name="CNG">CNG</div>
             <div class="hsdoanddontsection" data-id="CNG" style="display:block">
+                <div class="hsfaqloader" data-id="CNG"><i class="fa fa-spinner fa-spin"></i></div>
                 <div class="hsdoanddontContainer">
                     <div>
                         <ul>
@@ -585,6 +581,7 @@
             <!-- PNGHousehold == start -->
             <div class="hsdoanddontheader" data-name="PNGHousehold">PNG Household</div>
             <div class="hsdoanddontsection" data-id="PNGHousehold">
+                <div class="hsfaqloader" data-id="PNGHousehold"><i class="fa fa-spinner fa-spin"></i></div>
                 <div class="hsdoanddontContainer">
                     <div>
                         <ul>
@@ -660,6 +657,7 @@
             <!-- PNGCommercial == start -->
             <div class="hsdoanddontheader" data-name="PNGCommercial">PNG Commercial</div>
             <div class="hsdoanddontsection" data-id="PNGCommercial">
+                <div class="hsfaqloader" data-id="PNGCommercial"><i class="fa fa-spinner fa-spin"></i></div>
                 <div class="hsdoanddontContainer">
                     <div>
                         <ul>
@@ -735,6 +733,7 @@
             <!-- PNGIndustries == start -->
             <div class="hsdoanddontheader" data-name="PNGIndustries">PNG Industries</div>
             <div class="hsdoanddontsection" data-id="PNGIndustries">
+                <div class="hsfaqloader" data-id="PNGIndustries"><i class="fa fa-spinner fa-spin"></i></div>
                 <div class="hsdoanddontContainer">
                     <div>
                         <ul>

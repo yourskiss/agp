@@ -129,6 +129,7 @@
             }
             h5 { 
                 width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color: $blk1; @include hnr(); font-size:80px; line-height: 1.2; 
+                i.fa { margin-right: 5px; line-height: 1; font-size: 90%; font-weight: 300; }
             }
         }
     }
@@ -488,6 +489,7 @@
 
         .serviceHighlight 
         {
+            display: none;
             ul {
                 flex-wrap: wrap;
                 li { width: 31%; margin: 7px 0;}

@@ -83,7 +83,11 @@
         }
     }
     .commitmentsContainer {
-        width: 100%; float: left; 
+        width: 100%; float: left; position: relative; overflow: hidden; min-height: 100px;
+        .csrloader { 
+            display: none; z-index:1; position: absolute; left:0; top: 0; z-index:99; width: 100%;  height: 100%; margin: 0; padding: 0; background-color:$wht3; text-align: center; 
+            i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
+          }
         .commitmentsBox { 
             display: none; position: relative; width: 100%; float: left; margin: 1.5rem 0;
             .commitmentsLeft{
@@ -160,6 +164,9 @@
 {
     /* ######################## csrwrap ######################## */
     .commitmentsWrap { 
+        .commitmentsTabs {
+            ul {width: 100%; }
+        }
         .commitmentsContainer {
             .commitmentsBox { 
                 .commitmentsRight{
@@ -190,7 +197,10 @@
                         margin: 0.7rem 0; 
                         aside { 
                             img {max-width: 50px;}
-                            p {font-size: 16px;line-height: 22px;}
+                        }
+                        p {
+                            font-size: 16px;line-height: 24px;
+                            i.fa { display: none;}
                         }
                     }
                 }
