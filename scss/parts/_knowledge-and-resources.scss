@@ -19,11 +19,11 @@
                     aside {
                         width: 100%; float: left; padding:0 2rem 2rem 2rem; text-align: left;
                         a { 
-                            display: inline-block; text-decoration: none; color: $blu1; font-size:18px; line-height: 22px;  @include aBold();  @include fSC();
-                            span { text-decoration: none;  @include outT(); }
+                            display: inline-block; text-decoration: none; color: $blu1; font-size:18px; line-height:1;  @include aBold();  @include fSC();
+                            span {  border-bottom: solid 2px $wht1; @include outT(); }
                             i.fa { margin-left: 5px;  @include outT(); }
                             &:hover {
-                                span { text-decoration: underline;  @include inT(); }
+                                span { border-bottom-color:$blu1;  @include inT(); }
                                 i.fa { margin-left: 10px;  @include inT(); }
                             }
                         }

@@ -39,9 +39,9 @@
 
 
     .aboutContainer { 
-        width: 100%; float: left;  @include fBS(); align-items: stretch;  position: relative;
+        width: 100%; float: left;  @include fBC(); position: relative;
         .aboutDetails {
-            position: relative; width: 55%; float: left;
+            position: relative; width: 54%; float: left;
             img { width: 100%;  height: 100%; }
             ul {
                 position: absolute; top:5%; left: 10%; width:90%;  height: 90%; @include fBC(); justify-content: space-evenly; flex-wrap: wrap; 
@@ -180,35 +180,24 @@
 {
     .aboutWrap { 
         .aboutContainer { 
+            flex-wrap: wrap;
             .aboutDetails {
-               width: 50%; 
-               ul { left: 5%; width: 95%; }
+                width: 100%;
+               ul { left: 10%; width: 90%; }
             }
             .aboutMaps {
-                width:48%;  
+                width:100%; margin-top: 2rem;
+                img {width: 60%;}
                 
             }
         }
-
     }
 }
 
 
 @media only screen and (max-width:767px) 
 {
-    .aboutWrap { 
-        .aboutContainer { 
-            flex-wrap: wrap;
-            .aboutDetails {
-               width: 100%; 
-               ul { left: 10%; width: 90%; }
-            }
-            .aboutMaps {
-                width:100%; margin-top: 2rem;
-                
-            }
-        }
-    }
+ 
 }
 
 @media only screen and (max-width:599px) 
@@ -232,6 +221,17 @@
                 a { font-size:16px; line-height:24px;  }
             }
         }   
+
+
+
+        .aboutContainer { 
+            .aboutMaps {
+                img {width: 70%;}    
+            }
+        }
+
+
+
     }
 }
 
@@ -260,8 +260,9 @@
             }
             .aboutMaps {
                 flex-wrap: wrap;
+                img {width: 90%;}    
                 ul {
-                    position:static; width: 100%; float: left;  margin-top:2rem;
+                    position:static; width: 100%; float: left;  margin-top:1rem;
                     li {
                         margin:0.5rem 0;  width: 50%;  float: left;
                         span { 

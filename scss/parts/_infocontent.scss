@@ -25,7 +25,7 @@
             width: 100%; float: left; margin: 1rem 0 0 0;  text-align: center;
             a { 
                 display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
-                &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+                &:hover {  @include inT(); background-color:$ong3;  color: $wht1;  box-shadow: 4px 8px 12px #00000029; }
             }
         }
     }

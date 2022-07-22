@@ -24,16 +24,19 @@
             ul {
                 width: 100%; float: left;   @include fBS(); 
                 li {
-                    list-style: none; padding: 1rem;  background-color: $wht1; border-bottom: solid 2px $ong1; border-radius:0 0 3px 3px; cursor: pointer; @include outT();
-                    aside {
-                        width: 100%; float: left;  text-align: center; 
-                        img { max-width: 100%; filter:none;  @include outT(); }
-                    }
-                    p { width: 100%; float: left; margin-top: 0.2rem; text-align: center;  color:$blu1; font-size:16px; line-height: 36px; white-space:nowrap; @include aBold(); @include outT(); }
-                    &:hover { 
-                        border-color: $blu1; background-color: $blu1; @include inT();
-                        img { filter: brightness(0) invert(1);  @include inT();  }
-                        p { color:$wht1; @include inT(); }
+                    list-style: none; 
+                    a { 
+                        width: 100%; float: left;  padding: 1rem;  background-color: $wht1; border-bottom: solid 2px $ong1; border-radius:0 0 3px 3px; cursor: pointer; @include outT();
+                        aside {
+                            width: 100%; float: left;  text-align: center; 
+                            img { max-width: 100%; filter:none;  @include outT(); }
+                        }
+                        p { width: 100%; float: left; margin-top: 0.2rem; text-align: center;  color:$blu1; font-size:16px; line-height: 36px; white-space:nowrap; @include aBold(); @include outT(); }
+                        &:hover { 
+                            border-color: $blu1; background-color: $blu1; @include inT();
+                            img { filter: brightness(0) invert(1);  @include inT();  }
+                            p { color:$wht1; @include inT(); }
+                        }
                     }
                 }
             }
@@ -89,7 +92,7 @@
                         width: 100%; float: left; text-align: left;
                         a { 
                             display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
-                            &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+                            &:hover {  @include inT();  background:$ong2; box-shadow: 4px 8px 12px #00000029;  color: $wht1; }
                         }
                     }
                 }
@@ -206,12 +209,14 @@
                 ul {
                     flex-wrap: wrap;
                     li {
-                         padding:0.7rem 0.9rem; border-radius:0; @include fSC();
-                        aside {
-                            width: auto; text-align: left; 
-                            img { max-width: 25px;  }
+                        a { 
+                            padding:0.7rem 0.9rem; border-radius:0; @include fSC();
+                            aside {
+                                width: auto; text-align: left; 
+                                img { max-width: 25px;  }
+                            }
+                            p { margin: 0 0 0 0.7rem; font-size:16px; width:auto; text-align: left;  }
                         }
-                        p { margin: 0 0 0 0.7rem; font-size:16px; width:auto; text-align: left;  }
                     }
                 }
                 
@@ -290,11 +295,13 @@
                 ul {
                     flex-wrap: wrap;
                     li {
-                         padding:0.5rem; border-bottom-width: 1px;
-                        aside {
-                            img { max-width: 22px;  }
+                        a {
+                            padding:0.5rem; border-bottom-width: 1px;
+                            aside {
+                                img { max-width: 22px;  }
+                            }
+                            p { margin: 0 0 0 0.5rem; font-size:14px; line-height: 24px;  }
                         }
-                        p { margin: 0 0 0 0.5rem; font-size:14px; line-height: 24px;  }
                     }
                 }
                 
@@ -359,10 +366,12 @@
             .highlight {
                 ul {
                     li {
-                        aside {
-                            img { max-width:16px;  }
+                        a {
+                            aside {
+                                img { max-width:16px;  }
+                            }
+                            p { font-size:12px; line-height:30px;  }
                         }
-                        p { font-size:12px; line-height:30px;  }
                     }
                 }
                 

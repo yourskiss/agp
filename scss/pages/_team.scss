@@ -29,16 +29,22 @@
 
     .teamContainer {
         width: 100%; float: left; 
+        
         .teamheader {  display: none;
             position: relative; width: 100%;  float: left; margin:0.4rem 0; list-style: none; cursor: pointer; padding:1rem; border-bottom: solid 1px $blk9;  color: $blk9; font-size: 20px; line-height: 45px; @include Arial(); @include outT(); cursor: pointer;
             &:after { content: "\f107"; position: absolute; top:50%; right:0.5rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 24px; @include outT(); }
             &.active {
-                border-bottom:none; color:$blu1;  @include aBold(); @include inT(); user-select: none; pointer-events: none;
+                 color:$blu1;  @include aBold(); @include inT(); 
                 &:after { content: "\f106"; color:$blu1; @include inT(); }
             }
+            &.disabled { user-select: none; pointer-events: none; }
         }
         .teamsection { 
-            display: none; width: 100%; float: left; margin:0;
+            display: none; width: 100%; float: left; margin:0;  position: relative;  min-height: 100px; overflow: hidden;
+            .sectionloader { 
+                display: none; position: absolute; left: 0; top: 0; z-index:999; width: 100%;  height: 100%; margin: 0; padding: 0; background:$wht1; text-align: center; 
+                i.fa.fa-spinner {  font-weight: 900; color:#f76a29; font-size:72px; }
+            }
             ul {
                 width: 100%; float: left; @include fCS(); flex-wrap: wrap; justify-content:center;
                 li { 

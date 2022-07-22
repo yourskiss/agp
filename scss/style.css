@@ -863,8 +863,8 @@ main {
     max-width: 190px;
   }
   .navigation .wrapper aside .quickmenu {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
   }
   .navigation .wrapper aside .mainmenu {
     margin-left: 0.5rem;
@@ -1126,7 +1126,7 @@ main {
     right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 16px;
+    font-size: 14px;
     color: #3C3C3C;
     font-family: "FontAwesome";
     font-weight: 300;
@@ -1336,8 +1336,9 @@ main {
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=submit]:hover, .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=button]:hover {
   transition: all 0.4s ease-in;
-  background-color: #FFFFFF;
-  color: #233D4D;
+  background-color: #233C4C;
+  color: #FFFFFF;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 1565px) {
@@ -1517,8 +1518,9 @@ main {
 }
 .bannerhome .bannerhomeslider .slides .wrapper .banenrtext p a:hover {
   transition: all 0.4s ease-in;
-  background-color: #000000;
+  background-color: #233C4C;
   color: #FFFFFF;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
 }
 
 .banners {
@@ -1855,7 +1857,7 @@ main {
   list-style: none;
   width: 100%;
   float: left;
-  margin: 0.4rem 0;
+  margin: 0.6rem 0;
 }
 .quicklink .qlservice ul li a {
   text-decoration: none;
@@ -1867,7 +1869,7 @@ main {
   width: 23px;
   height: 20px;
   float: left;
-  margin-right: 6px;
+  margin-right: 12px;
   background: transparent url("../Images/menu/icons.png") no-repeat;
 }
 .quicklink .qlservice ul li a span.ql_connection {
@@ -1896,7 +1898,7 @@ main {
 }
 .quicklink .qlservice ul li a b {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1;
   border-bottom: solid 1px #233D4D;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 300;
@@ -1936,7 +1938,7 @@ main {
 @media only screen and (max-width: 1565px) {
   .quicklink {
     right: -210px;
-    transform: translateY(-37%);
+    transform: translateY(-40%);
     padding: 1rem;
     width: 210px;
   }
@@ -1970,11 +1972,11 @@ main {
     line-height: 22px;
   }
   .quicklink .qlservice ul li {
-    margin: 0.2rem 0;
+    margin: 0.3rem 0;
   }
   .quicklink .qlservice ul li a b {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1;
   }
 }
 @media only screen and (max-width: 1255px) {
@@ -1987,8 +1989,10 @@ main {
     top: 0;
     transform: translateY(0);
     padding: 1.5rem;
-    width: 320px;
-    min-height: 100vh;
+    width: 260px;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
   }
   .quicklink aside {
     display: none;
@@ -2024,16 +2028,16 @@ main {
   }
   .quicklink h3 {
     margin: 1rem 0 0.1rem 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .quicklink p span {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .quicklink p a {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .quicklink .qlservice h4 {
     margin: 1rem 0 0.2rem 0;
@@ -2042,45 +2046,16 @@ main {
     line-height: 22px;
   }
   .quicklink .qlservice ul li {
-    margin: 0.2rem 0;
+    margin: 0.5rem 0;
   }
   .quicklink .qlservice ul li a b {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-@media only screen and (max-width: 367px) {
-  .quicklink {
-    width: 290px;
-    padding: 1rem;
+    font-size: 16px;
+    line-height: 1;
   }
 }
 @media only screen and (max-width: 359px) {
   .quicklink {
-    width: 240px;
-  }
-}
-@media only screen and (min-device-width: 500px) and (max-device-width: 1000px) and (orientation: landscape) {
-  .quicklink {
-    width: 380px;
-    padding: 1rem 2rem;
-  }
-  .quicklink h6 {
-    margin-bottom: 0;
-  }
-  .quicklink h3 {
-    margin: 0.5rem 0 0.1rem 0;
-  }
-  .quicklink .qlservice {
-    width: 50%;
-    padding-right: 5%;
-  }
-  .quicklink .qlservice h4 {
-    margin: 0.4rem 0 0.1rem 0;
-    padding: 3px 15px;
-  }
-  .quicklink .qlservice ul li {
-    margin: 0.1rem 0;
+    width: 100%;
   }
 }
 .mobilemenuBG {
@@ -2457,8 +2432,9 @@ main {
 }
 .infocontent .wrapper aside a:hover {
   transition: all 0.4s ease-in;
-  background-color: #000000;
+  background-color: #ED4C1D;
   color: #FFFFFF;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
 }
 
 @keyframes zoomIN {
@@ -3730,7 +3706,7 @@ main {
   text-decoration: none;
   color: #233D4D;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
   display: flex;
@@ -3738,7 +3714,7 @@ main {
   align-items: center;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items aside a span {
-  text-decoration: none;
+  border-bottom: solid 2px #FFFFFF;
   transition: all 0.4s ease-out;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items aside a i.fa {
@@ -3746,7 +3722,7 @@ main {
   transition: all 0.4s ease-out;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items aside a:hover span {
-  text-decoration: underline;
+  border-bottom-color: #233D4D;
   transition: all 0.4s ease-in;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items aside a:hover i.fa {
@@ -4164,6 +4140,10 @@ main {
 }
 .highlightservices .highlightcontent .highlight ul li {
   list-style: none;
+}
+.highlightservices .highlightcontent .highlight ul li a {
+  width: 100%;
+  float: left;
   padding: 1rem;
   background-color: #FFFFFF;
   border-bottom: solid 2px #F2662C;
@@ -4171,17 +4151,17 @@ main {
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
-.highlightservices .highlightcontent .highlight ul li aside {
+.highlightservices .highlightcontent .highlight ul li a aside {
   width: 100%;
   float: left;
   text-align: center;
 }
-.highlightservices .highlightcontent .highlight ul li aside img {
+.highlightservices .highlightcontent .highlight ul li a aside img {
   max-width: 100%;
   filter: none;
   transition: all 0.4s ease-out;
 }
-.highlightservices .highlightcontent .highlight ul li p {
+.highlightservices .highlightcontent .highlight ul li a p {
   width: 100%;
   float: left;
   margin-top: 0.2rem;
@@ -4194,16 +4174,16 @@ main {
   font-weight: bold;
   transition: all 0.4s ease-out;
 }
-.highlightservices .highlightcontent .highlight ul li:hover {
+.highlightservices .highlightcontent .highlight ul li a:hover {
   border-color: #233D4D;
   background-color: #233D4D;
   transition: all 0.4s ease-in;
 }
-.highlightservices .highlightcontent .highlight ul li:hover img {
+.highlightservices .highlightcontent .highlight ul li a:hover img {
   filter: brightness(0) invert(1);
   transition: all 0.4s ease-in;
 }
-.highlightservices .highlightcontent .highlight ul li:hover p {
+.highlightservices .highlightcontent .highlight ul li a:hover p {
   color: #FFFFFF;
   transition: all 0.4s ease-in;
 }
@@ -4368,7 +4348,8 @@ main {
 }
 .weoffers .offergrid .itemgrid section aside a:hover {
   transition: all 0.4s ease-in;
-  background-color: #000000;
+  background: #F0632A;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
   color: #FFFFFF;
 }
 .weoffers .offergrid .itemgrid.one {
@@ -4506,21 +4487,21 @@ main {
   .highlightservices .highlightcontent .highlight ul {
     flex-wrap: wrap;
   }
-  .highlightservices .highlightcontent .highlight ul li {
+  .highlightservices .highlightcontent .highlight ul li a {
     padding: 0.7rem 0.9rem;
     border-radius: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  .highlightservices .highlightcontent .highlight ul li aside {
+  .highlightservices .highlightcontent .highlight ul li a aside {
     width: auto;
     text-align: left;
   }
-  .highlightservices .highlightcontent .highlight ul li aside img {
+  .highlightservices .highlightcontent .highlight ul li a aside img {
     max-width: 25px;
   }
-  .highlightservices .highlightcontent .highlight ul li p {
+  .highlightservices .highlightcontent .highlight ul li a p {
     margin: 0 0 0 0.7rem;
     font-size: 16px;
     width: auto;
@@ -4615,14 +4596,14 @@ main {
   .highlightservices .highlightcontent .highlight ul {
     flex-wrap: wrap;
   }
-  .highlightservices .highlightcontent .highlight ul li {
+  .highlightservices .highlightcontent .highlight ul li a {
     padding: 0.5rem;
     border-bottom-width: 1px;
   }
-  .highlightservices .highlightcontent .highlight ul li aside img {
+  .highlightservices .highlightcontent .highlight ul li a aside img {
     max-width: 22px;
   }
-  .highlightservices .highlightcontent .highlight ul li p {
+  .highlightservices .highlightcontent .highlight ul li a p {
     margin: 0 0 0 0.5rem;
     font-size: 14px;
     line-height: 24px;
@@ -4673,10 +4654,10 @@ main {
     padding: 0 0 2rem 0;
     margin-top: -60px;
   }
-  .highlightservices .highlightcontent .highlight ul li aside img {
+  .highlightservices .highlightcontent .highlight ul li a aside img {
     max-width: 16px;
   }
-  .highlightservices .highlightcontent .highlight ul li p {
+  .highlightservices .highlightcontent .highlight ul li a p {
     font-size: 12px;
     line-height: 30px;
   }
@@ -6733,13 +6714,12 @@ main {
   float: left;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  align-items: stretch;
+  align-items: center;
   position: relative;
 }
 .aboutWrap .aboutContainer .aboutDetails {
   position: relative;
-  width: 55%;
+  width: 54%;
   float: left;
 }
 .aboutWrap .aboutContainer .aboutDetails img {
@@ -6970,18 +6950,6 @@ main {
   }
 }
 @media only screen and (max-width: 1023px) {
-  .aboutWrap .aboutContainer .aboutDetails {
-    width: 50%;
-  }
-  .aboutWrap .aboutContainer .aboutDetails ul {
-    left: 5%;
-    width: 95%;
-  }
-  .aboutWrap .aboutContainer .aboutMaps {
-    width: 48%;
-  }
-}
-@media only screen and (max-width: 767px) {
   .aboutWrap .aboutContainer {
     flex-wrap: wrap;
   }
@@ -6995,6 +6963,9 @@ main {
   .aboutWrap .aboutContainer .aboutMaps {
     width: 100%;
     margin-top: 2rem;
+  }
+  .aboutWrap .aboutContainer .aboutMaps img {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -7027,6 +6998,9 @@ main {
     font-size: 16px;
     line-height: 24px;
   }
+  .aboutWrap .aboutContainer .aboutMaps img {
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 479px) {
   .aboutWrap {
@@ -7058,11 +7032,14 @@ main {
   .aboutWrap .aboutContainer .aboutMaps {
     flex-wrap: wrap;
   }
+  .aboutWrap .aboutContainer .aboutMaps img {
+    width: 90%;
+  }
   .aboutWrap .aboutContainer .aboutMaps ul {
     position: static;
     width: 100%;
     float: left;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .aboutWrap .aboutContainer .aboutMaps ul li {
     margin: 0.5rem 0;
@@ -7225,24 +7202,46 @@ main {
   transition: all 0.4s ease-out;
 }
 .teamsWrap .teamContainer .teamheader.active {
-  border-bottom: none;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: bold;
   transition: all 0.4s ease-in;
-  user-select: none;
-  pointer-events: none;
 }
 .teamsWrap .teamContainer .teamheader.active:after {
   content: "\f106";
   color: #233D4D;
   transition: all 0.4s ease-in;
 }
+.teamsWrap .teamContainer .teamheader.disabled {
+  user-select: none;
+  pointer-events: none;
+}
 .teamsWrap .teamContainer .teamsection {
   display: none;
   width: 100%;
   float: left;
   margin: 0;
+  position: relative;
+  min-height: 100px;
+  overflow: hidden;
+}
+.teamsWrap .teamContainer .teamsection .sectionloader {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  text-align: center;
+}
+.teamsWrap .teamContainer .teamsection .sectionloader i.fa.fa-spinner {
+  font-weight: 900;
+  color: #f76a29;
+  font-size: 72px;
 }
 .teamsWrap .teamContainer .teamsection ul {
   width: 100%;

@@ -120,12 +120,14 @@ $("#quickmenu").click(function()
     $("#quicklinkToggle").hide().addClass("active");
     $("#quicklinkBG").fadeIn(500);
     $("#quicklink").fadeIn(500);
+    $("body").css("overflow","hidden");
 });
 $("#qlMobileClose").click(function()
 {
     $("#quicklinkToggle").hide().removeClass("active");
     $("#quicklinkBG").fadeOut(500);
     $("#quicklink").fadeOut(500);
+    $("body").css("overflow","visible");
 });
 $("#quicklinkToggle").click(function()
 {
@@ -147,8 +149,8 @@ $("#quicklinkBG").click(function()
     }
     else 
     {
-        // 
         $("#quicklink").fadeOut(500);
+        $("body").css("overflow","visible");
     }
 });
 $(document).scroll(function() 
@@ -608,18 +610,45 @@ if($(".csrAbout").length > 0)
 /* ############################ team === start ############################ */
 if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
 {
-    $("#teamTabs ul li, #teamContainer .teamheader").click(function()
+    $("#teamTabs ul li").click(function()
     {
+        $(".sectionloader").fadeIn(100);
         let tagname = $(this).attr("data-name");
         $("#teamTabs ul li").removeClass("active");
         $("#teamContainer .teamheader").removeClass("active");
-        $("#teamContainer .teamsection").slideUp(500);
-        $("#teamTabs ul").addClass("disabled")
+        $("#teamContainer .teamsection").fadeOut(300);
+        $("#teamTabs ul, #teamContainer .teamheader").addClass("disabled")
 
         $("#teamTabs ul li[data-name='" + tagname + "']").addClass("active");
         $("#teamContainer .teamheader[data-name='" + tagname + "']").addClass("active");
-        $("#teamContainer .teamsection[data-id='" + tagname + "']").slideDown(500);
-        setTimeout(function(){ $("#teamTabs ul").removeClass('disabled'); }, 500);
+        $("#teamContainer .teamsection[data-id='" + tagname + "']").fadeIn(300);
+        setTimeout(function(){ $("#teamTabs ul, #teamContainer .teamheader").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".sectionloader").fadeOut(200); }, 500);
+    });
+    $("#teamContainer .teamheader").click(function()
+    {
+        let tagname = $(this).attr("data-name");
+        if($(this).hasClass("active"))
+        {
+            $("#teamTabs ul li").removeClass("active");
+            $("#teamContainer .teamheader").removeClass("active");
+            $("#teamContainer .teamsection").fadeOut(300);
+        }
+        else 
+        {
+            $(".sectionloader").fadeIn(50);
+            $("#teamTabs ul li").removeClass("active");
+            $("#teamContainer .teamheader").removeClass("active");
+            $("#teamContainer .teamsection").fadeOut(300);
+            $("#teamTabs ul, #teamContainer .teamheader").addClass("disabled")
+    
+            $("#teamTabs ul li[data-name='" + tagname + "']").addClass("active");
+            $("#teamContainer .teamheader[data-name='" + tagname + "']").addClass("active");
+            $("#teamContainer .teamsection[data-id='" + tagname + "']").fadeIn(300);
+            setTimeout(function(){ $("#teamTabs ul, #teamContainer .teamheader").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".sectionloader").fadeOut(200); }, 500);
+        }
+
     });
 }
 function viewprofiles(val)

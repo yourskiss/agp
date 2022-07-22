@@ -16,7 +16,7 @@
                         float: left; width: 100%;text-align: left;
                         a { 
                             display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:12px 25px; border:none; background-color:$blu1; color: $wht1; @include eurostile(); font-size:16px; line-height:20px; letter-spacing:0.4px; text-transform: uppercase;
-                            &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
+                            &:hover {  @include inT(); background-color:$blu2;  color: $wht1; box-shadow: 4px 8px 12px #00000029; }
                         }
                     }
                 }
