@@ -409,11 +409,11 @@ $(function($)
             responsive: [
                 {
                     breakpoint: 1023,
-                    settings: { adaptiveHeight: true, }
+                    settings: { dots: false, arrows: false }
                 },
                 {
                     breakpoint: 599,
-                    settings: { centerPadding: '10px', adaptiveHeight: false, dots: true, arrows: true, }
+                    settings: { centerPadding: '10px', dots: true, arrows: true }
                 }
             ]
         });

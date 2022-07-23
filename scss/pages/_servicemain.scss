@@ -9,7 +9,7 @@
     width: 100%; float: left; padding: 2rem 0 5rem; background-color:$wht1;
         
     .serviceAbout {
-        width: 100%; float: left; padding:2rem 0 0 0; @include fBS(); flex-wrap: wrap;
+        width: 100%; float: left; padding:0; @include fBS(); flex-wrap: wrap;
         .serviceAboutLeft {
             width: 45%; float: left;
             p { width: 100%; float: left; text-align: left; color: $blk2; @include Arial(); font-size: 16px; line-height: 28px; }
@@ -42,20 +42,20 @@
 
     
     .serviceHighlight { 
-        width: 100%; float: left; padding:3rem 0 0 0;
+        width: 100%; float: left; padding:5rem 0 0 0;
             ul {
                 width: 100%; float: left; @include fBS(); align-items: stretch;
                 li {
-                    list-style: none; width: 15.5%; height: inherit;
+                    list-style: none; width: 15.5%; height: inherit; box-shadow: 0px 6px 12px #00000014; background-color: $wht1; overflow: hidden;
                     a { 
-                        text-decoration: none; padding: 1rem; width: 100%; height: 100%; float: left; border-bottom: solid 2px $ong1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 3px 3px; cursor: pointer; @include outT(); background-color: $wht1;  background: linear-gradient(to left, $wht1 50%,  $blu1 50%); background-size: 200% 100%; background-position:right bottom; cursor: pointer;
+                        text-decoration: none; padding: 1rem; width: 100%; height: 100%; float: left; border-bottom: solid 2px $ong1; overflow: hidden; border-radius: 0px 0px 3px 3px; cursor: pointer; @include outT(); background-color: $wht1;  background: linear-gradient(to left, $wht1 50%,  $blu1 50%); background-size: 200% 100%; background-position:right bottom; cursor: pointer;
                         aside { 
                             width: 100%; float: left;  text-align: center; 
                             img { max-width: 100%; filter:none;  @include outT();  }
                         }
                         p { width: 100%; float: left; margin-top: 0.4rem; text-align: center; white-space: nowrap; color:$blu1; font-size:16px; line-height: 36px; white-space:normal; @include aBold(); @include outT(); }
                         &:hover { 
-                            background-color: $blu1;  border-color: $blu1; border-radius: 0px 0px 3px 3px;  background-position:left bottom; @include inT(); 
+                            background-color: $blu1;   border-color: $blu1; border-radius: 0px 0px 3px 3px;  background-position:left bottom; @include inT(); 
                             img { filter: brightness(0) invert(1);  @include inT();  }
                             p { color:$wht1; @include inT(); }
                         }
@@ -68,7 +68,7 @@
 
 
     .serviceWhychoose { 
-        width: 100%; float: left; padding:4rem 0; text-align: center;
+        width: 100%; float: left; padding:5rem 0; text-align: center;
         h2 { 
             width: 100%; float: left; text-align: left; @include fSC(); 
             span {  color:$blk1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();  }
@@ -140,7 +140,7 @@
 
 
     .serviceFuelsavings {
-        width: 100%; float: left; padding:4rem 0; position: relative;
+        width: 100%; float: left; padding:5rem 0; position: relative;
         img { width: 100%;}
         section {
             position: absolute; left: 3%; top: 50%; transform: translateY(-50%); width: 450px; float:left;
@@ -262,8 +262,7 @@
 
 
     /* ######################## servicewrap ######################## */
-    .servicewrap { 
-        padding: 2rem 0 4rem; 
+    .servicewrap {  
         .serviceAbout {
             .serviceAboutLeft { width: 48%; }
             .serviceAboutRight {
@@ -296,7 +295,6 @@
 
 
         .serviceWhychoose { 
-             padding:3rem 0; 
             h2 {  
                 span { font-size:24px; letter-spacing:0.92px; line-height: 35px;  }
             }
@@ -330,7 +328,6 @@
 
 
         .serviceFuelsavings {
-           padding:4rem 0; 
             section {
                 width: 400px; 
                 h2 { font-size:24px; letter-spacing:0.92px; line-height: 30px;   }
@@ -387,6 +384,11 @@
 {
     /* ######################## servicewrap ######################## */
     .servicewrap { 
+        padding: 2rem 0 3rem 0;
+
+        .serviceHighlight {
+            padding: 3rem 0 0 0;
+        }
 
         .serviceWhychoose { 
         padding:3rem 0; 
@@ -402,6 +404,8 @@
             }
         }
 
+        
+
 
         .servicePricebyarea { 
             .servicePricebyareaLeft { 
@@ -415,7 +419,7 @@
 
 
         .serviceFuelsavings {
-            padding:5rem 0;
+            padding:3rem 0;
             section {
                 width: 350px; 
                 aside { 
@@ -449,6 +453,9 @@
         }
         h3 { margin-top: 1rem; font-size:16px; line-height: 24px;   }
     } 
+
+
+
 }
 
 
@@ -461,7 +468,7 @@
     .servicewrap { 
 
         .serviceAbout {
-            padding:1.5rem 0 0 0; flex-wrap: wrap;
+              flex-wrap: wrap;
             .serviceAboutLeft {
                 width: 100%;
             }
@@ -500,7 +507,6 @@
 
         
         .serviceWhychoose { 
-            padding:3rem 0; 
             section { 
                 max-width:100%;
                 img { display: none; }
@@ -542,7 +548,6 @@
 
 
         .serviceFuelsavings {
-            padding:5rem 0;
             section {
                 width: 350px; 
                 aside { 
@@ -568,6 +573,11 @@
         }
 
 
+    }
+
+
+    .serviceothers {
+        padding: 3rem 0;
     }
 
 }
@@ -604,7 +614,6 @@
  
 
         .serviceFuelsavings {
-            padding:4rem 0;
             section {
                 width: 290px; 
                 h2 {font-size: 21px; line-height: 24px;}
@@ -625,7 +634,6 @@
 
     /* ######################## serviceothers ######################## */
     .serviceothers {
-        padding:3rem 0;
         .serviceotherslider{
             .items { 
                 a.servicebutton { bottom: -1px; }
@@ -654,9 +662,8 @@
 
     /* ######################## servicewrap ######################## */
     .servicewrap { 
-        padding:2rem 0 3rem 0;
+
         .serviceAbout {
-            padding:2rem 0 0 0; 
             .serviceAboutLeft {
                 p { font-size: 16px; line-height: 26px; color:$blk2; }
             }
@@ -683,7 +690,6 @@
 
         
         .serviceHighlight { 
-           padding:3rem 0 0 0;
                 ul {
                     li {
                         width: 48%;
@@ -703,7 +709,6 @@
 
 
         .serviceWhychoose { 
-            padding: 3rem 0;
             h2 { 
                 span {  color:$blk1; font-size:22px; letter-spacing:1.32px; line-height: 36px;   }
                 img { margin-left:3px; }
@@ -755,7 +760,6 @@
 
 
         .serviceFuelsavings {
-            padding:3rem 0; 
             section {
                 left:10%; width: 80%;  
                 h2 { font-size:22px; letter-spacing:1.32px; line-height: 28px;}

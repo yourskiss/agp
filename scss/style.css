@@ -3194,7 +3194,7 @@ main {
   width: 100%;
   float: left;
   background-color: #FFFFFF;
-  padding: 4rem 0 7rem 0;
+  padding: 4rem 0 6rem 0;
 }
 .satisfactionwrap h2 {
   width: 100%;
@@ -3428,7 +3428,7 @@ main {
 
 @media only screen and (max-width: 1565px) {
   .satisfactionwrap {
-    padding: 3rem 0 5rem 0;
+    padding: 4rem 0 5rem 0;
   }
   .satisfactionwrap h2 {
     margin-bottom: 1rem;
@@ -3507,6 +3507,9 @@ main {
   }
 }
 @media only screen and (max-width: 1023px) {
+  .satisfactionwrap {
+    padding: 3rem 0 4rem 0;
+  }
   .satisfactionwrap .satisfactionLarge .satisfactionSlider .items {
     flex-wrap: wrap;
   }
@@ -3579,9 +3582,6 @@ main {
   }
 }
 @media only screen and (max-width: 599px) {
-  .satisfactionwrap {
-    padding: 2rem 0 3rem 0;
-  }
   .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb {
     top: -20px;
     left: 4%;
@@ -3598,8 +3598,22 @@ main {
   .satisfactionSlider .slick-slide {
     margin: 0 20px 0 0;
   }
+  .satisfactionSlider .slick-track {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-items: stretch;
+    height: inherit;
+  }
+  .satisfactionSlider .slick-slide {
+    background-color: #233D4D;
+    height: inherit;
+  }
 }
 @media only screen and (max-width: 479px) {
+  .satisfactionwrap {
+    padding: 2rem 0 3rem 0;
+  }
   .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb {
     padding: 3rem 1rem 1em 1rem;
   }
@@ -3742,7 +3756,7 @@ main {
 
 @media only screen and (max-width: 1565px) {
   .knowledgeresources {
-    padding: 3rem 0 6rem 0;
+    padding: 4rem 0 6rem 0;
   }
   .knowledgeresources .knowledgeresourcesslider .slick-slide .items h4 {
     padding: 2.5rem 2rem 0 2rem;
@@ -3793,7 +3807,7 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   .knowledgeresources {
-    padding: 3rem 0 4rem 0;
+    padding: 3rem 0 3rem 0;
   }
   .knowledgeresources h2 span {
     font-size: 24px;
@@ -3825,7 +3839,7 @@ main {
 }
 @media only screen and (max-width: 479px) {
   .knowledgeresources {
-    padding: 2rem 0 6rem 0;
+    padding: 3rem 0 5rem 0;
   }
   .knowledgeresources h2 {
     display: block;
@@ -4257,7 +4271,7 @@ main {
   width: 100%;
   float: left;
   background-color: #FFFFFF;
-  padding: 6rem 0;
+  padding: 4rem 0 5rem 0;
 }
 .weoffers h2 {
   width: 100%;
@@ -4399,9 +4413,6 @@ main {
 }
 
 @media only screen and (max-width: 1565px) {
-  .weoffers {
-    padding: 4rem 0 5rem 0;
-  }
   .weoffers .offergrid .itemgrid {
     background: transparent;
     display: block;
@@ -4432,9 +4443,6 @@ main {
   }
 }
 @media only screen and (max-width: 1300px) {
-  .weoffers {
-    padding: 4rem 0 5rem 0;
-  }
   .weoffers .offergrid .itemgrid section {
     padding: 1rem;
   }
@@ -4471,6 +4479,7 @@ main {
 @media only screen and (max-width: 1255px) {
   .highlightservices {
     margin-top: -55px;
+    padding: 0 0 3rem 0;
   }
   .highlightservices .highlightcontent .highlight.png {
     width: 55%;
@@ -4526,7 +4535,7 @@ main {
     line-height: 24px;
   }
   .weoffers {
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
   }
   .weoffers .offergrid {
     display: block;
@@ -4578,8 +4587,8 @@ main {
 }
 @media only screen and (max-width: 767px) {
   .highlightservices {
-    padding: 0 0 3rem 0;
     margin-top: -50px;
+    padding: 0 0 2rem 0;
   }
   .highlightservices .highlightcontent .highlight.png {
     width: 48%;
@@ -4625,9 +4634,6 @@ main {
 @media only screen and (max-width: 599px) {
   .highlightservices {
     margin-top: 0px;
-  }
-  .weoffers {
-    padding: 2.5rem 0;
   }
   .weoffers h2 {
     margin-bottom: 0.7rem;
@@ -4697,6 +4703,9 @@ main {
     margin-top: 0;
     margin-left: 1rem;
   }
+  .weoffers {
+    padding: 2rem 0 3rem 0;
+  }
 }
 .servicebutton {
   display: inline-block;
@@ -4731,7 +4740,7 @@ main {
 .servicewrap .serviceAbout {
   width: 100%;
   float: left;
-  padding: 2rem 0 0 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -4804,7 +4813,7 @@ main {
 .servicewrap .serviceHighlight {
   width: 100%;
   float: left;
-  padding: 3rem 0 0 0;
+  padding: 5rem 0 0 0;
 }
 .servicewrap .serviceHighlight ul {
   width: 100%;
@@ -4818,6 +4827,9 @@ main {
   list-style: none;
   width: 15.5%;
   height: inherit;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  background-color: #FFFFFF;
+  overflow: hidden;
 }
 .servicewrap .serviceHighlight ul li a {
   text-decoration: none;
@@ -4826,7 +4838,7 @@ main {
   height: 100%;
   float: left;
   border-bottom: solid 2px #F2662C;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
+  overflow: hidden;
   border-radius: 0px 0px 3px 3px;
   cursor: pointer;
   transition: all 0.4s ease-out;
@@ -4878,7 +4890,7 @@ main {
 .servicewrap .serviceWhychoose {
   width: 100%;
   float: left;
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
 }
 .servicewrap .serviceWhychoose h2 {
@@ -5135,7 +5147,7 @@ main {
 .servicewrap .serviceFuelsavings {
   width: 100%;
   float: left;
-  padding: 4rem 0;
+  padding: 5rem 0;
   position: relative;
 }
 .servicewrap .serviceFuelsavings img {
@@ -5469,9 +5481,6 @@ main {
 
 @media only screen and (max-width: 1565px) {
   /* ######################## servicewrap ######################## */
-  .servicewrap {
-    padding: 2rem 0 4rem;
-  }
   .servicewrap .serviceAbout .serviceAboutLeft {
     width: 48%;
   }
@@ -5491,9 +5500,6 @@ main {
     margin-top: 0.5rem;
     font-size: 14px;
     line-height: 18px;
-  }
-  .servicewrap .serviceWhychoose {
-    padding: 3rem 0;
   }
   .servicewrap .serviceWhychoose h2 span {
     font-size: 24px;
@@ -5528,9 +5534,6 @@ main {
   }
   .servicewrap .servicePricebyarea .servicePricebyareaLeft h5 {
     font-size: 66px;
-  }
-  .servicewrap .serviceFuelsavings {
-    padding: 4rem 0;
   }
   .servicewrap .serviceFuelsavings section {
     width: 400px;
@@ -5587,6 +5590,12 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   /* ######################## servicewrap ######################## */
+  .servicewrap {
+    padding: 2rem 0 3rem 0;
+  }
+  .servicewrap .serviceHighlight {
+    padding: 3rem 0 0 0;
+  }
   .servicewrap .serviceWhychoose {
     padding: 3rem 0;
   }
@@ -5609,7 +5618,7 @@ main {
     width: 65%;
   }
   .servicewrap .serviceFuelsavings {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
   .servicewrap .serviceFuelsavings section {
     width: 350px;
@@ -5650,7 +5659,6 @@ main {
 @media only screen and (max-width: 1023px) {
   /* ######################## servicewrap ######################## */
   .servicewrap .serviceAbout {
-    padding: 1.5rem 0 0 0;
     flex-wrap: wrap;
   }
   .servicewrap .serviceAbout .serviceAboutLeft {
@@ -5682,9 +5690,6 @@ main {
   .servicewrap .serviceHighlight ul li {
     width: 31%;
     margin: 7px 0;
-  }
-  .servicewrap .serviceWhychoose {
-    padding: 3rem 0;
   }
   .servicewrap .serviceWhychoose section {
     max-width: 100%;
@@ -5756,9 +5761,6 @@ main {
     display: inline;
     margin: 0 0 -3px 0px;
   }
-  .servicewrap .serviceFuelsavings {
-    padding: 5rem 0;
-  }
   .servicewrap .serviceFuelsavings section {
     width: 350px;
   }
@@ -5793,6 +5795,9 @@ main {
     display: inline;
     margin: 0 0 -3px 0px;
   }
+  .serviceothers {
+    padding: 3rem 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* ######################## servicewrap ######################## */
@@ -5807,9 +5812,6 @@ main {
   }
   .servicewrap .servicePricebyarea .servicePricebyareaLeft {
     width: 92%;
-  }
-  .servicewrap .serviceFuelsavings {
-    padding: 4rem 0;
   }
   .servicewrap .serviceFuelsavings section {
     width: 290px;
@@ -5833,9 +5835,6 @@ main {
     width: 92%;
   }
   /* ######################## serviceothers ######################## */
-  .serviceothers {
-    padding: 3rem 0;
-  }
   .serviceothers .serviceotherslider .items a.servicebutton {
     bottom: -1px;
   }
@@ -5856,12 +5855,6 @@ main {
 }
 @media only screen and (max-width: 479px) {
   /* ######################## servicewrap ######################## */
-  .servicewrap {
-    padding: 2rem 0 3rem 0;
-  }
-  .servicewrap .serviceAbout {
-    padding: 2rem 0 0 0;
-  }
   .servicewrap .serviceAbout .serviceAboutLeft p {
     font-size: 16px;
     line-height: 26px;
@@ -5902,9 +5895,6 @@ main {
     letter-spacing: 0.35px;
     line-height: 17px;
   }
-  .servicewrap .serviceHighlight {
-    padding: 3rem 0 0 0;
-  }
   .servicewrap .serviceHighlight ul li {
     width: 48%;
   }
@@ -5929,9 +5919,6 @@ main {
     font-size: 14px;
     line-height: 18px;
     white-space: break-spaces;
-  }
-  .servicewrap .serviceWhychoose {
-    padding: 3rem 0;
   }
   .servicewrap .serviceWhychoose h2 span {
     color: #000000;
@@ -6025,9 +6012,6 @@ main {
   }
   .servicewrap .servicePricebyarea .servicePricebyareaLeft h5 {
     font-size: 40px;
-  }
-  .servicewrap .serviceFuelsavings {
-    padding: 3rem 0;
   }
   .servicewrap .serviceFuelsavings section {
     left: 10%;
