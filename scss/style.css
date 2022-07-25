@@ -403,28 +403,32 @@ template {
 }
 
 @font-face {
-  font-family: "Arial";
-  src: url("../fonts/arial.woff2") format("woff2"), url("../fonts/arial.woff") format("woff");
+  font-family: "Arial-Regular";
+  src: url("../fonts/Arial-Regular.woff2") format("woff2"), url("../fonts/Arial-Regular.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Arial-Medium";
-  src: url("../fonts/arial-medium.woff2") format("woff2"), url("../fonts/arial-medium.woff") format("woff");
+  src: url("../fonts/Arial-Medium.woff2") format("woff2"), url("../fonts/Arial-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: "Arial-Bold";
-  src: url("../fonts/arial-bold.woff2") format("woff2"), url("../fonts/arial-bold.woff") format("woff");
-  font-weight: bold;
+  src: url("../fonts/Arial-Bold.woff2") format("woff2"), url("../fonts/Arial-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "Arial-Black";
+  src: url("../fonts/Arial-Black.woff2") format("woff2"), url("../fonts/Arial-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
 }
 @font-face {
   font-family: "Eurostile-Bold";
@@ -444,6 +448,7 @@ template {
   @include Arial();
   @include aMedium();
   @include aBold();
+  @include aBlack();
   @include eurostile();
   @include hnr();
   @include FA();
@@ -451,7 +456,7 @@ template {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: normal;
@@ -534,7 +539,7 @@ main {
   text-align: left;
   color: #FFFFFF;
   font-size: 16px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .nav .wrapper ul {
@@ -547,21 +552,21 @@ main {
 }
 .nav .wrapper ul li.line {
   margin: 0 12px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #FFFFFF;
   font-size: 16px;
 }
 .nav .wrapper ul li a {
   text-decoration: none;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
 .nav .wrapper ul li a.callat {
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -639,10 +644,10 @@ main {
 }
 .navigation .wrapper ul li a {
   text-decoration: none;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 45px;
   transition: all 0.4s ease-out;
 }
@@ -716,7 +721,7 @@ main {
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul li a {
   text-decoration: none;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #3C3C3C;
   font-size: 18px;
@@ -732,7 +737,7 @@ main {
   float: left;
   margin-bottom: 5px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   font-size: 18px;
 }
@@ -752,7 +757,7 @@ main {
 }
 .navigation .wrapper ul li .dropdownmenu .dropdowninner ul li ul li a {
   text-decoration: none;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #3C3C3C;
   font-size: 18px;
@@ -987,7 +992,7 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 12px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .footer .wrapper .footerright {
@@ -1011,7 +1016,7 @@ main {
   float: left;
   padding: 0 0 5px 0;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #233D4D;
   font-size: 16px;
 }
@@ -1020,7 +1025,7 @@ main {
   float: left;
   padding: 0 0 5px 0;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #233D4D;
   font-size: 16px;
 }
@@ -1045,7 +1050,7 @@ main {
 }
 .footer .wrapper .footerright ul li ul li a {
   text-decoration: none;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #3C3C3C;
   font-size: 16px;
@@ -1080,7 +1085,7 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 12px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -1163,7 +1168,7 @@ main {
   }
   .footer .wrapper .footerright ul li ul li a {
     text-decoration: none;
-    font-family: "Arial", Arial, sans-serif;
+    font-family: "Arial-Regular", Arial, sans-serif;
     font-weight: 300;
     color: #3C3C3C;
     font-size: 16px;
@@ -1231,7 +1236,7 @@ main {
   line-height: 24px;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul {
   width: 100%;
@@ -1262,7 +1267,7 @@ main {
   margin-top: 5px;
   font-size: 14px;
   color: #000000;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -1275,10 +1280,10 @@ main {
   border: none;
   border-bottom: solid 1px #FFFFFF;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=text]::placeholder {
@@ -1302,10 +1307,10 @@ main {
   border: none;
   border-bottom: solid 1px #FFFFFF;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   opacity: 0.9;
 }
@@ -1474,8 +1479,8 @@ main {
   float: left;
   width: 100%;
   text-align: left;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
   font-size: 56px;
   line-height: 1.2;
   letter-spacing: 3.36px;
@@ -1491,7 +1496,7 @@ main {
   line-height: 60px;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .bannerhome .bannerhomeslider .slides .wrapper .banenrtext p {
@@ -1509,8 +1514,8 @@ main {
   border: none;
   background-color: #233D4D;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.4px;
@@ -1567,7 +1572,7 @@ main {
   line-height: 28px;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .banners.bannerfaqs .wrapper input[type=text]::placeholder {
   color: #FFFFFF;
@@ -1679,7 +1684,7 @@ main {
 .breadcrumbs li {
   list-style: none;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 34px;
@@ -1760,6 +1765,7 @@ main {
   align-items: center;
   transition: all 0.4s ease-out;
   opacity: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1607843137);
 }
 .quicklink aside img {
   max-width: 100%;
@@ -1801,7 +1807,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .quicklink p {
   width: 100%;
@@ -1816,7 +1822,7 @@ main {
   font-size: 18px;
   line-height: 21px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .quicklink p a {
   text-decoration: none;
@@ -1824,7 +1830,7 @@ main {
   font-size: 18px;
   line-height: 21px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-out;
 }
 .quicklink p a:hover {
@@ -1847,7 +1853,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .quicklink .qlservice ul {
   width: 100%;
@@ -1900,7 +1906,7 @@ main {
   font-size: 16px;
   line-height: 1;
   border-bottom: solid 1px #233D4D;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #233D4D;
   transition: all 0.4s ease-out;
@@ -2132,12 +2138,12 @@ main {
 }
 .mobilemenu h4 a span:first-child {
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   display: block;
 }
 .mobilemenu h4 a span:last-child {
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   opacity: 0.7;
   font-size: 14px;
@@ -2164,7 +2170,7 @@ main {
   align-items: center;
   font-size: 18px;
   line-height: 1;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #000000;
   transition: all 0.4s ease-out;
@@ -2222,7 +2228,7 @@ main {
   padding: 0 1.5rem;
   font-size: 18px;
   line-height: 45px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #000000;
   transition: all 0.4s ease-out;
@@ -2254,7 +2260,7 @@ main {
   font-size: 16px;
   line-height: 30px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #233D4D;
 }
 .mobilemenu ul li ul li a {
@@ -2264,7 +2270,7 @@ main {
   padding: 0;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   color: #3D3D3D;
   transition: all 0.4s ease-out;
@@ -2319,7 +2325,7 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-size: 12px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -2368,7 +2374,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .infocontent .wrapper h3 span {
@@ -2383,7 +2389,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .infocontent .wrapper h4 span {
@@ -2397,7 +2403,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2549019608);
 }
 .infocontent .wrapper p a {
@@ -2543,14 +2549,14 @@ main {
     font-size: 16px;
     line-height: 22px;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
   }
   .infocontent .wrapper h4 {
     margin: 1rem 0 1.5rem 0;
     font-size: 16px;
     line-height: 22px;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
   }
   .infocontent .wrapper p {
     display: none;
@@ -3034,7 +3040,7 @@ main {
 
 /* satisfactionNav  === arrows */
 .satisfactionSlider.slick-slider .slick-arrow {
-  z-index: 3;
+  z-index: 2;
   top: auto;
   bottom: -65px;
   width: 35px;
@@ -3094,7 +3100,7 @@ main {
 
 /* satisfactionNav  === dots */
 .satisfactionSlider.slick-slider .slick-dots {
-  z-index: 2;
+  z-index: 1;
   bottom: -40px;
   text-align: center;
 }
@@ -3366,14 +3372,14 @@ main {
 .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb p {
   position: relative;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
 }
 .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb p b {
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .satisfactionwrap .satisfactionThumb {
   width: 80%;
@@ -3664,7 +3670,7 @@ main {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .knowledgeresources .knowledgeresourcesslider {
@@ -3696,7 +3702,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items p {
   width: 100%;
@@ -3706,7 +3712,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .knowledgeresources .knowledgeresourcesslider .slick-slide .items aside {
@@ -3719,10 +3725,10 @@ main {
   display: inline-block;
   text-decoration: none;
   color: #233D4D;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -3992,7 +3998,7 @@ main {
   line-height: 28px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .viewprofilesPopup .viewprofilecontainer .viewprofileinner section h3 {
   opacity: 0.7;
@@ -4003,7 +4009,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .viewprofilesPopup .viewprofilecontainer .viewprofileinner section p {
@@ -4013,7 +4019,7 @@ main {
   font-size: 18px;
   line-height: 26px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -4140,7 +4146,7 @@ main {
   padding: 10px 20px;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
@@ -4185,7 +4191,7 @@ main {
   line-height: 36px;
   white-space: nowrap;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-out;
 }
 .highlightservices .highlightcontent .highlight ul li a:hover {
@@ -4212,10 +4218,10 @@ main {
   width: 100%;
   float: left;
   text-align: center;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
-  font-size: 26px;
+  font-size: 20px;
   letter-spacing: 0.78px;
   line-height: 32px;
 }
@@ -4225,17 +4231,17 @@ main {
   margin: 1rem 0 2rem 0;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.45px;
   line-height: 28px;
 }
 .infomain h3 span {
   display: block;
   margin-top: 1px;
-  font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
 }
 .infomain ul {
   width: 100%;
@@ -4264,7 +4270,7 @@ main {
   font-size: 20px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .weoffers {
@@ -4284,11 +4290,11 @@ main {
 }
 .weoffers h2 span {
   color: #000000;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 1.68px;
   line-height: 35px;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .weoffers h2 img {
   margin-left: 5px;
@@ -4322,10 +4328,10 @@ main {
   float: left;
   text-align: left;
   color: #000000;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .weoffers .offergrid .itemgrid section p {
   width: 100%;
@@ -4333,9 +4339,9 @@ main {
   margin: 0.5rem 0 1rem 0;
   text-align: left;
   color: #3C3C3C;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .weoffers .offergrid .itemgrid section aside {
@@ -4755,7 +4761,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
@@ -4791,7 +4797,7 @@ main {
   float: left;
   text-align: center;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -4869,7 +4875,7 @@ main {
   line-height: 36px;
   white-space: normal;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-out;
 }
 .servicewrap .serviceHighlight ul li a:hover {
@@ -4919,7 +4925,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -4953,7 +4959,7 @@ main {
   text-align: left;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -4963,7 +4969,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -5021,7 +5027,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -5039,7 +5045,7 @@ main {
   float: left;
   text-align: left;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 28px;
@@ -5052,7 +5058,7 @@ main {
   border: solid 1px #F2662C;
   text-align: left;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
@@ -5079,7 +5085,7 @@ main {
   background: #FFFFFF;
   text-align: center;
   color: #000000;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
@@ -5093,7 +5099,7 @@ main {
   background: #F2662C;
   text-align: center;
   color: #FFFFFF;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
@@ -5112,7 +5118,7 @@ main {
   margin-top: 3px;
   text-align: left;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 11px;
   line-height: 18px;
@@ -5179,7 +5185,7 @@ main {
   text-align: left;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -5245,7 +5251,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -5257,7 +5263,7 @@ main {
   text-align: left;
   color: #3C3C3C;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -5328,7 +5334,7 @@ main {
   margin-top: 3px;
   text-align: left;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 11px;
   line-height: 18px;
@@ -5380,7 +5386,7 @@ main {
   padding-bottom: 1px;
   text-align: left;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a i.fa {
   font-weight: 400;
@@ -5456,7 +5462,7 @@ main {
   line-height: 28px;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .serviceothers h3 b {
   font-weight: normal;
@@ -5963,7 +5969,7 @@ main {
     display: inline-block;
     color: #233D4D;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 28px;
     transition: all 0.4s ease-out;
@@ -6163,7 +6169,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -6214,7 +6220,7 @@ main {
   text-align: center;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
@@ -6301,7 +6307,7 @@ main {
   color: #888888;
   font-size: 22px;
   line-height: 45px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
 }
@@ -6309,7 +6315,7 @@ main {
   border-bottom-color: #233D4D;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-in;
   position: relative;
   user-select: none;
@@ -6384,7 +6390,7 @@ main {
   font-size: 16px;
   line-height: 1.2px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
@@ -6396,7 +6402,7 @@ main {
   line-height: 30px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
   width: 100%;
@@ -6405,7 +6411,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsLeft {
@@ -6641,7 +6647,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .aboutWrap .aboutSupportedby {
@@ -6674,7 +6680,7 @@ main {
   padding: 0 1.5rem;
   text-align: center;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #F1652C;
   font-size: 26px;
   line-height: 54px;
@@ -6713,7 +6719,7 @@ main {
   text-decoration: none;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   transition: all 0.4s ease-out;
@@ -6789,7 +6795,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .aboutWrap .aboutContainer .aboutMaps {
   position: relative;
@@ -6845,7 +6851,7 @@ main {
   color: #3C3C3C;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .aboutWrap .aboutNetworks {
@@ -6881,7 +6887,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .aboutWrap .aboutNetworks aside {
@@ -6893,7 +6899,7 @@ main {
   text-decoration: none;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   transition: all 0.4s ease-out;
@@ -7129,7 +7135,7 @@ main {
   margin-top: 1rem;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -7161,7 +7167,7 @@ main {
   color: #888888;
   font-size: 22px;
   line-height: 45px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
   cursor: pointer;
@@ -7170,7 +7176,7 @@ main {
   border-bottom-color: #233D4D;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-in;
   position: relative;
   user-select: none;
@@ -7204,7 +7210,7 @@ main {
   color: #888888;
   font-size: 20px;
   line-height: 45px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
   cursor: pointer;
@@ -7225,7 +7231,7 @@ main {
 .teamsWrap .teamContainer .teamheader.active {
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-in;
 }
 .teamsWrap .teamContainer .teamheader.active:after {
@@ -7304,7 +7310,7 @@ main {
   line-height: 28px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .teamsWrap .teamContainer .teamsection ul li .dp h3 {
   width: 100%;
@@ -7314,7 +7320,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .teamsWrap .teamContainer .teamsection ul li .dp p {
@@ -7326,7 +7332,7 @@ main {
   text-decoration: none;
   color: #3A4E5C;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   transition: all 0.4s ease-out;
@@ -7546,7 +7552,7 @@ main {
   padding-top: 1rem;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -7565,7 +7571,7 @@ main {
   font-size: 22px;
   line-height: 30px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .faqsWrap .popularquestions .popularquestionsSlider {
   width: 100%;
@@ -7606,7 +7612,7 @@ main {
   color: #707070;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .faqsWrap .popularquestions .popularquestionsSlider .slick-list .slick-track .slick-slide .itmes p {
@@ -7617,7 +7623,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .faqsWrap .faqsTabs {
   width: 100%;
@@ -7637,7 +7643,7 @@ main {
   font-size: 26px;
   line-height: 54px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .faqsWrap .faqsTabs ul {
   width: auto;
@@ -7658,7 +7664,7 @@ main {
   color: #888888;
   font-size: 22px;
   line-height: 54px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
   cursor: pointer;
@@ -7667,7 +7673,7 @@ main {
   border-bottom-color: #233D4D;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-in;
   position: relative;
   user-select: none;
@@ -7740,7 +7746,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #000000;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   position: relative;
 }
@@ -7766,7 +7772,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .faqsWrap .faqsContainer .faqssection ul li:last-child {
@@ -7855,7 +7861,7 @@ main {
     color: #888888;
     font-size: 20px;
     line-height: 45px;
-    font-family: "Arial", Arial, sans-serif;
+    font-family: "Arial-Regular", Arial, sans-serif;
     font-weight: 300;
     transition: all 0.4s ease-out;
     cursor: pointer;
@@ -7877,7 +7883,7 @@ main {
     border-bottom: none;
     color: #233D4D;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     transition: all 0.4s ease-in;
   }
   .faqsWrap .faqsContainer .faqsheader.active:after {
@@ -7958,7 +7964,7 @@ main {
   padding-top: 1rem;
   text-align: left;
   color: #535353;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -8001,7 +8007,7 @@ main {
   text-align: center;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 28px;
 }
@@ -8018,7 +8024,7 @@ main {
   margin: 0 0 1.2rem 1rem;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -8037,7 +8043,7 @@ main {
   text-align: center;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -8072,7 +8078,7 @@ main {
   float: left;
   text-align: center;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -8087,7 +8093,7 @@ main {
     text-align: center;
     color: #000000;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
   }
@@ -8143,7 +8149,7 @@ main {
   }
   .doanddontWrap .doanddontContainer .doanddontText ul li h2 {
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     margin-top: 1rem;
@@ -8202,7 +8208,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .contactWrap .contactContainer .contactInfo p a {
@@ -8224,7 +8230,7 @@ main {
   font-size: 22px;
   line-height: 44px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .contactWrap .contactContainer .contactInfo address {
   width: 100%;
@@ -8233,7 +8239,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -8261,14 +8267,14 @@ main {
   font-size: 26px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .contactWrap .contactContainer .contactInfo dl dd {
   text-align: left;
   color: #FFFFFF;
   font-size: 22px;
   line-height: 36px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .contactWrap .contactContainer .contactInfo dl dd i.fa {
@@ -8315,7 +8321,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .contactWrap .contactContainer .contactForm ul {
@@ -8342,7 +8348,7 @@ main {
   margin-top: 5px;
   font-size: 12px;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -8358,7 +8364,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .contactWrap .contactContainer .contactForm ul li input[type=text]::placeholder {
@@ -8385,7 +8391,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .contactWrap .contactContainer .contactForm ul li select option {
@@ -8444,10 +8450,10 @@ main {
   font-size: 26px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .adresswrap .addressheading h2 span {
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
@@ -8472,7 +8478,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .addressheading aside input[type=text]::placeholder {
@@ -8517,12 +8523,12 @@ main {
   font-size: 14px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .adresswrap .adresscontainer .adressmap .contactusmapmyindia .mapinfo h6 {
   font-size: 13px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist {
@@ -8543,7 +8549,7 @@ main {
   color: #000000;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist ul {
@@ -8569,7 +8575,7 @@ main {
   color: #707070;
   font-size: 14px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist ul li h3:before {
@@ -8591,7 +8597,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .adresswrap .adresscontainer .adresslist ul li h5 {
   width: 100%;
@@ -8600,7 +8606,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist ul li h6 {
@@ -8610,7 +8616,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist ul li p {
@@ -8621,7 +8627,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .adresswrap .adresscontainer .adresslist ul li p i.fa {
@@ -8952,10 +8958,10 @@ main {
   font-size: 26px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pngavailability .pnglocationHeading h2 span {
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
@@ -8980,7 +8986,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text]::placeholder {
@@ -9013,7 +9019,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pngavailability .pnglocationfilter ul {
   width: 100%;
@@ -9037,7 +9043,7 @@ main {
   margin-top: 5px;
   font-size: 12px;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -9053,7 +9059,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pngavailability .pnglocationfilter ul li input[type=text]::placeholder {
@@ -9080,7 +9086,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select option {
@@ -9137,7 +9143,7 @@ main {
   font-size: 18px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pngavailability .pnglocationlist ul {
   width: 100%;
@@ -9166,7 +9172,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pngavailability .pnglocationlist ul li h2:after {
   content: "";
@@ -9185,7 +9191,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3 {
@@ -9194,7 +9200,7 @@ main {
   text-align: left;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pngavailability .pnglocationlist ul li h3::before {
@@ -9225,7 +9231,7 @@ main {
   line-height: 28px;
   color: #3A4E5C;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pngavailability .pnglocationlist ul li h4 a {
   text-decoration: none;
@@ -9266,7 +9272,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pnggetconnection section h3 {
   width: 100%;
@@ -9276,7 +9282,7 @@ main {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pnggetconnection section dl {
@@ -9313,7 +9319,7 @@ main {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 22px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .pngavailabilityWrap .pnggetconnection section dl dt p span {
@@ -9352,7 +9358,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired {
   width: 100%;
@@ -9374,7 +9380,7 @@ main {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -9632,7 +9638,7 @@ main {
     font-size: 14px;
     line-height: 22px;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
   }
   .pngavailabilityWrap .pnggetconnection section dl dd {
     position: relative;
@@ -9705,10 +9711,10 @@ main {
   font-size: 26px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstation .cngstationheading h2 span {
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
@@ -9733,7 +9739,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationheading aside input[type=text]::placeholder {
@@ -9766,7 +9772,7 @@ main {
   font-size: 16px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstation .cngstationfilter ul {
   width: 100%;
@@ -9791,7 +9797,7 @@ main {
   margin-top: 5px;
   font-size: 12px;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -9807,7 +9813,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationfilter ul li input[type=text]::placeholder {
@@ -9834,7 +9840,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationfilter ul li select option {
@@ -9888,7 +9894,7 @@ main {
   font-size: 18px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstation .cngstationlist ul {
   width: 100%;
@@ -9919,7 +9925,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstation .cngstationlist ul li h2:after {
   content: "";
@@ -9938,7 +9944,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationlist ul li h4 {
@@ -9948,7 +9954,7 @@ main {
   color: #3C3C3C;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationlist ul li h4 i.fa {
@@ -9976,7 +9982,7 @@ main {
   text-align: left;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationlist ul li dl dt:before {
@@ -9991,7 +9997,7 @@ main {
   text-align: left;
   font-size: 14px;
   line-height: 26px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .cngstationWrap .cngstation .cngstationlist ul li dl dd span {
@@ -10004,7 +10010,7 @@ main {
   font-size: 14px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstation .cngstationlist ul li dl dd span i.fa {
   margin-right: 3px;
@@ -10049,12 +10055,12 @@ main {
   font-size: 14px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .cngstationWrap .cngstationmap .mapinfo h6 {
   font-size: 13px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -10278,7 +10284,7 @@ main {
   float: left;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
@@ -10295,7 +10301,7 @@ main {
   text-align: left;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 1;
 }
@@ -10305,7 +10311,7 @@ main {
   text-align: left;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   line-height: 1;
   margin: 0.7rem 0 0.9rem 0;
@@ -10335,7 +10341,7 @@ main {
   padding-bottom: 3px;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1;
 }
@@ -10401,7 +10407,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #233D4D;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .healthsafetyWrap .emergencyheading section .emergencycontactsort select option {
@@ -10435,7 +10441,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #233D4D;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text]::placeholder {
@@ -10513,7 +10519,7 @@ main {
   font-size: 18px;
   line-height: 1;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .healthsafetyWrap .emergencycontactlist .emergencyloader {
   display: none;
@@ -10564,7 +10570,7 @@ main {
   font-size: 22px;
   line-height: 28px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .healthsafetyWrap .emergencycontactlist ul li h2:after {
   content: "";
@@ -10587,7 +10593,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .healthsafetyWrap .emergencycontactlist ul li p i.fa {
@@ -10646,7 +10652,7 @@ main {
   font-size: 18px;
   line-height: 21px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 }
 .healthsafetyWrap .healthsafetyfaqs div aside:after {
@@ -10686,12 +10692,12 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .healthsafetyWrap .healthsafetyfaqs div section p b {
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 .healthsafetyWrap .healthsafetyfaqs div h3 {
@@ -10705,7 +10711,7 @@ main {
   text-decoration: none;
   color: #F2662C;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   transition: all 0.4s ease-out;
@@ -10742,7 +10748,7 @@ main {
   font-size: 26px;
   line-height: 54px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .healthsafetyWrap .hsdoanddontTabs ul {
   width: auto;
@@ -10765,7 +10771,7 @@ main {
   color: #888888;
   font-size: 22px;
   line-height: 54px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
   cursor: pointer;
@@ -10785,7 +10791,7 @@ main {
   border-bottom-color: #233D4D;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   transition: all 0.4s ease-in;
   user-select: none;
   pointer-events: none;
@@ -10864,7 +10870,7 @@ main {
   margin: 0 0 1.2rem 1rem;
   text-align: left;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -10891,7 +10897,7 @@ main {
   text-align: center;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 28px;
 }
@@ -10907,7 +10913,7 @@ main {
   text-align: center;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -10942,7 +10948,7 @@ main {
   float: left;
   text-align: center;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -10954,7 +10960,7 @@ main {
   text-align: center;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
@@ -11223,7 +11229,7 @@ main {
     color: #888888;
     font-size: 20px;
     line-height: 45px;
-    font-family: "Arial", Arial, sans-serif;
+    font-family: "Arial-Regular", Arial, sans-serif;
     font-weight: 300;
     transition: all 0.4s ease-out;
     cursor: pointer;
@@ -11244,7 +11250,7 @@ main {
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active {
     color: #233D4D;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     transition: all 0.4s ease-in;
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active:after {
@@ -11282,7 +11288,7 @@ main {
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div ul li h2 {
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     margin-top: 0.5rem;
@@ -11458,7 +11464,7 @@ main {
   color: #535353;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_title aside {
@@ -11509,7 +11515,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_related ul {
   width: 100%;
@@ -11538,7 +11544,7 @@ main {
   font-size: 18px;
   line-height: 30px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_related ul li p {
   width: 100%;
@@ -11548,7 +11554,7 @@ main {
   font-size: 16px;
   line-height: 1.2;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_related ul li p a {
   text-decoration: none;
@@ -11600,7 +11606,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_webinar p {
   width: 100%;
@@ -11609,7 +11615,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -11636,7 +11642,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_blogpost p {
   width: 100%;
@@ -11646,7 +11652,7 @@ main {
   color: #3C3C3C;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_blogpost h4 {
@@ -11658,7 +11664,7 @@ main {
   font-size: 22px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*  review */
@@ -11682,7 +11688,7 @@ main {
   font-size: 26px;
   line-height: 31px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 .resources_review .resources_review_header p {
@@ -11734,7 +11740,7 @@ main {
   color: #8D8D8D;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_review .resources_review_comments article h2 span {
@@ -11748,7 +11754,7 @@ main {
   color: #535353;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_review .resources_review_comments article h3 {
@@ -11762,7 +11768,7 @@ main {
   color: #233D4D;
   font-size: 16px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   transition: all 0.4s ease-out;
 }
@@ -11787,7 +11793,7 @@ main {
   color: #233D4D;
   font-size: 18px;
   line-height: 28px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   resize: none;
 }
@@ -11812,7 +11818,7 @@ main {
   color: #F2662C;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_review .resources_review_comments section h6 {
@@ -11862,7 +11868,7 @@ main {
   font-size: 18px;
   line-height: 28px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -11893,7 +11899,7 @@ main {
   font-size: 18px;
   line-height: 1;
   color: #233D4D;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_filter aside input[type=text]::placeholder {
@@ -11932,7 +11938,7 @@ main {
   margin-top: 5px;
   font-size: 12px;
   color: #F2662C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -11945,7 +11951,7 @@ main {
   font-size: 16px;
   line-height: 21px;
   color: #233D4D;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-align: right;
   transition: all 0.4s ease-out;
@@ -11968,7 +11974,7 @@ main {
   font-size: 16px;
   line-height: 1.2;
   color: #535353;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   text-decoration: none;
   cursor: pointer;
@@ -12012,7 +12018,7 @@ main {
   color: #535353;
   font-size: 16px;
   line-height: 1;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   cursor: pointer;
 }
@@ -12028,7 +12034,7 @@ main {
   font-size: 16px;
   line-height: 1.2;
   color: #535353;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_filter section div select option {
@@ -12085,7 +12091,7 @@ main {
   color: #F2662C;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_keywords ul li span {
@@ -12145,7 +12151,7 @@ main {
   font-size: 16px;
   line-height: 18px;
   color: #707070;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_list ul li section h4 span {
@@ -12160,7 +12166,7 @@ main {
   line-height: 30px;
   color: #000000;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_list ul li section p {
   width: 100%;
@@ -12170,7 +12176,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #3C3C3C;
-  font-family: "Arial", Arial, sans-serif;
+  font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
 .resources_list ul li section h5 {
@@ -12187,7 +12193,7 @@ main {
   font-size: 16px;
   line-height: 18px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_list ul li section h5 a i.fa {
   padding: 0 5px;
@@ -12229,7 +12235,7 @@ main {
   padding: 8px 16px;
   font-size: 18px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_pagination p a {
   text-decoration: none;
@@ -12258,7 +12264,7 @@ main {
   padding: 8px 16px;
   font-size: 24px;
   font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 .resources_pagination div ul li a {
   text-decoration: none;
@@ -12606,7 +12612,7 @@ main {
     cursor: pointer;
     font-size: 24px;
     font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     color: #3C3C3C;
     cursor: pointer;
     text-align: center;

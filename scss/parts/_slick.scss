@@ -56,7 +56,7 @@
 
 
 /* satisfactionNav  === arrows */
-.satisfactionSlider.slick-slider .slick-arrow { z-index: 3; top:auto; bottom:-65px; width:35px; height:35px; margin: 0; padding: 0; border:0; line-height: 1; background-color:$ong1; color: $wht1; @include fCC(); @include outT(); transform: translateY(-50%); }
+.satisfactionSlider.slick-slider .slick-arrow { z-index: 2; top:auto; bottom:-65px; width:35px; height:35px; margin: 0; padding: 0; border:0; line-height: 1; background-color:$ong1; color: $wht1; @include fCC(); @include outT(); transform: translateY(-50%); }
 .satisfactionSlider.slick-slider .slick-arrow:hover { background-color:$blu1; color: $wht1; @include inT(); }
 .satisfactionSlider.slick-slider .slick-arrow.slick-disabled { opacity: 0.5; background-color:$blk4; pointer-events:none; }
 .satisfactionSlider.slick-slider .slick-next  { right:20px; } 
@@ -66,7 +66,7 @@
 .satisfactionSlider.slick-slider .slick-prev:before { content: "\f100";  }
 .satisfactionSlider.slick-slider .slick-arrow.slick-disabled { user-select: none; pointer-events: none; }
 /* satisfactionNav  === dots */
-.satisfactionSlider.slick-slider .slick-dots { z-index:2; bottom: -40px;  text-align: center; }
+.satisfactionSlider.slick-slider .slick-dots { z-index:1; bottom: -40px;  text-align: center; }
 .satisfactionSlider.slick-slider .slick-dots li { position: relative; display: inline-block; width:12px; height:12px; margin: 0 4px; padding: 0; border: none; cursor: pointer; background:$wht4; border-radius:50%; }
 .satisfactionSlider.slick-slider .slick-dots li.slick-active { transform: scale(1); background:$ong2; }
 .satisfactionSlider.slick-slider .slick-dots li button { display: none; }

@@ -44,7 +44,7 @@
                     &:after { content: ''; position: absolute; bottom:0; left:0; height: 4px; width:100%; background-color:$ong1; border-radius: 4px;}
                 }
                 a { 
-                    text-decoration: none;  @include Arial(); color:$blk1;  font-size: 20px; line-height: 45px; @include outT();
+                    text-decoration: none;  @include Arial(); color:$blk1;  font-size: 18px; line-height: 45px; @include outT();
                     &:hover { color:$ong1; @include inT(); }
                     i.fa.fa-angle-down, i.fa.fa-angle-up  { margin-left:10px; }
                 }

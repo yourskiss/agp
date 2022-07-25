@@ -19,13 +19,13 @@
                     &:last-child { width: 100%; margin: 0; }
                     .errorMsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 14px; color: $blk1; @include Arial(); text-align: left; }
                     input[type='text'] {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 18px; line-height: 24px; color: $wht1; @include Arial();
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 16px; line-height: 24px; color: $wht1; @include Arial();
                         &::placeholder { color: $wht1; opacity: 0.9; }      
                         &:-ms-input-placeholder { color: $wht1; opacity: 0.9; }
                         &::-ms-input-placeholder { color: $wht1; opacity: 0.9;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 18px;  line-height: 24px; color: $wht1;  @include Arial(); opacity:0.9;
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 16px;  line-height: 24px; color: $wht1;  @include Arial(); opacity:0.9;
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
