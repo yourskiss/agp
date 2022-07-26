@@ -15,7 +15,7 @@
                 width: 200px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
                 span { display: none; }
                 input[type='text'] { 
-                    background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
+                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
                     &::placeholder { color: $blk7; opacity: 1; }      
                     &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                     &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
@@ -87,8 +87,9 @@
                         }
                     }
                     h5 { 
-                        position:absolute; right:1rem; top:1rem; width: auto; float: right; text-align: right; font-size: 20px; line-height: 1; cursor: pointer; text-decoration: none; color:$blu3; @include outT(); 
-                        &:hover { color:$ong1; @include inT(); }
+                        position:absolute; right:1rem; top:1rem; width: 19px; height: 20px; float: right;  line-height: 1; cursor: pointer; text-decoration: none; background: url('../images/share-orange.png') no-repeat center center; @include outT();  filter: grayscale(1);
+                        span { display: none; }
+                        &:hover {  filter: grayscale(0); @include inT(); }
                     }
                 }
             }

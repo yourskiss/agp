@@ -8980,7 +8980,7 @@ main {
   display: none;
 }
 .pngavailabilityWrap .pngavailability .pnglocationHeading aside input[type=text] {
-  background: transparent url("../Images/search-black.png") no-repeat;
+  background: transparent url("../Images/search2.png") no-repeat;
   background-position: right 8px top 50%;
   margin: 0;
   width: 100%;
@@ -9733,7 +9733,7 @@ main {
   display: none;
 }
 .cngstationWrap .cngstation .cngstationheading aside input[type=text] {
-  background: transparent url("../Images/search-black.png") no-repeat;
+  background: transparent url("../Images/search2.png") no-repeat;
   background-position: right 8px top 50%;
   margin: 0;
   width: 100%;
@@ -10024,18 +10024,21 @@ main {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  width: auto;
+  width: 19px;
+  height: 20px;
   float: right;
-  text-align: right;
-  font-size: 20px;
   line-height: 1;
   cursor: pointer;
   text-decoration: none;
-  color: #3A4E5C;
+  background: url("../images/share-orange.png") no-repeat center center;
   transition: all 0.4s ease-out;
+  filter: grayscale(1);
+}
+.cngstationWrap .cngstation .cngstationlist ul li h5 span {
+  display: none;
 }
 .cngstationWrap .cngstation .cngstationlist ul li h5:hover {
-  color: #F2662C;
+  filter: grayscale(0);
   transition: all 0.4s ease-in;
 }
 .cngstationWrap .cngstationmap {
@@ -10413,7 +10416,7 @@ main {
   background: transparent;
   outline: none;
   border: none;
-  border-bottom: solid 1px #969696;
+  border-bottom: solid 1px #707070;
   outline: none;
   text-align: left;
   font-size: 18px;
@@ -10447,7 +10450,7 @@ main {
   width: 100%;
   float: right;
   border: none;
-  border-bottom: solid 1px #969696;
+  border-bottom: solid 1px #707070;
   outline: none;
   padding: 0.5rem 0;
   font-size: 18px;
@@ -11899,7 +11902,7 @@ main {
   float: left;
 }
 .resources_filter aside input[type=text] {
-  background: transparent url("../Images/search-blue.png") no-repeat;
+  background: transparent url("../Images/search2.png") no-repeat;
   background-position: right 8px top 50%;
   margin: 0;
   width: 100%;
@@ -12225,11 +12228,18 @@ main {
   color: #233D4D;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  font-size: 20px;
+  width: 19px;
+  height: 20px;
+  background: url("../images/share-orange.png") no-repeat center center;
   line-height: 1;
+  text-decoration: none;
+  filter: grayscale(1);
+}
+.resources_list ul li section h5 span i.fa {
+  display: none;
 }
 .resources_list ul li section h5 span:hover {
-  color: #F2662C;
+  filter: grayscale(0);
   transition: all 0.4s ease-in;
 }
 

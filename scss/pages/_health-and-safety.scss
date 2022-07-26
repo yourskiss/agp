@@ -54,7 +54,7 @@
             .emergencycontactsort {
                 width: 200px; float: left; text-align: left; 
                 select {  
-                    width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; outline:none;  text-align: left; font-size: 18px;  line-height: 1; color: $blu1;  @include Arial(); 
+                    width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk7; outline:none;  text-align: left; font-size: 18px;  line-height: 1; color: $blu1;  @include Arial(); 
                     option { 
                         color: $blu1;      
                         &:disabled { user-select: none; pointer-events: none; }
@@ -66,7 +66,7 @@
                 width: 300px; float: left; text-align: left; 
                 span { display: none; }
                 input[type='text'] { 
-                    background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;   border-bottom: solid 1px $blk8;  outline:none; padding:0.5rem 0;  font-size: 18px; line-height: 1; color: $blu1; @include Arial();
+                    background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;   border-bottom: solid 1px $blk7;  outline:none; padding:0.5rem 0;  font-size: 18px; line-height: 1; color: $blu1; @include Arial();
                     &::placeholder { color: $blk7; opacity: 1; }      
                     &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                     &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
