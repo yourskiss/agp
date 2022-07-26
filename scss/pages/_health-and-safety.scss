@@ -26,7 +26,10 @@
             }
             h3 { 
                 width:100%; float:left; text-align: left; 
-                span { display: inline-block; border-bottom: solid 1px $wht1; padding-bottom: 3px; color: $wht1; @include aBold(); font-size: 16px; line-height: 1;  }
+                span { 
+                    display: inline-block; cursor: pointer; border-bottom: solid 1px $wht1; padding-bottom: 3px; color: $wht1; @include aBold(); font-size: 16px; line-height: 1;  @include outT();
+                    &:hover { color: $blk2; border-bottom-color:$blk2; @include inT(); }
+                }
             }
         }
     }

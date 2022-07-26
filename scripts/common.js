@@ -141,11 +141,11 @@ $("#quicklinkBG").click(function()
     $("#quicklinkBG").fadeOut(500);
     if($(window).width() > 1565)
     {
-        $("#quicklink").animate({ right: "-248px" });
+        $("#quicklink").animate({ right: "-270px" });
     }
     else if($(window).width() < 1565 && $(window).width() > 1255)
     {
-        $("#quicklink").animate({ right: "-210px" });
+        $("#quicklink").animate({ right: "-250px" });
     }
     else 
     {

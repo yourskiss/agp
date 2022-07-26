@@ -76,7 +76,7 @@
     width: 100%; float: left; background-color: $wht1; padding:4rem 0 5rem 0;
         h2 { 
             width: 100%; float: left; text-align: left; margin-bottom: 1.5rem; @include fSC(); 
-            span {  color:$blk1; font-size:26px; letter-spacing: 1.68px; line-height: 35px; @include aBlack();  }
+            span {  color:$blk1; font-size:26px; letter-spacing: normal; line-height: 35px; @include aBlack();  }
             img { margin-left:5px; max-width: 100%;}
         }
         .offergrid { 
@@ -91,7 +91,7 @@
                     aside {
                         width: 100%; float: left; text-align: left;
                         a { 
-                            display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
+                            display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
                             &:hover {  @include inT();  background:$ong2; box-shadow: 4px 8px 12px #00000029;  color: $wht1; }
                         }
                     }
@@ -269,13 +269,17 @@
     
 }
 
-
+@media only screen and (max-width:1023px) 
+{
+    .highlightservices {
+        margin-top:0px; padding: 3rem 0; 
+    }
+}
 
 
 @media only screen and (max-width:767px) 
 {
     .highlightservices {
-        margin-top: -50px; padding: 0 0 2rem 0; 
         .highlightcontent {
             .highlight {
                 &.png { 
@@ -327,7 +331,7 @@
 @media only screen and (max-width:599px) 
 {
     .highlightservices {
-         margin-top:0px;  
+        padding:2rem 0; margin-top:0px;  
     }
 
 
@@ -358,7 +362,6 @@
 @media only screen and (max-width:479px) 
 {
     .highlightservices {
-        padding: 0 0 2rem 0; margin-top: -60px; 
         .highlightcontent {
             .highlight {
                 ul {

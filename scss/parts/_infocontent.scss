@@ -1,21 +1,20 @@
-
 .infocontent{
     width: 100%; float: left; background-color:$wht1; position: relative; overflow: hidden;
     img { width: 100%; min-height: 100%; animation:zoomIN 30s infinite; z-index:1; position:absolute;}
     .wrapper {
         padding:4rem 0; z-index:2; position: relative;  
-        h2 { width: 100%; float: left; text-align: center;  color:$wht1; font-size:28px; line-height: 44px; text-shadow: 0px 3px 6px #00000077;
-            text-transform: uppercase; @include eurostile(); }
+        h2 { width: 100%; float: left; text-align: center;  color:$wht1; font-size:26px; letter-spacing: normal; line-height: 44px; text-shadow: 0px 3px 6px #00000077;
+            text-transform: uppercase; @include aBlack(); }
         h3 { 
-            width: 100%; float: left; margin: 0.5rem 0 1rem 0; text-align: center; color:$wht1; font-size:18px; line-height: 28px; text-shadow: 0px 3px 6px #0000003d; @include Arial(); 
+            width: 100%; float: left; margin: 0.5rem 0 1rem 0; text-align: center; color:$wht1; font-size:16px; line-height: 28px; text-shadow: 0px 3px 6px #0000003d; @include Arial(); 
             span { display: block;}
          }
          h4 { 
-            width: 100%; float: left; margin: 0.5rem 0 1rem 0; text-align: center; color:$wht1; font-size:18px; line-height: 28px; text-shadow: 0px 3px 6px #0000003d; @include Arial(); 
+            width: 100%; float: left; margin: 0.5rem 0 1rem 0; text-align: center; color:$wht1; font-size:16px; line-height: 28px; text-shadow: 0px 3px 6px #0000003d; @include Arial(); 
             span { display: block;}
          }
         p { 
-            width: 100%; float: left; text-align: center; color:$wht1; font-size:22px;  line-height: 26px; @include aBold(); text-shadow: 0px 3px 6px #00000041;
+            width: 100%; float: left; text-align: center; color:$wht1; font-size:20px;  line-height: 26px; @include aBold(); text-shadow: 0px 3px 6px #00000041;
             a {
                 text-decoration: none; color: $wht1;
                 &:hover { color: $blu1; }
@@ -24,7 +23,7 @@
         aside {
             width: 100%; float: left; margin: 1rem 0 0 0;  text-align: center;
             a { 
-                display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
+                display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase;
                 &:hover {  @include inT(); background-color:$ong3;  color: $wht1;  box-shadow: 4px 8px 12px #00000029; }
             }
         }

@@ -926,8 +926,8 @@ main {
   border: solid 2px #F2662C;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -951,8 +951,8 @@ main {
   border: solid 2px #F2662C;
   background-color: #FFFFFF;
   color: #F2662C;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1219,12 +1219,12 @@ main {
   width: 100%;
   float: left;
   text-align: left;
-  font-size: 28px;
-  letter-spacing: 1.68px;
+  font-size: 26px;
+  letter-spacing: normal;
   line-height: 35px;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent p {
@@ -1232,7 +1232,7 @@ main {
   float: left;
   text-align: left;
   margin: 0.5rem 0 2rem 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
@@ -1743,10 +1743,10 @@ main {
   z-index: 7;
   position: fixed;
   top: 50%;
-  right: -248px;
+  right: -270px;
   transform: translateY(-38%);
   display: block;
-  width: 248px;
+  width: 270px;
   float: left;
   padding: 1.5rem;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1607843137);
@@ -1788,14 +1788,14 @@ main {
 }
 .quicklink h2 span {
   color: #000000;
-  font-size: 28px;
-  letter-spacing: 0.66px;
-  line-height: 26px;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: normal;
+  line-height: 1;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .quicklink h2 img {
-  margin-left: 5px;
+  margin-left: 2px;
   max-width: 100%;
 }
 .quicklink h3 {
@@ -1943,10 +1943,10 @@ main {
 
 @media only screen and (max-width: 1565px) {
   .quicklink {
-    right: -210px;
+    right: -250px;
     transform: translateY(-40%);
     padding: 1rem;
-    width: 210px;
+    width: 250px;
   }
   .quicklink aside {
     left: -44px;
@@ -2358,12 +2358,13 @@ main {
   float: left;
   text-align: center;
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 26px;
+  letter-spacing: normal;
   line-height: 44px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4666666667);
   text-transform: uppercase;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .infocontent .wrapper h3 {
   width: 100%;
@@ -2371,7 +2372,7 @@ main {
   margin: 0.5rem 0 1rem 0;
   text-align: center;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
   font-family: "Arial-Regular", Arial, sans-serif;
@@ -2386,7 +2387,7 @@ main {
   margin: 0.5rem 0 1rem 0;
   text-align: center;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2392156863);
   font-family: "Arial-Regular", Arial, sans-serif;
@@ -2400,7 +2401,7 @@ main {
   float: left;
   text-align: center;
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
@@ -2429,8 +2430,8 @@ main {
   border: none;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.4px;
   line-height: 20px;
@@ -3213,11 +3214,11 @@ main {
 }
 .satisfactionwrap h2 span {
   color: #000000;
-  font-size: 28px;
-  letter-spacing: 1.68px;
+  font-size: 26px;
+  letter-spacing: normal;
   line-height: 35px;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .satisfactionwrap h2 img {
   margin-left: 5px;
@@ -3374,8 +3375,8 @@ main {
   color: #FFFFFF;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
 }
 .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb p b {
   font-family: "Arial-Bold", Arial, sans-serif;
@@ -3652,11 +3653,11 @@ main {
 }
 .knowledgeresources h2 span {
   color: #000000;
-  font-size: 28px;
-  letter-spacing: 1.68px;
+  font-size: 26px;
+  letter-spacing: normal;
   line-height: 35px;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .knowledgeresources h2 img {
   margin-left: 5px;
@@ -3668,7 +3669,7 @@ main {
   margin: 0.7rem 0 1.5rem 0;
   text-align: left;
   color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
@@ -3699,7 +3700,7 @@ main {
   padding: 2.5rem 2rem 0 2rem;
   text-align: left;
   color: #000000;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
@@ -3710,8 +3711,8 @@ main {
   padding: 0.7rem 2rem 1.2rem 2rem;
   text-align: left;
   color: #3C3C3C;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 26px;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
@@ -3781,7 +3782,7 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   .knowledgeresources {
-    padding: 3rem 0 4rem 0;
+    padding: 3rem 0 5rem 0;
   }
   .knowledgeresources h2 span {
     font-size: 24px;
@@ -3813,7 +3814,7 @@ main {
 }
 @media only screen and (max-width: 1255px) {
   .knowledgeresources {
-    padding: 3rem 0 3rem 0;
+    padding: 3rem 0 5rem 0;
   }
   .knowledgeresources h2 span {
     font-size: 24px;
@@ -3843,9 +3844,14 @@ main {
     line-height: 18px;
   }
 }
+@media only screen and (max-width: 1023px) {
+  .knowledgeresources {
+    padding: 3rem 0 3rem 0;
+  }
+}
 @media only screen and (max-width: 479px) {
   .knowledgeresources {
-    padding: 3rem 0 5rem 0;
+    padding: 3rem 0 6rem 0;
   }
   .knowledgeresources h2 {
     display: block;
@@ -4291,7 +4297,7 @@ main {
 .weoffers h2 span {
   color: #000000;
   font-size: 26px;
-  letter-spacing: 1.68px;
+  letter-spacing: normal;
   line-height: 35px;
   font-family: "Arial-Black", Arial, sans-serif;
   font-weight: 900;
@@ -4359,8 +4365,8 @@ main {
   border: none;
   background-color: #F2662C;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.4px;
   line-height: 20px;
@@ -4591,11 +4597,13 @@ main {
     bottom: 0;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .highlightservices {
-    margin-top: -50px;
-    padding: 0 0 2rem 0;
+    margin-top: 0px;
+    padding: 3rem 0;
   }
+}
+@media only screen and (max-width: 767px) {
   .highlightservices .highlightcontent .highlight.png {
     width: 48%;
   }
@@ -4639,6 +4647,7 @@ main {
 }
 @media only screen and (max-width: 599px) {
   .highlightservices {
+    padding: 2rem 0;
     margin-top: 0px;
   }
   .weoffers h2 {
@@ -4662,10 +4671,6 @@ main {
   }
 }
 @media only screen and (max-width: 479px) {
-  .highlightservices {
-    padding: 0 0 2rem 0;
-    margin-top: -60px;
-  }
   .highlightservices .highlightcontent .highlight ul li a aside img {
     max-width: 16px;
   }
@@ -10337,6 +10342,7 @@ main {
 }
 .healthsafetymain .healthsafetyAbout section h3 span {
   display: inline-block;
+  cursor: pointer;
   border-bottom: solid 1px #FFFFFF;
   padding-bottom: 3px;
   color: #FFFFFF;
@@ -10344,6 +10350,12 @@ main {
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
+  transition: all 0.4s ease-out;
+}
+.healthsafetymain .healthsafetyAbout section h3 span:hover {
+  color: #3C3C3C;
+  border-bottom-color: #3C3C3C;
+  transition: all 0.4s ease-in;
 }
 
 /* ######################## faqsWrap ######################## */

@@ -15,14 +15,14 @@
                 dt { 
                     width: 100%; float: left; margin-bottom:0.6rem;
                     a { 
-                        display: inline-block; width:190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$ong1; color: $wht1; @include eurostile(); font-size:14px; text-transform: uppercase;
+                        display: inline-block; width:190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$ong1; color: $wht1; @include aMedium(); font-size:14px; text-transform: uppercase;
                         &:hover {  @include inT(); background-color:$blu1; border-color:$blu1; color: $wht1; }
                     }
                 }
                 dd { 
                     width: 100%; float: left;
                     a { 
-                        display: inline-block; width: 190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$wht1; color: $ong1; @include eurostile(); font-size:14px;  text-transform: uppercase;
+                        display: inline-block; width: 190px; text-align: center; text-decoration: none;@include outT(); padding:7px 0; border: solid 2px $ong1; background-color:$wht1; color: $ong1; @include aMedium(); font-size:14px;  text-transform: uppercase;
                         &:hover {  @include inT(); background-color:$blu1; border-color:$blu1; color: $wht1; }
                     }
                 }

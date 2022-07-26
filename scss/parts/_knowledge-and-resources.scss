@@ -1,12 +1,11 @@
-
 .knowledgeresources {
     width: 100%; float: left; background-color:$wht3; padding:4rem 0 7rem 0;
         h2 { 
             width: 100%; float: left; text-align: left; @include fSC(); 
-            span {  color:$blk1; font-size:28px; letter-spacing: 1.68px; line-height: 35px; @include eurostile(); }
+            span {  color:$blk1; font-size:26px; letter-spacing:normal; line-height: 35px; @include aBlack(); }
             img { margin-left:5px; max-width: 100%;}
         }
-        h3 { width: 100%; float: left; margin:0.7rem 0 1.5rem 0; text-align: left; color:$blk1; font-size:18px; line-height: 24px; @include Arial(); }
+        h3 { width: 100%; float: left; margin:0.7rem 0 1.5rem 0; text-align: left; color:$blk1; font-size:16px; line-height: 24px; @include Arial(); }
         .knowledgeresourcesslider {
             width: 100%; float: left; margin-bottom: 0 !important; padding-bottom: 20px;
             .slick-slide { 
@@ -14,8 +13,8 @@
                 .items { 
                     width: 100%; float: left; 
                     img { width: 100%; }
-                    h4 { width: 100%; float: left; padding:2.5rem 2rem 0 2rem; text-align: left; color:$blk1; font-size:22px; line-height:26px;  @include aBold(); }
-                    p { width: 100%; float: left; padding:0.7rem 2rem 1.2rem 2rem; text-align: left; color:$blk2; font-size:18px; line-height: 28px; @include Arial(); }
+                    h4 { width: 100%; float: left; padding:2.5rem 2rem 0 2rem; text-align: left; color:$blk1; font-size:20px; line-height:26px;  @include aBold(); }
+                    p { width: 100%; float: left; padding:0.7rem 2rem 1.2rem 2rem; text-align: left; color:$blk2; font-size:16px; line-height: 26px; @include Arial(); }
                     aside {
                         width: 100%; float: left; padding:0 2rem 2rem 2rem; text-align: left;
                         a { 
@@ -58,7 +57,7 @@
 @media only screen and (max-width:1255px) 
 {
     .knowledgeresources {
-         padding:3rem 0 4rem 0;
+         padding:3rem 0 5rem 0;
          h2 {
             span { font-size: 24px;letter-spacing: 0.35px;line-height: 30px; }
          }
@@ -82,7 +81,7 @@
 @media only screen and (max-width:1255px) 
 {
     .knowledgeresources {
-         padding:3rem 0 3rem 0;
+         padding:3rem 0 5rem 0;
          h2 {
             span { font-size: 24px;letter-spacing: 0.35px;line-height: 30px; }
          }
@@ -102,11 +101,18 @@
     }
 }
 
+@media only screen and (max-width:1023px) 
+{
+    .knowledgeresources {
+         padding:3rem 0 3rem 0;
+    }
+}
+
 
 @media only screen and (max-width:479px) 
 {
     .knowledgeresources {
-         padding:3rem 0 5rem 0;
+         padding:3rem 0 6rem 0;
          h2 {
             display: block;
             span { display: inline; font-size: 22px;letter-spacing: 1.32px; line-height: 30px; }
