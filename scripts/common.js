@@ -171,6 +171,13 @@ $(document).scroll(function()
 /* quick link menu === end */
 
 
+/* top margin on scroll donw === start */
+let jumpdiv;
+if($(window).width() > 1565) { jumpdiv = 136 } 
+else if($(window).width() < 1565 && $(window).width() > 1255) { jumpdiv = 112 } 
+else if($(window).width() < 1255 && $(window).width() > 479) { jumpdiv = 102 } 
+else { jumpdiv = 87 } 
+/*  top margin on scroll donw === end */
 
  
 /* ############################ Scroller === start ############################ */
@@ -589,14 +596,9 @@ if($(".commitmentsContainer").length > 0)
 }
 if($(".csrAbout").length > 0)
 {
-    $(".csrAboutRight ul li").click(function(){
-        let jumpdiv = 0;
-        if($(window).width() > 1565) jumpdiv = 136;
-        else if($(window).width() < 1565 && $(window).width() > 1255) jumpdiv = 112;
-        else if($(window).width() < 1255 && $(window).width() > 479) jumpdiv = 102;
-        else jumpdiv = 87;
+    $(".csrAboutRight ul li").click(function(){ 
         setTimeout(function(){ 
-            $('html, body').animate({scrollTop: $(".commitmentsWrap").offset().top  - jumpdiv },250);
+            $('html, body').animate({scrollTop: $(".commitmentsWrap").offset().top  - jumpdiv },500);
         }, 300);
         $(".csrloader").show(50);
         let getname = $(this).attr("data-name");
@@ -907,6 +909,10 @@ if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length
         $("#emergencycontactsearch").animate({left: "100%"});
         $('#emergencycontactinput').val("").trigger("keyup");
     });
+}
+
+function gotosafetyfaqs(){
+    $('html, body').animate({scrollTop: $("#healthsafetyfaqs").offset().top  - jumpdiv }, 500);
 }
 /* ############################ Health & Safety === end ############################ */
 
