@@ -172,7 +172,7 @@ $(document).scroll(function()
 
 
 /* top margin on scroll donw === start */
-let jumpdiv;
+var jumpdiv;
 if($(window).width() > 1565) { jumpdiv = 136 } 
 else if($(window).width() < 1565 && $(window).width() > 1255) { jumpdiv = 112 } 
 else if($(window).width() < 1255 && $(window).width() > 479) { jumpdiv = 102 } 
@@ -807,14 +807,27 @@ if($("#locationsearchToggle").length > 0 && $("#locationsearchClose").length > 0
 /* ############################  cng station === start ############################ */
 if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("#cngStationSearchClose").length > 0)
 {
-    $("#cngStationToggle").click(function()
+    $("#cngStationToggle").click(function(e)
     {
+        e.stopPropagation();
+        e.preventDefault();
         $("#cngStationSearch").animate({left: "0"});
     });
     $("#cngStationSearchClose").click(function()
     {
         $("#cngStationSearch").animate({left: "100%"});
         $('#cngStationSearchInput').val("").trigger("keyup");
+    });
+
+    $('body').click(function(e) // close on click body
+    {    
+        e.stopPropagation();
+        e.preventDefault();
+        if (e.target != $('#cngStationSearch')  || e.target != $('#cngStationSearchInput') || e.target != $('#cngStationToggle'))  
+        {
+            $("#cngStationSearch").animate({left: "100%"});
+            $('#cngStationSearchInput').val("").trigger("keyup");
+        }
     });
 }
 /* ############################  cng station === end ############################ */
@@ -911,9 +924,16 @@ if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length
     });
 }
 
-function gotosafetyfaqs(){
-    $('html, body').animate({scrollTop: $("#healthsafetyfaqs").offset().top  - jumpdiv }, 500);
+
+if($("#gotosafetyfaqs").length > 0 && $("#healthsafetyfaqs").length > 0)
+{
+    $("#gotosafetyfaqs").click(function()
+    {
+        $('html, body').animate({scrollTop: $("#healthsafetyfaqs").offset().top  - jumpdiv }, 500);
+    });
 }
+
+ 
 /* ############################ Health & Safety === end ############################ */
 
 
