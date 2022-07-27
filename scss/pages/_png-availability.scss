@@ -306,7 +306,7 @@
                     input[type='text'] {  padding: 0.5rem 3rem 0.5rem 1rem;} 
                 }
                 p { 
-                     display: block; font-size: 24px;color:$blu1; cursor: pointer; @include outT();
+                     display: block; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
                     &:hover { color: $blk1; @include inT(); }
                 }
             }

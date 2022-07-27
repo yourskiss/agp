@@ -807,10 +807,8 @@ if($("#locationsearchToggle").length > 0 && $("#locationsearchClose").length > 0
 /* ############################  cng station === start ############################ */
 if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("#cngStationSearchClose").length > 0)
 {
-    $("#cngStationToggle").click(function(e)
+    $("#cngStationToggle").click(function()
     {
-        e.stopPropagation();
-        e.preventDefault();
         $("#cngStationSearch").animate({left: "0"});
     });
     $("#cngStationSearchClose").click(function()
@@ -818,21 +816,9 @@ if($("#cngStationSearch").length > 0 && $("#cngStationToggle").length > 0 && $("
         $("#cngStationSearch").animate({left: "100%"});
         $('#cngStationSearchInput').val("").trigger("keyup");
     });
-
-    $('body').click(function(e) // close on click body
-    {    
-        e.stopPropagation();
-        e.preventDefault();
-        if (e.target != $('#cngStationSearch')  || e.target != $('#cngStationSearchInput') || e.target != $('#cngStationToggle'))  
-        {
-            $("#cngStationSearch").animate({left: "100%"});
-            $('#cngStationSearchInput').val("").trigger("keyup");
-        }
-    });
 }
 /* ############################  cng station === end ############################ */
-
-
+ 
 
 
 /* ############################  Health & Safety === start ############################ */

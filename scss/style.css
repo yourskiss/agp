@@ -1331,10 +1331,10 @@ main {
   border: none;
   background-color: #233D4D;
   color: #FFFFFF;
-  font-family: "Eurostile-Bold", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Arial-Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.4px;
+  letter-spacing: normal;
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
@@ -9568,7 +9568,7 @@ main {
   }
   .pngavailabilityWrap .pngavailability .pnglocationHeading p {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: #233D4D;
     cursor: pointer;
     transition: all 0.4s ease-out;
@@ -10174,7 +10174,7 @@ main {
   }
   .cngstationWrap .cngstation .cngstationheading p {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: #233D4D;
     cursor: pointer;
     transition: all 0.4s ease-out;
