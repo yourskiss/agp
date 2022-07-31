@@ -1,5 +1,5 @@
 .servicebutton { 
-    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:12px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; line-height:20px; letter-spacing:0.4px; text-transform: uppercase;
+    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:12px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; line-height:1; letter-spacing:0.4px; text-transform: uppercase;
     &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
 }
 
@@ -12,7 +12,7 @@
         width: 100%; float: left; padding:0; @include fBS(); flex-wrap: wrap;
         .serviceAboutLeft {
             width: 45%; float: left;
-            p { width: 100%; float: left; text-align: left; color: $blk2; @include Arial(); font-size: 16px; line-height: 28px; }
+            p { width: 100%; float: left; text-align: left; color: $blk2; @include Arial(); font-size: 16px; line-height: 26px; }
         }
         .serviceAboutRight {
             width: 45%; float: right;
@@ -25,7 +25,7 @@
                         width: 100%; float: left; text-align: center;
                         img { max-width: 100%;}
                     }
-                    p { width: 100%; margin: 1rem 0 0 0; float: left; text-align: center; color: $blk2; @include Arial(); font-size: 20px; line-height: 24px; }
+                    p { width: 100%; margin: 1rem 0 0 0; float: left; text-align: center; color: $blk2; @include Arial(); font-size: 18px; line-height: 24px; }
                 }
             }
         }
@@ -71,10 +71,10 @@
         width: 100%; float: left; padding:5rem 0; text-align: center;
         h2 { 
             width: 100%; float: left; text-align: left; @include fSC(); 
-            span {  color:$blk1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();  }
+            span {  color:$blk1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();  }
             img { margin-left:5px; max-width: 100%;}
         }
-        h3 {  width: 100%; margin:0.3rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:18px; line-height: 28px;  }
+        h3 {  width: 100%; margin:0.3rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px;  }
         section { 
             width: 100%; max-width: 1000px; margin: 0 auto; @include fBS(); align-items: stretch;
             img { width:450px }
@@ -82,8 +82,8 @@
                 width: 520px;  @include fSS(); flex-wrap: wrap;
                 li { 
                     list-style: none;
-                    h4 {  width: 100%; margin:0; float: left; text-align: left; color: $blk1; @include aBold(); font-size:18px; line-height: 28px;  }
-                    p {  width: 100%; margin:0.1rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 22px;  }
+                    h4 {  width: 100%; margin:0; float: left; text-align: left; color: $blk1; @include aBold(); font-size:16px; line-height: 26px;  }
+                    p {  width: 100%; margin:0.1rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:14px; line-height: 22px;  }
                 }
             }
             aside { display: none; }
@@ -103,10 +103,10 @@
             box-shadow: 0px 6px 12px #00000014;
             h2 { 
                 width: 100%; float: left; text-align: left; @include fSC(); 
-                span {  color:$blk1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();  }
+                span {  color:$blk1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();  }
                 img { margin-left:5px; max-width: 100%;}
             }
-            p {  width: 100%; margin:0.5rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:18px; line-height: 28px;  }
+            p {  width: 100%; margin:0.5rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px;  }
             section { 
                 width: 100%; float: left; @include fSC();
                 h3 { width:auto; margin-right:1rem; float: left; text-align: left; color:$blk7; @include Arial(); font-size:12px; line-height: 28px;  }
@@ -128,7 +128,7 @@
                 }
             }
             h5 { 
-                width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color: $blk1; @include hnr(); font-size:80px; line-height: 1.2; 
+                width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color: $blk1; @include aMedium(); font-size:74px; line-height: 1.2; 
                 i.fa { margin-right: 5px; line-height: 1; font-size: 90%; font-weight: 300; }
             }
         }
@@ -143,9 +143,9 @@
         width: 100%; float: left; padding:5rem 0; position: relative;
         img { width: 100%;}
         section {
-            position: absolute; left: 3%; top: 50%; transform: translateY(-50%); width: 450px; float:left;
-            h2 {  width: 100%; float: left; text-align: left;  color:$wht1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();   }
-            p {  width: 100%; margin:0.7rem 0 1.5rem 0; float: left; text-align: left; color: $wht1; @include aBold(); font-size:18px; line-height: 28px; }
+            position: absolute; left: 3%; top: 50%; transform: translateY(-50%); width: 390px; float:left;
+            h2 {  width: 100%; float: left; text-align: left;  color:$wht1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();   }
+            p {  width: 100%; margin:0.7rem 0 1.5rem 0; float: left; text-align: left; color: $wht1; @include aBold(); font-size:16px; line-height: 26px; }
             aside { 
                 width: 100%; float: left; text-align: left; 
                 a.servicebutton {
@@ -169,23 +169,23 @@
             box-shadow: 0px 6px 12px #00000014;
             h2 { 
                 width: 100%; float: left; text-align: left; @include fSC(); 
-                span {  color:$blk1; font-size:28px; letter-spacing:1.68px; line-height: 35px; @include eurostile();  }
+                span {  color:$blk1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();  }
                 img { margin-left:5px; max-width: 100%;}
             }
-            h3 { width: 100%; margin:0.5rem 0 1.5rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:18px; line-height: 28px; }
-            h4 { width: 100%; margin:0 0 0.7rem 0; float: left; text-align: left; color: $blk2; @include aBold(); font-size:18px; line-height: 28px; }
+            h3 { width: 100%; margin:0.5rem 0 1.5rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px; }
+            h4 { width: 100%; margin:0 0 0.7rem 0; float: left; text-align: left; color: $blk2; @include aBold(); font-size:16px; line-height: 26px; }
             section { 
                 width:75%; float: left; @include fBS();
                 aside { 
                     width: 47%; float: left;
                     .pincodeinput {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 18px; line-height: 24px; color: $blk7; @include hnr();
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px; line-height: 24px; color: $blk7; @include aMedium();
                         &::placeholder { color: $blk7;  opacity: 1; }      
                         &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     .districtselect {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 18px;  line-height: 24px; color:$blk7;  @include hnr(); 
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px;  line-height: 24px; color:$blk7;  @include aMedium(); 
                         option { 
                             color: $blk7;      
                             &:disabled { user-select: none; pointer-events: none; }
@@ -197,14 +197,14 @@
             h5 { 
                 width: 100%; float: left; text-align: left; margin-top:1rem;
                 .gosubmit {
-                    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase; cursor: pointer;
+                    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; text-transform: uppercase; cursor: pointer;
                         &:hover {  @include inT(); background-color:$blk1;  color: $wht1; }
                 }
             }
             h6 {
                 width: 100%; float: left; text-align: left;  margin-top:2rem;
                 a {
-                    text-decoration: none; @include outT(); font-size:18px; line-height: 28px;  color:$blu1;
+                    text-decoration: none; @include outT(); font-size:16px; line-height: 26px;  color:$blu1;
                     span { border-bottom: solid 1px $blu1; padding-bottom: 1px; text-align: left; @include aBold();  }
                     i.fa { font-weight: 400; margin-left: 5px;  @include outT(); }
                     &:hover {
@@ -230,7 +230,7 @@
         .items { 
             width: 49.5%; float: left; position: relative;
             img { width: 100%; }
-            h2 { position: absolute; left: 10%; top: 12%; width: 80%; color: $wht1; @include eurostile(); font-size:32px; letter-spacing:1.92px; line-height: 44px; text-transform: uppercase; text-shadow: 0px 3px 6px rgba(0,0,0,0.6); text-align: left; }
+            h2 { position: absolute; left: 10%; top: 12%; width: 80%; color: $wht1; @include aBlack(); font-size:30px; letter-spacing:1.92px; line-height: 44px; text-transform: uppercase; text-shadow: 0px 3px 6px rgba(0,0,0,0.6); text-align: left; }
             a.servicebutton {
                 position: absolute; bottom:4px; right:0;  text-decoration: none; @include outT(); white-space:nowrap;
                 &:hover { @include inT(); }
@@ -238,7 +238,7 @@
         }
     }
     h3 { 
-        width: 100%; float: left; margin-top: 2rem; text-align: center; font-size:18px; line-height: 28px;  color:$blu1; @include aBold();
+        width: 100%; float: left; margin-top: 2rem; text-align: center; font-size:16px; line-height: 26px;  color:$blu1; @include aBold();
         b { font-weight: normal; }
         a { 
             text-decoration: none;  color:$blu1; @include outT(); 

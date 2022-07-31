@@ -33,7 +33,7 @@
     img { width: 100%;}
     .wrapper { 
         z-index: 2; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); 
-        h2 { float: left; width: 100%; text-align: left; @include eurostile(); font-size: 56px; line-height:1.2; letter-spacing:3.36px; color: $wht1;  text-transform: uppercase;  }            
+        h2 { float: left; width: 100%; text-align: left; @include aBlack(); font-size: 56px; line-height:1.2; letter-spacing:3.36px; color: $wht1;  text-transform: uppercase;  }            
     }
 }
 
@@ -41,7 +41,7 @@
 .banners.bannerfaqs { 
     .wrapper { 
             input[type='text'] { 
-                background: transparent url('../Images/search.png') no-repeat; background-position:right 8px top 50%; margin:1rem 0 0 0; width:320px; float: left; border:none; border-bottom: solid 2px $wht1; outline:none; padding:0.7rem 0.5rem;  font-size: 18px; line-height: 28px; color: $wht1; @include aBold();
+                background: transparent url('../Images/search.png') no-repeat; background-position:right 8px top 50%; margin:1rem 0 0 0; width:280px; float: left; border:none; border-bottom: solid 2px $wht1; outline:none; padding:0.7rem 0.5rem;  font-size: 16px; line-height: 26px; color: $wht1; @include aBold();
                 &::placeholder { color: $wht1; opacity: 1; }      
                 &:-ms-input-placeholder { color: $wht1; opacity: 1; }
                 &::-ms-input-placeholder { color: $wht1; opacity: 1;  }

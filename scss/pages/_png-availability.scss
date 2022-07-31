@@ -7,14 +7,14 @@
         .pnglocationHeading { 
             width: 100%; float: left; @include fBC(); padding:0 1%; margin-bottom: 2rem;
             h2 {
-                width: auto; float: left; text-align: left; color: $blk1; font-size:26px; line-height: 1; @include aBold();
+                width: auto; float: left; text-align: left; color: $blk1; font-size:24px; line-height: 1; @include aBold();
                 span { @include Arial(); font-size: 14px; }
             }
             aside {
-                width: 220px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
+                width: 200px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
                 span { display: none; }
                 input[type='text'] { 
-                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0.5rem;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
+                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0.5rem;  font-size: 16px; line-height: 1; color: $blk7; @include Arial();
                     &::placeholder { color: $blk7; opacity: 1; }      
                     &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                     &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
@@ -24,7 +24,7 @@
         }
         .pnglocationfilter { 
             width: 100%; float: left; padding:0 1%; margin-bottom: 2rem;
-            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:18px; line-height:28px; @include aBold(); }
+            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:16px; line-height:26px; @include aBold(); }
             ul { 
                 width: 100%; float: left; @include fSC(); 
                 li { 
@@ -32,27 +32,27 @@
                     &:last-child { margin-right: 0; }
                     .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
                     input[type='text'] {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px; line-height: 24px; color:$blk7; @include Arial();
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px; line-height: 1; color:$blk7; @include Arial();
                         &::placeholder { color: $blk7; opacity: 1; }      
                         &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); 
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); 
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
                         }
                     }
                     input[type='submit'], input[type='button'] { 
-                        display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
                         &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
                     }
                 }
             }
         }
         .pnglocationlist {
-            width: 100%; float: left; height: 680px;  
+            width: 100%; float: left; height: 660px;  
             .pnglocationscrollContainer, .pnglocationscroll { overflow: visible; }
             .pnglocationnoresult { display: none; float: left; width:98%; margin:1rem 1%; padding:2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px; text-align: center; color: $blk1; font-size: 18px; line-height: 1;  @include aBold();  }
             ul { 
@@ -60,12 +60,12 @@
                 li { 
                     list-style: none; width:48%; margin:10px 1%; padding:1.5rem 1.5rem 1.5rem  2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px;
                     h2 { 
-                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  text-align: left; color: $blk1; font-size: 18px; line-height: 28px; @include aBold();  
+                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  text-align: left; color: $blk1; font-size: 16px; line-height: 26px; @include aBold();  
                         &:after { content: ''; position:absolute; left: -15px; top: 7px; height: 12px; width: 8px; background: url('../images/icon2.png') no-repeat; background-position: left 0px top 0px; }
                     }
-                    p { width: 100%; float: left; text-align: left;  color: $blk2; font-size: 16px; line-height: 24px; @include Arial();  }
+                    p { width: 100%; float: left; text-align: left;  color: $blk2; font-size: 14px; line-height: 24px; @include Arial();  }
                     h3 { 
-                        width: 100%; float: left; text-align: left;  font-size: 16px; line-height: 26px; @include Arial(); 
+                        width: 100%; float: left; text-align: left;  font-size: 14px; line-height: 24px; @include Arial(); 
                         &::before { content: "\f017"; @include FA(); padding-right: 5px; }
                         &.png_comingsoon {  color:#002293; }
                         &.png_unavailable { color:#002293; }
@@ -73,7 +73,7 @@
                         &.png_openforregistration { color:#002293; }
                     }
                     h4 { 
-                        width: 100%; float: left; margin-top: 0.3rem; text-align: left; font-size: 18px; line-height: 28px; color:$blu3; @include aBold();  
+                        width: 100%; float: left; margin-top: 0.3rem; text-align: left; font-size: 16px; line-height: 26px; color:$blu3; @include aBold();  
                         a { 
                             text-decoration: none; color:$blu3;  @include outT();
                             i.fa { padding: 0 5px; @include outT(); }
@@ -96,13 +96,13 @@
         .pnggetconnectionimg { width: 100%; float: left; }
         section { 
             width: 100%; float: left; padding: 2rem;
-            h2 { width: 100%; float: left; text-align: left; color: $wht1; font-size: 22px; line-height: 26px; @include aBold();  }
-            h3 { width: 100%; float: left; margin: 0.4rem 0 1.5rem 0; text-align: left;  color: $wht1; font-size: 18px; line-height: 28px; @include Arial();  }
+            h2 { width: 100%; float: left; text-align: left; color: $wht1; font-size: 20px; line-height: 26px; @include aBold();  }
+            h3 { width: 100%; float: left; margin: 0.4rem 0 1.5rem 0; text-align: left;  color: $wht1; font-size: 16px; line-height: 26px; @include Arial();  }
             dl { 
                 width: 100%; float: left; @include fSS();
                 dt { 
                     width: 25%;
-                    aside { position: relative; z-index: 2; height: 48px; width: 48px; border-radius: 50%; background: $wht1; @include fCC(); @include eurostile(); font-size:32px; line-height: 1; color: $blu1; }
+                    aside { position: relative; z-index: 2; height: 48px; width: 48px; border-radius: 50%; background: $wht1; @include fCC(); @include aMedium(); font-size:32px; line-height: 1; color: $blu1; }
                     p {  
                         width: 100%; float: left; margin:0.6rem 0 0 0; text-align: left;  color: $wht1; font-size: 14px; line-height: 22px; @include Arial(); 
                         span { display: block; }
@@ -114,13 +114,13 @@
                     &:before { content: ''; z-index: 1; position: absolute; top: 5px; left:-130%; height: 1px; width:230%; background: $wht1; }
                 }
             }
-            h4 { width: 100%; float: left; margin:2rem 0 0.8rem 0; text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include aBold(); }
+            h4 { width: 100%; float: left; margin:2rem 0 0.8rem 0; text-align: left;  color: $wht1; font-size: 16px; line-height: 24px; @include aBold(); }
             .connectiondocumentsrequired {
                 width: 100%; float: left; 
                 ul { 
                     width: 100%; float: left; 
                     li { 
-                       list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 20px; margin: 5px 0; width: 50%; float: left;  text-align: left;  color: $wht1; font-size: 18px; line-height: 24px; @include Arial(); 
+                       list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 20px; margin: 5px 0; width: 50%; float: left;  text-align: left;  color: $wht1; font-size: 16px; line-height: 24px; @include Arial(); 
                     }
                 }
             }

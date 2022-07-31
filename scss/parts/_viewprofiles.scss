@@ -30,9 +30,9 @@
             
             section { 
                 width:50%; float: right;
-                h2 { width: 100%; float: left; text-align: left;  font-size: 26px; line-height: 28px; color: $blk1; @include aBold(); }
-                h3 { opacity: 0.7; width: 100%; float: left;  margin:0.2rem 0 1rem 0; text-align: left;  font-size: 18px; line-height: 28px; color:$blk2; @include Arial(); }
-                p { width: 100%; float: left; text-align: left;  font-size: 18px; line-height: 26px; color:$blk2; @include Arial(); }
+                h2 { width: 100%; float: left; text-align: left;  font-size: 24px; line-height: 26px; color: $blk1; @include aBold(); }
+                h3 { opacity: 0.7; width: 100%; float: left;  margin:0.2rem 0 1rem 0; text-align: left;  font-size: 16px; line-height: 26px; color:$blk2; @include Arial(); }
+                p { width: 100%; float: left; text-align: left;  font-size: 16px; line-height: 26px; color:$blk2; @include Arial(); }
             }
         }
         

@@ -8,14 +8,14 @@
         .cngstationheading { 
             width: 100%; float: left; @include fBC();  padding:0 1%;  margin-bottom:2rem;
             h2 {
-                width: auto; float: left; text-align: left; color: $blk1; font-size:26px; line-height: 1; @include aBold();
+                width: auto; float: left; text-align: left; color: $blk1; font-size:24px; line-height: 1; @include aBold();
                 span { @include Arial(); font-size: 14px; }
             }
             aside {
-                width: 200px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
+                width: 180px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
                 span { display: none; }
                 input[type='text'] { 
-                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0;  font-size: 18px; line-height: 1; color: $blk7; @include Arial();
+                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0;  font-size: 16px; line-height: 1; color: $blk7; @include Arial();
                     &::placeholder { color: $blk7; opacity: 1; }      
                     &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                     &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
@@ -25,7 +25,7 @@
         }
         .cngstationfilter { 
             width: 100%; float: left; padding:0 1%; margin-bottom: 2rem;
-            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:16px; line-height:28px; @include aBold(); }
+            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:16px; line-height:26px; @include aBold(); }
             ul { 
                 width: 100%; float: left; @include fSC(); 
                 li { 
@@ -33,20 +33,20 @@
                     &:last-child { width:14%; margin-right: 0; }
                     .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
                     input[type='text'] {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px; line-height: 24px; color:$blk7; @include Arial();
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px; line-height: 1; color:$blk7; @include Arial();
                         &::placeholder { color: $blk7; opacity: 1; }      
                         &:-ms-input-placeholder { color: $blk7; opacity: 1; }
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 18px;  line-height: 24px; color: $blk7;  @include Arial(); 
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); 
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
                         }
                     }
                     input[type='submit'], input[type='button'] { 
-                        display: inline-block; width:100%; text-align: center; text-decoration: none; @include outT(); padding:10px 0; border:none; background-color:$ong1; color: $wht1; @include eurostile(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        display: inline-block; width:100%; text-align: center; text-decoration: none; @include outT(); padding:10px 0; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
                         &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
                     }
                 }
@@ -60,12 +60,12 @@
                 li { 
                     list-style: none; position: relative; width:96%; margin:10px 2%; padding:1rem 1.5rem 1rem  2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px;
                     h2 { 
-                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  padding-right: 20px; text-align: left; color: $blk1; font-size: 18px; line-height: 28px; @include aBold();  
+                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  padding-right: 20px; text-align: left; color: $blk1; font-size: 16px; line-height: 26px; @include aBold();  
                         &:after { content: ''; position:absolute; left: -15px; top: 7px; height: 12px; width: 8px; background: url('../images/icon2.png') no-repeat; background-position: left 0px top 0px; }
                     }
-                    p { width: 100%; float: left; text-align: left; color: $blk2; font-size: 16px; line-height: 26px; @include Arial();  }
+                    p { width: 100%; float: left; text-align: left; color: $blk2; font-size: 14px; line-height: 24px; @include Arial();  }
                     h4 { 
-                        width: 100%; float: left; text-align: left;  color: $blk2; font-size: 16px; line-height: 26px; @include Arial(); 
+                        width: 100%; float: left; text-align: left;  color: $blk2; font-size: 14px; line-height: 24px; @include Arial(); 
                         i.fa { padding: 0 5px 0 0; transform: rotate(22deg); }
                         a { 
                             text-decoration: none; color:$blk2;  @include outT();
@@ -75,13 +75,13 @@
                     dl { 
                         width: 100%; float: left; @include fBC();
                         dt { 
-                            color:$blu2;  text-align: left;  font-size: 16px; line-height: 26px; @include Arial(); 
+                            color:$blu2;  text-align: left;  font-size: 14px; line-height: 24px; @include Arial(); 
                             &:before { content: "\f017"; @include FA(); margin-right: 5px; }
                         }
                         dd { 
-                            color:$blk7; text-align: left;  font-size: 14px; line-height: 26px; @include Arial(); 
+                            color:$blk7; text-align: left;  font-size: 14px; line-height: 24px; @include Arial(); 
                             span { 
-                                margin-left: 5px; background:$wht7; padding:5px 10px; border-radius:25px; color:$blu1; text-align: left;  font-size: 14px; line-height: 26px; @include aBold(); 
+                                margin-left: 5px; background:$wht7; padding:5px 10px; border-radius:25px; color:$blu1; text-align: left;  font-size: 14px; line-height: 24px; @include aBold(); 
                                 i.fa { margin-right:3px; }
                             }
                         }
