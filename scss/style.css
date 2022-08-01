@@ -10411,7 +10411,7 @@ main {
 .healthsafetyWrap .emergencyheading {
   width: 100%;
   float: left;
-  padding: 3rem 0 3rem 0;
+  padding: 0 0 3rem 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -11069,7 +11069,6 @@ main {
   }
   /* ######################## faqsWrap ######################## */
   .healthsafetyWrap .emergencyheading {
-    padding: 3rem 0;
     flex-wrap: wrap;
   }
   .healthsafetyWrap .emergencyheading h2 {
@@ -11254,6 +11253,12 @@ main {
     margin: 10px 2%;
     padding: 2rem 2rem 1rem 2rem;
   }
+  .healthsafetyWrap .healthsafetyfaqs {
+    display: none;
+  }
+  .healthsafetyWrap .hsdoanddontTabs {
+    padding-top: 3rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   /* ######################## faqsWrap ######################## */
@@ -11261,7 +11266,7 @@ main {
     padding: 2rem 0 3rem 0;
   }
   .healthsafetyWrap .emergencyheading {
-    padding: 3rem 0 1.5rem 0;
+    padding: 0 0 1.5rem 0;
   }
   .healthsafetyWrap .emergencyAlphabetical {
     margin-bottom: 1rem;
@@ -11522,6 +11527,19 @@ main {
   line-height: 26px;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+}
+.resources_title p span {
+  display: inline-block;
+}
+.resources_title p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #535353;
+  transition: all 0.4s ease-out;
+}
+.resources_title p a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
 }
 .resources_title aside {
   width: 100%;
@@ -11801,6 +11819,16 @@ main {
 }
 .resources_review .resources_review_comments article h2 span {
   display: inline-block;
+}
+.resources_review .resources_review_comments article h2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #8D8D8D;
+  transition: all 0.4s ease-out;
+}
+.resources_review .resources_review_comments article h2 a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
 }
 .resources_review .resources_review_comments article p {
   width: 100%;

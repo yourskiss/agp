@@ -24,6 +24,11 @@
     }
     p { 
         width: 100%; float: left; margin: 0.7rem 0 0.9rem 0; text-align: left; color: $blk6; font-size:18px; line-height: 26px; @include Arial();  
+        span { display: inline-block;}
+        a { 
+            display: inline-block; text-decoration: none; color: $blk6; @include outT(); 
+            &:hover { color: $ong1; @include inT();  }
+        }
     }
     aside { 
         width: 100%; float: left; text-align: left; 
@@ -132,6 +137,10 @@
             h2 { 
                 width: 100%; float: left; text-align: left;  color: $blk10; font-size:16px; line-height:26px; @include Arial();
                 span { display: inline-block; }
+                a { 
+                    display: inline-block; text-decoration: none; color: $blk10; @include outT(); 
+                    &:hover { color: $ong1; @include inT();  }
+                }
             }
             p { width: 100%; float: left; margin: 0.2rem 0 0.5rem 0; text-align: left; color:$blk6; font-size:16px; line-height:26px; @include Arial(); }
             h3 { 

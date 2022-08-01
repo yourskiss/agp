@@ -38,7 +38,7 @@
 
 
     .emergencyheading {
-        width: 100%; float: left;  padding:3rem 0 3rem 0; @include fBS();
+        width: 100%; float: left;  padding:0 0 3rem 0; @include fBS();
         h2 { 
             width:50%; float: left; text-align: left;
             span { display: inline; color: $blk1; @include aBlack(); font-size:26px; letter-spacing: 1.68px; line-height:35px; }
@@ -301,7 +301,7 @@
     
     
         .emergencyheading {
-             padding:3rem 0; flex-wrap: wrap;
+             flex-wrap: wrap;
             h2 { 
                 width:100%; 
                 span { font-size:22px; letter-spacing: 1.32px; line-height:36px; }
@@ -439,6 +439,8 @@
                 }
             }
         } 
+        .healthsafetyfaqs { display: none; }
+        .hsdoanddontTabs{ padding-top: 3rem; }
     }
 }
 
@@ -452,7 +454,7 @@
     .healthsafetyWrap { 
         padding:2rem 0 3rem 0;
 
-        .emergencyheading {padding: 3rem 0 1.5rem 0; }
+        .emergencyheading {padding: 0 0 1.5rem 0; }
 
         .emergencyAlphabetical { margin-bottom: 1rem; }
  
