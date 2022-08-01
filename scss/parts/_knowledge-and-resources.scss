@@ -5,7 +5,7 @@
             span {  color:$blk1; font-size:26px; letter-spacing:normal; line-height: 35px; @include aBlack(); }
             img { margin-left:5px; max-width: 100%;}
         }
-        h3 { width: 100%; float: left; margin:0.7rem 0 1.5rem 0; text-align: left; color:$blk1; font-size:16px; line-height: 24px; @include Arial(); }
+        h3 { width: 100%; float: left; margin:0.7rem 0 1.5rem 0; text-align: left; color:$blk2; font-size:16px; line-height: 24px; @include Arial(); }
         .knowledgeresourcesslider {
             width: 100%; float: left; margin-bottom: 0 !important; padding-bottom: 20px;
             .slick-slide { 

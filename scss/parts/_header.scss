@@ -39,9 +39,10 @@
         ul {
             @include fEC(); align-items: stretch;height: 100%;
             li {
-                list-style: none; margin: 0 15px; @include fSC();
-                &.active { position: relative;
-                    &:after { content: ''; position: absolute; bottom:0; left:0; height: 4px; width:100%; background-color:$ong1; border-radius: 4px;}
+                list-style: none; margin: 0 15px; @include fSC(); position: relative;
+                &:after {opacity: 0;  display: block; content: '';position: absolute; bottom:0; left:0; height: 4px; width:100%; background-color:$ong1; border-radius: 4px;}
+                &.active { 
+                    &:after {  opacity: 1; }
                 }
                 a { 
                     text-decoration: none;  @include Arial(); color:$blk1;  font-size: 18px; line-height: 45px; @include outT();
@@ -67,6 +68,7 @@
                             width: 63%; float: left; @include fSS(); flex-wrap: wrap;
                             li { 
                                 width: 30.3%; margin:0 3% 5px 0; display: inline-block;
+                                &:after { display: none; }
                                 a { 
                                     text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 30px;  @include outT();
                                     &:hover { color:$ong1; @include inT(); }
@@ -76,6 +78,7 @@
                                     width: 100%; float: left; @include fSS(); flex-direction: column;
                                     li { 
                                         list-style: none; margin:5px 0; width: 100%; float: left;
+                                        &:after { display: none; }
                                         a { 
                                             text-decoration: none;  @include Arial(); color:$blk2;  font-size: 18px; line-height: 24px;  @include outT();
                                             &:hover { color:$ong1; @include inT(); }

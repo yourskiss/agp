@@ -48,16 +48,18 @@
                 li {
                     list-style: none; width: 15.5%; height: inherit; box-shadow: 0px 6px 12px #00000014; background-color: $wht1; overflow: hidden;
                     a { 
-                        text-decoration: none; padding: 1rem; width: 100%; height: 100%; float: left; border-bottom: solid 2px $ong1; overflow: hidden; border-radius: 0px 0px 3px 3px; cursor: pointer; @include outT(); background-color: $wht1;  background: linear-gradient(to left, $wht1 50%,  $blu1 50%); background-size: 200% 100%; background-position:right bottom; cursor: pointer;
+                        position: relative; text-decoration: none; padding: 1rem; width: 100%; height: 100%; float: left; border-bottom: solid 2px $ong1; overflow: hidden; border-radius: 0px 0px 3px 3px; cursor: pointer; @include outT(); background-color: $wht1;  cursor: pointer;
                         aside { 
-                            width: 100%; float: left;  text-align: center; 
+                            z-index:2; position: relative; width: 100%; float: left;  text-align: center; 
                             img { max-width: 100%; filter:none;  @include outT();  }
                         }
-                        p { width: 100%; float: left; margin-top: 0.4rem; text-align: center; white-space: nowrap; color:$blu1; font-size:16px; line-height: 36px; white-space:normal; @include aBold(); @include outT(); }
+                        p { z-index:2; position: relative; width: 100%; float: left; margin-top: 0.4rem; text-align: center; white-space: nowrap; color:$blu1; font-size:16px; line-height: 36px; white-space:normal; @include aBold(); @include outT(); }
+                        &:before { z-index:1; content: '';position:absolute; left: 0; top: 0; width: 1px; height: 100%; background: transparent; @include outT();  }
                         &:hover { 
-                            background-color: $blu1;   border-color: $blu1; border-radius: 0px 0px 3px 3px;  background-position:left bottom; @include inT(); 
+                             border-color: $blu1; border-radius: 0px 0px 3px 3px;  @include inT(); 
                             img { filter: brightness(0) invert(1);  @include inT();  }
                             p { color:$wht1; @include inT(); }
+                            &:before {  width: 100%; height: 100%; background: $blu1;  @include inT(); }
                         }
                     }
                 }

@@ -146,6 +146,17 @@
     /* ######################## faqsWrap ######################## */
     .faqsWrap { 
 
+
+        .faqsAbout {
+            display: none;
+        }
+
+
+        .popularquestions { 
+            display: none;
+        }
+
+
         .faqsTabs{ 
             padding: 0;
             h2 { margin-bottom: 0; padding:0 0 1rem 0; }
@@ -186,15 +197,7 @@
     .faqsWrap { 
 
 
-        .faqsAbout {
-            display: none;
-        }
-
- 
-
-
         .popularquestions { 
-            display: none;
             padding: 2rem 0 2rem 0;
             h2 { margin-bottom: 0.5rem; font-size:18px; line-height:26px;   }
             .popularquestionsSlider {.slick-list {.slick-track {

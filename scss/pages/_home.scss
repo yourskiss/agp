@@ -26,16 +26,18 @@
                 li {
                     list-style: none; 
                     a { 
-                        width: 100%; float: left;  padding: 1rem;  background-color: $wht1; border-bottom: solid 2px $ong1; border-radius:0 0 3px 3px; cursor: pointer; @include outT();
+                       position: relative; width: 100%; float: left;  padding: 1rem;  background-color: $wht1; border-bottom: solid 2px $ong1; border-radius:0 0 3px 3px; cursor: pointer; @include outT();
                         aside {
-                            width: 100%; float: left;  text-align: center; 
+                            z-index: 2; position: relative;  width: 100%; float: left;  text-align: center; 
                             img { max-width: 100%; filter:none;  @include outT(); }
                         }
-                        p { width: 100%; float: left; margin-top: 0.2rem; text-align: center;  color:$blu1; font-size:16px; line-height: 36px; white-space:nowrap; @include aBold(); @include outT(); }
+                        p { z-index: 2; position: relative;  width: 100%; float: left; margin-top: 0.2rem; text-align: center;  color:$blu1; font-size:16px; line-height: 36px; white-space:nowrap; @include aBold(); @include outT(); }
+                        &:before { z-index:1; content: '';position:absolute; left: 0; top: 0; width: 1px; height: 100%; background: transparent; @include outT();  }
                         &:hover { 
-                            border-color: $blu1; background-color: $blu1; @include inT();
+                            border-color: $blu1; background-color: $wht1; @include inT();
                             img { filter: brightness(0) invert(1);  @include inT();  }
                             p { color:$wht1; @include inT(); }
+                            &:before {  width: 100%; height: 100%; background: $blu1;  @include inT(); }
                         }
                     }
                 }
