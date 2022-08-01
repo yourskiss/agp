@@ -560,7 +560,7 @@
                    }    
                 }
                 .emergencycontactsearch {
-                    width: 100%;  position: absolute; top: 0; left: 100%; border-bottom: solid 1px #969696; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht1; 
+                    width: 100%;  position: absolute; top: 0; left: 100%; border-bottom: solid 1px #969696; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht3; 
                     input[type='text'] { border-bottom: none; }
                     span { 
                         display:block; margin-right: 1rem; font-size: 22px;color:$blu1; cursor: pointer; @include outT();

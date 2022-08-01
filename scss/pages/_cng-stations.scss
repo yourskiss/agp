@@ -89,6 +89,7 @@
                     h5 { 
                         position:absolute; right:1rem; top:1rem; width: 19px; height: 20px; float: right;  line-height: 1; cursor: pointer; text-decoration: none; background: url('../images/share-orange.png') no-repeat center center; @include outT();  filter: grayscale(1);
                         span { display: none; }
+                        i.fa { display: none;}
                         &:hover {  filter: grayscale(0); @include inT(); }
                     }
                 }

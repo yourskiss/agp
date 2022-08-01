@@ -10023,6 +10023,9 @@ main {
 .cngstationWrap .cngstation .cngstationlist ul li h5 span {
   display: none;
 }
+.cngstationWrap .cngstation .cngstationlist ul li h5 i.fa {
+  display: none;
+}
 .cngstationWrap .cngstation .cngstationlist ul li h5:hover {
   filter: grayscale(0);
   transition: all 0.4s ease-in;
@@ -11359,7 +11362,7 @@ main {
     align-items: center;
     width: 100%;
     padding: 0 0 1px 0;
-    background: #FFFFFF;
+    background: #F4F7F8;
   }
   .healthsafetyWrap .emergencyheading section .emergencycontactsearch input[type=text] {
     border-bottom: none;
