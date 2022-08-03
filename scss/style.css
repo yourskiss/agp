@@ -3227,9 +3227,9 @@ main {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #FFFFFF url("../Images/loader.gif") no-repeat center center;
+  background: none;
 }
-.satisfactionwrap .satisfactionLarge .satisfactionVideo iframe {
+.satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv {
   display: block;
   z-index: 4;
   position: absolute;
@@ -3240,9 +3240,22 @@ main {
   border: 0;
   margin: 0;
   padding: 0;
-  background: none;
+  background: #FFFFFF url("../Images/loader.gif") no-repeat center center;
 }
-.satisfactionwrap .satisfactionLarge .satisfactionVideo span {
+.satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv iframe {
+  display: block;
+  z-index: 4;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+.satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv span {
   display: block;
   z-index: 5;
   position: absolute;
@@ -3260,7 +3273,7 @@ main {
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
-.satisfactionwrap .satisfactionLarge .satisfactionVideo span:hover {
+.satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv span:hover {
   background: #233D4D;
   color: #FFFFFF;
   transition: all 0.4s ease-in;
@@ -3507,6 +3520,41 @@ main {
   .satisfactionwrap {
     padding: 3rem 0 4rem 0;
   }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo {
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv span {
+    right: -5px;
+    top: -5px;
+    height: 32px;
+    width: 32px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv iframe {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    height: 250px;
+  }
   .satisfactionwrap .satisfactionLarge .satisfactionSlider .items {
     flex-wrap: wrap;
   }
@@ -3610,6 +3658,12 @@ main {
 @media only screen and (max-width: 479px) {
   .satisfactionwrap {
     padding: 2rem 0 3rem 0;
+  }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv {
+    max-width: 330px;
+  }
+  .satisfactionwrap .satisfactionLarge .satisfactionVideo .iframediv iframe {
+    height: 190px;
   }
   .satisfactionwrap .satisfactionLarge .satisfactionSlider .items .satisfactionContent .textb {
     padding: 3rem 1rem 1em 1rem;
