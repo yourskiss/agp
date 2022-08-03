@@ -430,11 +430,12 @@ $(function($)
             asNavFor: '.satisfactionSlider',
             dots: true,
             arrows:true,
-            centerMode: true,
+            centerMode: false,
             autoplay: false,
             centerPadding: '10px',
             focusOnSelect: true,
-            infinite: true,
+            infinite: false,
+            initialSlide:0,
             responsive: [
                 {
                     breakpoint: 1023,
