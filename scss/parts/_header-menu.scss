@@ -83,7 +83,7 @@
         h5{
             width: 100%; float: left; @include fSC();
             a { 
-                margin-right: 2rem; text-decoration: none; @include outT(); color: $blu1; font-size: 24px; 
+                margin-right:1.5rem; text-decoration: none; @include outT(); color: $blu1; font-size: 24px; 
                 &:hover {  @include inT(); color:$ong1; }
             }
         }

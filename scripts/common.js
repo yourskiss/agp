@@ -581,17 +581,51 @@ function whychoosemore()
 /* ############################ csr === start ############################ */
 if($(".commitmentsContainer").length > 0)
 {
+    
     $("#commitmentstitletabs li").click(function(){
         $(".csrloader").show(50);
         $("#commitmentstitletabs").addClass("disabled")
         let getname = $(this).attr("data-id");
-        $("#commitmentstitletabs  li").removeClass("active");
-        $(".commitmentsContainer .commitmentsBox").slideUp(500);
+        $("#commitmentstitletabs li").removeClass("active");
+        $(".commitmentsContainer .commitmenthead").removeClass("active").addClass('disabled');
+        $(".commitmentsContainer .commitmentbody").slideUp(500);
 
-        $(this).addClass("active");
-        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(500);
+        $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
+        $(".commitmentsContainer .commitmenthead[data-id='" + getname + "']").addClass("active");
+        $(".commitmentsContainer .commitmentbody[data-src='" + getname + "']").slideDown(500);
+        
         setTimeout(function(){ $("#commitmentstitletabs").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".commitmentsContainer .commitmenthead").removeClass('disabled'); }, 500);
         setTimeout(function(){ $(".csrloader").fadeOut(200); }, 600);
+    });
+
+
+    $(".commitmentsContainer .commitmenthead").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $("#commitmentstitletabs li").removeClass("active");
+            $(".commitmentsContainer .commitmenthead").removeClass("active").removeClass('disabled');
+            $(".commitmentsContainer .commitmentbody").slideUp(500);
+        }
+        else 
+        {
+            $('html, body').animate({scrollTop: $(".commitmentsContainer").offset().top  - jumpdiv },500);
+            $(".csrloader").slideDown(50);
+            $("#commitmentstitletabs").addClass("disabled")
+            let getname = $(this).attr("data-id");
+            $("#commitmentstitletabs li").removeClass("active");
+            $(".commitmentsContainer .commitmenthead").removeClass("active").addClass('disabled');
+            $(".commitmentsContainer .commitmentbody").slideUp(500);
+    
+            $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
+            $(".commitmentsContainer .commitmenthead[data-id='" + getname + "']").addClass("active");
+            $(".commitmentsContainer .commitmentbody[data-src='" + getname + "']").slideDown(500);
+            
+            setTimeout(function(){ $("#commitmentstitletabs").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".commitmentsContainer .commitmenthead").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".csrloader").slideUp(200); }, 600);
+        }
     });
 }
 if($(".csrAbout").length > 0)
@@ -603,9 +637,11 @@ if($(".csrAbout").length > 0)
         $(".csrloader").show(50);
         let getname = $(this).attr("data-name");
         $("#commitmentstitletabs li").removeClass("active");
-        $(".commitmentsContainer .commitmentsBox").slideUp(300);
+        $(".commitmentsContainer .commitmenthead").removeClass("active").addClass('disabled');
+        $(".commitmentsContainer .commitmentbody").slideUp(300);
         $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
-        $(".commitmentsContainer .commitmentsBox[data-src='" + getname + "']").slideDown(300);
+        $(".commitmentsContainer .commitmenthead[data-id='" + getname + "']").addClass("active");
+        $(".commitmentsContainer .commitmentbody[data-src='" + getname + "']").slideDown(300);
         setTimeout(function(){ $(".csrloader").fadeOut(200); }, 600);
     });
 }
@@ -641,6 +677,7 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
         }
         else 
         {
+            $('html, body').animate({scrollTop: $("#teamContainer").offset().top  - jumpdiv },500);
             $(".teamsloader[data-id='" + tagname + "']").fadeIn(100);
             $("#teamTabs ul li").removeClass("active");
             $("#teamContainer .teamheader").removeClass("active");
@@ -689,6 +726,11 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
         $("#faqsContainer .faqssection[data-id='" + tagname + "']").fadeIn(200);
         setTimeout(function(){ $("#faqsTabs ul, #faqsContainer .faqsheader").removeClass('disabled'); }, 500);
         setTimeout(function(){ $(".faqsloader").slideUp(200); }, 500);
+
+
+        $("#faqsContainer .faqssection ul li").removeClass("active");
+        $("#faqsContainer .faqssection ul li h4").removeClass("active");
+        $("#faqsContainer .faqssection ul li p").slideUp(300);
     });
 
     $("#faqsContainer .faqsheader").click(function()
@@ -701,6 +743,7 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
         }
         else 
         {
+            $('html, body').animate({scrollTop: $("#faqsContainer").offset().top  - jumpdiv },500);
             let tagname = $(this).attr("data-name");
             $(".faqsloader[data-id='" + tagname + "']").slideDown(50);
             $("#faqsTabs ul li").removeClass("active");
@@ -714,7 +757,9 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
             setTimeout(function(){ $("#faqsTabs ul, #faqsContainer .faqsheader").removeClass('disabled'); }, 500);
             setTimeout(function(){ $(".faqsloader").slideUp(200); }, 500);
         }
-
+        $("#faqsContainer .faqssection ul li").removeClass("active");
+        $("#faqsContainer .faqssection ul li h4").removeClass("active");
+        $("#faqsContainer .faqssection ul li p").slideUp(300);
     });
 
     $("#faqsContainer .faqssection ul li h4").click(function()
@@ -850,6 +895,7 @@ if($("#hsdoanddontTabs").length > 0 &&  $("#hsdoanddontBody").length > 0)
         }
         else 
         {
+            $('html, body').animate({scrollTop: $("#hsdoanddontBody").offset().top  - jumpdiv },500);
             let tagname = $(this).attr("data-name");
             $(".hsfaqloader[data-id='" + tagname + "']").slideDown(50);
             $("#hsdoanddontTabs ul li").removeClass("active");

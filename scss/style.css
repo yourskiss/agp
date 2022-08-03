@@ -955,7 +955,7 @@ main {
   border-color: #233D4D;
   color: #FFFFFF;
 }
-.footer .wrapper .footerleft ul {
+.footer .wrapper .footerleft h5 {
   width: 100%;
   float: left;
   margin-top: 2.5rem;
@@ -963,17 +963,14 @@ main {
   justify-content: flex-start;
   align-items: center;
 }
-.footer .wrapper .footerleft ul li {
-  list-style: none;
-  margin: 0 25px 0 0;
-}
-.footer .wrapper .footerleft ul li a {
+.footer .wrapper .footerleft h5 a {
+  margin: 0 1rem 0 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
   color: #233D4D;
   font-size: 24px;
 }
-.footer .wrapper .footerleft ul li a:hover {
+.footer .wrapper .footerleft h5 a:hover {
   transition: all 0.4s ease-in;
   color: #F2662C;
 }
@@ -1060,7 +1057,7 @@ main {
   margin-top: 2.5rem;
 }
 .footer .wrapper .footerright h4 a {
-  margin: 0 25px 0 0;
+  margin: 0 1.5rem 0 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
   color: #233D4D;
@@ -1100,7 +1097,7 @@ main {
   .footer .wrapper .footerleft dl {
     margin-top: 0.5rem;
   }
-  .footer .wrapper .footerleft ul {
+  .footer .wrapper .footerleft h5 {
     display: none;
   }
   .footer .wrapper .footerleft p {
@@ -2301,7 +2298,7 @@ main {
   align-items: center;
 }
 .mobilemenu .menusocial h5 a {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   text-decoration: none;
   transition: all 0.4s ease-out;
   color: #233D4D;
@@ -6191,7 +6188,6 @@ main {
 .csrWrap .csrAbout {
   width: 100%;
   float: left;
-  padding: 2rem 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -6355,8 +6351,6 @@ main {
   font-weight: 700;
   transition: all 0.4s ease-in;
   position: relative;
-  user-select: none;
-  pointer-events: none;
 }
 .commitmentsWrap .commitmentsTabs ul li.active:after {
   content: "";
@@ -6395,21 +6389,28 @@ main {
   color: #F2662C;
   font-size: 72px;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox {
+.commitmentsWrap .commitmentsContainer .commitmenthead {
   display: none;
+}
+.commitmentsWrap .commitmentsContainer .commitmentbody {
+  display: none;
+  width: 100%;
+  float: left;
+}
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox {
   position: relative;
   width: 100%;
   float: left;
   margin: 1.5rem 0;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsLeft {
   float: left;
   width: 50%;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft img {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsLeft img {
   width: 100%;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight {
   position: absolute;
   right: 0;
   top: 50%;
@@ -6420,7 +6421,7 @@ main {
   background-color: #FFFFFF;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.0784313725);
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight aside {
   width: 100%;
   float: left;
   text-align: left;
@@ -6430,7 +6431,7 @@ main {
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight h2 {
   width: 100%;
   float: left;
   margin: 0.7rem 0 0.5rem 0;
@@ -6441,7 +6442,7 @@ main {
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight p {
   width: 100%;
   float: left;
   text-align: left;
@@ -6451,10 +6452,10 @@ main {
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsLeft {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox.commitmentsReverse .commitmentsLeft {
   float: right;
 }
-.commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsRight {
+.commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox.commitmentsReverse .commitmentsRight {
   right: auto;
   left: 0;
 }
@@ -6482,21 +6483,21 @@ main {
     font-size: 18px;
     line-height: 36px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox {
     margin: 1rem 0;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight {
     width: 60%;
     padding: 2rem;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight aside {
     font-size: 14px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight h2 {
     font-size: 22px;
     line-height: 28px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight p {
     font-size: 16px;
     line-height: 24px;
   }
@@ -6506,7 +6507,7 @@ main {
   .commitmentsWrap .commitmentsTabs ul {
     width: 100%;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight {
     width: 70%;
     padding: 1rem;
   }
@@ -6558,72 +6559,98 @@ main {
   .commitmentsWrap {
     padding: 3rem 0;
   }
-  .commitmentsWrap .commitmentsTabs ul li {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+  .commitmentsWrap .commitmentsTabs {
+    display: none;
   }
   .commitmentsWrap .commitmentsContainer h2 span {
     font-size: 24px;
     letter-spacing: 0.92px;
     line-height: 30px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox {
+  .commitmentsWrap .commitmentsContainer .commitmenthead {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem 3rem 1rem 0.7rem;
+    border-bottom: solid 1.5px #707070;
+    color: #888888;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Arial-Regular", Arial, sans-serif;
+    font-weight: 300;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmenthead:after {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 0.6rem;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+    font-weight: 300;
+    line-height: 1;
+    color: #888888;
+    font-size: 28px;
+    transition: all 0.4s ease-out;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmenthead.active {
+    border-bottom: none;
+    color: #233D4D;
+    font-family: "Arial-Bold", Arial, sans-serif;
+    font-weight: 700;
+    transition: all 0.4s ease-in;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmenthead.active:after {
+    content: "\f106";
+    color: #233D4D;
+    transition: all 0.4s ease-in;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmenthead.disabled {
+    user-select: none;
+    pointer-events: none;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentbody {
+    margin: 0 0 1rem 0;
+  }
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox {
     margin: 1rem 0;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsLeft {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsLeft {
     width: 100%;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight {
     margin-top: -80px;
-    width: 85%;
+    margin-left: 12%;
+    width: 76%;
     padding: 3rem 2rem;
-    float: right;
+    float: left;
     position: relative;
-    right: 0;
+    right: auto;
+    left: 0;
     top: 0;
     transform: none;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight aside {
     font-size: 14px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight h2 {
     font-size: 22px;
     line-height: 28px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight p {
     font-size: 16px;
     line-height: 24px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox.commitmentsReverse .commitmentsRight {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox.commitmentsReverse .commitmentsRight {
     float: left;
+    right: auto;
     left: 0;
-  }
-}
-@media only screen and (max-width: 1023px) {
-  /* ######################## csrwrap ######################## */
-  .commitmentsWrap .commitmentsTabs {
-    margin: 1rem 0;
-  }
-  .commitmentsWrap .commitmentsTabs ul {
-    flex-wrap: wrap;
-    border-bottom: none;
-  }
-  .commitmentsWrap .commitmentsTabs ul li {
-    width: 100%;
-    float: left;
-    padding: 1rem;
-    background: #FAFAFA;
-    margin: 2px 0;
-    border: none;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-  }
-  .commitmentsWrap .commitmentsTabs ul li.active {
-    background: #233D4D;
-    color: #FFFFFF;
-    border-bottom: 0px;
+    top: 0;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -6642,27 +6669,28 @@ main {
   }
   /* ######################## csrwrap ######################## */
   .commitmentsWrap {
-    padding: 3rem 0 6rem 0;
+    padding: 2rem 0 6rem 0;
   }
   .commitmentsWrap h2 span {
     font-size: 22px;
     letter-spacing: 0.92px;
     line-height: 38px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight {
     padding: 1.5rem;
     margin-top: -40px;
-    width: 90%;
+    width: 80%;
+    margin-left: 10%;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight aside {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight aside {
     font-size: 14px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight h2 {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight h2 {
     margin: 0.5rem 0 0.5rem 0;
     font-size: 22px;
     line-height: 24px;
   }
-  .commitmentsWrap .commitmentsContainer .commitmentsBox .commitmentsRight p {
+  .commitmentsWrap .commitmentsContainer .commitmentbody .commitmentsBox .commitmentsRight p {
     font-size: 16px;
     line-height: 24px;
   }
