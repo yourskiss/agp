@@ -309,11 +309,14 @@
             flex-wrap: wrap;
             .contactInfo {
                 width: 100%; 
-                dl { padding: 1.5rem 2rem; }
+                dl { padding: 1.5rem; }
              }
             .contactForm {width: 100%; padding: 2rem;  margin-top:2rem; }
         }
     }
+
+
+
 
 
         /* ######################## adresswrap ######################## */
@@ -365,5 +368,20 @@
                 .adresslist {  height: 525px; }
             }
         }
+
+}
+
+@media only screen and (max-width:359px) 
+{
+ 
+
+    /* ######################## contactWrap ######################## */
+    .contactWrap { 
+        .contactContainer {
+            .contactInfo {
+                dl { padding: 1rem; }
+             }
+        }
+    }
 
 }

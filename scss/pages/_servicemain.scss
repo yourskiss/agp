@@ -109,6 +109,12 @@
                 img { margin-left:5px; max-width: 100%;}
             }
             p {  width: 100%; margin:0.5rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px;  }
+            h6 { 
+                width: 100%; margin:0; float: left; text-align: left;  
+                a { width:auto; float:left; padding:12px 25px; border:none; outline: 0; background: $ong1; text-decoration: none; text-align: center; color:$wht1; @include aMedium(); font-size:16px; line-height: 18px; cursor: pointer; @include outT();
+                    &:hover { background: $ong2; box-shadow: 4px 8px 12px #00000029; color:$wht1; @include inT(); }
+                }
+            }
             section { 
                 width: 100%; float: left; @include fSC();
                 h3 { width:auto; margin-right:1rem; float: left; text-align: left; color:$blk7; @include Arial(); font-size:12px; line-height: 28px;  }
@@ -133,6 +139,7 @@
                 width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color: $blk1; @include aMedium(); font-size:74px; line-height: 1.2; 
                 i.fa { margin-right: 5px; line-height: 1; font-size: 90%; font-weight: 300; }
             }
+            
         }
     }
 
@@ -320,6 +327,7 @@
                     span { font-size:24px; letter-spacing:0.92px; line-height: 30px;  }
                 }
                 p {  margin: 0.5rem 0 1rem 0; font-size: 16px; line-height: 24px; }
+
                 h5 { font-size:66px;  }
             }
         }
@@ -746,6 +754,9 @@
                     span { font-size:22px; letter-spacing:1.32px; line-height: 36px; }
                 }
                 p {  margin:0.5rem 0;  font-size:16px; line-height: 26px;  }
+                h6 {  
+                    a { font-size:14px; line-height: 22px; padding: 8px 20px; }
+                }
                 section { 
                     flex-wrap: wrap;
                     h3 { width:100%; margin:0; font-size:11px; line-height: 28px;  }

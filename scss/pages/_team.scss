@@ -35,7 +35,7 @@
             position: relative; width: 100%;  float: left; margin:0.4rem 0; list-style: none; cursor: pointer; padding:1rem; border-bottom: solid 1px $blk9;  color: $blk9; font-size: 18px; line-height: 45px; @include Arial(); @include outT(); cursor: pointer;
             &:after { content: "\f107"; position: absolute; top:50%; right:0.5rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 22px; @include outT(); }
             &.active {
-                 color:$blu1;  @include aBold(); @include inT(); 
+                 color:$blu1;  @include aBold(); @include inT(); border-bottom: none;
                 &:after { content: "\f106"; color:$blu1; @include inT(); }
             }
             &.disabled { user-select: none; pointer-events: none; }

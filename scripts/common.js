@@ -534,7 +534,7 @@ $(function($)
 function satisfactionShowVideo(iframesrc) // video show
 {
     $(".satisfactionVideo").fadeIn(600);
-    $(".satisfactionVideo iframe").attr("src", "https://www.youtube.com/embed/"+iframesrc+"?autoplay=1&mute=0&loop=1&rel=0&showinfo=0&controls=0&modestbranding=1&playsinline=1&playlist="+iframesrc);
+    $(".satisfactionVideo iframe").attr("src", "https://www.youtube.com/embed/"+iframesrc+"?autoplay=1&mute=0&loop=1&rel=0&showinfo=0&controls=1&modestbranding=1&playsinline=1&playlist="+iframesrc);
 }
 function satisfactionHideVideo() // video close 
 {

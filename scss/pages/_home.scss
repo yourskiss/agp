@@ -251,7 +251,7 @@
                 .itemgrid { 
                     width: 100%; float: left; 
                     section { 
-                        padding:2rem; margin-top: -10%; float: right; width: 75%; position: relative; left:auto;  top: auto;  right: 0px; bottom: 0; 
+                        padding:2rem; margin-top: -7%; float: right; width: 80%; position: relative; left:auto;  top: auto;  right:10%; bottom: 0; 
                         h3 { font-size: 18px; }
                         p { margin:0.3rem 0 0.5rem 0; font-size: 16px; line-height: 22px; }
                         aside {
@@ -261,7 +261,7 @@
                     &.one, &.two, &.four, &.three { 
                         margin:0.5rem 0 1rem 0; padding: 0;
                         img { width: 100%;}
-                        section {  width: 75%;  left:auto;  top: auto;    right: 0px; bottom: 0;  }
+                        section {  width: 80%;  left:auto;  top: auto;    right: 10%; bottom: 0;  }
                     } 
                     
                 }
@@ -274,7 +274,10 @@
 @media only screen and (max-width:1023px) 
 {
     .highlightservices {
-        margin-top:0px; padding: 3rem 0; 
+        margin-top:0px; padding: 2rem 0; 
+        .highlightcontent {
+            display: none;
+        }
     }
 }
 
@@ -345,17 +348,22 @@
             }
             .offergrid { 
                 .itemgrid { 
+                    margin: 0.5rem 0 1.5rem 0;
                     section { 
-                        padding:1rem; margin-top: -15%;  width: 85%;  
+                        padding:1rem; margin-top: -15%;  width: 84%; right: 8%; 
                         p { margin:0.5rem 0 0.8rem 0; }
                     }
                     &.one, &.two, &.four, &.three { 
-                        section {  width: 85%;  }
+                        margin: 0.5rem 0 1.5rem 0;
+                        section {  width: 84%; right: 8%; }
                     } 
                     
                 }
             }
     }
+
+
+
 
 }
 
@@ -401,9 +409,10 @@
             }
     }
 
-    .weoffers {
-        padding: 2rem 0 3rem 0;
-    }
+ 
+        .weoffers {
+            padding: 2rem 0 2rem 0;
+        }
 
 
  
