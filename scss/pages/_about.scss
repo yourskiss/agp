@@ -89,11 +89,13 @@
         aside { 
             width:100%; float: left; text-align: left; 
             a {
-                text-decoration: none; color:$blu1; @include aBold(); font-size:16px; line-height:26px; @include outT();
+                text-decoration: none; @include fSC(); color:$blu1; @include aBold(); font-size:16px; line-height:26px; @include outT();
                 i.fa { padding:0 5px;  @include outT(); }
+                span {  border-bottom: solid 1px $wht1;   @include outT();  }
                 &:hover {
                     color: $blk1;  @include inT();
                     i.fa { padding:0 0 0 10px; @include inT(); }
+                    span {  border-bottom-color:$blk1; @include inT(); }
                 }
             }
         }

@@ -142,11 +142,13 @@
             h3 { 
                 width:100%; float:left; text-align: left; padding:2rem 0 0 1rem;
                 a { 
-                    display: inline-block; text-decoration: none; color: $ong1; @include aBold(); font-size: 16px; line-height:26px;  @include outT();
-                    i.fa { padding: 0 5px;  color: $ong1; @include outT(); }
+                    display: inline-block; text-decoration: none; color: $wht1; @include aBold(); font-size: 16px; line-height:26px;  @include outT();
+                    span { border-bottom: solid 1px $blu1;   @include outT(); }
+                    i.fa { padding: 0 5px; @include outT(); }
                     &:hover {
                         color: $wht1; @include inT();
-                        i.fa { padding: 0 0 0 10px; color: $wht1; @include inT(); }
+                        span { border-bottom-color:$wht1; @include inT(); }
+                        i.fa { padding: 0 0 0 10px;  @include inT(); }
                     } 
                 }
             }
@@ -163,7 +165,7 @@
         
     .hsdoanddontTabs{
         width: 100%; float: left;  padding:0;  @include fCS(); flex-wrap: wrap; 
-        h2 { width:100%; float:left; margin-bottom: 1rem; text-align: left; color:$blk1; font-size:26px; line-height:48px; @include aBold();  }
+        h2 { width:100%; float:left; margin-bottom: 1rem; text-align: left; color:$blk1; font-size:26px; line-height:48px; @include aBlack();  }
         ul {
             width: auto; padding: 0; @include fCC();  border-bottom: solid 1px $blk9;
             &.disabled { user-select: none; pointer-events: none; }
@@ -193,8 +195,8 @@
                 width: 100%; float: left; @include fBS(); align-items: stretch;
                 
                 div {
-                    width: 33%; float: left;
-                    &:nth-child(2) { width: 28%; float: left; @include fCC();  flex-wrap: wrap; height: auto; }
+                    width: 33%; float: left; background: $wht3; padding: 1rem 1.5rem; border-radius:8px;
+                    &:nth-child(2) { background: none; padding: 0; border-radius:0; width: 28%; float: left; @include fCC();  flex-wrap: wrap; height: auto; }
                     ul {
                         width: 100%; float: left;
                         li {
@@ -236,7 +238,7 @@
                 width:100%; float:left; padding-top:1.5rem; text-align: center; color: $blu1; @include aBold(); font-size: 16px; line-height: 26px; 
                 a { 
                     text-decoration: none; color:$blu1; @include outT(); 
-                   &:hover { color: $ong1; @include inT(); } 
+                   &:hover { text-decoration: underline; color: $ong1; @include inT(); } 
                 }
             }
         }
@@ -537,7 +539,7 @@
     }
     /* ######################## faqsWrap ######################## */
     .healthsafetyWrap { 
-        padding:2rem 0 3rem 0;
+        padding:3rem 0 2rem 0;
 
         
  
@@ -551,7 +553,7 @@
                 display: block; position: relative; width: 100%;  float: left; margin:0; list-style: none; cursor: pointer; padding:0.5rem 3rem 0.5rem 0; border-bottom: solid 1px $blk7;  color: $blk9; font-size: 20px; line-height: 45px; @include Arial(); @include outT(); cursor: pointer;
                 &:after { content: "\f107"; position: absolute; top:50%; right:0.6rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 28px; @include outT(); }
                 &.active {
-                     color:$blu1;  @include aBold(); @include inT(); 
+                     color:$blu1; border-bottom: none; @include aBold(); @include inT(); 
                     &:after { content: "\f106"; color:$blu1; @include inT(); }
                 }
                 &.disabled { user-select: none; pointer-events: none; }
@@ -561,7 +563,7 @@
                 .hsdoanddontContainer {
                     padding:0; flex-direction: column;
                     div {
-                        width: 100%;  
+                        width: 100%;  padding: 0; border-radius: 0; background: none;
                         &:nth-child(2) { display: none;}
                         ul {
                             li {

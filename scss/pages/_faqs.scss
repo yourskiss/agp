@@ -41,7 +41,7 @@
 
     .faqsTabs{
         width: 100%; float: left;  padding:0 0 2rem 0;  @include fCS(); flex-wrap: wrap; 
-        h2 { width:100%; float:left; margin-bottom: 1rem; text-align: left; color:$blk1; font-size:26px; line-height:48px; @include aBold();  }
+        h2 { width:100%; float:left; margin-bottom: 1rem; text-align: left; color:$blk1; font-size:26px; line-height:48px; @include aBlack();  }
         ul {
             width: auto; padding: 0; @include fCC();  border-bottom: solid 1px $blk9; 
             &.disabled { user-select: none; pointer-events: none; }

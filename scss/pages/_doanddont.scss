@@ -26,7 +26,7 @@
             }  
         }
         .doanddontText {
-            width: 33%; float: left;
+            width: 33%; float: left; background: $wht3; border-radius: 8px; padding: 1rem 1.5rem;
             ul {
                 width: 100%; float: left;
                 li {
@@ -101,7 +101,7 @@
             padding:1rem 0 3rem 0; flex-direction: column;
             .doanddontImg { display: none;  }
             .doanddontText {
-                width: 100%;  
+                width: 100%;  background: none; border-radius:0; padding: 0;
                 ul {
                     li {
                         margin:0 0 1rem 1rem; font-size: 16px; line-height: 26px; 

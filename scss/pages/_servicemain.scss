@@ -203,7 +203,7 @@
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     .districtselect {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px;  line-height: 24px; color:$blk7;  @include aMedium(); -webkit-appearance:none; appearance:none; border-radius: 0;
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px;  line-height: 24px; color:$blk7;  @include aMedium(); border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/dd_black.png') no-repeat; background-position:right 5px center; 
                         option { 
                             color: $blk7;      
                             &:disabled { user-select: none; pointer-events: none; }
@@ -223,11 +223,11 @@
                 width: 100%; float: left; text-align: left;  margin-top:2rem;
                 a {
                     text-decoration: none; @include outT(); font-size:16px; line-height: 26px;  color:$blu1;
-                    span { border-bottom: solid 1px $blu1; padding-bottom: 1px; text-align: left; @include aBold();  }
+                    span {  border-bottom: solid 1px $wht1; padding-bottom: 2px; text-align: left; @include aBold(); @include outT();  }
                     i.fa { font-weight: 400; margin-left: 5px;  @include outT(); }
                     &:hover {
                         color:$blk1; @include inT();
-                        span { border-bottom-color:$blk1; }
+                        span {  border-bottom-color:$blk1;  @include inT(); }
                         i.fa { margin-left: 10px; @include inT();}
                     }
                 }
@@ -259,12 +259,12 @@
         b { font-weight: normal; }
         a { 
             text-decoration: none;  color:$blu1; @include outT(); 
-            span {
-                padding:0 5px;  @include outT();
-            }
+            span { border-bottom: solid 1px $wht1; @include outT();}
+            i.fa { padding:0 5px;  @include outT(); }
             &:hover {
                 color:$blk1; @include inT();
-                span { padding:0 0 0 10px; @include inT();}
+                i.fa { padding:0 0 0 10px; @include inT();}
+                span { border-bottom-color: $blk1;  @include inT();}
             }
         }
     }

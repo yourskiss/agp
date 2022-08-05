@@ -1292,7 +1292,6 @@ main {
   width: 100%;
   float: left;
   padding: 5px 0;
-  background: transparent;
   outline: none;
   border: none;
   border-bottom: solid 1px #FFFFFF;
@@ -1303,9 +1302,13 @@ main {
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
   opacity: 0.9;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  background: transparent url("../images/dd_wishtoconnect.png") no-repeat;
+  background-position: right 5px center;
 }
 .wishtoconnect .wrapper .wishtoconnectcontent ul li select option {
   color: #000000;
@@ -1430,7 +1433,6 @@ main {
   }
   .wishtoconnect .wrapper .wishtoconnectcontent ul li select {
     font-size: 16px;
-    opacity: 0.7;
   }
   .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=submit], .wishtoconnect .wrapper .wishtoconnectcontent ul li input[type=button] {
     font-size: 14px;
@@ -5564,9 +5566,13 @@ main {
   color: #707070;
   font-family: "Arial-Medium", Arial, sans-serif;
   font-weight: 500;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  background: transparent url("../images/dd_black.png") no-repeat;
+  background-position: right 5px center;
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft section aside .districtselect option {
   color: #707070;
@@ -5630,11 +5636,12 @@ main {
   color: #233D4D;
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a span {
-  border-bottom: solid 1px #233D4D;
-  padding-bottom: 1px;
+  border-bottom: solid 1px #FFFFFF;
+  padding-bottom: 2px;
   text-align: left;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
+  transition: all 0.4s ease-out;
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a i.fa {
   font-weight: 400;
@@ -5647,6 +5654,7 @@ main {
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a:hover span {
   border-bottom-color: #000000;
+  transition: all 0.4s ease-in;
 }
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft h6 a:hover i.fa {
   margin-left: 10px;
@@ -5707,6 +5715,10 @@ main {
   transition: all 0.4s ease-out;
 }
 .serviceothers h3 a span {
+  border-bottom: solid 1px #FFFFFF;
+  transition: all 0.4s ease-out;
+}
+.serviceothers h3 a i.fa {
   padding: 0 5px;
   transition: all 0.4s ease-out;
 }
@@ -5714,8 +5726,12 @@ main {
   color: #000000;
   transition: all 0.4s ease-in;
 }
-.serviceothers h3 a:hover span {
+.serviceothers h3 a:hover i.fa {
   padding: 0 0 0 10px;
+  transition: all 0.4s ease-in;
+}
+.serviceothers h3 a:hover span {
+  border-bottom-color: #000000;
   transition: all 0.4s ease-in;
 }
 
@@ -6465,6 +6481,9 @@ main {
   max-width: 100%;
 }
 .csrWrap .csrAbout .csrAboutRight ul li p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: auto;
   margin: 0 0 0 1rem;
   float: left;
@@ -6480,6 +6499,8 @@ main {
 }
 .csrWrap .csrAbout .csrAboutRight ul li p span {
   display: inline-block;
+  border-bottom: solid 1px #FFFFFF;
+  transition: all 0.4s ease-out;
 }
 .csrWrap .csrAbout .csrAboutRight ul li p i.fa {
   display: inline-block;
@@ -6487,6 +6508,11 @@ main {
   transition: all 0.4s ease-out;
 }
 .csrWrap .csrAbout .csrAboutRight ul li p:hover {
+  color: #000000;
+  transition: all 0.4s ease-in;
+}
+.csrWrap .csrAbout .csrAboutRight ul li p:hover span {
+  border-bottom-color: #000000;
   transition: all 0.4s ease-in;
 }
 .csrWrap .csrAbout .csrAboutRight ul li p:hover i.fa {
@@ -7180,6 +7206,9 @@ main {
 }
 .aboutWrap .aboutNetworks aside a {
   text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: #233D4D;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
@@ -7191,12 +7220,20 @@ main {
   padding: 0 5px;
   transition: all 0.4s ease-out;
 }
+.aboutWrap .aboutNetworks aside a span {
+  border-bottom: solid 1px #FFFFFF;
+  transition: all 0.4s ease-out;
+}
 .aboutWrap .aboutNetworks aside a:hover {
   color: #000000;
   transition: all 0.4s ease-in;
 }
 .aboutWrap .aboutNetworks aside a:hover i.fa {
   padding: 0 0 0 10px;
+  transition: all 0.4s ease-in;
+}
+.aboutWrap .aboutNetworks aside a:hover span {
+  border-bottom-color: #000000;
   transition: all 0.4s ease-in;
 }
 
@@ -7929,8 +7966,8 @@ main {
   color: #000000;
   font-size: 26px;
   line-height: 48px;
-  font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .faqsWrap .faqsTabs ul {
   width: auto;
@@ -8303,6 +8340,9 @@ main {
 .doanddontWrap .doanddontContainer .doanddontText {
   width: 33%;
   float: left;
+  background: #F4F7F8;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
 }
 .doanddontWrap .doanddontContainer .doanddontText ul {
   width: 100%;
@@ -8425,6 +8465,9 @@ main {
   }
   .doanddontWrap .doanddontContainer .doanddontText {
     width: 100%;
+    background: none;
+    border-radius: 0;
+    padding: 0;
   }
   .doanddontWrap .doanddontContainer .doanddontText ul li {
     margin: 0 0 1rem 1rem;
@@ -8682,9 +8725,13 @@ main {
   color: #707070;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  background: transparent url("../images/dd_contactus.png") no-repeat;
+  background-position: right 5px center;
 }
 .contactWrap .contactContainer .contactForm ul li select option {
   color: #000000;
@@ -9386,9 +9433,13 @@ main {
   color: #707070;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  background: transparent url("../images/dd_black.png") no-repeat;
+  background-position: right 5px center;
 }
 .pngavailabilityWrap .pngavailability .pnglocationfilter ul li select option {
   color: #000000;
@@ -9574,6 +9625,7 @@ main {
 .pngavailabilityWrap .pnggetconnection section h2 {
   width: 100%;
   float: left;
+  margin-bottom: 2rem;
   text-align: left;
   color: #FFFFFF;
   font-size: 20px;
@@ -9581,85 +9633,66 @@ main {
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
 }
-.pngavailabilityWrap .pnggetconnection section h3 {
+.pngavailabilityWrap .pnggetconnection section div {
   width: 100%;
   float: left;
-  margin: 0.4rem 0 1.5rem 0;
-  text-align: left;
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: "Arial-Regular", Arial, sans-serif;
-  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.pngavailabilityWrap .pnggetconnection section dl {
-  width: 100%;
+.pngavailabilityWrap .pnggetconnection section div dl {
+  width: 46%;
   float: left;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 5px 0 17px;
 }
-.pngavailabilityWrap .pnggetconnection section dl dt {
-  width: 25%;
+.pngavailabilityWrap .pnggetconnection section div dl dt {
+  width: 100%;
+  min-height: 60px;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-left: solid 1px #fff;
 }
-.pngavailabilityWrap .pnggetconnection section dl dt aside {
-  position: relative;
-  z-index: 2;
-  height: 48px;
-  width: 48px;
+.pngavailabilityWrap .pnggetconnection section div dl dt aside {
+  margin-left: -17px;
+  height: 34px;
+  width: 34px;
   border-radius: 50%;
   background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Arial-Medium", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 32px;
+  font-family: "Arial-Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
   line-height: 1;
-  color: #233D4D;
+  color: #F2662C;
 }
-.pngavailabilityWrap .pnggetconnection section dl dt p {
-  width: 100%;
-  float: left;
-  margin: 0.6rem 0 0 0;
+.pngavailabilityWrap .pnggetconnection section div dl dt p {
+  width: 85%;
+  margin: 0.1rem 0 0.5rem 1rem;
   text-align: left;
   color: #FFFFFF;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 1.2;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
 }
-.pngavailabilityWrap .pnggetconnection section dl dt p span {
+.pngavailabilityWrap .pnggetconnection section div dl dt p span {
   display: block;
 }
-.pngavailabilityWrap .pnggetconnection section dl dd {
-  position: relative;
-  width: 12.5%;
-  top: 20px;
-}
-.pngavailabilityWrap .pnggetconnection section dl dd span {
-  position: absolute;
-  top: 0;
-  left: -15%;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background: #FFFFFF;
-}
-.pngavailabilityWrap .pnggetconnection section dl dd:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  top: 5px;
-  left: -130%;
-  height: 1px;
-  width: 230%;
-  background: #FFFFFF;
+.pngavailabilityWrap .pnggetconnection section div dl dt:last-child {
+  border-left: none;
 }
 .pngavailabilityWrap .pnggetconnection section h4 {
   width: 100%;
   float: left;
-  margin: 2rem 0 0.8rem 0;
+  margin: 2rem 0 0 0;
   text-align: left;
   color: #FFFFFF;
   font-size: 16px;
@@ -9667,21 +9700,18 @@ main {
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
 }
-.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired {
+.pngavailabilityWrap .pnggetconnection section ul {
   width: 100%;
   float: left;
+  padding: 0.6rem 0 1rem 0;
 }
-.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul {
-  width: 100%;
-  float: left;
-}
-.pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
+.pngavailabilityWrap .pnggetconnection section ul li {
   list-style: none;
   background: transparent url("../images/icon2.png") no-repeat;
   background-position: top 7px left 0px;
-  padding: 0 0 0 20px;
-  margin: 5px 0;
-  width: 50%;
+  padding: 0 0 0 18px;
+  margin: 5px 20px 5px 0;
+  width: auto;
   float: left;
   text-align: left;
   color: #FFFFFF;
@@ -9689,6 +9719,26 @@ main {
   line-height: 24px;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+}
+.pngavailabilityWrap .pnggetconnection section h5 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Arial-Regular", Arial, sans-serif;
+  font-weight: 300;
+}
+.pngavailabilityWrap .pnggetconnection section h5 a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #FFFFFF;
+  transition: all 0.4s ease-out;
+}
+.pngavailabilityWrap .pnggetconnection section h5 a:hover {
+  color: #F2662C;
+  transition: all 0.4s ease-in;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -9698,6 +9748,7 @@ main {
 }
 @media only screen and (max-width: 1565px) {
   .pngavailabilityWrap .pngavailability {
+    width: 63%;
     padding: 2rem 2rem 0 0;
   }
   .pngavailabilityWrap .pngavailability .pnglocationHeading h2 {
@@ -9723,7 +9774,7 @@ main {
     font-size: 16px;
   }
   .pngavailabilityWrap .pngavailability .pnglocationlist {
-    height: 575px;
+    height: 590px;
   }
   .pngavailabilityWrap .pngavailability .pnglocationlist ul li {
     width: 48%;
@@ -9750,36 +9801,14 @@ main {
     font-size: 16px;
     line-height: 28px;
   }
+  .pngavailabilityWrap .pnggetconnection {
+    width: 37%;
+  }
   .pngavailabilityWrap .pnggetconnection section {
     padding: 1.5rem;
   }
-  .pngavailabilityWrap .pnggetconnection section h2 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .pngavailabilityWrap .pnggetconnection section h3 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dt {
-    width: 26%;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dt p {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .pngavailabilityWrap .pnggetconnection section h4 {
-    font-size: 16px;
-  }
-  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
+  .pngavailabilityWrap .pnggetconnection section ul li {
     margin: 3px 0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .pngavailabilityWrap .pngavailability .pnglocationlist {
-    height: 420px;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -9787,7 +9816,7 @@ main {
     width: 62%;
   }
   .pngavailabilityWrap .pngavailability .pnglocationlist {
-    height: 420px;
+    height: 580px;
   }
   .pngavailabilityWrap .pnggetconnection {
     width: 38%;
@@ -9802,6 +9831,42 @@ main {
   }
   .pngavailabilityWrap .pnggetconnection {
     width: 40%;
+  }
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 1rem;
+  }
+  .pngavailabilityWrap .pnggetconnection section h2 {
+    margin: 1rem 0;
+  }
+  .pngavailabilityWrap .pnggetconnection section div dl {
+    width: 46%;
+    padding: 0 5px 0 14px;
+  }
+  .pngavailabilityWrap .pnggetconnection section div dl dt aside {
+    margin-left: -14px;
+    height: 28px;
+    width: 28px;
+    font-size: 18px;
+  }
+  .pngavailabilityWrap .pnggetconnection section div dl dt p {
+    font-size: 14px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h4 {
+    margin: 1.5rem 0 0 0;
+  }
+  .pngavailabilityWrap .pnggetconnection section ul {
+    padding: 0.5rem 0 1rem 0;
+  }
+  .pngavailabilityWrap .pnggetconnection section ul li {
+    background-position: top 4px left 0px;
+    padding: 0 0 0 18px;
+    margin: 5px 20px 5px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pngavailabilityWrap .pnggetconnection section h5 {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -9820,8 +9885,8 @@ main {
     width: 98%;
     margin: 3rem 1%;
   }
-  .pngavailabilityWrap .pnggetconnection section dl dt {
-    width: 19%;
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 2rem;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -9907,8 +9972,8 @@ main {
     margin: 10px 2%;
     padding: 1rem 1.5rem 1rem 2rem;
   }
-  .pngavailabilityWrap .pnggetconnection section dl dt {
-    width: 25%;
+  .pngavailabilityWrap .pnggetconnection section {
+    padding: 1rem;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -9922,69 +9987,22 @@ main {
     padding: 1.5rem;
   }
   .pngavailabilityWrap .pnggetconnection section h2 {
-    font-size: 20px;
-    line-height: 26px;
+    margin: 0 0 1.5rem 0;
   }
-  .pngavailabilityWrap .pnggetconnection section h3 {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl {
+  .pngavailabilityWrap .pnggetconnection section div {
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
-  .pngavailabilityWrap .pnggetconnection section dl dt {
+  .pngavailabilityWrap .pnggetconnection section div dl {
     width: 100%;
-    float: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
   }
-  .pngavailabilityWrap .pnggetconnection section dl dt aside {
-    top: -2px;
-    margin-right: 1.5rem;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dt p {
-    margin: 0;
-    width: auto;
-    max-width: 75%;
-    font-size: 14px;
-    line-height: 22px;
-    font-family: "Arial-Bold", Arial, sans-serif;
-    font-weight: 700;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dd {
-    position: relative;
-    top: -2px;
-    width: 92%;
-    height: 50px;
-    float: right;
+  .pngavailabilityWrap .pnggetconnection section div dl:first-child dt:last-child {
     border-left: solid 1px #FFFFFF;
   }
-  .pngavailabilityWrap .pnggetconnection section dl dd::before {
-    display: none;
-  }
-  .pngavailabilityWrap .pnggetconnection section dl dd span {
-    position: absolute;
-    top: 40%;
-    left: -6px;
+  .pngavailabilityWrap .pnggetconnection section ul li {
+    width: 100%;
   }
   .pngavailabilityWrap .pnggetconnection section h4 {
-    margin: 2.5rem 0 1rem 0;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired {
-    overflow: hidden;
-    overflow-x: scroll;
-  }
-  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul {
-    width: 400px;
-  }
-  .pngavailabilityWrap .pnggetconnection section .connectiondocumentsrequired ul li {
-    margin: 4px 0;
-    font-size: 16px;
-    line-height: 24px;
+    margin: 0.5rem 0 0 0;
   }
 }
 .cngstationWrap {
@@ -10155,6 +10173,13 @@ main {
   color: #707070;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent url("../images/dd_black.png") no-repeat;
+  background-position: right 5px center;
 }
 .cngstationWrap .cngstation .cngstationfilter ul li select option {
   color: #000000;
@@ -11046,25 +11071,31 @@ main {
 .hsfaqswrap .healthsafetyfaqs div h3 a {
   display: inline-block;
   text-decoration: none;
-  color: #F2662C;
+  color: #FFFFFF;
   font-family: "Arial-Bold", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;
   transition: all 0.4s ease-out;
 }
+.hsfaqswrap .healthsafetyfaqs div h3 a span {
+  border-bottom: solid 1px #233D4D;
+  transition: all 0.4s ease-out;
+}
 .hsfaqswrap .healthsafetyfaqs div h3 a i.fa {
   padding: 0 5px;
-  color: #F2662C;
   transition: all 0.4s ease-out;
 }
 .hsfaqswrap .healthsafetyfaqs div h3 a:hover {
   color: #FFFFFF;
   transition: all 0.4s ease-in;
 }
+.hsfaqswrap .healthsafetyfaqs div h3 a:hover span {
+  border-bottom-color: #FFFFFF;
+  transition: all 0.4s ease-in;
+}
 .hsfaqswrap .healthsafetyfaqs div h3 a:hover i.fa {
   padding: 0 0 0 10px;
-  color: #FFFFFF;
   transition: all 0.4s ease-in;
 }
 
@@ -11092,8 +11123,8 @@ main {
   color: #000000;
   font-size: 26px;
   line-height: 48px;
-  font-family: "Arial-Bold", Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Arial-Black", Arial, sans-serif;
+  font-weight: 900;
 }
 .healthsafetyWrap .hsdoanddontTabs ul {
   width: auto;
@@ -11196,8 +11227,14 @@ main {
 .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div {
   width: 33%;
   float: left;
+  background: #F4F7F8;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
 }
 .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div:nth-child(2) {
+  background: none;
+  padding: 0;
+  border-radius: 0;
   width: 28%;
   float: left;
   display: flex;
@@ -11316,6 +11353,7 @@ main {
   transition: all 0.4s ease-out;
 }
 .healthsafetyWrap .hsdoanddontBody .hssafetyinstructions h3 a:hover {
+  text-decoration: underline;
   color: #F2662C;
   transition: all 0.4s ease-in;
 }
@@ -11670,7 +11708,7 @@ main {
   }
   /* ######################## faqsWrap ######################## */
   .healthsafetyWrap {
-    padding: 2rem 0 3rem 0;
+    padding: 3rem 0 2rem 0;
   }
   .healthsafetyWrap .hsdoanddontTabs ul {
     display: none;
@@ -11711,6 +11749,7 @@ main {
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontheader.active {
     color: #233D4D;
+    border-bottom: none;
     font-family: "Arial-Bold", Arial, sans-serif;
     font-weight: 700;
     transition: all 0.4s ease-in;
@@ -11734,6 +11773,9 @@ main {
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div {
     width: 100%;
+    padding: 0;
+    border-radius: 0;
+    background: none;
   }
   .healthsafetyWrap .hsdoanddontBody .hsdoanddontsection .hsdoanddontContainer div:nth-child(2) {
     display: none;
@@ -12492,23 +12534,11 @@ main {
   font-weight: 300;
   text-decoration: none;
   cursor: pointer;
-}
-.resources_filter section div .rt_head:after {
-  content: "";
-  position: absolute;
-  right: 5px;
-  top: 35%;
-  transform: rotate(-135deg);
-  padding: 2.5px;
-  border-left: 2px solid #3D3D3D;
-  border-top: 2px solid #3D3D3D;
+  background: transparent url("../images/dd_black.png") no-repeat;
+  background-position: right 5px center;
 }
 .resources_filter section div .rt_head.active {
   border-bottom-color: #FFFFFF;
-}
-.resources_filter section div .rt_head.active:after {
-  top: 40%;
-  transform: rotate(45deg);
 }
 .resources_filter section div .rt_body {
   display: none;
@@ -12550,9 +12580,13 @@ main {
   color: #535353;
   font-family: "Arial-Regular", Arial, sans-serif;
   font-weight: 300;
+  border-radius: 0;
+  text-indent: 1px;
+  text-overflow: "";
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
+  background: transparent url("../images/dd_resources.png") no-repeat;
+  background-position: right 5px center;
 }
 .resources_filter section div select option {
   color: #000000;

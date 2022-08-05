@@ -34,12 +34,13 @@
                         img { max-width: 100%;}
                     }
                     p { 
-                        width:auto; margin: 0 0 0 1rem; float: left; text-align: center; color: $blu1; @include aBold(); font-size: 18px; line-height: 24px; 
+                        @include fSC(); width:auto; margin: 0 0 0 1rem; float: left; text-align: center; color: $blu1; @include aBold(); font-size: 18px; line-height: 24px; 
                         cursor: pointer; @include outT(); cursor: pointer;
-                        span { display: inline-block; }
+                        span { display: inline-block; border-bottom: solid 1px $wht1;   @include outT(); }
                         i.fa { display: inline-block; padding:0 5px;  @include outT(); }
                         &:hover { 
-                            @include inT();
+                            color: $blk1; @include inT();
+                            span { border-bottom-color:$blk1; @include inT(); }
                             i.fa {  padding:0 0 0 10px;  @include inT(); }
                         }
                     }

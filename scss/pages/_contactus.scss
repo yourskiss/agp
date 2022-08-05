@@ -60,7 +60,7 @@
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial();  -webkit-appearance:none; appearance:none; border-radius: 0;
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/dd_contactus.png') no-repeat; background-position:right 5px center; 
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
