@@ -25,7 +25,7 @@
                         &::-ms-input-placeholder { color: $wht1; opacity: 0.9;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 16px;  line-height: 24px; color: $wht1;  @include Arial(); opacity:0.9;
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $wht1; text-align: left; font-size: 16px;  line-height: 24px; color: $wht1;  @include Arial(); opacity:0.9; -webkit-appearance:none; appearance:none; border-radius: 0;
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }

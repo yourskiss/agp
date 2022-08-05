@@ -1,11 +1,12 @@
-
 .bannerhome {
      width: 100%; float: left; background:$ong1; 
     .bannerhomeslider { 
         position:relative; width: 100%; float: left; margin: 0 !important;
         .slides { 
             position:relative; width: 100%; float: left;
-            img { width: 100%;}
+            .homeslide_web { display: block; width: 100%; }
+            .homeslide_ipad { display: none; width: 100%; }
+            .homeslide_mobile { display: none; width: 100%; }
             .wrapper { 
                 z-index: 2; position:absolute; left:50%; top:35%; transform: translateX(-50%); 
                 .banenrtext {
@@ -30,7 +31,9 @@
 
 .banners { 
     position:relative;  width: 100%; float: left; background:$ong1; line-height: 0;
-    img { width: 100%;}
+    .banner_web { display: block; width: 100%; }
+    .banner_ipad { display: none; width: 100%; }
+    .banner_mobile { display: none; width: 100%; }
     .wrapper { 
         z-index: 2; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); 
         h2 { float: left; width: 100%; text-align: left; @include aBlack(); font-size: 56px; line-height:1.2; letter-spacing:3.36px; color: $wht1;  text-transform: uppercase;  }            
@@ -126,11 +129,34 @@
    }
 
    .banners { 
-    .wrapper { 
-        h2 { font-size: 26px; letter-spacing: 1.56px; }            
+        .wrapper { 
+            h2 { font-size: 26px; letter-spacing: 1.56px; }            
+        }
     }
+
+
 }
 
+
+@media only screen and (max-width:767px) 
+{
+    .bannerhome {
+        .bannerhomeslider { 
+            .slides { 
+                .homeslide_web { display: none;  }
+                .homeslide_ipad { display: block;  }
+                .homeslide_mobile { display: none;  }
+            } 
+            
+        }
+    }
+
+
+    .banners { 
+        .banner_web { display: none;  }
+        .banner_ipad { display: block; }
+        .banner_mobile { display: none;  }
+    }
 
 
 }
@@ -142,6 +168,9 @@
     .bannerhome {
        .bannerhomeslider { 
            .slides { 
+            .homeslide_web { display: none;  }
+            .homeslide_ipad { display: none;  }
+            .homeslide_mobile { display: block;  }
                .wrapper { 
                     top:42%;  
                    .banenrtext {
@@ -155,6 +184,9 @@
    }
 
    .banners { 
+        .banner_web { display: none;  }
+        .banner_ipad { display: none; }
+        .banner_mobile { display: block;  }
         .wrapper { 
             top: 65%;
             h2 { font-size: 24px; letter-spacing: 1.44px; line-height: 34px; }            

@@ -220,7 +220,7 @@
                     }
                 }
                 select {  
-                    width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk7; text-align: left; font-size: 16px;  line-height: 1.2; color:$blk6; @include Arial(); 
+                    width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk7; text-align: left; font-size: 16px;  line-height: 1.2; color:$blk6; @include Arial(); -webkit-appearance:none; appearance:none; border-radius: 0;
                     option { 
                         color: $blk1;      
                         &:disabled { user-select: none; pointer-events: none; }

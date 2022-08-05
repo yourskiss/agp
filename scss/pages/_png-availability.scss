@@ -38,7 +38,7 @@
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     select {  
-                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); 
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); -webkit-appearance:none; appearance:none; border-radius: 0;
                         option { 
                             color: $blk1;      
                             &:disabled { user-select: none; pointer-events: none; }
@@ -93,7 +93,8 @@
 
     .pnggetconnection {
         width: 35%; float: left; background-color:$blu1;    
-        .pnggetconnectionimg { width: 100%; float: left; }
+        .pnggetconnection_desktop { display: block; width: 100%; float: left;  }
+        .pnggetconnection_mobile { display: none; width: 100%; float: left;  }
         section { 
             width: 100%; float: left; padding: 2rem;
             h2 { width: 100%; float: left; text-align: left; color: $wht1; font-size: 20px; line-height: 26px; @include aBold();  }
@@ -353,6 +354,8 @@
 {
     .pngavailabilityWrap { 
         .pnggetconnection {  
+            .pnggetconnection_desktop { display: none; }
+            .pnggetconnection_mobile { display: block; }
             section { 
                 padding:1.5rem;
                 h2{  font-size: 20px; line-height: 26px;   }

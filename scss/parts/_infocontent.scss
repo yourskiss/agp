@@ -1,6 +1,8 @@
 .infocontent{
     width: 100%; float: left; background-color:$wht1; position: relative; overflow: hidden;
-    img { width: 100%; min-height: 100%; animation:zoomIN 30s infinite; z-index:1; position:absolute;}
+    .infocontent_web { display: block; z-index:1; position:absolute;  animation:zoomIN 30s infinite; width: 100%; min-height: 100%; }
+    .infocontent_ipad { display: none; z-index:1; position:absolute;  animation:zoomIN 30s infinite; width: 100%; min-height: 100%; }
+    .infocontent_mobile { display: none; z-index:1; position:absolute;  animation:zoomIN 30s infinite; width: 100%; min-height: 100%; }
     .wrapper {
         padding:4rem 0; z-index:2; position: relative;  
         h2 { width: 100%; float: left; text-align: center;  color:$wht1; font-size:26px; letter-spacing: normal; line-height: 44px; text-shadow: 0px 3px 6px #00000077;
@@ -32,8 +34,8 @@
 
 @keyframes zoomIN {
 	0% {  transform: scale(1);  }
-	46% { transform: scale(1.4);  }
-    54% { transform: scale(1.4);  }
+	49% { transform: scale(1.4);  }
+    51% { transform: scale(1.4);  }
 	100% { transform: scale(1);  }
 }
 
@@ -42,8 +44,11 @@
 
 @media only screen and (max-width:1565px) 
 {
-
+ 
     .infocontent{
+        .infocontent_web { display: none; }
+        .infocontent_ipad { display: block; }
+        .infocontent_mobile { display: none; }
         .wrapper {
             h2 {font-size:24px; line-height: 36px; }
             h3 {  margin: 0.5rem 0 1rem 0; font-size:16px; line-height: 24px; 
@@ -114,6 +119,9 @@
 {
 
     .infocontent{
+        .infocontent_web { display: none; }
+        .infocontent_ipad { display: none; }
+        .infocontent_mobile { display: block; }
         .wrapper {
             padding:2rem 0;
             h2 {font-size:22px; letter-spacing: 1.32px; line-height: 28px; }

@@ -101,7 +101,7 @@
             img { width: 100%;}
         }
         .servicePricebyareaLeft { 
-            width: 50%; min-height: 65%; float: left;  background:$wht1; padding: 3rem 2rem; position: absolute; top: 50%; left: 0; transform: translateY(-50%);
+            width: 50%;  float: left;  background:$wht1; padding: 3rem 2rem; position: absolute; top: 50%; left: 0; transform: translateY(-50%);
             box-shadow: 0px 6px 12px #00000014;
             h2 { 
                 width: 100%; float: left; text-align: left; @include fSC(); 
@@ -150,7 +150,9 @@
 
     .serviceFuelsavings {
         width: 100%; float: left; padding:5rem 0; position: relative;
-        img { width: 100%;}
+        .fuelsavings_web { display: block; width: 100%; }
+        .fuelsavings_ipad { display: none; width: 100%; }
+        .fuelsavings_mobile { display: none; width: 100%; }
         section {
             position: absolute; left: 3%; top: 50%; transform: translateY(-50%); width: 390px; float:left;
             h2 {  width: 100%; float: left; text-align: left;  color:$wht1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();   }
@@ -194,7 +196,7 @@
                         &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
                     }
                     .districtselect {  
-                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px;  line-height: 24px; color:$blk7;  @include aMedium(); 
+                        width: 100%; float: left; padding:5px 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk2; text-align: left; font-size: 16px;  line-height: 24px; color:$blk7;  @include aMedium(); -webkit-appearance:none; appearance:none; border-radius: 0;
                         option { 
                             color: $blk7;      
                             &:disabled { user-select: none; pointer-events: none; }
@@ -558,6 +560,9 @@
 
 
         .serviceFuelsavings {
+            .fuelsavings_web { display: none; }
+            .fuelsavings_ipad { display: block;   }
+            .fuelsavings_mobile { display: none;  }
             section {
                 width: 350px; 
                 aside { 
@@ -768,11 +773,12 @@
         }
 
 
-
-
-
+ 
 
         .serviceFuelsavings {
+            .fuelsavings_web { display: none; }
+            .fuelsavings_ipad { display: none;   }
+            .fuelsavings_mobile { display: block;  }
             section {
                 left:10%; width: 80%;  
                 h2 { font-size:22px; letter-spacing:1.32px; line-height: 28px;}
