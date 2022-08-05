@@ -4942,6 +4942,20 @@ main {
   font-size: 16px;
   line-height: 26px;
 }
+.servicewrap .serviceAbout .serviceAboutLeft h5 {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.servicewrap .serviceAbout .serviceAboutLeft h5 a.servicebutton {
+  background: #F2662C;
+  color: #FFFFFF;
+}
+.servicewrap .serviceAbout .serviceAboutLeft h5 a.servicebutton:hover {
+  background: #F0632A;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.1607843137);
+}
 .servicewrap .serviceAbout .serviceAboutRight {
   width: 45%;
   float: right;
@@ -4979,6 +4993,7 @@ main {
   line-height: 24px;
 }
 .servicewrap .serviceAbout .serviceAboutBottom {
+  display: none;
   width: 100%;
   float: left;
   text-align: left;
@@ -5660,21 +5675,6 @@ main {
 .serviceothers .serviceotherslider .items img {
   width: 100%;
 }
-.serviceothers .serviceotherslider .items h2 {
-  position: absolute;
-  left: 10%;
-  top: 12%;
-  width: 80%;
-  color: #FFFFFF;
-  font-family: "Arial-Black", Arial, sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-  letter-spacing: 1.92px;
-  line-height: 44px;
-  text-transform: uppercase;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
-  text-align: left;
-}
 .serviceothers .serviceotherslider .items a.servicebutton {
   position: absolute;
   bottom: 4px;
@@ -5684,6 +5684,7 @@ main {
   white-space: nowrap;
 }
 .serviceothers .serviceotherslider .items a.servicebutton:hover {
+  background: #E54C0D;
   transition: all 0.4s ease-in;
 }
 .serviceothers h3 {
@@ -5876,14 +5877,6 @@ main {
   .serviceothers {
     padding: 3rem 0 5rem 0;
   }
-  .serviceothers .serviceotherslider .items h2 {
-    left: 5%;
-    top: 8%;
-    width: 90%;
-    font-size: 24px;
-    letter-spacing: 0.35px;
-    line-height: 30px;
-  }
   .serviceothers .serviceotherslider .items a.servicebutton {
     padding: 8px 15px;
     font-size: 14px;
@@ -5903,6 +5896,9 @@ main {
   .servicewrap .serviceAbout .serviceAboutLeft {
     width: 100%;
   }
+  .servicewrap .serviceAbout .serviceAboutLeft h5 {
+    display: none;
+  }
   .servicewrap .serviceAbout .serviceAboutRight {
     width: 100%;
     margin-top: 1rem;
@@ -5918,7 +5914,7 @@ main {
     margin: 0.5rem 0 0 0;
   }
   .servicewrap .serviceAbout .serviceAboutBottom {
-    margin-top: 1rem;
+    display: block;
   }
   .servicewrap .serviceHighlight {
     display: none;
