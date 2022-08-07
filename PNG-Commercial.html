@@ -233,61 +233,95 @@
                 <img src="Images/icon.png" alt="why choose" />
             </h2>
             <h3>PNG as an alternative offers many benefits. Below are some of the reasons why one should consider using PNG.</h3>
-            <section>
-                <img src="images/service/png-commercial/whychoose.png" alt="why choose" />
-                <ul id="whychooselist">
+                <ul class="col2" id="whychooselist">
                     <li>
-                        <h4>Eco-Friendly</h4>
-                        <p>
-                            PNG is a cleaner burning fuel and is mostly methane, which makes it eco-friendly. 
-                            LPG is not as eco-friendly as it is mostly propane or butane (bottles gas).
-                        </p>
+                        <h4></h4>
+                        <dl>
+                            <dd>PNG</dd>
+                            <dd>LPG</dd>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Safety</h4>
-                        <p>
-                            PNG is lighter than air and dissipates quickly in case of leak or breakage, as compared to LPG.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_ecofriendly.png" alt="Eco-friendly" />
+                            <span>Eco-friendly</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Control</h4>
-                        <p>
-                            PNG Supply to the stove can be controlled or turned off through the valve while controlling the supply of LPG to the stove is not as easy.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_safety.png" alt="Safety" />
+                            <span>Safety</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Economical</h4>
-                        <p>
-                            PNG is economical with lower rates and installation charges while LPG has a higher rate with cylinder security charges and booking hassles.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_control.png" alt="Control" />
+                            <span>Control</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Supply type</h4>
-                        <p>
-                            PNG is supplied through a direct pipeline that ensures constant delivery while LPG needs to be stored thus comes in cylinders that need to be pre-booked.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_economical.png" alt="Economical" />
+                            <span>Economical</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Odour</h4>
-                        <p>
-                            PNG is an odourless gas but to ensure safety and detection, a little smell is added while LPG has Pungent odour.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_supplytype.png" alt="Supply type" />
+                            <span>Supply type</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Usage</h4>
-                        <p>
-                            PNG gas stoves have nozzles with bigger diameter for a better supply while LPG nozzles have a smaller diameter for a slower supply.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_odour.png" alt="Odour" />
+                            <span>Odour</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                     <li>
-                        <h4>Payment</h4>
-                        <p>
-                            PNG bills are paid monthly depending on your usage while LPG needs to be pre-paid to get the cylinder installed.
-                        </p>
+                        <h4>
+                            <img src="images/service/wcs_usage.png" alt="Usage" />
+                            <span>Usage</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <h4>
+                            <img src="images/service/wcs_payment.png" alt="Payment" />
+                            <span>Payment</span>
+                        </h4>
+                        <dl>
+                            <dt data-title="PNG">Lorem Ipsum is simply dummy text of the printing</dt>
+                            <dt data-title="LPG">Lorem Ipsum has been the industry's standard dummy</dt>
+                        </dl>
                     </li>
                 </ul>
-                <aside id="whychoosemore"><span onclick="whychoosemore()">View more <i class="fa fa-angle-double-down" aria-hidden="true"></i></span></aside>
-            </section>
         </div>
         <!--serviceWhychoose end -->
 
@@ -426,6 +460,7 @@
         </h2>
         <div class="satisfactionLarge">
             <div class="satisfactionVideo">
+                <div class="satisfactionVideobg" onclick="satisfactionHideVideo()"></div>
                 <div class="iframediv">
                     <span onclick="satisfactionHideVideo()"><i class="fa fa-times" aria-hidden="true"></i></span>
                     <iframe src="" frameborder="0" allowtransparency="true" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -658,11 +693,12 @@
                 <li class="width25">
                     <select name="typeofquery">
                         <option value="0" selected disabled>Type of Query</option>
-                        <option>New Connection</option>
-                        <option>Business</option>
+                        <option>Billing/Finance</option>
                         <option>Complaint</option>
-                        <option>Feedback</option>
-                        <option>Other</option>
+                        <option>Emergency</option>
+                        <option>General Enquiry</option>
+                        <option>New Connection</option>
+                        <option>Technical</option>
                     </select>
                     <span class="errorMsg">Select Query</span>
                 </li>

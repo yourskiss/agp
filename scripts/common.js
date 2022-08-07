@@ -430,6 +430,7 @@ $(function($)
             asNavFor: '.satisfactionSlider',
             dots: true,
             arrows:true,
+            vertical: false,
             centerMode: false,
             autoplay: false,
             centerPadding: '10px',
@@ -438,12 +439,12 @@ $(function($)
             initialSlide:0,
             responsive: [
                 {
-                    breakpoint: 1023,
-                    settings: {vertical: false, slidesToShow: 3 }
+                    breakpoint: 1255,
+                    settings: { slidesToShow: 3 }
                 },
                 {
                     breakpoint: 767,
-                    settings: {vertical: false, slidesToShow: 2 }
+                    settings: {dots: false,arrows:false, }
                 },
                 {
                     breakpoint: 599,
@@ -533,11 +534,13 @@ $(function($)
 /* ############################ satisfaction  video === start ############################ */
 function satisfactionShowVideo(iframesrc) // video show
 {
+    $("body").css("overflow","hidden");
     $(".satisfactionVideo").fadeIn(600);
     $(".satisfactionVideo iframe").attr("src", "https://www.youtube.com/embed/"+iframesrc+"?autoplay=1&mute=0&loop=1&rel=0&showinfo=0&controls=1&modestbranding=1&playsinline=1&playlist="+iframesrc);
 }
 function satisfactionHideVideo() // video close 
 {
+    $("body").css("overflow","visible");
     $(".satisfactionVideo").fadeOut(600);
     $(".satisfactionVideo iframe").attr('src', '');
 }
@@ -545,6 +548,32 @@ function satisfactionHideVideo() // video close
 
 
 /* ############################ services === start ############################ */
+if($("#whychooselist").length > 0)
+{
+
+    $("#whychooselist li h4").click(function()
+    {
+        if($(window).width() < 1023)
+        {
+            if($(this).hasClass("active"))
+            {
+                $(this).removeClass("active");
+                $(this).next("dl").slideUp(300);
+            }
+            else 
+            {
+                $("#whychooselist li h4").removeClass("active");
+                $("#whychooselist li dl").slideUp(300);
+
+                $(this).addClass("active");
+                $(this).next("dl").slideDown(300);
+            }
+        }
+    });
+
+}
+
+
 function changepincode()
 {
     $("#pinCurrent").slideUp(300);
@@ -568,12 +597,6 @@ function shwopincode()
         $("#pinChange").show();
         $("#pinChangeError").hide();
     }
-}
-
-function whychoosemore()
-{
-    $("#whychoosemore").hide();
-    $("#whychooselist li").slideDown();
 }
 /* ############################ services === end ############################ */
 
