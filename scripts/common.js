@@ -1051,7 +1051,7 @@ if($(".resources_pagination").length > 0)
     });
     $("#resources_pagination div ul li").click(function(e)
     {
-        if($(window).width() < 599)
+        if($(window).width() < 1023)
         {
             e.preventDefault();
             e.stopPropagation();
@@ -1065,7 +1065,7 @@ if($(".resources_pagination").length > 0)
     $('body').click(function(e) // close on click body
     {    
         e.stopPropagation();
-        if($(window).width() < 599)
+        if($(window).width() < 1023)
         {
             $("#resources_pagination div ul").slideUp(300);
         }
