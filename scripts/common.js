@@ -553,7 +553,7 @@ if($("#whychooselist").length > 0)
 
     $("#whychooselist li h4").click(function()
     {
-        if($(window).width() < 1023)
+        if($(window).width() < 1255)
         {
             if($(this).hasClass("active"))
             {
@@ -570,9 +570,12 @@ if($("#whychooselist").length > 0)
             }
         }
     });
-
 }
-
+function whychooseusmoreview()
+{
+    $("#whychooselist li").slideDown(500);
+    $("#whychooselist li div h6 span").fadeOut(300);
+}
 
 function changepincode()
 {
