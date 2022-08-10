@@ -14,8 +14,7 @@ $(window).on('load', function()
 /* onLoad === end */
 
 
-// maainmenu
-
+ 
 
 /* dropdown header menu === start */
 $(".navigation .wrapper ul li.megamenu a").click(function()
@@ -46,11 +45,59 @@ $(".dropdownclose").click(function()
 /* dropdown header menu === end */
 
 
+/* search bar in header === start */
+if($("#searchmain").length > 0 && $("#searchinheader").length > 0)
+{
+    $("#searchmain").click(function(e)
+    {
+        e.preventDefault();
+        e.stopPropagation();
+        $("#searchinheader").slideToggle(300);
+        $("#searchmain").toggleClass("active");
+        if($(window).width() > 1255)
+        {
+            $("#mainmenuulli").slideToggle(300);
+        }
+    });
+    $("#searchinheader").click(function(e)
+    {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+    $("#searchHeadBack, #searchinheader article").click(function()
+    {
+        $("#searchinheader").slideUp(300);
+        $("#searchmain").removeClass("active");
+        $("#searchInput").val('');
+        if($(window).width() > 1255)
+        {
+            $("#mainmenuulli").fadeIn(300);
+        }
+    });
+    $('body').click(function(e) // close on click body
+    {    
+        e.stopPropagation();
+        if (e.target != $('#searchmain')  || e.target != $('#searchinheader') || e.target != $('#searchHeadBack')) 
+        {
+            $("#searchinheader").slideUp(300);
+            $("#searchmain").removeClass("active");
+            $("#searchInput").val('');
+            if($(window).width() > 1255)
+            {
+                $("#mainmenuulli").fadeIn(300);
+            }
+        }
+    });
+}
+/* search bar in header === end */
+
+
+
 /* whish to connect on changes opacity  === start */
 $(".wishtoconnect .wrapper .wishtoconnectcontent ul li select").change(function() {
     $(this).css('opacity','1');   
 });
-/* whish to connect on changes opacity  === start */
+/* whish to connect on changes opacity  === end */
 
 
 
@@ -1074,8 +1121,6 @@ if($(".resources_pagination").length > 0)
         }
     });
 }
-
-
  function clearresourcefilter()
  {
     $("#resourcesortby option:selected").prop("selected", false);
