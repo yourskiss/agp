@@ -716,7 +716,10 @@ if($(".csrAbout").length > 0)
         $("#commitmentstitletabs li[data-id='" + getname + "']").addClass("active");
         $(".commitmentsContainer .commitmenthead[data-id='" + getname + "']").addClass("active");
         $(".commitmentsContainer .commitmentbody[data-src='" + getname + "']").slideDown(300);
-        setTimeout(function(){ $(".csrloader").fadeOut(200); }, 600);
+
+        setTimeout(function(){ $("#commitmentstitletabs").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".commitmentsContainer .commitmenthead").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".csrloader").slideUp(200); }, 600);
     });
 }
 /* ############################ csr === end ############################ */
