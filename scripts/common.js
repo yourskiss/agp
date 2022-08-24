@@ -620,8 +620,19 @@ if($("#whychooselist").length > 0)
 }
 function whychooseusmoreview()
 {
-    $("#whychooselist li").slideDown(500);
-    $("#whychooselist li div h6 span").fadeOut(300);
+    $("#whychooselist li.whychoose_hide").slideToggle(500);
+    $("#whychooselist li div h6 span").toggleClass("active");
+
+    if($("#whychooselist li div h6 span").hasClass("active"))
+    {
+        $("#whychooseusmoreviewText").text("View less");
+        $("#whychooseusmoreviewIcon").removeClass("fa-angle-down").addClass("fa-angle-up");
+    }
+    else 
+    {
+        $("#whychooseusmoreviewText").text("View more");
+        $("#whychooseusmoreviewIcon").removeClass("fa-angle-up").addClass("fa-angle-down");
+    }
 }
 
 function changepincode()
