@@ -1101,10 +1101,6 @@ if($(".resources_filter").length > 0)
  }
 
 
-
-
-
- /* ############################  resources === start ############################ */
 if($(".resources_pagination").length > 0)
 {
     $("#resources_pagination div h2").click(function(e)
@@ -1145,4 +1141,22 @@ if($(".resources_pagination").length > 0)
     $(".rt_body").slideUp(300);
  }
 /* ############################ resources === end ############################ */
+
+
+
+
+ /* ############################  rfc_oem_tabs === start ############################ */
+ if($("#rfc_oem_tabs").length > 0)
+ {
+     $("#rfc_oem_tabs aside").click(function()
+     {
+         let faqname = $(this).attr("data-name");
+         $("#rfc_oem_tabs aside").removeClass("active");
+         $("#rfc_oem_tabs section").slideUp(500);
+         $("#rfc_oem_tabs aside[data-name='" + faqname + "']").addClass("active");
+         $("#rfc_oem_tabs section[data-id='" + faqname + "']").slideDown(500);
+     });
+ }
+ /* ############################  rfc_oem_tabs === start ############################ */
+
 
