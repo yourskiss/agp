@@ -572,6 +572,39 @@ $(function($)
     }
     
 
+    if($(".calulatorothers").length > 0)
+    {
+        // calulator others slider
+        $('.calulatorslider').slick({
+            slidesToShow:3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            infinite: true,
+            adaptiveHeight: false,
+            centerMode: true,
+            centerPadding: '0',
+            initialSlide:0,
+            responsive:
+            [
+                {
+                    breakpoint: 99999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1023,
+                    settings: { centerPadding: '10px', slidesToShow:2 }
+                },
+                {
+                    breakpoint: 599,
+                    settings: { centerPadding: '15px', slidesToShow:1 }
+                }
+            ]
+        });
+    }
+
 
 });
 /* ############################ sliders === end ############################ */
