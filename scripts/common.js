@@ -1238,15 +1238,60 @@ if($(".resources_pagination").length > 0)
 /* ############################  newconnection === start ############################ */
 const fileSizeValidation = (fileID) => {
     var filesize = $("#"+fileID)[0].files[0].size;
-    if(filesize > 1000000) 
+    if(filesize > 2000000) 
     {
-        $("#"+fileID+"-error").show().html("Please upload file less than 1MB");
+        alert("Please upload file less than 2MB");
         $("#"+fileID).val('');
     }
-    else 
+}
+
+if($("#connection_tabs_head").length > 0 && $("#connection_tabs_container").length > 0)
+{
+    $(".connection_tabs_head ul li").click(function(){
+        $(".conTabLoader").slideDown(50);
+        $(".connection_tabs_head ul").addClass("disabled")
+        let getname = $(this).attr("data-id");
+        $(".connection_tabs_head ul li").removeClass("active");
+        $(".connection_tabs_container .conTabHead").removeClass("active").addClass('disabled');
+        $(".connection_tabs_container .conTabBody").slideUp(500);
+
+        $(".connection_tabs_head li[data-id='" + getname + "']").addClass("active");
+        $(".connection_tabs_container .conTabHead[data-id='" + getname + "']").addClass("active");
+        $(".connection_tabs_container .conTabBody[data-id='" + getname + "']").slideDown(500);
+        
+        setTimeout(function(){ $(".connection_tabs_head ul").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".connection_tabs_container .conTabHead").removeClass('disabled'); }, 500);
+        setTimeout(function(){ $(".conTabLoader").slideUp(200); }, 600);
+    });
+
+
+    $(".connection_tabs_container .conTabHead").click(function()
     {
-        $("#"+fileID+"-error").hide().html("");
-    }
+        if($(this).hasClass("active"))
+        {
+            $(".connection_tabs_head ul li").removeClass("active");
+            $(".connection_tabs_container .conTabHead").removeClass("active").removeClass('disabled');
+            $(".connection_tabs_container .conTabBody").slideUp(500);
+        }
+        else 
+        {
+            $('html, body').animate({scrollTop: $("#connection_tabs_container").offset().top  - jumpdiv },500);
+            $(".conTabLoader").slideDown(50);
+            $(".connection_tabs_head ul").addClass("disabled")
+            let getname = $(this).attr("data-id");
+            $(".connection_tabs_head ul li").removeClass("active");
+            $(".connection_tabs_container .conTabHead").removeClass("active").addClass('disabled');
+            $(".connection_tabs_container .conTabBody").slideUp(500);
+    
+            $(".connection_tabs_head ul li[data-id='" + getname + "']").addClass("active");
+            $(".connection_tabs_container .conTabHead[data-id='" + getname + "']").addClass("active");
+            $(".connection_tabs_container .conTabBody[data-id='" + getname + "']").slideDown(500);
+            
+            setTimeout(function(){ $(".connection_tabs_head ul").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".connection_tabs_container .conTabHead").removeClass('disabled'); }, 500);
+            setTimeout(function(){ $(".conTabLoader").slideUp(200); }, 600);
+        }
+    });
 }
 /* ############################  newconnection === start ############################ */
 

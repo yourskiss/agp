@@ -206,9 +206,22 @@
             </p>
         </div>
 
-
-        <div class="connectiontabs">
-            test
+        <div class="connection_tabs_head" id="connection_tabs_head">
+            <ul>
+                <li class="active" data-id="tab_households">PNG for Households</li>
+                <li data-id="tab_commercial">PNG for Commercial Use</li>
+            </ul>
+        </div>
+        <div class="connection_tabs_container" id="connection_tabs_container">
+            <div class="conTabLoader" id="conTabLoader"><i class="fa fa-spinner fa-spin"></i></div>
+            <aside class="conTabHead active" data-id="tab_households">PNG for Households</aside>
+            <section class="conTabBody" data-id="tab_households" style="display:block;">
+                Households
+            </section>
+            <aside class="conTabHead" data-id="tab_commercial">PNG for Commercial Use</aside>
+            <section class="conTabBody" data-id="tab_commercial">
+                Commercial
+            </section>
         </div>
 
 
