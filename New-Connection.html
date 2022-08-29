@@ -196,7 +196,7 @@
         </ul>
 
         
-        <div class="applicationInfo">
+        <div class="connectioninfo">
             <h2>
                 <span>DOCUMENTS REQUIRED</span>
                 <img src="images/icon.png" alt="about" />
@@ -204,6 +204,201 @@
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
+        </div>
+
+
+
+
+        <div class="connectioninfo">
+            <h2>
+                <span>GET A NEW CONNECTION</span>
+                <img src="images/icon.png" alt="about" />
+            </h2>
+        </div>
+
+
+        <div class="connection_form">
+            <div class="connection_left">
+            <section>
+                <div class="connection_field cf33">
+                    <select class="connection_select" name="connectiontype" id="connectiontype">
+                        <option value="0">Select connection type</option>
+                        <option value="1">type 1</option>
+                        <option value="2">type 2</option>
+                        <option value="3">type 3</option>
+                    </select>
+                    <span class="connection_errormsg">Please select connection type</span>
+                </div>
+                <div class="connection_field cf33">
+                    <select class="connection_select" name="state" id="state">
+                        <option value="0">State*</option>
+                        <option value="1">state 1</option>
+                        <option value="2">state 2</option>
+                        <option value="3">state 3</option>
+                    </select>
+                    <span class="connection_errormsg">Please select State</span>
+                </div>
+                <div class="connection_field cf33">
+                    <select class="connection_select" name="district" id="district">
+                        <option value="0">District*</option>
+                        <option value="1">District 1</option>
+                        <option value="2">District 2</option>
+                        <option value="3">District 3</option>
+                    </select>
+                    <span class="connection_errormsg">Please select district</span>
+                </div>
+            </section>
+            <section> 
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="name" id="name" placeholder="Name*" />
+                    <span class="connection_errormsg">Please enter name</span>
+                </div>
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="contactno" id="contactno" placeholder="Contact No.*" />
+                    <span class="connection_errormsg">Please enter contact no</span>
+                </div>
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="emailid" id="emailid" placeholder="Email ID*" />
+                    <span class="connection_errormsg">Please enter email id</span>
+                </div>
+            </section>
+            <section> 
+                <div class="connection_field cf50">
+                    <input class="connection_input" type="text" name="houseno" id="houseno" placeholder="House No.*" />
+                    <span class="connection_errormsg">Please enter house no.</span>
+                </div>
+                <div class="connection_field cf50">
+                    <input class="connection_input" type="text" name="apartment*" id="apartment" placeholder="Society/Apartment*" />
+                    <span class="connection_errormsg">Please enter Society/Apartment</span>
+                </div>
+            </section>
+            <section> 
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="area" id="area" placeholder="Area*" />
+                    <span class="connection_errormsg">Please enter area</span>
+                </div>
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="street" id="street" placeholder="Street*" />
+                    <span class="connection_errormsg">Please enter street</span>
+                </div>
+                <div class="connection_field cf33">
+                    <input class="connection_input" type="text" name="landmark" id="landmark" placeholder="Landmark" />
+                    <span class="connection_errormsg">Please enter landmark</span>
+                </div>
+            </section>
+            <section> 
+                <div class="connection_field cf50">
+                    <input class="connection_input" type="text" name="city" id="city" placeholder="Village/Town/City*" />
+                    <span class="connection_errormsg">Please enter Village/Town/City*</span>
+                </div>
+                <div class="connection_field cf50">
+                    <input class="connection_input" type="text" name="pincode" id="pincode" placeholder="Pincode" />
+                    <span class="connection_errormsg">Please enter pincode</span>
+                </div>
+            </section>
+            <section class="connection_docs"> 
+                <div class="connection_field cf33">
+                     <h4>Address Proof  <small>(Any 2)</small></h4>
+                     <h5>Only JPEG, PNG, PDF file with size of 1 MB allowed</h5>
+                     <ul>
+                        <li>
+                            <select class="connection_select" name="addressproof1" id="addressproof1">
+                                <option value="0">Select</option>
+                                <option value="1">address proof 1</option>
+                                <option value="2">address proof 2</option>
+                                <option value="3">address proof 3</option>
+                            </select> 
+                        </li>
+                        <li>
+                            <input type="file" name="document-1" id="document-1" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                            <label for="document-1" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                        </li>
+                     </ul>
+                     <span id="document-1-error" class="connection_errormsg">Select any one</span>
+                     <ul>
+                        <li>
+                            <select class="connection_select" name="addressproof2" id="addressproof2">
+                                <option value="0">Select</option>
+                                <option value="1">address proof 1</option>
+                                <option value="2">address proof 2</option>
+                                <option value="3">address proof 3</option>
+                            </select> 
+                        </li>
+                        <li>
+                            <input type="file" name="document-2" id="document-2" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                            <label for="document-2" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                        </li>
+                     </ul>
+                     <span id="document-2-error" class="connection_errormsg">Select</span>  
+                </div>
+                <div class="connection_field cf33">
+                     <h4>Photo Identify Proof <small>(Any 2)</small></h4>
+                     <h5>Only JPEG, PNG, PDF file with size of 1 MB allowed</h5>
+                     <ul>
+                        <li>
+                            <select class="connection_select" name="addressproof" id="addressproof">
+                                <option value="0">Select</option>
+                                <option value="1">address proof 1</option>
+                                <option value="2">address proof 2</option>
+                                <option value="3">address proof 3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="file" name="document-3" id="document-3" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                            <label for="document-3" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                            
+                        </li>
+                     </ul>
+                     <span id="document-3-error" class="connection_errormsg">Select</span>  
+                     <ul>
+                        <li>
+                            <select class="connection_select" name="addressproof" id="addressproof">
+                                <option value="0">Select</option>
+                                <option value="1">address proof 1</option>
+                                <option value="2">address proof 2</option>
+                                <option value="3">address proof 3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="file" name="document-4" id="document-4" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                            <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label> 
+                        </li>
+                     </ul>
+                     <span id="document-4-error" class="connection_errormsg">Select</span>  
+                </div>
+                <div class="connection_field cf33">
+                     <h4>Ownership Proof  <small>(Any 1)</small></h4>
+                     <h5>Only JPEG, PNG, PDF file with size of 1 MB allowed</h5>
+                     <ul>
+                        <li>
+                            <select class="connection_select" name="addressproof" id="addressproof">
+                                <option value="0">Select</option>
+                                <option value="1">address proof 1</option>
+                                <option value="2">address proof 2</option>
+                                <option value="3">address proof 3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="file" name="document-5" id="document-5" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                            <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                        </li>
+                     </ul>
+                     <span id="document-5-error" class="connection_errormsg">Select</span>  
+                </div>
+            </section>
+
+
+            <section class="connection_submt"> 
+                <p>Fields marked * are mandatory</p>
+                <div class="connection_field">
+                    <input class="connection_button" type="submit" name="" id="" value="Submit" />
+                </div>
+            </section>
+            </div>
+            <div class="connection_right">
+                <img class="connection_web" src="images/newconnection/connection_web.jpg" alt="connection" />
+                <img class="connection_mob" src="images/newconnection/connection_mob.jpg" alt="connection" />
+            </div>
         </div>
 
         
@@ -214,8 +409,38 @@
 
 
 
+
    
- 
+<!-- connectionothers  =====  start -->
+<div class="connectionothers">
+    <div class="wrapper">
+        <div class="connectionslider">
+
+            <div class="items">
+                <img src="images/newconnection/slide-cng.jpg" alt="cng" />
+                <a href="#">CNG FOR VEHICLES</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-household.jpg" alt="household" />
+                <a href="#">PNG FOR HOUSEHOLD</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-industries.jpg" alt="industries" />
+                <a href="#">PNG FOR INDUSTRIES</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-commercial.jpg" alt="commercial" />
+                <a href="#">PNG FOR COMMERCIAL</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- connectionothers  =====  end -->
+
+
+
+
 
 
 
