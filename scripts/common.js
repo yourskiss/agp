@@ -606,6 +606,46 @@ $(function($)
     }
 
 
+
+
+    if($(".connectionothers").length > 0)
+    {
+        // calulator others slider
+        $('.connectionslider').slick({
+            slidesToShow:4,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            infinite: true,
+            adaptiveHeight: false,
+            centerMode: true,
+            centerPadding: '0',
+            initialSlide:0,
+            responsive:
+            [
+                {
+                    breakpoint: 99999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1255,
+                    settings: { centerPadding: '10px', slidesToShow:3 }
+                },
+                {
+                    breakpoint: 1023,
+                    settings: { centerPadding: '10px', slidesToShow:2 }
+                },
+                {
+                    breakpoint: 599,
+                    settings: { centerPadding: '15px', slidesToShow:1 }
+                }
+            ]
+        });
+    }
+
+
 });
 /* ############################ sliders === end ############################ */
 
@@ -1193,3 +1233,21 @@ if($(".resources_pagination").length > 0)
  /* ############################  rfc_oem_tabs === start ############################ */
 
 
+
+
+/* ############################  newconnection === start ############################ */
+const fileSizeValidation = (fileID) => {
+    var filesize = $("#"+fileID)[0].files[0].size;
+    if(filesize > 1000000) 
+    {
+        $("#"+fileID+"-error").show().html("Please upload file less than 1MB");
+        $("#"+fileID).val('');
+    }
+    else 
+    {
+        $("#"+fileID+"-error").hide().html("");
+    }
+}
+/* ############################  newconnection === start ############################ */
+
+ 
