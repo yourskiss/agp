@@ -854,18 +854,17 @@ if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
 
     });
 }
-function viewprofiles(val)
+function viewprofiles()
 {
-    let getval = parseInt(val);
     $(".viewprofilesBG").fadeIn(300);
     $(".viewprofilesPopup").fadeIn(500);
-    // $("body").css("overflow","hidden");
+    $("body").css("overflow","hidden");
 }
 function closeprofiles()
 {
     $(".viewprofilesBG").fadeOut(500);
     $(".viewprofilesPopup").fadeOut(300);
-    // $("body").css("overflow","visible");
+    $("body").css("overflow","visible");
 }
 /* ############################ team === end ############################ */
 
