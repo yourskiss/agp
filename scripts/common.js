@@ -822,6 +822,22 @@ if($(".csrAbout").length > 0)
 /* ############################ csr === end ############################ */
 
 
+/* ############################ ABOUT === start ############################ */
+function hide_cgdlicenses()
+{
+    $(".cgd_licensesBG").fadeOut(500);
+    $(".cgd_licenses_popup").fadeOut(500);
+}
+
+function show_cgdlicenses()
+{
+    $(".cgd_licensesBG").fadeIn(500);
+    $(".cgd_licenses_popup").fadeIn(500);
+}
+/* ############################ ABOUT === end ############################ */
+
+
+
 /* ############################ team === start ############################ */
 if($("#teamTabs").length > 0 &&  $("#teamContainer").length > 0)
 {
