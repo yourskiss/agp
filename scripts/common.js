@@ -732,6 +732,19 @@ function shwopincode()
         $("#pinChangeError").hide();
     }
 }
+
+function hidevaluechain()
+{
+    $(".valuechainBG").fadeOut(500);
+    $(".valuechainPopup").fadeOut(500);
+}
+
+function showvaluechain()
+{
+    $(".valuechainBG").fadeIn(500);
+    $(".valuechainPopup").fadeIn(500);
+}
+
 /* ############################ services === end ############################ */
 
 
