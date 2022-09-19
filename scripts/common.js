@@ -985,6 +985,28 @@ if($("#faqsTabs").length > 0 &&  $("#faqsContainer").length > 0)
         }
     });
 }
+if($(".popularquestions").length > 0)
+{
+    $(".popularquestionsSlider .itmes").click(function()
+    {
+        let tagname = $(this).attr("data-name");
+        $("#faqsTabs ul li").removeClass("active");
+        $("#faqsContainer .faqsheader").removeClass("active");
+        $("#faqsContainer .faqssection").fadeOut(200);
+
+        $("#faqsTabs ul li[data-name='" + tagname + "']").addClass("active");
+        $("#faqsContainer .faqsheader[data-name='" + tagname + "']").addClass("active");
+        $("#faqsContainer .faqssection[data-id='" + tagname + "']").fadeIn(200);
+
+        $('html, body').animate({scrollTop: $("#faqsTabs").offset().top  - jumpdiv }, 500);
+
+        $("#faqsContainer .faqssection ul li").removeClass("active");
+        $("#faqsContainer .faqssection ul li h4").removeClass("active");
+        $("#faqsContainer .faqssection ul li p").slideUp(300);
+
+    });
+}
+
 /* ############################ faqs === end ############################ */
 
 
