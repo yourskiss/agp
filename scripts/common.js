@@ -1070,6 +1070,45 @@ if($("#locationsearchToggle").length > 0 && $("#locationsearchClose").length > 0
         $('#locationsearchInput').val("").trigger("keyup");
     });
 }
+
+if($("#getnewpngconnection").length > 0)
+{
+    $("#getnewpngconnection .getnewpngconnection_tab span").click(function()
+    {
+        var getname = $(this).attr("data-id");
+        $(".getnewpngconnection_tab span").removeClass("active");
+        $(".getnewpngconnection_body").slideUp(300);
+        $(".getnewpngconnection_head").removeClass("active");
+
+        $(".getnewpngconnection_tab span[data-id='"+getname+"']").addClass("active");
+        $(".getnewpngconnection_body[data-id='"+getname+"']").slideDown(300);
+        $(".getnewpngconnection_head[data-id='"+getname+"']").addClass("active");
+    });
+    $(".getnewpngconnection_head").click(function()
+    {
+        if($(this).hasClass("active"))
+        {
+            $(".getnewpngconnection_tab span").removeClass("active");
+            $(".getnewpngconnection_body").slideUp(300);
+            $(".getnewpngconnection_head").removeClass("active");
+        }
+        else 
+        {
+            var getname = $(this).attr("data-id");
+            $(".getnewpngconnection_tab span").removeClass("active");
+            $(".getnewpngconnection_body").slideUp(300);
+            $(".getnewpngconnection_head").removeClass("active");
+    
+            $(".getnewpngconnection_tab span[data-id='"+getname+"']").addClass("active");
+            $(".getnewpngconnection_body[data-id='"+getname+"']").slideDown(300);
+            $(".getnewpngconnection_head[data-id='"+getname+"']").addClass("active");
+        }
+
+    });
+}
+
+
+
 /* ############################ png available location === end ############################ */
 
 
