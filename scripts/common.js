@@ -990,6 +990,7 @@ if($(".popularquestions").length > 0)
     $(".popularquestionsSlider .itmes").click(function()
     {
         let tagname = $(this).attr("data-name");
+        let tagid = $(this).attr("data-id");
         $("#faqsTabs ul li").removeClass("active");
         $("#faqsContainer .faqsheader").removeClass("active");
         $("#faqsContainer .faqssection").fadeOut(200);
@@ -1004,7 +1005,14 @@ if($(".popularquestions").length > 0)
         $("#faqsContainer .faqssection ul li h4").removeClass("active");
         $("#faqsContainer .faqssection ul li p").slideUp(300);
 
+        $("#faqsContainer .faqssection ul li[data-id='" + tagid + "']").addClass("active");
+        $("#faqsContainer .faqssection ul li[data-id='" + tagid + "'] h4").addClass("active");
+        $("#faqsContainer .faqssection ul li[data-id='" + tagid + "'] p").slideDown(300);
     });
+
+
+
+
 }
 
 /* ############################ faqs === end ############################ */
