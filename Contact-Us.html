@@ -234,6 +234,26 @@
                     <img src="images/icon.png" alt="WRITE TO US" />
                 </h2>
                 <p>You can directly write to us by filling out the form given below. We are all ears to any feedback, complaints, suggestions, or queries. </p>
+                
+                <div class="contact_success">
+                    <aside>
+                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </aside>
+                    <h5>
+                        <b>Thank you for submitting the form!</b>
+                        <span>Our team will get in touch with you soon.</span>
+                    </h5>
+                </div>
+                <div class="contact_failed">
+                    <section>
+                        <aside><i class="fa fa-info" aria-hidden="true"></i></aside>
+                        <h5>
+                            <b>Sorry</b>
+                            <span>We are facing some issue. Please try again.</span>
+                        </h5>
+                    </section>
+                </div>
+
                 <ul>
                     <li>
                         <input type="text" name="name" placeholder="Name" />
@@ -297,7 +317,14 @@
             </div>
             <div class="adresslist">
                 <div class="addressscroll">
-                    <div class="addresssnotavailable" id="geographicalareanotavailable">No record found.</div>
+                    <div class="addresssnotavailable" id="geographicalareanotavailable">
+                        <section>
+                            <div>
+                                <aside><img src="images/no-result.png" alt="no result" /></aside>
+                                <p>Sorry, we were not able to find any results. Please try again.</p>
+                            </div>
+                        </section>
+                    </div>
                     <ul id="geographicalarea">
                         <li>
                             <h3>Geographical Area:</h3>
