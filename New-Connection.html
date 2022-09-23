@@ -404,11 +404,11 @@
                         <input class="connection_input" type="text" name="emailid" id="emailid" placeholder="Email ID*" />
                         <span class="connection_errormsg">Please enter email id</span>
                     </div>
-                    <div class="connection_field cf50">
+                    <div class="connection_field cf67">
                         <input class="connection_input" type="text" name="houseno" id="houseno" placeholder="House No.*" />
                         <span class="connection_errormsg">Please enter house no.</span>
                     </div>
-                    <div class="connection_field cf50">
+                    <div class="connection_field cf33">
                         <input class="connection_input" type="text" name="apartment*" id="apartment" placeholder="Society/Apartment*" />
                         <span class="connection_errormsg">Please enter Society/Apartment</span>
                     </div>
@@ -425,11 +425,11 @@
                         <input class="connection_input" type="text" name="landmark" id="landmark" placeholder="Landmark" />
                         <span class="connection_errormsg">Please enter landmark</span>
                     </div>
-                    <div class="connection_field cf50">
+                    <div class="connection_field cf67">
                         <input class="connection_input" type="text" name="city" id="city" placeholder="Village/Town/City*" />
                         <span class="connection_errormsg">Please enter Village/Town/City*</span>
                     </div>
-                    <div class="connection_field cf50">
+                    <div class="connection_field cf33">
                         <input class="connection_input" type="text" name="pincode" id="pincode" placeholder="Pincode" />
                         <span class="connection_errormsg">Please enter pincode</span>
                     </div>
@@ -447,11 +447,15 @@
                                 </select> 
                             </li>
                             <li>
-                                <input type="file" name="document-1" id="document-1" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                <input type="file" name="document-1" id="document-1" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
                                 <label for="document-1" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
                             </li>
                         </ul>
-                        <span id="document-1-error" class="connection_errormsg">Select any one</span>
+                        <span id="document-1-error" class="connection_errormsg">Select</span>
+                        <span class="connection_filename" id="document-1-filename">
+                            <b></b>
+                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(1)"></i>
+                        </span>
                         <ul>
                             <li>
                                 <select class="connection_select" name="addressproof2" id="addressproof2">
@@ -462,11 +466,15 @@
                                 </select> 
                             </li>
                             <li>
-                                <input type="file" name="document-2" id="document-2" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                <input type="file" name="document-2" id="document-2" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
                                 <label for="document-2" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
                             </li>
                         </ul>
                         <span id="document-2-error" class="connection_errormsg">Select</span>  
+                        <span class="connection_filename" id="document-2-filename">
+                            <b></b>
+                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(2)"></i>
+                        </span>
                     </div>
                     <div class="connection_field cf30">
                         <h4>Photo Identify Proof <small>(Any 2)</small></h4>
@@ -481,12 +489,15 @@
                                 </select>
                             </li>
                             <li>
-                                <input type="file" name="document-3" id="document-3" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                <input type="file" name="document-3" id="document-3" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
                                 <label for="document-3" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
-                                
                             </li>
                         </ul>
-                        <span id="document-3-error" class="connection_errormsg">Select</span>  
+                        <span id="document-3-error" class="connection_errormsg">Select</span> 
+                        <span class="connection_filename" id="document-3-filename">
+                            <b></b>
+                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(3)"></i>
+                        </span> 
                         <ul>
                             <li>
                                 <select class="connection_select" name="addressproof" id="addressproof">
@@ -497,11 +508,15 @@
                                 </select>
                             </li>
                             <li>
-                                <input type="file" name="document-4" id="document-4" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label> 
+                                <input type="file" name="document-4" id="document-4" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
                             </li>
                         </ul>
                         <span id="document-4-error" class="connection_errormsg">Select</span>  
+                        <span class="connection_filename" id="document-4-filename">
+                            <b></b>
+                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(4)"></i>
+                        </span> 
                     </div>
                     <div class="connection_field cf30">
                         <h4>Ownership Proof  <small>(Any 1)</small></h4>
@@ -516,11 +531,14 @@
                                 </select>
                             </li>
                             <li>
-                                <input type="file" name="document-5" id="document-5" onchange="fileSizeValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                <input type="file" name="document-5" id="document-5" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
                             </li>
                         </ul>
                         <span id="document-5-error" class="connection_errormsg">Select</span>  
+                        <span class="connection_filename" id="document-5-filename">
+                            <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(5)"></i>
+                        </span>
                     </div>
                     <div class="connection_field cf100">
                         <p>Fields marked * are mandatory</p>

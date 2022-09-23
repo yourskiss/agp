@@ -1348,14 +1348,30 @@ if($(".resources_pagination").length > 0)
 
 
 /* ############################  newconnection === start ############################ */
-const fileSizeValidation = (fileID) => {
+const fileValidation = (fileID) => {
     var filesize = $("#"+fileID)[0].files[0].size;
+    var filename = $("#"+fileID)[0].files[0].name;
     if(filesize > 2000000) 
     {
-        alert("Please upload file less than 2MB");
-        $("#"+fileID).val('');
+        $("#"+fileID+"-error").show().text("Please upload file less than 2MB");
+        
+        $(".connection_filename").hide();
+        $(".connection_filename b").text("");
+    }
+    else 
+    {
+        $(".connection_errormsg").hide().text("");
+        $("#"+fileID+"-filename").show();
+        $("#"+fileID+"-filename b").text(filename);
     }
 }
+const detelefile = (val) => {
+    $("#document-"+val+"-filename b").text("");
+    $("#document-"+val+"-filename").hide();
+    $("#document-"+val).val('');
+}
+
+
 
 if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
 {
