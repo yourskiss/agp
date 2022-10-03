@@ -263,14 +263,20 @@
                 <li data-name="cng" >CNG</li>
                 <li data-name="connections">Connections</li>
                 <li data-name="png">PNG</li>
-                <!--
-                <li data-name="billingpayments">Billing & Payments</li>
-                <li data-name="refunds">Refunds</li>
-                <li data-name="referrals">Referrals</li>
-                -->
             </ul>
         </div>
+        
         <div class="faqsContainer" id="faqsContainer">
+
+            <div class="faqsnoresult" id="faqsnoresult">
+                <section>
+                    <div>
+                        <aside><img src="images/no-result.png" alt="no result" /></aside>
+                        <p>Sorry, we were not able to find any results. Please try again.</p>
+                        <h4><span onclick="clearSearch()">Clear Search</span></h4>
+                    </div>
+                </section>
+            </div>
 
             <!-- about == start -->
             <div class="faqsheader active" data-name="about">About AG&P</div>
@@ -818,7 +824,7 @@
 <script>window.jQuery || document.write("<script src='scripts/jquery-min.js'><\/script>")</script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/common.js"></script>
-
+ 
  
 </body>
 </html>

@@ -1067,12 +1067,71 @@ if($(".popularquestions").length > 0)
         $("#faqsContainer .faqssection ul li[data-id='" + tagid + "'] h4").addClass("active");
         $("#faqsContainer .faqssection ul li[data-id='" + tagid + "'] p").slideDown(300);
     });
-
-
-
-
 }
-
+if($("#faqssearch").length > 0)
+{
+    $('#faqssearch').on('keypress', function (e) 
+    {
+        if (e.keyCode == '13' || e.charCode == '13') return false;
+    });
+    $("#faqssearch").keyup(function() 
+    {
+        if($(this).val() == '')
+        {
+            clearSearch();
+        }
+        else 
+        {
+            $("#faqsTabs").hide();
+            $(".faqsheader").hide();
+            $(".faqsWrap .faqsContainer .faqssection").show();
+            $(".popularquestions").hide();
+            $(".faqsAbout").hide();
+            var filter = $(this).val(),
+            count = 0;
+            if (count == 0) { $('#faqsnoresult').hide();  }
+            $('.faqsWrap .faqsContainer .faqssection ul li').each(function() 
+            {
+                if ($(this).html().search(new RegExp(filter, "i")) < 0) 
+                {
+                    if (count == 0) $('#faqsnoresult').show();
+                    else $('#faqsnoresult').hide();
+                    $(this).hide().removeClass("active");
+                    $(this).find("h4").removeClass("active");
+                    $(this).find("p").hide();
+                } 
+                else 
+                {
+                    $(this).show().addClass("active");
+                    $(this).find("h4").addClass("active");
+                    $(this).find("p").show();
+                    count++;
+                }
+            });
+        }  
+    });
+}
+function clearSearch()
+{
+    $("#faqssearch").val('');
+    $('#faqsnoresult').hide();
+    if($(window).width() > 1023) {
+        $("#faqsTabs").show();
+        $(".faqsheader").hide();
+        $(".popularquestions").show();
+    }
+    else {
+        $("#faqsTabs").hide();
+        $(".faqsheader").show();
+        $(".popularquestions").hide();
+    }
+    $(".faqsAbout").show();
+    $(".faqsWrap .faqsContainer .faqssection").hide();
+    $(".faqsWrap .faqsContainer .faqssection[data-id='about']").show();
+    $(".faqsWrap .faqsContainer .faqssection ul li").show().removeClass("active");
+    $(".faqsWrap .faqsContainer .faqssection ul li h4").removeClass("active");
+    $(".faqsWrap .faqsContainer .faqssection ul li p").hide();
+}
 /* ############################ faqs === end ############################ */
 
 
