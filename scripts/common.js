@@ -842,6 +842,41 @@ if($(".csrAbout").length > 0)
         setTimeout(function(){ $(".csrloader").slideUp(200); }, 600);
     });
 }
+
+
+if($(".csr_pagination").length > 0)
+{
+    $("#csr_pagination div h2").click(function(e)
+    {
+        e.preventDefault();
+        e.stopPropagation();
+        $("#csr_pagination div ul").slideToggle(300);
+    });
+    $("#csr_pagination div ul li").click(function(e)
+    {
+        if($(window).width() < 1023)
+        {
+            e.preventDefault();
+            e.stopPropagation();
+            $("#csr_pagination div ul").slideUp(300);
+            $("#csr_pagination div ul li").removeClass("active");
+            $(this).addClass("active");
+            var pagenumber = $(this).find("a").text();
+            $("#csr_pagination div h2").text(pagenumber);
+        }
+    });
+    $('body').click(function(e) // close on click body
+    {    
+        e.stopPropagation();
+        if($(window).width() < 1023)
+        {
+            $("#csr_pagination div ul").slideUp(300);
+        }
+    });
+}
+
+
+
 /* ############################ csr === end ############################ */
 
 
