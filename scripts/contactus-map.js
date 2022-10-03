@@ -17,7 +17,9 @@ window.onload = function() {
     hybrid: true,
     search: true,
     location:true,
-    zoom: 9
+    zoom: 9,
+    iconUrl: "/images/map-icon.png",
+    iconSize: [21, 32]
   });
  
   var mk1 = addMarker(pt1, '', "Address 1").addTo(map);
@@ -41,6 +43,9 @@ window.onload = function() {
 function addMarker(position, icon, title) 
 {
 
+ 
+
+
   if (icon == '')
   {
     var mk = new L.Marker(position, {
@@ -54,6 +59,7 @@ function addMarker(position, icon, title)
       icon: icon,
       draggable: false,
       title: title
+      
     });
   }
   map.addLayer(mk);

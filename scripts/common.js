@@ -1242,7 +1242,6 @@ if($("#hsdoanddontTabs").length > 0 &&  $("#hsdoanddontBody").length > 0)
         }
     });
 }
-
 if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length > 0)
 {
     $("#emergencyAlphabetical ul li").click(function()
@@ -1259,7 +1258,6 @@ if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length 
         setTimeout(function(){ $(".emergencyloader").slideUp(200); }, 500);
     });
 }
-
 if($("#healthsafetyfaqs").length > 0)
 {
     $("#healthsafetyfaqs div aside").click(function()
@@ -1271,9 +1269,6 @@ if($("#healthsafetyfaqs").length > 0)
         $("#healthsafetyfaqs div section[data-id='" + faqname + "']").slideDown(500);
     });
 }
-
-        
-
 if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length > 0)
 {
     $("#emergencycontactToggle").click(function()
@@ -1286,8 +1281,6 @@ if($("#emergencycontactToggle").length > 0 && $("#emergencycontactClose").length
         $('#emergencycontactinput').val("").trigger("keyup");
     });
 }
-
-
 if($("#gotosafetyfaqs").length > 0 && $("#healthsafetyfaqs").length > 0)
 {
     $("#gotosafetyfaqs").click(function()
@@ -1296,7 +1289,63 @@ if($("#gotosafetyfaqs").length > 0 && $("#healthsafetyfaqs").length > 0)
     });
 }
 
+
+if($("#emergencylist").length > 0)
+{
+    $('#emergencycontactinput').on('keypress', function (e) 
+    {
+        if (e.keyCode == '13' || e.charCode == '13') return false;
+    });
+    $("#emergencycontactinput").keyup(function() {
+        selectjob();
+    });
+    selectjob = function() {
+        var designationtitle = $("#emergencycontactinput").val();
+
+        $('#emergencylist li').hide();
+        var tablerow = $('#emergencylist li').filter(function(index) {
+          return ($(this).text().toLowerCase().indexOf(designationtitle.toLowerCase()) >= 0 )
+        });
+        if(tablerow == '' || tablerow.length == 0)
+        {
+            $("#emergencynoresult").show();    
+        }
+        else 
+        {
+            $("#emergencynoresult").hide();
+            tablerow.show();
+        }
+    }
+}
  
+$(document).on("change", "#sortemergencycontact", function ()					
+{
+			var shortbyselect = $(this).val();
+			var resultdiv = $('#emergencylist li');
+					 if (shortbyselect == 'a2z') 
+					{
+						resultdiv.sort(function(a, b) 
+						{
+							var x = $(a).data("id").replace(' ', '').toLowerCase();
+							var y = $(b).data("id").replace(' ', '').toLowerCase();
+							return x < y ? -1 : x > y ? 1 : 0;
+						});	
+					}
+					else if (shortbyselect == 'z2a') 
+					{
+						resultdiv.sort(function(a, b) 
+						{
+							var x = $(a).data("id").replace(' ', '').toLowerCase();
+							var y = $(b).data("id").replace(' ', '').toLowerCase();
+							return x > y ? -1 : x < y ? 1 : 0
+						});
+					}
+                    else 
+                    {
+                        // nothing
+                    }
+			$("#emergencylist").html(resultdiv);
+});							
 /* ############################ Health & Safety === end ############################ */
 
 

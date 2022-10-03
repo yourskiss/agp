@@ -218,8 +218,8 @@
                 <aside class="emergencycontactsort">
                     <select name="sortemergencycontact" id="sortemergencycontact">
                         <option value="0" selected disabled>Sort Alphabetically</option>
-                        <option>A to Z</option>
-                        <option>Z to A</option>
+                        <option value="a2z">A to Z</option>
+                        <option value="z2a">Z to A</option>
                     </select>
                     <span id="emergencycontactToggle"><i class="fa fa-search" aria-hidden="true"></i></span>
                 </aside>
@@ -231,10 +231,10 @@
         </div>
 
 
-
+    <!--
         <div class="emergencyAlphabetical" id="emergencyAlphabetical">
             <ul>
-                <li data-name="alphabetA">A</li>
+                <li data-name="alphabetA" class="active">A</li> 
                 <li data-name="alphabetB">B</li>
                 <li data-name="alphabetC">C</li>
                 <li data-name="alphabetD">D</li>
@@ -251,7 +251,7 @@
                 <li data-name="alphabetO">O</li>
                 <li data-name="alphabetP">P</li>
                 <li data-name="alphabetQ">Q</li>
-                <li data-name="alphabetR" class="active">R</li>
+                <li data-name="alphabetR">R</li>
                 <li data-name="alphabetS">S</li>
                 <li data-name="alphabetT">T</li>
                 <li data-name="alphabetU">U</li>
@@ -262,200 +262,152 @@
                 <li data-name="alphabetZ">Z</li>
             </ul>
         </div>
+    -->
 
 
         <div class="emergencycontactlist" id="emergencycontactlist"> 
             <div class="emergencycontactscroll">
-                <div class="emergencynoresult">No result found</div>
                 <div class="emergencyloader" data-id="CNG"><i class="fa fa-spinner fa-spin"></i></div>
-                <ul>
-                    <li data-id="alphabetA">
+                <div class="emergencynoresult" id="emergencynoresult">
+                    <section>
+                        <div>
+                            <aside><img src="images/no-result.png" alt="no result" /></aside>
+                            <p>Sorry, we were not able to find any results. Please try again.</p>
+                        </div>
+                    </section>
+                </div>
+                <ul id="emergencylist">
+                    <li data-id="alphabetA" style="display:block;">
                         <h2>City A</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetB">
+                    <li data-id="alphabetB" style="display:block;">
                         <h2>City B</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetC">
+                    <li data-id="alphabetC" style="display:block;">
                         <h2>City C</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetD">
+                    <li data-id="alphabetD" style="display:block;">
                         <h2>City D</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetE">
+                    <li data-id="alphabetE" style="display:block;">
                         <h2>City E</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetF">
+                    <li data-id="alphabetF" style="display:block;">
                         <h2>City F</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetG">
+                    <li data-id="alphabetG" style="display:block;">
                         <h2>City G</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetH">
+                    <li data-id="alphabetH" style="display:block;">
                         <h2>City H</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetI">
+                    <li data-id="alphabetI" style="display:block;">
                         <h2>City I</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetJ">
+                    <li data-id="alphabetJ" style="display:block;">
                         <h2>City J</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetK">
+                    <li data-id="alphabetK" style="display:block;">
                         <h2>City K</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetL">
+                    <li data-id="alphabetL" style="display:block;">
                         <h2>City L</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetM">
+                    <li data-id="alphabetM" style="display:block;">
                         <h2>City M</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetN">
+                    <li data-id="alphabetN" style="display:block;">
                         <h2>City N</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetO">
+                    <li data-id="alphabetO" style="display:block;">
                         <h2>City O</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetP">
+                    <li data-id="alphabetP" style="display:block;">
                         <h2>City P</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetQ">
+                    <li data-id="alphabetQ" style="display:block;">
                         <h2>City Q</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetS">
+                    <li data-id="alphabetS" style="display:block;">
                         <h2>City S</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetT">
+                    <li data-id="alphabetT" style="display:block;">
                         <h2>City T</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetU">
+                    <li data-id="alphabetU" style="display:block;">
                         <h2>City U</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetV">
+                    <li data-id="alphabetV" style="display:block;">
                         <h2>City V</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetW">
+                    <li data-id="alphabetW" style="display:block;">
                         <h2>City W</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetX">
+                    <li data-id="alphabetX" style="display:block;">
                         <h2>City X</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetY">
+                    <li data-id="alphabetY" style="display:block;">
                         <h2>City Y</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
-                    <li data-id="alphabetZ">
+                    <li data-id="alphabetZ" style="display:block;">
                         <h2>City Z</h2>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
                     </li>
+                    <li data-id="alphabetR" style="display:block;">
+                        <h2>Ramanathapuram</h2>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
+                    </li>
                     
-                    
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
-                    <li data-id="alphabetR" style="display:block;">
-                        <h2>Ramanathapuram</h2>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:9448742150">9448742150</a></p>
-                    </li>
                     <!-- alphabet end -->
 
                 </ul>
@@ -526,6 +478,9 @@
     </div>
 </div>
 <!-- hsfaqswrap =====  end -->
+
+
+
 
 
 
@@ -882,6 +837,9 @@
     </div>
 </div>
 <!--  additionalguidancewrap  =====  end -->
+
+
+
 
 
 
