@@ -1360,7 +1360,7 @@ if($("#emergencylist").length > 0)
     });
     selectjob = function() {
         var designationtitle = $("#emergencycontactinput").val();
-
+        $("#emergencyAlphabetical ul li").removeClass("active");
         $('#emergencylist li').hide();
         var tablerow = $('#emergencylist li').filter(function(index) {
           return ($(this).text().toLowerCase().indexOf(designationtitle.toLowerCase()) >= 0 )
