@@ -452,112 +452,230 @@
                         <span class="connection_errormsg">Please enter pincode</span>
                     </div>
 
-                    <div class="connection_field cf30">
-                        <h4>Address Proof  <small>(Any 2)</small></h4>
-                        <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
-                        <ul>
-                            <li>
-                                <select class="connection_select" name="addressproof1" id="addressproof1">
-                                    <option value="0">Select</option>
-                                    <option value="1">Address proof 1</option>
-                                    <option value="2">Address proof 2</option>
-                                    <option value="3">Address proof 3</option>
-                                </select> 
-                            </li>
-                            <li>
-                                <input type="file" name="document-1" id="document-1" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-1" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
-                            </li>
-                        </ul>
-                        <span id="document-1-error" class="connection_errormsg">Select</span>
-                        <span class="connection_filename" id="document-1-filename">
-                            <b></b>
-                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(1)"></i>
-                        </span>
-                        <ul>
-                            <li>
-                                <select class="connection_select" name="addressproof2" id="addressproof2">
-                                    <option value="0">Select</option>
-                                    <option value="1">Address proof 1</option>
-                                    <option value="2">Address proof 2</option>
-                                    <option value="3">Address proof 3</option>
-                                </select> 
-                            </li>
-                            <li>
-                                <input type="file" name="document-2" id="document-2" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-2" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
-                            </li>
-                        </ul>
-                        <span id="document-2-error" class="connection_errormsg">Select</span>  
-                        <span class="connection_filename" id="document-2-filename">
-                            <b></b>
-                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(2)"></i>
-                        </span>
+
+                    <!-- Households field === start -->
+                    <div class="connection_field100" data-id="tab_households" style="display:block;">
+                        <div class="connection_field cf30">
+                            <h4>Address Proof  <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof1" id="addressproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-1" id="document-1" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-1" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-1-error" class="connection_errormsg">Select</span>
+                            <span class="connection_filename" id="document-1-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(1)"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof2" id="addressproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-2" id="document-2" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-2" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-2-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-2-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(2)"></i>
+                            </span>
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Photo Identify Proof <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof1" id="identifyproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-3" id="document-3" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-3" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-3-error" class="connection_errormsg">Select</span> 
+                            <span class="connection_filename" id="document-3-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(3)"></i>
+                            </span> 
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof2" id="identifyproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-4" id="document-4" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
+                                </li>
+                            </ul>
+                            <span id="document-4-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-4-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(4)"></i>
+                            </span> 
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Ownership Proof  <small>(Any 1)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="ownershipproof1" id="ownershipproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Ownership proof 1</option>
+                                        <option value="2">Ownership proof 2</option>
+                                        <option value="3">Ownership proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-5" id="document-5" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
+                                </li>
+                            </ul>
+                            <span id="document-5-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-5-filename">
+                                <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(5)"></i>
+                            </span>
+                        </div>
                     </div>
-                    <div class="connection_field cf30">
-                        <h4>Photo Identify Proof <small>(Any 2)</small></h4>
-                        <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
-                        <ul>
-                            <li>
-                                <select class="connection_select" name="addressproof" id="addressproof">
-                                    <option value="0">Select</option>
-                                    <option value="1">Identify proof 1</option>
-                                    <option value="2">Identify proof 2</option>
-                                    <option value="3">Identify proof 3</option>
-                                </select>
-                            </li>
-                            <li>
-                                <input type="file" name="document-3" id="document-3" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-3" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
-                            </li>
-                        </ul>
-                        <span id="document-3-error" class="connection_errormsg">Select</span> 
-                        <span class="connection_filename" id="document-3-filename">
-                            <b></b>
-                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(3)"></i>
-                        </span> 
-                        <ul>
-                            <li>
-                                <select class="connection_select" name="addressproof" id="addressproof">
-                                    <option value="0">Select</option>
-                                    <option value="1">Identify proof 1</option>
-                                    <option value="2">Identify proof 2</option>
-                                    <option value="3">Identify proof 3</option>
-                                </select>
-                            </li>
-                            <li>
-                                <input type="file" name="document-4" id="document-4" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
-                            </li>
-                        </ul>
-                        <span id="document-4-error" class="connection_errormsg">Select</span>  
-                        <span class="connection_filename" id="document-4-filename">
-                            <b></b>
-                            <i class="fa fa-times" aria-hidden="true" onclick="detelefile(4)"></i>
-                        </span> 
+                    <!-- Households field === end -->
+
+                    <!-- Commercial  field === start -->
+                    <div class="connection_field100" data-id="tab_commercial" style="display:none;">
+                        <div class="connection_field cf30">
+                            <h4>Address Proof  <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof3" id="addressproof3">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-6" id="document-6" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-6" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-6-error" class="connection_errormsg">Select</span>
+                            <span class="connection_filename" id="document-6-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(6)"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof4" id="addressproof4">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-7" id="document-7" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-7" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-7-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-7-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(7)"></i>
+                            </span>
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Photo Identify Proof <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof3" id="identifyproof3">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-8" id="document-8" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-8" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-8-error" class="connection_errormsg">Select</span> 
+                            <span class="connection_filename" id="document-8-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(8)"></i>
+                            </span> 
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof4" id="identifyproof4">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-9" id="document-9" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-9" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
+                                </li>
+                            </ul>
+                            <span id="document-9-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-9-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(9)"></i>
+                            </span> 
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Ownership Proof  <small>(Any 1)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="ownershipproof2" id="ownershipproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Ownership proof 1</option>
+                                        <option value="2">Ownership proof 2</option>
+                                        <option value="3">Ownership proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-10" id="document-10" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-10" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
+                                </li>
+                            </ul>
+                            <span id="document-10-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-10-filename">
+                                <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(10)"></i>
+                            </span>
+                        </div>
                     </div>
-                    <div class="connection_field cf30">
-                        <h4>Ownership Proof  <small>(Any 1)</small></h4>
-                        <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
-                        <ul>
-                            <li>
-                                <select class="connection_select" name="addressproof" id="addressproof">
-                                    <option value="0">Select</option>
-                                    <option value="1">Ownership proof 1</option>
-                                    <option value="2">Ownership proof 2</option>
-                                    <option value="3">Ownership proof 3</option>
-                                </select>
-                            </li>
-                            <li>
-                                <input type="file" name="document-5" id="document-5" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
-                                <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
-                            </li>
-                        </ul>
-                        <span id="document-5-error" class="connection_errormsg">Select</span>  
-                        <span class="connection_filename" id="document-5-filename">
-                            <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(5)"></i>
-                        </span>
-                    </div>
+                    <!-- Commercial  field === end -->
+
+
                     <div class="connection_field cf100">
                         <p>Fields marked * are mandatory</p>
                         <input class="connection_button" type="submit" name="" id="" value="Submit" />
