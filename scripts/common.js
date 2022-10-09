@@ -1549,9 +1549,13 @@ if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
         $("#connection_container .conTabHead").removeClass("active").addClass('disabled');
         $("#connection_container .conTabBody").slideUp(500);
 
+        $(".connection_field100").hide(300);
+        $(".connection_field100[data-id='" + getname + "']").show(300);
+
         $("#connection_tabs li[data-id='" + getname + "']").addClass("active");
         $("#connection_container .conTabHead[data-id='" + getname + "']").addClass("active");
         $("#connection_container .conTabBody[data-id='" + getname + "']").slideDown(500);
+        
         
         setTimeout(function(){ $("#connection_tabs").removeClass('disabled'); }, 500);
         setTimeout(function(){ $("#connection_container .conTabHead").removeClass('disabled'); }, 500);
@@ -1561,6 +1565,10 @@ if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
 
     $("#connection_container .conTabHead").click(function()
     {
+        let getname = $(this).attr("data-id");
+        $(".connection_field100").hide(300);
+        $(".connection_field100[data-id='" + getname + "']").show(300);
+
         if($(this).hasClass("active"))
         {
             $("#connection_tabs li").removeClass("active");
@@ -1572,7 +1580,6 @@ if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
             $('html, body').animate({scrollTop: $("#connection_container").offset().top  - jumpdiv },500);
             $("#conTabLoader").slideDown(50);
             $("#connection_tabs").addClass("disabled")
-            let getname = $(this).attr("data-id");
             $("#connection_tabs li").removeClass("active");
             $("#connection_container .conTabHead").removeClass("active").addClass('disabled');
             $("#connection_container .conTabBody").slideUp(500);
