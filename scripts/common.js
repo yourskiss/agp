@@ -1549,8 +1549,8 @@ if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
         $("#connection_container .conTabHead").removeClass("active").addClass('disabled');
         $("#connection_container .conTabBody").slideUp(500);
 
-        $(".connection_field100").hide(300);
-        $(".connection_field100[data-id='" + getname + "']").show(300);
+      //  $(".connection_field100").hide(300);
+      //  $(".connection_field100[data-id='" + getname + "']").show(300);
 
         $("#connection_tabs li[data-id='" + getname + "']").addClass("active");
         $("#connection_container .conTabHead[data-id='" + getname + "']").addClass("active");
@@ -1566,8 +1566,8 @@ if($("#connection_tabs").length > 0 && $("#connection_container").length > 0)
     $("#connection_container .conTabHead").click(function()
     {
         let getname = $(this).attr("data-id");
-        $(".connection_field100").hide(300);
-        $(".connection_field100[data-id='" + getname + "']").show(300);
+      // $(".connection_field100").hide(300);
+      // $(".connection_field100[data-id='" + getname + "']").show(300);
 
         if($(this).hasClass("active"))
         {
