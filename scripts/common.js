@@ -1305,14 +1305,15 @@ if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length 
 {
     $("#emergencyAlphabetical ul li").click(function()
     {
+        debugger;
         let alphabetname = $(this).attr("data-name");
         $(".emergencyloader").slideDown(50);
-        $("#emergencyAlphabetical ul li").removeClass("active");
-        $("#emergencycontactlist ul li").slideUp(300);
         $("#emergencyAlphabetical ul").addClass("disabled")
         $('#emergencycontactinput').val("").trigger("keyup");
+        $("#emergencyAlphabetical ul li").removeClass("active");
+        $("#emergencylist li").slideUp(300);
         $("#emergencyAlphabetical ul li[data-name='" + alphabetname + "']").addClass("active");
-        $("#emergencycontactlist ul li[data-id='" + alphabetname + "']").slideDown(300);
+        $("#emergencylist li[data-id='" + alphabetname + "']").slideDown(300);
         setTimeout(function(){ $("#emergencyAlphabetical ul").removeClass('disabled'); }, 500);
         setTimeout(function(){ $(".emergencyloader").slideUp(200); }, 500);
     });
