@@ -1305,7 +1305,6 @@ if($("#emergencyAlphabetical").length > 0 &&  $("#emergencycontactlist").length 
 {
     $("#emergencyAlphabetical ul li").click(function()
     {
-        debugger;
         let alphabetname = $(this).attr("data-name");
         $(".emergencyloader").slideDown(50);
         $("#emergencyAlphabetical ul").addClass("disabled")
@@ -1380,6 +1379,9 @@ if($("#emergencylist").length > 0)
  
 $(document).on("change", "#sortemergencycontact", function ()					
 {
+    $("#emergencylist li").slideDown(300);
+    $("#emergencyAlphabetical ul li").removeClass("active");
+    
 			var shortbyselect = $(this).val();
 			var resultdiv = $('#emergencylist li');
 					 if (shortbyselect == 'a2z') 
