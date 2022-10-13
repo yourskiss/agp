@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <title>New Connection</title>
+
+    <link rel="stylesheet" href="styles/fontawesome.min.css" />
+    <link rel="stylesheet" href="styles/main.min.css" />
+    
+    
+</head>
+<body>
+<main>
+
+<!-- header  =====  start -->
+<header class="header" id="header">
+
+    <div class="nav">
+        <div class="wrapper">
+                <p>We are taking care of all COVID protocols.</p>
+                <ul>
+                    <li>
+                        <a href="tel:1800567677111" class="callat">
+                            <img src="images/menu/phone.png" alt="phone" />
+                            <span>1800 567 677 111</span>
+                        </a>
+                    </li>
+                    <li class="line">|</li>
+                    <li><a href="#">Investors</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">Careers</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">FAQs</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">New Connection</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <i id="searchmain" class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+
+    <div id="searchinheader" class="searchinheader">
+        <article></article>
+        <section>
+            <span class="searchHeadBack" id="searchHeadBack"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+            <input class="searchHeadInput" type="text" name="searchInput" id="searchInput" placeholder="Enter keyword" />
+            <input class="searchHeadButton" type="submit" name="searchButton" id="searchButton" value="Search" />
+        </section>
+    </div>
+
+
+
+    <div class="navigation">
+        <div class="wrapper">
+            <a href="/"><img class="logo" src="images/logo.png" alt="agp" /></a>
+            <aside>
+                <span class="quickmenu" id="quickmenu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="quickmenu" /></span>
+                <span class="mainmenu" id="mainmenu">
+                    <img src="images/menu/menu.png" alt="menu" />
+                </span>
+            </aside>
+            <ul id="mainmenuulli">
+                <li class="megamenu">
+                    <a href="#">About Us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li><a href="#">About AG&P Pratham</a></li>
+                                <li><a href="#">Financials</a></li>
+                                <li><a href="#">CSR</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Compliances & Regulations</a></li>
+                            </ul>
+                            <img src="images/menu/about.png" class="dropdownimg" alt="about" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu">
+                    <a href="#">CNG<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">CNG Stations</a></li>
+                                        <li><a href="#">OEM</a></li>    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">OEM Partners</a></li>
+                                        <li><a href="#">Retrofitments</a></li>
+                                        <li><a href="#">RFC</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Offers and Promotions</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/menu/cng.png" class="dropdownimg" alt="cng" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu">
+                    <a href="#">PNG<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li>
+                                    <h2>Household</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Offers and Promotions</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Commercial</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Industries</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Applications</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/menu/png.png" class="dropdownimg" alt="png" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Health and Safety</a></li>
+                <li><a href="#">Resources</a></li>
+                <li class="loginsignup"><a href="#"><span>Login/Signup</span><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</header>
+<!-- header  =====  end -->
+
+ 
+
+
+<!-- banner  =====  start -->
+<div class="banners">
+    <img class="banner_web" src="images/newconnection/banner-web.jpg" alt="New Connection"  />
+    <img class="banner_ipad" src="images/newconnection/banner-ipad.jpg" alt="New Connection"  />
+    <img class="banner_mobile" src="images/newconnection/banner-mobile.jpg" alt="New Connection"  />
+    <div class="wrapper">
+        <h2>EXCITED FOR A<br> NEW BEGINNING?</h2>
+    </div>
+</div>
+<!-- banner  =====  end -->
+
+
+
+
+<!-- newconnectionWrap =====  start -->
+<div class="newconnectionWrap">
+    <div class="wrapper">
+
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><span>New Connection</span></li>
+        </ul>
+
+ 
+        <div class="connection_tabs_head">
+            <h2>
+                <span>DOCUMENTS REQUIRED</span>
+                <img src="images/icon.png" alt="about" />
+            </h2>
+            <p>
+                Are you ready to switch to natural gas? Follow the steps below and start your journey with PNG and CNG, today.
+            </p>
+            <ul id="connection_tabs">
+                <li class="active" data-id="tab_households">PNG for Households</li>
+                <li data-id="tab_commercial">PNG for Commercial Use</li>
+            </ul>
+        </div>
+        <div class="connection_tabs_container" id="connection_container">
+            <div class="conTabLoader" id="conTabLoader"><i class="fa fa-spinner fa-spin"></i></div>
+            <aside class="conTabHead active" data-id="tab_households">PNG for Households</aside>
+            <section class="conTabBody" data-id="tab_households" style="display:block;">
+                <div class="connectioncontainer">
+                    <div class="connectioncontainerleft">
+                        <img class="connectioncontainerWeb" src="images/newconnection/png-household-desktop.jpg" alt="PNG for Households" />
+                        <img class="connectioncontainerMob" src="images/newconnection/png-household-mobile.jpg" alt="PNG for Households" />
+                        <ul>
+                            <li>
+                                <p>Apply</p>
+                            </li>
+                            <li>
+                                <p>Document Verification</p>
+                            </li>
+                            <li>
+                                <p>Feasibility Study</p>
+                            </li>
+                            <li>
+                                <p>Equipment Installation</p>
+                            </li>
+                            <li>
+                                <p>Burner Conversion</p>
+                            </li>
+                            <li>
+                                <p>Installation Complete</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="connectioncontainerright">
+                        <h2>PNG for Households</h2>
+                        <div class="connectioncontainerscroll">
+                            <section>
+                                <ul>
+                                    <li>
+                                        <h3>Address Proof <span>(Any 2)</span></h3>
+                                    </li>
+                                    <li>Recent Telephone Bill</li>
+                                    <li>Aadhaar Card</li>
+                                    <li>Passport</li>
+                                    <li>Driving License</li>
+                                    <li>Voter ID</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3>Photo Identify Proof <span>(Any 2)</span></h3>
+                                    </li>
+                                    <li>Passport</li>
+                                    <li>Driving License</li>
+                                    <li>Voter ID</li>
+                                    <li>Aadhaar Card</li>
+                                    <li>PAN Card</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3>Ownership Proof <span>(Any 1)</span></h3>
+                                    </li>
+                                    <li>House Tax Bill</li>
+                                    <li>Regd. Sale Deed</li>
+                                    <li>Index Copy</li>
+                                    <li>Society Share Certificate</li>
+                                    <li>Possession Letter</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="conTabHead" data-id="tab_commercial">PNG for Commercial Use</aside>
+            <section class="conTabBody" data-id="tab_commercial">
+                <div class="connectioncontainer">
+                    <div class="connectioncontainerleft">
+                        <img class="connectioncontainerWeb" src="images/newconnection/png-commercial-desktop.jpg" alt="PNG for Commercial" />
+                        <img class="connectioncontainerMob" src="images/newconnection/png-commercial-mobile.jpg" alt="PNG for Commercial" />
+                        <ul>    
+                            <li>
+                                <p>Apply</p>
+                            </li>
+                            <li>
+                                <p>Feasibility Study</p>
+                            </li>
+                            <li>
+                                <p>Document Verification & Proposal Preparation</p>
+                            </li>
+                            <li>
+                                <p>Burner Conversions</p>
+                            </li>
+                            <li>
+                                <p>Equipment Installation</p>
+                            </li>
+                            <li>
+                                <p>Installation Complete</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="connectioncontainerright">
+                        <h2>PNG for Commercial Use</h2>
+                        <div class="connectioncontainerscroll">
+                            <section>
+                                <ul>
+                                    <li>
+                                        <h3>Address Proof <span>(Any 2)</span></h3>
+                                    </li>
+                                    <li>Recent Telephone Bill</li>
+                                    <li>Aadhaar Card</li>
+                                    <li>Passport</li>
+                                    <li>Driving License</li>
+                                    <li>Voter ID</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3>Photo Identify Proof <span>(Any 2)</span></h3>
+                                    </li>
+                                    <li>Passport</li>
+                                    <li>Driving License</li>
+                                    <li>Voter ID</li>
+                                    <li>Aadhaar Card</li>
+                                    <li>PAN Card</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3>Ownership Proof <span>(Any 1)</span></h3>
+                                    </li>
+                                    <li>House Tax Bill</li>
+                                    <li>Regd. Sale Deed</li>
+                                    <li>Index Copy</li>
+                                    <li>Society Share Certificate</li>
+                                    <li>Possession Letter</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+        <div class="connectioninfo">
+            <h2>
+                <span>GET A NEW CONNECTION</span>
+                <img src="images/icon.png" alt="about" />
+            </h2>
+        </div>
+
+
+        <div class="connection_form">
+            <div class="connection_left">
+                <section>
+                    <div class="connection_field_success">
+                        <section>
+                            <aside><i class="fa fa-check" aria-hidden="true"></i></aside>
+                            <h5>
+                                <b>Thank you for submitting the form!</b>
+                                <span>Our team will get in touch with you soon.</span>
+                            </h5>
+                        </section>  
+                    </div>
+                    <div class="connection_field_failed">
+                        <section>
+                            <aside><i class="fa fa-info" aria-hidden="true"></i></aside>
+                            <h5>
+                                <b>Sorry</b>
+                                <span>We are facing some issue. Please try again.</span>
+                            </h5>
+                        </section>
+                    </div>
+                    <div class="connection_field cf33">
+                        <select class="connection_select" name="connectiontype" id="connectiontype">
+                            <option value="0">Select connection type</option>
+                            <option value="1">type 1</option>
+                            <option value="2">type 2</option>
+                            <option value="3">type 3</option>
+                        </select>
+                        <span class="connection_errormsg">Please select connection type</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <select class="connection_select" name="state" id="state">
+                            <option value="0">State*</option>
+                            <option value="1">state 1</option>
+                            <option value="2">state 2</option>
+                            <option value="3">state 3</option>
+                        </select>
+                        <span class="connection_errormsg">Please select State</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <select class="connection_select" name="district" id="district">
+                            <option value="0">District*</option>
+                            <option value="1">District 1</option>
+                            <option value="2">District 2</option>
+                            <option value="3">District 3</option>
+                        </select>
+                        <span class="connection_errormsg">Please select district</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="name" id="name" placeholder="Name*" />
+                        <span class="connection_errormsg">Please enter name</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="contactno" id="contactno" placeholder="Contact No.*" />
+                        <span class="connection_errormsg">Please enter contact no</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="emailid" id="emailid" placeholder="Email ID*" />
+                        <span class="connection_errormsg">Please enter email id</span>
+                    </div>
+                    <div class="connection_field cf67">
+                        <input class="connection_input" type="text" name="houseno" id="houseno" placeholder="House No.*" />
+                        <span class="connection_errormsg">Please enter house no.</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="apartment*" id="apartment" placeholder="Society/Apartment*" />
+                        <span class="connection_errormsg">Please enter Society/Apartment</span>
+                    </div>
+
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="area" id="area" placeholder="Area*" />
+                        <span class="connection_errormsg">Please enter area</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="street" id="street" placeholder="Street*" />
+                        <span class="connection_errormsg">Please enter street</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="landmark" id="landmark" placeholder="Landmark" />
+                        <span class="connection_errormsg">Please enter landmark</span>
+                    </div>
+                    <div class="connection_field cf67">
+                        <input class="connection_input" type="text" name="city" id="city" placeholder="Village/Town/City*" />
+                        <span class="connection_errormsg">Please enter Village/Town/City*</span>
+                    </div>
+                    <div class="connection_field cf33">
+                        <input class="connection_input" type="text" name="pincode" id="pincode" placeholder="Pincode" />
+                        <span class="connection_errormsg">Please enter pincode</span>
+                    </div>
+
+
+                    <!-- Households field === start -->
+                    <div class="connection_field100" data-id="tab_households" style="display:block;">
+                        <div class="connection_field cf30">
+                            <h4>Address Proof  <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof1" id="addressproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-1" id="document-1" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-1" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-1-error" class="connection_errormsg">Select</span>
+                            <span class="connection_filename" id="document-1-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(1)"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof2" id="addressproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-2" id="document-2" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-2" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-2-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-2-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(2)"></i>
+                            </span>
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Photo Identify Proof <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof1" id="identifyproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-3" id="document-3" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-3" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-3-error" class="connection_errormsg">Select</span> 
+                            <span class="connection_filename" id="document-3-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(3)"></i>
+                            </span> 
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof2" id="identifyproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-4" id="document-4" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-4" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
+                                </li>
+                            </ul>
+                            <span id="document-4-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-4-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(4)"></i>
+                            </span> 
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Ownership Proof  <small>(Any 1)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="ownershipproof1" id="ownershipproof1">
+                                        <option value="0">Select</option>
+                                        <option value="1">Ownership proof 1</option>
+                                        <option value="2">Ownership proof 2</option>
+                                        <option value="3">Ownership proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-5" id="document-5" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-5" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
+                                </li>
+                            </ul>
+                            <span id="document-5-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-5-filename">
+                                <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(5)"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Households field === end -->
+
+                    <!-- Commercial  field === start -->
+                    <div class="connection_field100" data-id="tab_commercial" style="display:none;">
+                        <div class="connection_field cf30">
+                            <h4>Address Proof  <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof3" id="addressproof3">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-6" id="document-6" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-6" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-6-error" class="connection_errormsg">Select</span>
+                            <span class="connection_filename" id="document-6-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(6)"></i>
+                            </span>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="addressproof4" id="addressproof4">
+                                        <option value="0">Select</option>
+                                        <option value="1">Address proof 1</option>
+                                        <option value="2">Address proof 2</option>
+                                        <option value="3">Address proof 3</option>
+                                    </select> 
+                                </li>
+                                <li>
+                                    <input type="file" name="document-7" id="document-7" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-7" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-7-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-7-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(7)"></i>
+                            </span>
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Photo Identify Proof <small>(Any 2)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof3" id="identifyproof3">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-8" id="document-8" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-8" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>
+                                </li>
+                            </ul>
+                            <span id="document-8-error" class="connection_errormsg">Select</span> 
+                            <span class="connection_filename" id="document-8-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(8)"></i>
+                            </span> 
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="identifyproof4" id="identifyproof4">
+                                        <option value="0">Select</option>
+                                        <option value="1">Identify proof 1</option>
+                                        <option value="2">Identify proof 2</option>
+                                        <option value="3">Identify proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-9" id="document-9" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-9" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>   
+                                </li>
+                            </ul>
+                            <span id="document-9-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-9-filename">
+                                <b></b>
+                                <i class="fa fa-times" aria-hidden="true" onclick="detelefile(9)"></i>
+                            </span> 
+                        </div>
+                        <div class="connection_field cf30">
+                            <h4>Ownership Proof  <small>(Any 1)</small></h4>
+                            <h5>Only JPEG, PNG, PDF file with size of 2 MB allowed</h5>
+                            <ul>
+                                <li>
+                                    <select class="connection_select" name="ownershipproof2" id="ownershipproof2">
+                                        <option value="0">Select</option>
+                                        <option value="1">Ownership proof 1</option>
+                                        <option value="2">Ownership proof 2</option>
+                                        <option value="3">Ownership proof 3</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="file" name="document-10" id="document-10" onchange="fileValidation(this.id)" accept="application/pdf, image/jpg, image/jpeg, image/png" />
+                                    <label for="document-10" class="connection_upload"><i class="fa fa-upload" aria-hidden="true"></i><span>UPLOAD</span></label>  
+                                </li>
+                            </ul>
+                            <span id="document-10-error" class="connection_errormsg">Select</span>  
+                            <span class="connection_filename" id="document-10-filename">
+                                <b></b><i class="fa fa-times" aria-hidden="true" onclick="detelefile(10)"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Commercial  field === end -->
+
+
+                    <div class="connection_field cf100">
+                        <p>Fields marked * are mandatory</p>
+                        <input class="connection_button" type="submit" name="" id="" value="Submit" />
+                    </div>
+                </section>
+            </div>
+            <div class="connection_right">
+                <img class="connection_web" src="images/newconnection/connection_web.jpg" alt="connection" />
+                <img class="connection_mob" src="images/newconnection/connection_mob.jpg" alt="connection" />
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+<!--  newconnectionWrap  =====  end -->
+
+
+
+
+   
+<!-- connectionothers  =====  start -->
+<div class="connectionothers">
+    <div class="wrapper">
+        <div class="connectionslider">
+
+            <div class="items">
+                <img src="images/newconnection/slide-cng.jpg" alt="cng" />
+                <a href="#">CNG FOR VEHICLES</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-household.jpg" alt="household" />
+                <a href="#">PNG FOR HOUSEHOLD</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-industries.jpg" alt="industries" />
+                <a href="#">PNG FOR INDUSTRIES</a>
+            </div>
+            <div class="items">
+                <img src="images/newconnection/slide-commercial.jpg" alt="commercial" />
+                <a href="#">PNG FOR COMMERCIAL</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- connectionothers  =====  end -->
+
+
+
+
+
+
+
+<!-- wishtoconnect  =====  start -->
+<div class="wishtoconnect">
+    <div class="wrapper">
+        <div class="wishtoconnectposter">
+            <img src="images/wishtoconnect.png" alt="wish to connect" />
+        </div>
+        <div class="wishtoconnectcontent">
+            <h2>WISH TO CONNECT?</h2>
+            <p>Just drop a message and we’ll get in touch with you.</p>
+            <div class="wishtoconnect_success">
+                <section>
+                    <aside><i class="fa fa-check" aria-hidden="true"></i></aside>
+                    <h5>
+                        <b>Thank you for submitting the form!</b>
+                        <span>Our team will get in touch with you soon.</span>
+                    </h5>
+                </section>  
+            </div>
+            <div class="wishtoconnect_failed">
+                <section>
+                    <aside><i class="fa fa-info" aria-hidden="true"></i></aside>
+                    <h5>
+                        <b>Sorry</b>
+                        <span>We are facing some issue. Please try again.</span>
+                    </h5>
+                </section>
+            </div>
+            <ul>
+                <li class="width25">
+                    <input type="text" name="name" placeholder="Name" />
+                    <span class="errorMsg">Enter Name</span>
+                </li>
+                <li class="width25">
+                    <input type="text" name="contactno" placeholder="Contact No." />
+                    <span class="errorMsg">Enter Contact No.</span>
+                </li>
+                <li class="width25">
+                    <input type="text" name="emailid" placeholder="Email ID" />
+                    <span class="errorMsg">Enter Email ID</span>
+                </li>
+                <li class="width25">
+                    <select name="location">
+                        <option value="0" selected disabled>Location</option>
+                        <option>Raichur </option>
+                        <option>Ramnad</option>
+                        <option>Chennai </option>
+                        <option>Jodhpur </option>
+                        <option>Shivamogga </option>
+                        <option>Mysuru </option>
+                        <option>Gulbarga </option>
+                        <option>Hassan </option>
+                        <option>Thiruvanathapuram </option>
+                        <option>Nellore</option>
+                        <option>Tirupati </option>
+                        <option>Anantapur </option>
+                    </select>
+                    <span class="errorMsg">Select Location</span>
+                </li>
+                <li class="width25">
+                    <select name="typeofquery">
+                        <option value="0" selected disabled>Type of Query</option>
+                        <option>Billing/Finance</option>
+                        <option>Complaint</option>
+                        <option>Emergency</option>
+                        <option>General Enquiry</option>
+                        <option>New Connection</option>
+                        <option>Technical</option>
+                    </select>
+                    <span class="errorMsg">Select Query</span>
+                </li>
+                <li class="width75">
+                    <input type="text" name="message" placeholder="Message" />
+                    <span class="errorMsg">Enter Message</span>
+                </li>
+                <li>
+                    <input type="submit" name="submit"  value="SUBMIT" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- wishtoconnect  =====  end -->
+
+
+
+<!-- footer  =====  start -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footerleft">
+            <aside><img src="images/logo2.png" alt="logo" /></aside>
+            <dl>
+                <dt><a href="#">MYPRATHAM ACCOUNT</a></dt>
+                <dd><a href="#">GET A NEW CONNECTION</a></dd>
+            </dl>
+            <h5>
+                <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </h5>
+            <p>All rights reserved © AG&P Pratham 2022</p>
+        </div>
+        <div class="footerright">
+            <ul>
+                <li>
+                    <h2>CNG</h2>
+                    <ul>      
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">CNG Stations</a></li>
+                        <li><a href="#">OEM</a></li>    
+                        <li><a href="#">OEM Partners</a></li>
+                        <li><a href="#">Retrofitments</a></li>
+                        <li><a href="#">RFC</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Offers and Promotions</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Household </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Connection Process </a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Offers and Promotions </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Commercial </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Connection Process </a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Industrial </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Applications </a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>About Us </h2>
+                    <ul>
+                        <li><a href="#">About AG&P </a></li>
+                        <li><a href="#">Pratham Team </a></li>
+                        <li><a href="#">Financials </a></li>
+                        <li><a href="#">Compliance & Regulations </a></li>
+                        <li><a href="#">CSR</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Health & Safety </h2>
+                    <ul>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Emergency help</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#">Resources </a></h3>
+                    <h3><a href="#">Careers </a></h3>
+                    <h3><a href="#">Investors </a></h3>
+                    <h3><a href="#">Contact Us</a></h3>
+                </li>
+                <li>
+                    <h2>Others </h2>
+                    <ul>
+                        <li><a href="#">FAQs </a></li>
+                        <li><a href="#">Privacy Notice </a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>
+                <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </h4>
+            <p>All rights reserved © AG&P Pratham 2022</p>
+        </div>
+    </div>
+</footer>
+<!-- footer  =====  end -->
+
+
+
+<!-- wishtoconnect  =====  end -->
+
+
+</main>
+
+
+
+
+
+<!-- quicklink  =====  start -->
+<div class="quicklinkBG" id="quicklinkBG"></div>
+<div class="quicklink" id="quicklink">
+        <aside id="quicklinkToggle">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="toggle" />
+        </aside>
+        <h6>
+            <img id="qlMobileClose" src="images/menu/close.png" alt="close" />
+        </h6>
+        <h2>
+            <span>QUICK LINKS</span>
+            <img src="images/icon.png" alt="QUICK LINKS" />
+        </h2>
+        <h3>Smell Gas?</h3> 
+        <p>
+            <span>Call Us: </span> <a href="tel"> 0800 111 999</a> 
+        </p>
+        <div class="qlservice">
+            <h4>PNG Users</h4>
+            <ul>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_connection"></span>
+                        <b>New Connection</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_availability"></span>
+                        <b>PNG Availability</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_billpay"></span>
+                        <b>Bill Pay</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_offers"></span>
+                        <b>Offers</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="qlservice">
+            <h4>CNG Users</h4>
+            <ul class="abc">
+                <li> 
+                    <a href="#" >
+                        <span class="ql_stations"></span>
+                        <b>Stations </b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_calculator"></span>
+                        <b>Calculator</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_fitmentcenters"></span>
+                        <b>Fitment Centers</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_oemshowrooms"></span>
+                        <b>OEM Showrooms</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_offers"></span>
+                        <b>Offers</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+<!-- quicklink  =====  end -->
+
+
+
+
+
+<!-- mobilemenu  =====  start -->
+<div class="mobilemenuBG" id="mobilemenuBG"></div>
+<div class="mobilemenu" id="mobilemenu">
+    <aside>
+        <img id="menuobileClose" src="images/menu/close.png" alt="close" />
+    </aside>
+    <h4>
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+        <a href="#">
+            <span>Welcome Guest</span>
+            <span>Login/Signup</span>
+        </a>
+    </h4>
+    <ul>
+        <li>
+            <h2>
+                <img src="images/menu/icon2.png" alt="menu" />
+                <span>About Us</span>
+            </h2>
+            <ul>
+            <li><a href="#">About AG&P Pratham</a></li>
+            <li><a href="#">Financials</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Compliances & Regulations</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2>
+                <img src="images/menu/icon3.png" alt="menu" />
+                <span>CNG</span>
+            </h2>
+            <ul>
+                <li><a href="#">Product Information</a></li>
+                <li><a href="#">CNG Stations</a></li>
+                <li><a href="#">OEM</a></li>    
+                <li><a href="#">OEM Partners</a></li>
+                <li><a href="#">Retrofitments</a></li>
+                <li><a href="#">RFC</a></li>
+                <li><a href="#">Do’s and Don’ts</a></li>
+                <li><a href="#">Offers and Promotions</a></li>
+                <li><a href="#">Calculator</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2>
+                <img src="images/menu/icon1.png" alt="menu" />
+                <span>PNG</span>
+            </h2>
+            <ul>
+                <li><h3>Household</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Offers and Promotions</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+                <li><h3>Commercial</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+                <li><h3>Industries</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2 class="nosubmenu" onclick="window.open('#','_self')">
+                <img src="images/menu/icon5.png" alt="menu" />
+                <span>Health and Safety</span>
+            </h2>
+        </li>
+        <li>
+            <h2 class="nosubmenu" onclick="window.open('#','_self')">
+                <img src="images/menu/icon4.png" alt="menu" />
+                <span>Resources</span>
+            </h2>
+        </li>
+        <li> 
+            <h2 class="more_h2">
+                <img src="images/menu/icon6.png" alt="menu" />
+                <span>More</span>
+            </h2>
+            <ul class="more_ul">
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">New Connection</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="menusocial">
+        <h5>
+            <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </h5>
+        <p>All rights reserved © AG&P Pratham 2022</p>
+    </div>
+</div>
+<!-- mobilemenu  =====  end -->
+
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='scripts/jquery-min.js'><\/script>")</script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/common.js"></script>
+
+ 
+</body>
+</html>

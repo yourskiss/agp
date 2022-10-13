@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <title>Do's and Don'ts</title>
+
+    <link rel="stylesheet" href="styles/fontawesome.min.css" />
+    <link rel="stylesheet" href="styles/main.min.css" />
+    
+    
+</head>
+<body>
+<main>
+
+<!-- header  =====  start -->
+<header class="header" id="header">
+
+    <div class="nav">
+        <div class="wrapper">
+                <p>We are taking care of all COVID protocols.</p>
+                <ul>
+                    <li>
+                        <a href="tel:1800567677111" class="callat">
+                            <img src="images/menu/phone.png" alt="phone" />
+                            <span>1800 567 677 111</span>
+                        </a>
+                    </li>
+                    <li class="line">|</li>
+                    <li><a href="#">Investors</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">Careers</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">FAQs</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">New Connection</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <i id="searchmain" class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+
+    <div id="searchinheader" class="searchinheader">
+        <article></article>
+        <section>
+            <span class="searchHeadBack" id="searchHeadBack"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+            <input class="searchHeadInput" type="text" name="searchInput" id="searchInput" placeholder="Enter keyword" />
+            <input class="searchHeadButton" type="submit" name="searchButton" id="searchButton" value="Search" />
+        </section>
+    </div>
+
+
+
+
+    <div class="navigation">
+        <div class="wrapper">
+            <a href="/"><img class="logo" src="images/logo.png" alt="agp" /></a>
+            <aside>
+                <span class="quickmenu" id="quickmenu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="quickmenu" /></span>
+                <span class="mainmenu" id="mainmenu">
+                    <img src="images/menu/menu.png" alt="menu" />
+                </span>
+            </aside>
+            <ul id="mainmenuulli">
+                <li class="megamenu">
+                    <a href="#">About Us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li><a href="#">About AG&P Pratham</a></li>
+                                <li><a href="#">Financials</a></li>
+                                <li><a href="#">CSR</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Compliances & Regulations</a></li>
+                            </ul>
+                            <img src="images/menu/about.png" class="dropdownimg" alt="about" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu">
+                    <a href="#">CNG<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">CNG Stations</a></li>
+                                        <li><a href="#">OEM</a></li>    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">OEM Partners</a></li>
+                                        <li><a href="#">Retrofitments</a></li>
+                                        <li><a href="#">RFC</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Offers and Promotions</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/menu/cng.png" class="dropdownimg" alt="cng" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li class="megamenu">
+                    <a href="#">PNG<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdownmenu">
+                        <div class="dropdowninner">
+                            <ul>
+                                <li>
+                                    <h2>Household</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Offers and Promotions</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Commercial</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>Industries</h2>
+                                    <ul>
+                                        <li><a href="#">Product Information</a></li>
+                                        <li><a href="#">Applications</a></li>
+                                        <li><a href="#">Connection Process</a></li>
+                                        <li><a href="#">PNG Availability</a></li>
+                                        <li><a href="#">Do’s and Don’ts</a></li>
+                                        <li><a href="#">Calculator</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/menu/png.png" class="dropdownimg" alt="png" />
+                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Health and Safety</a></li>
+                <li><a href="#">Resources</a></li>
+                <li class="loginsignup"><a href="#"><span>Login/Signup</span><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</header>
+<!-- header  =====  end -->
+
+ 
+
+
+
+<!-- doanddont =====  start -->
+<div class="doanddontWrap">
+    <div class="wrapper">
+
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><a href="#">CNG</a></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li><span>Do’s and Don’ts</span></li>
+        </ul>
+
+        <div class="doanddontAbout">
+            <h2>
+                <span>DO’S AND DON’TS FOR CNG</span>
+                <img src="images/icon.png" alt="about" />
+            </h2>
+            <p>
+                AG&P Pratham encourages the safety and security of everyone involved with handling and operating appliances or containers with Gas. We advise everyone in and around the pipelines and equipment to be vigilant. Remember, safety comes first. Our customer care is available in times of emergency, give us a call immediately in case you smell gas.
+            </p>
+        </div>
+
+
+        <div class="doanddontContainer">
+            <div class="doanddontText">
+                <ul>
+                    <li><h2>Do’s</h2></li>
+                    <li>Ensure that an authorised engineer at a well equipped workshop does the installation or servicing of CNG kit</li>
+                    <li>Get your CNG cylinders hydro tested every three years</li>
+                    <li>Get the vehicle thoroughly checked by an authorized workshop every year.</li>
+                    <li>Always keep the certificate of CNG kit and cylinder</li>
+                    <li>Keep a portable fire extinguisher and first aid box in the vehicle.</li>
+                    <li>Follow the safety rules/safety instructions while filling and driving the vehicle. Be alert for any emergency</li>
+                </ul>
+            </div>
+            <div class="doanddontImg">
+                <section>
+                    <img src="images/do-and-dont/thumb.png" alt="do and dont" />
+                    <p>
+                        <span>Do’s</span>
+                        <span>Don’ts</span>
+                    </p>
+                </section>
+            </div>
+            <div class="doanddontText">
+                <ul>
+                    <li><h2>Don’ts</h2></li>
+                    <li>Do not install LPG, Propane or any other cylinder in place of your CNG cylinder</li>
+                    <li>Do not start the vehicle in the middle of getting your tank filled</li>
+                    <li>Do not use mobile phones near the installation and gas station areas</li>
+                    <li>Do not use any naked flame near CNG filling area</li>
+                    <li>Avoid carrying inflammable material near the CNG cylinder</li>
+                    <li>Do not place any luggage or load over cylinder as it may damage the cylinder pipe, hose, valve etc</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- start === cng -->
+        <div class="safetyinstructions">
+            <h2>Safety instructions for visitors in the CNG station</h2>
+            <section>
+                <ul>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon1.png" alt="do and dont" /> </aside>
+                        <p>Upon entering the station, get off your vehicle</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon2.png" alt="do and dont" /> </aside>
+                        <p>Always keep your senses on alert for danger inside the station</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon3.png" alt="do and dont" /> </aside>
+                        <p>Do not use mobile phones inside the station</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon4.png" alt="do and dont" /> </aside>
+                        <p>Do not smoke, do not use matchbox, lighter, open flame inside the station</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon5.png" alt="do and dont" /> </aside>
+                        <p>Keep the area clean and do not litter</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon6.png" alt="do and dont" /> </aside>
+                        <p>In case of emergency, proceed to a safer location</p>
+                    </li>
+                    <li>
+                        <aside><img src="images/do-and-dont/icon7.png" alt="do and dont" /> </aside>
+                        <p>Follow the instructions given by the workers and the staff</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- end === cng -->
+
+
+        <!-- start === png -->
+        <div class="safetyinstructions">
+                    <h2>Safety instructions for PNG customers</h2>
+                    <section class="forpngonly">
+                        <ul>
+                            <li>
+                                <aside><img src="images/do-and-dont/icon9.png" alt="do and dont" /></aside>
+                                <p>Gas geyser should not be installed in confined space</p>
+                            </li>
+                            <li>
+                                <aside><img src="images/do-and-dont/icon10.png" alt="do and dont" /></aside>
+                                <p>Gas geysers should be installed in well ventilated areas</p>
+                            </li>
+                            <li>
+                                <aside><img src="images/do-and-dont/icon8.png" alt="do and dont" /></aside>
+                                <p>Use only ISI approved gas burner</p>
+                            </li>
+                            <li>
+                                <aside><img src="images/do-and-dont/icon11.png" alt="do and dont" /></aside>
+                                <p>Periodic cleaning of gas burner should be done</p>
+                            </li>
+                        </ul>
+                    </section>
+        </div>
+        <!-- end === png -->
+        
+
+ 
+
+
+
+    </div>
+</div>
+<!-- doanddont =====  start -->
+
+
+
+
+
+
+
+<!-- knowledgeresources  =====  start -->
+<div class="knowledgeresources">
+    <div class="wrapper">
+        <h2>
+            <span>KNOWLEDGE AND RESOURCES</span>
+            <img src="images/icon.png" alt="KNOWLEDGE AND RESOURCES" />
+        </h2>
+        <h3>
+            All you need to know about natural gas, its uses, benefits, and industry trends is here. Our repository will provide you with the basic and advanced information on the fuel industry
+        </h3>
+
+        <div class="knowledgeresourcesslider">
+            <div class="items">
+                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
+                <h4>Transition to cleaner energy</h4>
+                <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+            <div class="items">
+                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
+                <h4>What to do when you fear gas leak?</h4>
+                <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+            <div class="items">
+                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
+                <h4>CNG and your pocket</h4>
+                <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+            <div class="items">
+                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
+                <h4>Transition to cleaner energy</h4>
+                <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+            <div class="items">
+                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
+                <h4>What to do when you fear gas leak?</h4>
+                <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+            <div class="items">
+                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
+                <h4>CNG and your pocket</h4>
+                <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
+                <aside>
+                    <a href="#">
+                        <span>Know more</span>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </aside>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- knowledgeresources  =====  end -->
+
+
+
+   
+ 
+<!-- wishtoconnect  =====  start -->
+<div class="wishtoconnect">
+    <div class="wrapper">
+        <div class="wishtoconnectposter">
+            <img src="images/wishtoconnect.png" alt="wish to connect" />
+        </div>
+        <div class="wishtoconnectcontent">
+            <h2>WISH TO CONNECT?</h2>
+            <p>Just drop a message and we’ll get in touch with you.</p>
+            <div class="wishtoconnect_success">
+                <section>
+                    <aside><i class="fa fa-check" aria-hidden="true"></i></aside>
+                    <h5>
+                        <b>Thank you for submitting the form!</b>
+                        <span>Our team will get in touch with you soon.</span>
+                    </h5>
+                </section>  
+            </div>
+            <div class="wishtoconnect_failed">
+                <section>
+                    <aside><i class="fa fa-info" aria-hidden="true"></i></aside>
+                    <h5>
+                        <b>Sorry</b>
+                        <span>We are facing some issue. Please try again.</span>
+                    </h5>
+                </section>
+            </div>
+            <ul>
+                <li class="width25">
+                    <input type="text" name="name" placeholder="Name" />
+                    <span class="errorMsg">Enter Name</span>
+                </li>
+                <li class="width25">
+                    <input type="text" name="contactno" placeholder="Contact No." />
+                    <span class="errorMsg">Enter Contact No.</span>
+                </li>
+                <li class="width25">
+                    <input type="text" name="emailid" placeholder="Email ID" />
+                    <span class="errorMsg">Enter Email ID</span>
+                </li>
+                <li class="width25">
+                    <select name="location">
+                        <option value="0" selected disabled>Location</option>
+                        <option>Raichur </option>
+                        <option>Ramnad</option>
+                        <option>Chennai </option>
+                        <option>Jodhpur </option>
+                        <option>Shivamogga </option>
+                        <option>Mysuru </option>
+                        <option>Gulbarga </option>
+                        <option>Hassan </option>
+                        <option>Thiruvanathapuram </option>
+                        <option>Nellore</option>
+                        <option>Tirupati </option>
+                        <option>Anantapur </option>
+                    </select>
+                    <span class="errorMsg">Select Location</span>
+                </li>
+                <li class="width25">
+                    <select name="typeofquery">
+                        <option value="0" selected disabled>Type of Query</option>
+                        <option>Billing/Finance</option>
+                        <option>Complaint</option>
+                        <option>Emergency</option>
+                        <option>General Enquiry</option>
+                        <option>New Connection</option>
+                        <option>Technical</option>
+                    </select>
+                    <span class="errorMsg">Select Query</span>
+                </li>
+                <li class="width75">
+                    <input type="text" name="message" placeholder="Message" />
+                    <span class="errorMsg">Enter Message</span>
+                </li>
+                <li>
+                    <input type="submit" name="submit"  value="SUBMIT" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- wishtoconnect  =====  end -->
+
+
+
+<!-- footer  =====  start -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footerleft">
+            <aside><img src="images/logo2.png" alt="logo" /></aside>
+            <dl>
+                <dt><a href="#">MYPRATHAM ACCOUNT</a></dt>
+                <dd><a href="#">GET A NEW CONNECTION</a></dd>
+            </dl>
+            <h5>
+                <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </h5>
+            <p>All rights reserved © AG&P Pratham 2022</p>
+        </div>
+        <div class="footerright">
+            <ul>
+                <li>
+                    <h2>CNG</h2>
+                    <ul>      
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">CNG Stations</a></li>
+                        <li><a href="#">OEM</a></li>    
+                        <li><a href="#">OEM Partners</a></li>
+                        <li><a href="#">Retrofitments</a></li>
+                        <li><a href="#">RFC</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Offers and Promotions</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Household </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Connection Process </a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Offers and Promotions </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Commercial </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Connection Process </a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>PNG Industrial </h2>
+                    <ul>
+                        <li><a href="#">Product Information </a></li>
+                        <li><a href="#">Applications </a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability </a></li>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>About Us </h2>
+                    <ul>
+                        <li><a href="#">About AG&P </a></li>
+                        <li><a href="#">Pratham Team </a></li>
+                        <li><a href="#">Financials </a></li>
+                        <li><a href="#">Compliance & Regulations </a></li>
+                        <li><a href="#">CSR</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Health & Safety </h2>
+                    <ul>
+                        <li><a href="#">Do’s and Don’ts </a></li>
+                        <li><a href="#">Emergency help</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><a href="#">Resources </a></h3>
+                    <h3><a href="#">Careers </a></h3>
+                    <h3><a href="#">Investors </a></h3>
+                    <h3><a href="#">Contact Us</a></h3>
+                </li>
+                <li>
+                    <h2>Others </h2>
+                    <ul>
+                        <li><a href="#">FAQs </a></li>
+                        <li><a href="#">Privacy Notice </a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>
+                <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </h4>
+            <p>All rights reserved © AG&P Pratham 2022</p>
+        </div>
+    </div>
+</footer>
+<!-- footer  =====  end -->
+
+ 
+
+</main>
+
+
+
+
+
+<!-- quicklink  =====  start -->
+<div class="quicklinkBG" id="quicklinkBG"></div>
+<div class="quicklink" id="quicklink">
+        <aside id="quicklinkToggle">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="toggle" />
+        </aside>
+        <h6>
+            <img id="qlMobileClose" src="images/menu/close.png" alt="close" />
+        </h6>
+        <h2>
+            <span>QUICK LINKS</span>
+            <img src="images/icon.png" alt="QUICK LINKS" />
+        </h2>
+        <h3>Smell Gas?</h3> 
+        <p>
+            <span>Call Us: </span> <a href="tel"> 0800 111 999</a> 
+        </p>
+        <div class="qlservice">
+            <h4>PNG Users</h4>
+            <ul>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_connection"></span>
+                        <b>New Connection</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_availability"></span>
+                        <b>PNG Availability</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_billpay"></span>
+                        <b>Bill Pay</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_offers"></span>
+                        <b>Offers</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="qlservice">
+            <h4>CNG Users</h4>
+            <ul class="abc">
+                <li> 
+                    <a href="#" >
+                        <span class="ql_stations"></span>
+                        <b>Stations </b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_calculator"></span>
+                        <b>Calculator</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_fitmentcenters"></span>
+                        <b>Fitment Centers</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_oemshowrooms"></span>
+                        <b>OEM Showrooms</b>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#" >
+                        <span class="ql_offers"></span>
+                        <b>Offers</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+<!-- quicklink  =====  end -->
+
+
+
+
+
+<!-- mobilemenu  =====  start -->
+<div class="mobilemenuBG" id="mobilemenuBG"></div>
+<div class="mobilemenu" id="mobilemenu">
+    <aside>
+        <img id="menuobileClose" src="images/menu/close.png" alt="close" />
+    </aside>
+    <h4>
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+        <a href="#">
+            <span>Welcome Guest</span>
+            <span>Login/Signup</span>
+        </a>
+    </h4>
+    <ul>
+        <li>
+            <h2>
+                <img src="images/menu/icon2.png" alt="menu" />
+                <span>About Us</span>
+            </h2>
+            <ul>
+            <li><a href="#">About AG&P Pratham</a></li>
+            <li><a href="#">Financials</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Compliances & Regulations</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2>
+                <img src="images/menu/icon3.png" alt="menu" />
+                <span>CNG</span>
+            </h2>
+            <ul>
+                <li><a href="#">Product Information</a></li>
+                <li><a href="#">CNG Stations</a></li>
+                <li><a href="#">OEM</a></li>    
+                <li><a href="#">OEM Partners</a></li>
+                <li><a href="#">Retrofitments</a></li>
+                <li><a href="#">RFC</a></li>
+                <li><a href="#">Do’s and Don’ts</a></li>
+                <li><a href="#">Offers and Promotions</a></li>
+                <li><a href="#">Calculator</a></li>
+            </ul>
+        </li>
+        <li>
+            <h2>
+                <img src="images/menu/icon1.png" alt="menu" />
+                <span>PNG</span>
+            </h2>
+            <ul>
+                <li><h3>Household</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Offers and Promotions</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+                <li><h3>Commercial</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+                <li><h3>Industries</h3></li>
+                <li>
+                    <ol>
+                        <li><a href="#">Product Information</a></li>
+                        <li><a href="#">Applications</a></li>
+                        <li><a href="#">Connection Process</a></li>
+                        <li><a href="#">PNG Availability</a></li>
+                        <li><a href="#">Do’s and Don’ts</a></li>
+                        <li><a href="#">Calculator</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2 class="nosubmenu" onclick="window.open('#','_self')">
+                <img src="images/menu/icon5.png" alt="menu" />
+                <span>Health and Safety</span>
+            </h2>
+        </li>
+        <li>
+            <h2 class="nosubmenu" onclick="window.open('#','_self')">
+                <img src="images/menu/icon4.png" alt="menu" />
+                <span>Resources</span>
+            </h2>
+        </li>
+        <li> 
+            <h2 class="more_h2">
+                <img src="images/menu/icon6.png" alt="menu" />
+                <span>More</span>
+            </h2>
+            <ul class="more_ul">
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">New Connection</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="menusocial">
+        <h5>
+            <a href="https://www.facebook.com/agppratham/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/company/ag-p-pratham" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/agppratham/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/agppratham?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCySOAStOz4rEgOY_xfeArCw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </h5>
+        <p>All rights reserved © AG&P Pratham 2022</p>
+    </div>
+</div>
+<!-- mobilemenu  =====  end -->
+
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='scripts/jquery-min.js'><\/script>")</script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/common.js"></script>
+
+ 
+</body>
+</html>
