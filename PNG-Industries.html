@@ -7,8 +7,8 @@
 
     <title>PNG Industries</title>
 
-    <link rel="stylesheet" href="styles/fontawesome.min.css" />
-    <link rel="stylesheet" href="styles/main.min.css" />
+    <link rel="stylesheet" href="frontend/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="frontend/css/main.min.css" />
     
     
 </head>
@@ -24,7 +24,7 @@
                 <ul>
                     <li>
                         <a href="tel:1800567677111" class="callat">
-                            <img src="images/menu/phone.png" alt="phone" />
+                            <img src="frontend/images/frontimage/menu/phone.png" alt="phone" />
                             <span>1800 567 677 111</span>
                         </a>
                     </li>
@@ -58,11 +58,11 @@
 
     <div class="navigation">
         <div class="wrapper">
-            <a href="/"><img class="logo" src="images/logo.png" alt="agp" /></a>
+            <a href="/"><img class="logo" src="frontend/images/frontimage/logo.png" alt="agp" /></a>
             <aside>
                 <span class="quickmenu" id="quickmenu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="quickmenu" /></span>
                 <span class="mainmenu" id="mainmenu">
-                    <img src="images/menu/menu.png" alt="menu" />
+                    <img src="frontend/images/frontimage/menu/menu.png" alt="menu" />
                 </span>
             </aside>
             <ul id="mainmenuulli">
@@ -77,8 +77,8 @@
                                 <li><a href="#">Team</a></li>
                                 <li><a href="#">Compliances & Regulations</a></li>
                             </ul>
-                            <img src="images/menu/about.png" class="dropdownimg" alt="about" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/about.png" class="dropdownimg" alt="about" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -109,8 +109,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img src="images/menu/cng.png" class="dropdownimg" alt="cng" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/cng.png" class="dropdownimg" alt="cng" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -152,8 +152,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img src="images/menu/png.png" class="dropdownimg" alt="png" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/png.png" class="dropdownimg" alt="png" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -175,9 +175,9 @@
 
 <!-- banner  =====  start -->
 <div class="banners">
-    <img class="banner_web" src="images/service/png-industries/banner-web.jpg" alt="PNG Industries"  />
-    <img class="banner_ipad" src="images/service/png-industries/banner-ipad.jpg" alt="PNG Industries"  />
-    <img class="banner_mobile" src="images/service/png-industries/banner-mobile.jpg" alt="PNG Industries"  />
+    <img class="banner_web" src="frontend/images/frontimage/service/png-industries/banner-web.jpg" alt="PNG Industries"  />
+    <img class="banner_ipad" src="frontend/images/frontimage/service/png-industries/banner-ipad.jpg" alt="PNG Industries"  />
+    <img class="banner_mobile" src="frontend/images/frontimage/service/png-industries/banner-mobile.jpg" alt="PNG Industries"  />
     <div class="wrapper">
             <h2>STAY POWERED,<br>STAY CONNECTED!</h2>
     </div>
@@ -211,27 +211,27 @@
             <div class="serviceAboutRight">
                 <ul>
                     <li>
-                        <aside><img src="images/service/icon9.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon9.png" alt="feature" /></aside>
                         <p>Reliable source</p>
                     </li>
                     <li>
-                        <aside><img src="images/service/icon10.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon10.png" alt="feature" /></aside>
                         <p>Versatile application</p>
                     </li>
                     <li>
-                        <aside><img src="images/service/icon11.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon11.png" alt="feature" /></aside>
                         <p>Non-stop supply</p>
                     </li>
                     <li>
-                        <aside><img src="images/service/icon4.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon4.png" alt="feature" /></aside>
                         <p>Eco-friendly</p>
                     </li>
                     <li>
-                        <aside><img src="images/service/icon8.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon8.png" alt="feature" /></aside>
                         <p>No extra storage space</p>
                     </li>
                     <li>
-                        <aside><img src="images/service/icon12.png" alt="feature" /></aside>
+                        <aside><img src="frontend/images/frontimage/service/icon12.png" alt="feature" /></aside>
                         <p>Pay-per-use</p>
                     </li>
                 </ul>
@@ -248,7 +248,7 @@
         <div class="serviceWhychoose">
             <h2>
                 <span>WHY CHOOSE PNG?</span>
-                <img src="images/icon.png" alt="why choose" />
+                <img src="frontend/images/frontimage/icon.png" alt="why choose" />
             </h2>
             <h3>PNG as an alternative offers many benefits. Below are some of the reasons why one should consider using PNG.</h3>
             <ul class="col5" id="whychooselist">
@@ -267,7 +267,7 @@
                         <li class="whychoose_second">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_inventorymanagement.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_inventorymanagement.png" alt="">
                                     <span>Inventory Management</span>
                                 </h4>
                                 <dl>
@@ -282,7 +282,7 @@
                         <li class="whychoose_block">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_storage.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_storage.png" alt="">
                                     <span>Storage</span>
                                 </h4>
                                 <dl>
@@ -297,7 +297,7 @@
                         <li class="whychoose_block">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_heatcontent.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_heatcontent.png" alt="">
                                     <span>Heat Content</span>
                                 </h4>
                                 <dl>
@@ -312,7 +312,7 @@
                         <li class="whychoose_block">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_processmaintenance.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_processmaintenance.png" alt="">
                                     <span>Process maintenance</span>
                                 </h4>
                                 <dl>
@@ -327,7 +327,7 @@
                         <li class="whychoose_block">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_pollution.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_pollution.png" alt="">
                                     <span>Pollution</span>
                                 </h4>
                                 <dl>
@@ -342,7 +342,7 @@
                         <li class="whychoose_block">
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_metering.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_metering.png" alt="">
                                     <span>Metering</span>
                                 </h4>
                                 <dl>
@@ -357,7 +357,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_pilferage.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_pilferage.png" alt="">
                                     <span>Pilferage</span>
                                 </h4>
                                 <dl>
@@ -372,7 +372,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_carbonemission.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_carbonemission.png" alt="">
                                     <span>Carbon Emission</span>
                                 </h4>
                                 <dl>
@@ -387,7 +387,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_safetyprecautions.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_safetyprecautions.png" alt="">
                                     <span>Saftey Precautions</span>
                                 </h4>
                                 <dl>
@@ -402,7 +402,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_healthandenvironmentalhazards.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_healthandenvironmentalhazards.png" alt="">
                                     <span>Health &amp; Enviromental hazards</span>
                                 </h4>
                                 <dl>
@@ -417,7 +417,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_effluentdischarge.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_effluentdischarge.png" alt="">
                                     <span>Effluent discharge</span>
                                 </h4>
                                 <dl>
@@ -432,7 +432,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_handlingfuelatplant.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_handlingfuelatplant.png" alt="">
                                     <span>Handling fuel at Plant</span>
                                 </h4>
                                <dl>
@@ -447,7 +447,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_supplycontinuity.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_supplycontinuity.png" alt="">
                                     <span>Supply continuity</span>
                                 </h4>
                                 <dl>
@@ -462,7 +462,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_operationalcost.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_operationalcost.png" alt="">
                                     <span>Operational / running cost</span>
                                 </h4>
                                 <dl>
@@ -477,7 +477,7 @@
                         <li class="whychoose_hide" >
                             <div>
                                 <h4>
-                                    <img src="images/service/wcs_competitiveness.png" alt="">
+                                    <img src="frontend/images/frontimage/service/wcs_competitiveness.png" alt="">
                                     <span>Competitive-ness</span>
                                 </h4>
                                 <dl>
@@ -508,12 +508,12 @@
         <!--servicePricebyarea start -->
         <div class="servicePricebyarea">
             <div class="servicePricebyareaRight">
-                <img src="images/service/png-industries/savespacemoney.jpg" alt="Price by area" />
+                <img src="frontend/images/frontimage/service/png-industries/savespacemoney.jpg" alt="Price by area" />
             </div>
             <div class="servicePricebyareaLeft">
                 <h2>
                     <span>INDUSTRIAL APPLICATION OF PNG</span>
-                    <img src="images/icon.png" alt="" />
+                    <img src="frontend/images/frontimage/icon.png" alt="" />
                 </h2>
                 <p>PNG is used across industries for multiple functions. The gas is versatile in nature and can be used in your business to heat, boil, or cool products. From steam boilers to dryers to glass furnaces, PNG is applicable in various machineries. AG&P Pratham will help you to set up the right systems for use of PNG in your industry. </p>
                 <h6><a href="#">Know various application of PNG in Industries</a></h6>
@@ -526,9 +526,9 @@
 
         <!--serviceFuelsavings start -->
         <div class="serviceFuelsavings">
-            <img class="fuelsavings_web" src="images/service/fuelsavings-web.jpg" alt="fuel savings"  />
-            <img class="fuelsavings_ipad" src="images/service/fuelsavings-ipad.jpg" alt="fuel savings"  />
-            <img class="fuelsavings_mobile" src="images/service/fuelsavings-mobile.jpg" alt="fuel savings"  />
+            <img class="fuelsavings_web" src="frontend/images/frontimage/service/fuelsavings-web.jpg" alt="fuel savings"  />
+            <img class="fuelsavings_ipad" src="frontend/images/frontimage/service/fuelsavings-ipad.jpg" alt="fuel savings"  />
+            <img class="fuelsavings_mobile" src="frontend/images/frontimage/service/fuelsavings-mobile.jpg" alt="fuel savings"  />
             <section>
                 <h2>FUEL SAVINGS</h2>
                 <p>
@@ -547,12 +547,12 @@
         <!--servicePipelineAvailable start -->
         <div class="servicePipelineAvailable sa_png_industries_bg">
             <div class="serviceAvailableRight">
-                <img src="images/service/png-industries/guarantee.jpg" alt="Industries" />
+                <img src="frontend/images/frontimage/service/png-industries/guarantee.jpg" alt="Industries" />
             </div>
             <div class="serviceAvailableLeft">
                 <h2>
                     <span>GUARANTEE OF SMOOTH OPERATIONS</span>
-                    <img src="images/icon.png" alt="" />
+                    <img src="frontend/images/frontimage/icon.png" alt="" />
                 </h2>
                 <h3>We, at AG&P Pratham, know that undisturbed systems yield results. Our PNG pipelines are channelled underground for the safety of your operations. </h3>
                 <h4>Is the pipeline available near you? Enter your location to find out</h4>
@@ -575,7 +575,7 @@
                     <input class="gosubmit" type="submit" name="go" id="go" value="Go" />
                 </h5>
                 <div class="sa_no_result">
-                    <aside><img src="images/no-result.png" alt="no result" /></aside>
+                    <aside><img src="frontend/images/frontimage/no-result.png" alt="no result" /></aside>
                     <p>Sorry, we were not able to find any results. Please try again.</p>
                 </div>
                 <ul class="sa_resultlist">
@@ -623,7 +623,7 @@
     <div class="wrapper">
         <h2>
             <span>YOUR SATISFACTION IS OUR MISSION</span>
-            <img src="images/icon.png" alt="YOUR SATISFACTION IS OUR MISSION" />
+            <img src="frontend/images/frontimage/icon.png" alt="YOUR SATISFACTION IS OUR MISSION" />
         </h2>
         <div class="satisfactionLarge">
             <div class="satisfactionVideo">
@@ -636,7 +636,7 @@
             <div class="satisfactionSlider">
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-ashok-sharma-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-ashok-sharma-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('wKhMoByApG0')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -652,7 +652,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-sanjay-singh-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-sanjay-singh-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('hVlwdTqXRCk')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -668,7 +668,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-yogendra-solanki-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-yogendra-solanki-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('QEYgh_ToYJ4')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -684,7 +684,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-naresh-jirawala-prins-polytech.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-naresh-jirawala-prins-polytech.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('fRSt684wx2c')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -700,7 +700,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-lalit-kumar-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-lalit-kumar-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('llH19EV3j70')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -719,23 +719,23 @@
         <div class="satisfactionThumb">
             <div class="satisfactionNav">
                 <div class="item">
-                    <img src="images/testimonials/thumb-ashok-sharma-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-ashok-sharma-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-sanjay-singh-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-sanjay-singh-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-yogendra-solanki-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-yogendra-solanki-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-naresh-jirawala-prins-polytech.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-naresh-jirawala-prins-polytech.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-lalit-kumar-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-lalit-kumar-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
             </div>
@@ -757,11 +757,11 @@
         <div class="serviceotherslider">
 
             <div class="items">
-                <img src="images/service/png-commercial.jpg" alt="commercial" />
+                <img src="frontend/images/frontimage/service/png-commercial.jpg" alt="commercial" />
                 <a href="#" class="servicebutton">PNG FOR COMMERCIAL USE</a>
             </div>
             <div class="items">
-                <img src="images/service/png-household.jpg" alt="household" />
+                <img src="frontend/images/frontimage/service/png-household.jpg" alt="household" />
                 <a href="#" class="servicebutton">PNG FOR HOUSEHOLD</a>
             </div>
 
@@ -782,7 +782,7 @@
 <div class="wishtoconnect">
     <div class="wrapper">
         <div class="wishtoconnectposter">
-            <img src="images/wishtoconnect.png" alt="wish to connect" />
+            <img src="frontend/images/frontimage/wishtoconnect.png" alt="wish to connect" />
         </div>
         <div class="wishtoconnectcontent">
             <h2>WISH TO CONNECT?</h2>
@@ -867,7 +867,7 @@
 <footer class="footer">
     <div class="wrapper">
         <div class="footerleft">
-            <aside><img src="images/logo2.png" alt="logo" /></aside>
+            <aside><img src="frontend/images/frontimage/logo2.png" alt="logo" /></aside>
             <dl>
                 <dt><a href="#">MYPRATHAM ACCOUNT</a></dt>
                 <dd><a href="#">GET A NEW CONNECTION</a></dd>
@@ -986,11 +986,11 @@
 <!-- valuechain Popup =====  start -->
 <div class="valuechainBG" onclick="hidevaluechain()"></div>
 <div class="valuechainPopup png">
-    <aside onclick="hidevaluechain()"><img src="images/team/close.png" alt="close" /></aside>
+    <aside onclick="hidevaluechain()"><img src="frontend/images/frontimage/team/close.png" alt="close" /></aside>
     <div class="valuechain_png">
          <h2>PNG Value Chain</h2>
-         <img class="valuechain_web" src="images/service/value-chain-png-web.jpg" alt="value chain" />
-         <img class="valuechain_mob" src="images/service/value-chain-png-mobile.jpg" alt="value chain" />
+         <img class="valuechain_web" src="frontend/images/frontimage/service/value-chain-png-web.jpg" alt="value chain" />
+         <img class="valuechain_mob" src="frontend/images/frontimage/service/value-chain-png-mobile.jpg" alt="value chain" />
     </div>
 </div>
 <!-- valuechain Popup =====  end -->
@@ -1004,11 +1004,11 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="toggle" />
         </aside>
         <h6>
-            <img id="qlMobileClose" src="images/menu/close.png" alt="close" />
+            <img id="qlMobileClose" src="frontend/images/frontimage/menu/close.png" alt="close" />
         </h6>
         <h2>
             <span>QUICK LINKS</span>
-            <img src="images/icon.png" alt="QUICK LINKS" />
+            <img src="frontend/images/frontimage/icon.png" alt="QUICK LINKS" />
         </h2>
         <h3>Smell Gas?</h3> 
         <p>
@@ -1089,7 +1089,7 @@
 <div class="mobilemenuBG" id="mobilemenuBG"></div>
 <div class="mobilemenu" id="mobilemenu">
     <aside>
-        <img id="menuobileClose" src="images/menu/close.png" alt="close" />
+        <img id="menuobileClose" src="frontend/images/frontimage/menu/close.png" alt="close" />
     </aside>
     <h4>
         <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -1101,7 +1101,7 @@
     <ul>
         <li>
             <h2>
-                <img src="images/menu/icon2.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon2.png" alt="menu" />
                 <span>About Us</span>
             </h2>
             <ul>
@@ -1114,7 +1114,7 @@
         </li>
         <li>
             <h2>
-                <img src="images/menu/icon3.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon3.png" alt="menu" />
                 <span>CNG</span>
             </h2>
             <ul>
@@ -1131,7 +1131,7 @@
         </li>
         <li>
             <h2>
-                <img src="images/menu/icon1.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon1.png" alt="menu" />
                 <span>PNG</span>
             </h2>
             <ul>
@@ -1171,19 +1171,19 @@
         </li>
         <li>
             <h2 class="nosubmenu" onclick="window.open('#','_self')">
-                <img src="images/menu/icon5.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon5.png" alt="menu" />
                 <span>Health and Safety</span>
             </h2>
         </li>
         <li>
             <h2 class="nosubmenu" onclick="window.open('#','_self')">
-                <img src="images/menu/icon4.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon4.png" alt="menu" />
                 <span>Resources</span>
             </h2>
         </li>
         <li> 
             <h2 class="more_h2">
-                <img src="images/menu/icon6.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon6.png" alt="menu" />
                 <span>More</span>
             </h2>
             <ul class="more_ul">
@@ -1211,14 +1211,10 @@
 
 
 
-
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='scripts/jquery-min.js'><\/script>")</script>
-<script src="scripts/slick.min.js"></script>
-<script src="scripts/common.js"></script>
+<script src="frontend/js/jquery-min.js"></script>
+<script src="frontend/js/slick.min.js"></script>
+<script src="frontend/js/slimscroll.min.js"></script>
+<script src="frontend/js/common.js"></script>
 
  
 </body>

@@ -7,8 +7,8 @@
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="styles/fontawesome.min.css" />
-    <link rel="stylesheet" href="styles/main.min.css" />
+    <link rel="stylesheet" href="frontend/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="frontend/css/main.min.css" />
     
     
 </head>
@@ -24,7 +24,7 @@
                 <ul>
                     <li>
                         <a href="tel:1800567677111" class="callat">
-                            <img src="images/menu/phone.png" alt="phone" />
+                            <img src="frontend/images/frontimage/menu/phone.png" alt="phone" />
                             <span>1800 567 677 111</span>
                         </a>
                     </li>
@@ -58,11 +58,11 @@
 
     <div class="navigation">
         <div class="wrapper">
-            <a href="/"><img class="logo" src="images/logo.png" alt="agp" /></a>
+            <a href="/"><img class="logo" src="frontend/images/frontimage/logo.png" alt="agp" /></a>
             <aside>
                 <span class="quickmenu" id="quickmenu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="quickmenu" /></span>
                 <span class="mainmenu" id="mainmenu">
-                    <img src="images/menu/menu.png" alt="menu" />
+                    <img src="frontend/images/frontimage/menu/menu.png" alt="menu" />
                 </span>
             </aside>
             <ul id="mainmenuulli">
@@ -77,8 +77,8 @@
                                 <li><a href="#">Team</a></li>
                                 <li><a href="#">Compliances & Regulations</a></li>
                             </ul>
-                            <img src="images/menu/about.png" class="dropdownimg" alt="about" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/about.png" class="dropdownimg" alt="about" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -109,8 +109,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img src="images/menu/cng.png" class="dropdownimg" alt="cng" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/cng.png" class="dropdownimg" alt="cng" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -152,8 +152,8 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img src="images/menu/png.png" class="dropdownimg" alt="png" />
-                            <img src="images/menu/closemenu.png" class="dropdownclose" alt="close" />
+                            <img src="frontend/images/frontimage/menu/png.png" class="dropdownimg" alt="png" />
+                            <img src="frontend/images/frontimage/menu/closemenu.png" class="dropdownclose" alt="close" />
                         </div>
                     </div>
                 </li>
@@ -178,9 +178,9 @@
     <div class="bannerhomeslider">
 
         <div class="slides">
-            <img class="homeslide_web" src="images/home/banner-web-1.jpg" alt="home"  />
-            <img class="homeslide_ipad" src="images/home/banner-ipad-1.jpg" alt="home"  />
-            <img class="homeslide_mobile" src="images/home/banner-mobile-1.jpg" alt="home"  />
+            <img class="homeslide_web" src="frontend/images/frontimage/home/banner-web-1.jpg" alt="home"  />
+            <img class="homeslide_ipad" src="frontend/images/frontimage/home/banner-ipad-1.jpg" alt="home"  />
+            <img class="homeslide_mobile" src="frontend/images/frontimage/home/banner-mobile-1.jpg" alt="home"  />
             <div class="wrapper">
                 <div class="banenrtext">
                     <h2>Shorter worries<br>longer journeys</h2>
@@ -191,9 +191,9 @@
         </div>
 
         <div class="slides">
-            <img class="homeslide_web" src="images/home/banner-web-2.jpg" alt="home"  />
-            <img class="homeslide_ipad" src="images/home/banner-ipad-2.jpg" alt="home"  />
-            <img class="homeslide_mobile" src="images/home/banner-mobile-2.jpg" alt="home"  />
+            <img class="homeslide_web" src="frontend/images/frontimage/home/banner-web-2.jpg" alt="home"  />
+            <img class="homeslide_ipad" src="frontend/images/frontimage/home/banner-ipad-2.jpg" alt="home"  />
+            <img class="homeslide_mobile" src="frontend/images/frontimage/home/banner-mobile-2.jpg" alt="home"  />
             <div class="wrapper">
                 <div class="banenrtext">
                     <h2>Convenient cooking<br>and stronger bonds</h2>
@@ -204,9 +204,9 @@
         </div>
 
         <div class="slides">
-            <img class="homeslide_web" src="images/home/banner-web-3.jpg" alt="home"  />
-            <img class="homeslide_ipad" src="images/home/banner-ipad-3.jpg" alt="home"  />
-            <img class="homeslide_mobile" src="images/home/banner-mobile-3.jpg" alt="home"  />
+            <img class="homeslide_web" src="frontend/images/frontimage/home/banner-web-3.jpg" alt="home"  />
+            <img class="homeslide_ipad" src="frontend/images/frontimage/home/banner-ipad-3.jpg" alt="home"  />
+            <img class="homeslide_mobile" src="frontend/images/frontimage/home/banner-mobile-3.jpg" alt="home"  />
             <div class="wrapper">
                 <div class="banenrtext">
                     <h2>Stay powered<br>stay connected</h2>
@@ -217,9 +217,9 @@
         </div>
 
         <div class="slides">
-            <img class="homeslide_web" src="images/home/banner-web-4.jpg" alt="home"  />
-            <img class="homeslide_ipad" src="images/home/banner-ipad-4.jpg" alt="home"  />
-            <img class="homeslide_mobile" src="images/home/banner-mobile-4.jpg" alt="home"  />
+            <img class="homeslide_web" src="frontend/images/frontimage/home/banner-web-4.jpg" alt="home"  />
+            <img class="homeslide_ipad" src="frontend/images/frontimage/home/banner-ipad-4.jpg" alt="home"  />
+            <img class="homeslide_mobile" src="frontend/images/frontimage/home/banner-mobile-4.jpg" alt="home"  />
             <div class="wrapper">
                 <div class="banenrtext">: 
                     <h2>One fuel,<br> many uses</h2>
@@ -244,25 +244,25 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon1.png" alt="New Connection" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon1.png" alt="New Connection" /></aside>
                             <p>New Connection</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon2.png" alt="Availability" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon2.png" alt="Availability" /></aside>
                             <p>Availability</p>
                         </a>
                     </li>
                     <li>
                         <a href="#"> 
-                            <aside><img src="images/home/icon3.png" alt="Calculator" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon3.png" alt="Calculator" /></aside>
                             <p>PNG Calculator</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon4.png" alt="Bill Pay" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon4.png" alt="Bill Pay" /></aside>
                             <p>Bill Pay</p>
                         </a>
                     </li>
@@ -273,19 +273,19 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon5.png" alt="Stations" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon5.png" alt="Stations" /></aside>
                             <p>Stations</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon3.png" alt="Calculator" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon3.png" alt="Calculator" /></aside>
                             <p>CNG Calculator</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <aside><img src="images/home/icon2.png" alt="RFC Locator" /></aside>
+                            <aside><img src="frontend/images/frontimage/home/icon2.png" alt="RFC Locator" /></aside>
                             <p>RFC Locator</p>
                         </a>
                     </li>
@@ -309,19 +309,19 @@
         </h3>
         <ul>
             <li>
-                <aside><img src="images/home/info_1.png" alt="24x7 supply" /></aside>
+                <aside><img src="frontend/images/frontimage/home/info_1.png" alt="24x7 supply" /></aside>
                 <p>24/7 supply</p>
             </li>
             <li>
-                <aside><img src="images/home/info_2.png" alt="Safety first" /></aside>
+                <aside><img src="frontend/images/frontimage/home/info_2.png" alt="Safety first" /></aside>
                 <p>Safety first</p>
             </li>
             <li>
-                <aside><img src="images/home/info_3.png" alt="Technical excellence" /></aside>
+                <aside><img src="frontend/images/frontimage/home/info_3.png" alt="Technical excellence" /></aside>
                 <p>Technical excellence</p>
             </li>
             <li>
-                <aside><img src="images/home/info_4.png" alt="Customer first approach" /></aside>
+                <aside><img src="frontend/images/frontimage/home/info_4.png" alt="Customer first approach" /></aside>
                 <p>Customer first approach</p>
             </li>
         </ul>
@@ -337,11 +337,11 @@
     <div class="wrapper">
         <h2>
             <span>WHAT WE OFFER</span>
-            <img src="images/icon.png" alt="WHAT WE OFFER" />
+            <img src="frontend/images/frontimage/icon.png" alt="WHAT WE OFFER" />
         </h2>
         <div class="offergrid">
             <div class="itemgrid one">
-                <img src="images/home/offer-cng.jpg" alt="WE OFFER" />
+                <img src="frontend/images/frontimage/home/offer-cng.jpg" alt="WE OFFER" />
                 <section>
                     <h3>CNG For Vehicles</h3>
                     <p>Enjoy fuel efficient journeys with AG&P Pratham. With higher availability across regions, you will never have the fear of running out of fuel. </p>
@@ -349,7 +349,7 @@
                 </section>
             </div>
             <div class="itemgrid four">
-                <img src="images/home/offer-commercial.jpg" alt="WE OFFER" />
+                <img src="frontend/images/frontimage/home/offer-commercial.jpg" alt="WE OFFER" />
                 <section>
                     <h3>PNG For Commercial Use</h3>
                     <p>Avail an advantageous business with PNG and its versatility; the fuel can be used for heating, cooling, power generation, cooking, and other purposes. </p>
@@ -357,7 +357,7 @@
                 </section>
             </div>
             <div class="itemgrid two">
-                <img src="images/home/offer-industries.jpg" alt="WE OFFER" />
+                <img src="frontend/images/frontimage/home/offer-industries.jpg" alt="WE OFFER" />
                 <section>
                     <h3>PNG For Industries</h3>
                     <p>PNG is a green solution with secure delivery to the plants and factories establishing seamless operations at work. </p>
@@ -365,7 +365,7 @@
                 </section>
             </div>
             <div class="itemgrid three">
-                <img src="images/home/offer-households.jpg" alt="WE OFFER" />
+                <img src="frontend/images/frontimage/home/offer-households.jpg" alt="WE OFFER" />
                 <section>
                     <h3>PNG For Household</h3>
                     <p>Ensure healthy living with domestic-friendly PNG. Connect to a direct pipeline that gives you constant fuel support. </p>
@@ -383,11 +383,11 @@
 <!-- infocontent  =====  start -->
 <div class="infocontent">
     <video class="infovideo_web" autoplay loop muted playsinline  poster="images/home/infocontent_web.jpg">
-        <source src="images/home/video-heath-safety-desktop.mp4" type="video/mp4" />
+        <source src="frontend/images/frontimage/home/video-heath-safety-desktop.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
-    <img class="infoimg_ipad" src="images/home/infocontent_ipad.jpg" alt="Your safety is our priority" />
-    <img class="infoimg_mobile" src="images/home/infocontent_mobile.jpg" alt="Your safety is our priority" />
+    <img class="infoimg_ipad" src="frontend/images/frontimage/home/infocontent_ipad.jpg" alt="Your safety is our priority" />
+    <img class="infoimg_mobile" src="frontend/images/frontimage/home/infocontent_mobile.jpg" alt="Your safety is our priority" />
     <div class="infocontentInner">
         <section>
             <h2>Your safety is our priority</h2>
@@ -412,7 +412,7 @@
     <div class="wrapper">
         <h2>
             <span>YOUR SATISFACTION IS OUR MISSION</span>
-            <img src="images/icon.png" alt="YOUR SATISFACTION IS OUR MISSION" />
+            <img src="frontend/images/frontimage/icon.png" alt="YOUR SATISFACTION IS OUR MISSION" />
         </h2>
         <div class="satisfactionLarge">
             <div class="satisfactionVideo">
@@ -425,7 +425,7 @@
             <div class="satisfactionSlider">
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-ashok-sharma-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-ashok-sharma-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('wKhMoByApG0')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -441,7 +441,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-sanjay-singh-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-sanjay-singh-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('hVlwdTqXRCk')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -457,7 +457,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-yogendra-solanki-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-yogendra-solanki-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('QEYgh_ToYJ4')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -473,7 +473,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-naresh-jirawala-prins-polytech.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-naresh-jirawala-prins-polytech.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('fRSt684wx2c')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -489,7 +489,7 @@
                 </div>
                 <div class="items">
                     <div class="satisfactionMedia">
-                        <img src="images/testimonials/large-lalit-kumar-jodhpur.jpg" alt="satisfaction" />
+                        <img src="frontend/images/frontimage/testimonials/large-lalit-kumar-jodhpur.jpg" alt="satisfaction" />
                         <span class="playiconsbig" onclick="satisfactionShowVideo('llH19EV3j70')"><i class="fa fa-play" aria-hidden="true"></i></span>
                     </div>
                     <div class="satisfactionContent">
@@ -508,23 +508,23 @@
         <div class="satisfactionThumb">
             <div class="satisfactionNav">
                 <div class="item">
-                    <img src="images/testimonials/thumb-ashok-sharma-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-ashok-sharma-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-sanjay-singh-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-sanjay-singh-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-yogendra-solanki-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-yogendra-solanki-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-naresh-jirawala-prins-polytech.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-naresh-jirawala-prins-polytech.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
                 <div class="item">
-                    <img src="images/testimonials/thumb-lalit-kumar-jodhpur.png" alt="satisfaction" />
+                    <img src="frontend/images/frontimage/testimonials/thumb-lalit-kumar-jodhpur.png" alt="satisfaction" />
                     <span class="playicons"><i class="fa fa-play" aria-hidden="true"></i></span>
                 </div>
             </div>
@@ -542,14 +542,14 @@
     <div class="wrapper">
         <h2>
             <span>KNOWLEDGE AND RESOURCES</span>
-            <img src="images/icon.png" alt="KNOWLEDGE AND RESOURCES" />
+            <img src="frontend/images/frontimage/icon.png" alt="KNOWLEDGE AND RESOURCES" />
         </h2>
         <h3>
             All you need to know about natural gas, its uses, benefits, and industry trends is here. Our repository will provide you with the basic and advanced information on the fuel industry.
         </h3>
         <div class="knowledgeresourcesslider">
             <div class="items">
-                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/1.png" alt="knowledge and resources" />
                 <h4>Transition to cleaner energy</h4>
                 <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
                 <aside>
@@ -560,7 +560,7 @@
                 </aside>
             </div>
             <div class="items">
-                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/2.png" alt="knowledge and resources" />
                 <h4>What to do when you fear gas leak?</h4>
                 <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
                 <aside>
@@ -571,7 +571,7 @@
                 </aside>
             </div>
             <div class="items">
-                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/3.png" alt="knowledge and resources" />
                 <h4>CNG and your pocket</h4>
                 <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
                 <aside>
@@ -582,7 +582,7 @@
                 </aside>
             </div>
             <div class="items">
-                <img src="images/knowledge-and-resources/1.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/1.png" alt="knowledge and resources" />
                 <h4>Transition to cleaner energy</h4>
                 <p>AG&P Pratham, India, the City Gas Distribution (CGD) arm and a critical pillar of Singapore based AG&P Group is a leading LNG and Gas distribution company.</p>
                 <aside>
@@ -593,7 +593,7 @@
                 </aside>
             </div>
             <div class="items">
-                <img src="images/knowledge-and-resources/2.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/2.png" alt="knowledge and resources" />
                 <h4>What to do when you fear gas leak?</h4>
                 <p>Enjoy Fuel efficient journeys with AG&P Pratham. CNG gives you more mileage per kilometer, saving fuel cost and increasing the earnings.</p>
                 <aside>
@@ -604,7 +604,7 @@
                 </aside>
             </div>
             <div class="items">
-                <img src="images/knowledge-and-resources/3.png" alt="knowledge and resources" />
+                <img src="frontend/images/frontimage/knowledge-and-resources/3.png" alt="knowledge and resources" />
                 <h4>CNG and your pocket</h4>
                 <p>This pocket-friendly choice lets you embark on longer and safer journeys that are not just beneficial to you but also to the environment.</p>
                 <aside>
@@ -626,7 +626,7 @@
 <div class="wishtoconnect">
     <div class="wrapper">
         <div class="wishtoconnectposter">
-            <img src="images/wishtoconnect.png" alt="wish to connect" />
+            <img src="frontend/images/frontimage/wishtoconnect.png" alt="wish to connect" />
         </div>
         <div class="wishtoconnectcontent">
             <h2>WISH TO CONNECT?</h2>
@@ -711,7 +711,7 @@
 <footer class="footer">
     <div class="wrapper">
         <div class="footerleft">
-            <aside><img src="images/logo2.png" alt="logo" /></aside>
+            <aside><img src="frontend/images/frontimage/logo2.png" alt="logo" /></aside>
             <dl>
                 <dt><a href="#">MYPRATHAM ACCOUNT</a></dt>
                 <dd><a href="#">GET A NEW CONNECTION</a></dd>
@@ -834,11 +834,11 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmRhYmFjYmIsIDIwMjEvMDQvMTQtMDA6Mzk6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy4wIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzJBRjlBRUZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNzJBRjlBRkZFMkIxMUVDQTNBN0RBMDRCRkNCQUE2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA3MkFGOUFDRkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3MkFGOUFERkUyQjExRUNBM0E3REEwNEJGQ0JBQTY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OgeRbgAAAtFJREFUeNqslk1oE0EUgGfz0zSlPRU8aAriwZT4e9BDAmKqR5UWJD2IYNuDEotYvVRoYGYxQgtW0UPBi0T0Ys2hpXg0TS/xoGBFxbQXxcQgRT2YuElMNuObNbOZbIl0QgeGzbx5O9+b97dRfl3cj9odSlcPdoUmiePwCWNdXU2g8rMZQrW8Kuo52gXY+vpx1/WHBECmzBkYRPY+L9HujCERZNsugLCH2J6tdyduG2IFVN8uM4sVNmvZtbgJisQJ05WGMOtEQOXlouo4NED4vjY7Og6gjXq8kDt8j+liKUjnyK0mgNM/SMT97rupjTqIG4Wc/iEiBbHvPdIIsgUggOKV1GLjHe/R9gLPLW0dN29D9/tXOQgE2QAU564gff0VBRHVZsco389fOnC89CiyDLc01rRY0CsvHl+VqpNSbEpR3N3YHb7PMuefO+DJDoefxDU8Gew4eZ6rF8rz0+dqP3JLjhZZhMQqBkW+1QSA4MNcQJBhSWdgyHwHRg5udApis2qsWFsRZ3lpDlPL+H17FOUn/Fj/8tGU/UktUJBRUcZGTcu/KcamPOKZtuYUjeKO0+GmrGHW1rJpoz7EG5RiERXcg7isHoPnkMLH4AbZph7HGyQDiGlpHJ5ZM9wBAGQFsBjA3Af9KmTr3RWCXpUA3Ql46psaKYNYAeDPFbCG9Dx4l4RDKc8WBijPz6hwEJHqFGCJCFgBwEDnhWiQAQwXaHkRwG6FIcBU6pOgZ9LU5jGLR2mlWLgW8AHgA3Obvv6a9SllyzcRAP9X9PSHeFwUSHEpdzGrtjJcZy4PC21FlYJAXYgvvIeYYKhgnyWNMTRHXz1N1fLTaanA22/sribpz5wCwQzCegd7QkqOa9FQsJJ48tm+5+AIyAgHQCxI7dsnuf8CvE4gywhkFW6laAIyafnPtekSqAtwlbrdgE2fXwaC1q0KDZGlq6rdPNs2gI2/AgwARGKjjcdOEOMAAAAASUVORK5CYII=" alt="toggle" />
         </aside>
         <h6>
-            <img id="qlMobileClose" src="images/menu/close.png" alt="close" />
+            <img id="qlMobileClose" src="frontend/images/frontimage/menu/close.png" alt="close" />
         </h6>
         <h2>
             <span>QUICK LINKS</span>
-            <img src="images/icon.png" alt="QUICK LINKS" />
+            <img src="frontend/images/frontimage/icon.png" alt="QUICK LINKS" />
         </h2>
         <h3>Smell Gas?</h3> 
         <p>
@@ -919,7 +919,7 @@
 <div class="mobilemenuBG" id="mobilemenuBG"></div>
 <div class="mobilemenu" id="mobilemenu">
     <aside>
-        <img id="menuobileClose" src="images/menu/close.png" alt="close" />
+        <img id="menuobileClose" src="frontend/images/frontimage/menu/close.png" alt="close" />
     </aside>
     <h4>
         <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -931,7 +931,7 @@
     <ul>
         <li>
             <h2>
-                <img src="images/menu/icon2.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon2.png" alt="menu" />
                 <span>About Us</span>
             </h2>
             <ul>
@@ -944,7 +944,7 @@
         </li>
         <li>
             <h2>
-                <img src="images/menu/icon3.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon3.png" alt="menu" />
                 <span>CNG</span>
             </h2>
             <ul>
@@ -961,7 +961,7 @@
         </li>
         <li>
             <h2>
-                <img src="images/menu/icon1.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon1.png" alt="menu" />
                 <span>PNG</span>
             </h2>
             <ul>
@@ -1001,19 +1001,19 @@
         </li>
         <li>
             <h2 class="nosubmenu" onclick="window.open('#','_self')">
-                <img src="images/menu/icon5.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon5.png" alt="menu" />
                 <span>Health and Safety</span>
             </h2>
         </li>
         <li>
             <h2 class="nosubmenu" onclick="window.open('#','_self')">
-                <img src="images/menu/icon4.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon4.png" alt="menu" />
                 <span>Resources</span>
             </h2>
         </li>
         <li> 
             <h2 class="more_h2">
-                <img src="images/menu/icon6.png" alt="menu" />
+                <img src="frontend/images/frontimage/menu/icon6.png" alt="menu" />
                 <span>More</span>
             </h2>
             <ul class="more_ul">
@@ -1045,11 +1045,10 @@
 
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='scripts/jquery-min.js'><\/script>")</script>
-<script src="scripts/slick.min.js"></script>
-<script src="scripts/common.js"></script>
-
+<script src="frontend/js/jquery-min.js"></script>
+<script src="frontend/js/slick.min.js"></script>
+<script src="frontend/js/slimscroll.min.js"></script>
+<script src="frontend/js/common.js"></script>
  
 </body>
 </html>
