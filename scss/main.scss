@@ -1,0 +1,88 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+} 
+body {
+    margin:0; 
+    padding:0; 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.2; 
+    letter-spacing: normal;
+    letter-spacing: normal;
+    color: #000000;
+    background-color: #ffffff;
+    box-sizing:border-box;
+}
+main {
+  display: block;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 136px 0 0 0;
+  overflow: hidden;
+}
+.wrapper { 
+    display: flow-root;
+    width: 96%;
+    max-width: 1640px;
+    float: none;
+    margin: 0 auto; 
+}
+
+
+
+@media only screen and (max-width:1565px) 
+{
+  main { padding:112px 0 0 0; }
+}
+
+@media only screen and (max-width:1255px) 
+{
+  main { padding:102px 0 0 0; }
+  .wrapper { width: 92%; }
+
+}
+@media only screen and (max-width:479px) 
+{
+  main { padding:87px 0 0 0; }
+  .wrapper { width: 90%; }
+}
+@import "_main_var.scss";
+@import "_main_mixin.scss"; 
+@import "_main_normalize.scss";
+@import "_main_fonts.scss";
+@import "_main_slick.scss";
+
+@import "_part_header.scss";
+@import "_part_headermenu.scss";
+@import "_part_quicklinks.scss";
+@import "_part_breadcrumbs.scss"; 
+@import "_part_wishtoconnect.scss";
+@import "_part_footer.scss";
+@import "_part_banners.scss";
+@import "_part_satisfaction.scss";
+@import "_part_knowledgeandresources.scss";
+@import "_part_service_checkoffers.scss";
+@import "_part_service_cngproperties.scss";
+@import "_part_service_oemrfc.scss";
+@import "_part_service_slider.scss";
+@import "_part_service_valuechain.scss";
+@import "_part_service_whychooseus.scss";
+
+@import "_page_about.scss";
+@import "_page_applications.scss";
+@import "_page_availability.scss";
+@import "_page_calculator.scss";
+@import "_page_contactus.scss";
+@import "_page_csr.scss";
+@import "_page_doanddont.scss";
+@import "_page_faqs.scss";
+@import "_page_healthandsafety.scss";
+@import "_page_home.scss";
+@import "_page_newconnection.scss";
+@import "_page_stations.scss";
+@import "_page_team.scss";
+@import "_page_results.scss";
+@import "_page_resources.scss";
+@import "_page_services.scss";

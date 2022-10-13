@@ -1,0 +1,333 @@
+/* ################## calculatorWrap ################## */
+.calculatorWrap { 
+    width: 100%; float: left; padding:2rem 0 4rem 0; background: $wht1;
+
+
+    /* heading */ 
+    .calc_heading { 
+        width: 100%; float: left; text-align: left;  margin: 0 0 2rem 0;
+        span {  display: inline;  color:$blk1; font-size:26px; letter-spacing:0; line-height: 35px; @include aBlack(); text-transform: uppercase; }
+        img { display: inline; max-width: 100%; margin:0 0 -3px 0; }
+    }
+
+    /* info */ 
+    .calc_info { 
+        width: 100%; float: left; text-align: left; margin:3rem 0 0 0;
+        h3 { width: 100%; float: left; text-align:left; color:$blk1; font-size:20px; line-height: 24px; @include aBold();   }
+        p { margin: 0.5rem 0 1.5rem 0; width: 100%; float: left; text-align:left; color:$blk2; font-size:16px; line-height: 28px; @include Arial();   }
+        dl { 
+            width: 100%; float: left; @include fSC(); 
+            dt { 
+                width: auto; float: left; text-align: center; margin-right: 1.5rem;
+                a {
+                    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:12px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; line-height:1; letter-spacing:0.4px; text-transform: uppercase;
+                    &:hover {  @include inT(); background-color:$ong2;  color: $wht1; box-shadow: 4px 8px 12px #00000029; }
+                }  
+            }
+            dd { 
+                width:auto; float: left; text-align: left; 
+                a {
+                    text-decoration: none; @include fSC(); color:$blu1; @include aBold(); font-size:16px; line-height:1.2; @include outT();
+                    b { border-bottom: solid 2px $wht1; @include outT(); }
+                    i.fa { margin-top: -2px; padding:0 5px;  @include outT(); }
+                    span {  border-bottom: solid 1px $wht1;   @include outT();  }
+                    &:hover {
+                        color: $blk1; @include inT();
+                        b { border-bottom-color:$blu1; @include inT(); }
+                        i.fa { padding:0 0 0 10px; @include inT(); }
+                        span {  border-bottom-color:$blk1; @include inT(); }
+                    }
+                }
+            }
+        }
+    }
+
+    /* container */ 
+    .calculator_container { 
+        width: 100%; float: left; @include fCS(); align-items: stretch; height:inherit;
+        .calculator_left{ 
+            width: 52%; float: left;  background-color: $wht1; box-shadow: 0px 6px 12px #00000014; @include fSC();
+            section { 
+                width: 100%; padding:3rem; float: left; height: auto;
+                .calculate_field { 
+                    &.calculate_field_top { width: 100%; float: left;  margin:0 0 1rem 0;  }
+                    &.calculate_field_bottom { width: 100%; float: left;  margin: 1rem 0 0 0; @include fSC(); }
+                    &.calculate_field_left { width: 48%; float: left; margin: 1rem 0; }
+                    &.calculate_field_right { width: 48%; float:right; margin: 1rem 0; }
+                    .calculate_errormsg { display: none; width: 100%; float: left;  margin:0.3rem 0 0 0; text-align:left; color:$ong1; font-size:12px; line-height: 1; @include Arial(); }
+                    .calculate_input {  
+                        width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk6; text-align: left; font-size: 18px; line-height: 1; color:$blk3; @include Arial();
+                        &::placeholder { color: $blk6; opacity: 1; }      
+                        &:-ms-input-placeholder { color: $blk6; opacity: 1; }
+                        &::-ms-input-placeholder { color: $blk6; opacity: 1;  }
+                    }
+                    .calculate_select {  
+                        width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk6; text-align: left; font-size: 18px;  line-height: 1; color: $blk3;  @include Arial(); border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/dd_contactus.png') no-repeat; background-position:right 5px center; 
+                        option { 
+                            color: $blk3;      
+                            &:disabled { user-select: none; pointer-events: none; }
+                        }
+                    }
+                    .calculate_button { 
+                        width:auto; float: left; text-align: center; text-decoration: none; @include outT(); padding:12px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing:0; line-height: 1.2; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                    }
+                    .calculate_reset {
+                        margin:0 0 0 2rem; width:auto; float: left; border-bottom: solid 1px $blu1;  text-decoration: none; @include outT();  text-decoration: none; color:$blu1; @include Arial(); font-size:16px; line-height:1; cursor: pointer; @include outT();
+                        &:hover { border-bottom-color:$ong1; color:$ong1; @include inT();  }
+                    }  
+                }
+            }
+        }
+        .calculator_right{ 
+           position: relative; width: 48%; float: left; background:$blu1 url('../images/calculator/bg_web.png') no-repeat right top; background-size:auto 100%; overflow: hidden;
+           section { 
+                position: relative; width: 79%; padding:3rem; float: left; height: auto;
+                h3 { 
+                    width: 100%; float: left;  margin:0 0 1rem 0; text-align:left; color:$wht1; font-size:18px; line-height: 28px; @include Arial();  
+                    span { 
+                        @include aMedium(); font-size:22px;  
+                        i.fa { margin-right: 5px; font-size: 85%; font-weight:300; line-height: 1; }
+                        b { font-weight: normal; }
+                    }
+                }
+                h2 { 
+                    width: auto; padding: 0.7rem 1rem; margin:0.5rem 0 2rem 0; float: left; background-color: $wht1; text-align:left; color:$blu1; font-size:20px; line-height: 28px; @include aBold();  
+                    span { 
+                        font-size:26px;  
+                        i.fa { margin-right: 5px; font-size: 85%; font-weight:300; line-height: 1; }
+                        b { font-weight: normal; }
+                    }
+                }
+                p { width: 100%; float: left; text-align:left; color:$wht1; font-size:14px; line-height: 24px; @include Arial(); }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+/* ################## calulatorothers ################## */
+.calulatorothers { 
+    width: 100%; float: left; padding:5rem 0 7rem 0; background: $wht3;
+    .calulatorslider{
+        width: 100%; float: left; @include fBS();
+        .items { 
+            width: 32.8%; float: left; position: relative;
+            img { width: 100%;float: left; }
+            a {
+                position: absolute; bottom:0px; right:0;   white-space:nowrap; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 20px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; line-height:1; letter-spacing:0; text-transform: uppercase;
+                &:hover { background:$ong2; @include inT(); color: $wht1; box-shadow: 4px 8px 12px #00000029;  }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:1565px) 
+{
+
+    /* ################## calculatorWrap ################## */
+    .calculatorWrap { 
+        /* container */ 
+        .calculator_container { 
+            .calculator_left{ 
+                width: 54%;
+                section { 
+                    padding:1.5rem;  
+                    .calculate_field { 
+                        .calculate_input {  padding:0.5rem 0; font-size: 16px; }
+                        .calculate_select { padding:0.5rem 0; font-size: 16px; }
+                        .calculate_button {  padding:10px 20px; font-size:14px; }
+                        .calculate_reset { margin:0 0 0 1.5rem; font-size:16px; }  
+                    }
+                 }
+            }
+            .calculator_right{  
+                width: 46%;
+                section { 
+                    width: 79%; padding:1.5rem;
+                    h3 {   margin:0 0 0.5rem 0; font-size:16px; 
+                        span {  font-size:20px;  }
+                    }
+                    h2 { 
+                         padding: 0.3rem 0.6rem; margin:0.5rem 0 1.2rem 0; font-size:18px; 
+                        span { font-size:22px;  }
+                    }
+                    p { font-size:12px; line-height:18px; }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+ 
+
+
+
+@media only screen and (max-width:1255px) 
+{
+
+    /* ################## calculatorWrap ################## */
+    .calculatorWrap { 
+
+
+        /* heading */ 
+        .calc_heading { 
+            span { font-size:22px; letter-spacing:1.32px; line-height: 32px;  }
+            img { margin:0 0 -2px 0; }
+        }
+        
+        
+        /* info */ 
+        .calc_info { 
+            h3 { font-size:18px; line-height: 21px; }
+            p { font-size:16px; line-height: 26px; margin: 0.3rem 0 1rem 0; }
+            dl { 
+                flex-direction: column;
+                dt { 
+                    width: 100%; float: left; text-align: left; margin:0 0 1.2rem 0; 
+                    a {padding:10px 20px; font-size:14px; letter-spacing: 0.35px; }  
+                }
+                dd { width: 100%; float: left; text-align: left;}
+            }
+        }
+
+
+        /* container */ 
+        .calculator_container { 
+            flex-wrap: wrap;
+            .calculator_left{ 
+                width: 100%;
+                section { 
+                    padding:3rem;  
+                 }
+            }
+            .calculator_right{  
+                width: 100%;
+                section { width: 83%; padding:3rem;}
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    /* ######################## serviceothers ######################## */
+    .calulatorothers {
+        padding:3rem 0 4rem 0;
+        .calulatorslider{
+            .items { 
+                a {padding:9px 15px; font-size:14px; }
+            }
+        }
+        .calulatorslider .slick-list { overflow: hidden;  }
+        .calulatorslider .slick-track { overflow: hidden; }
+        .calulatorslider .slick-slide { margin: 0 10px 0 0; }
+    } 
+    
+ 
+    /* ################## calculatorWrap ################## */
+    .calculatorWrap { 
+
+        /* container */ 
+        .calculator_container { 
+            .calculator_left{ 
+                section { 
+                    padding:1.5rem;  
+                 }
+            }
+            .calculator_right{  
+                section { width: 80%; padding:1.5rem;}
+            }
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width:599px) 
+{
+    /* ################## calculatorWrap ################## */
+    .calculatorWrap { 
+
+        /* container */ 
+        .calculator_container { 
+            .calculator_left{ 
+                section { 
+                    padding:1.5rem;  
+                    .calculate_field { 
+                        &.calculate_field_top { margin:0 0 0.9rem 0;  }
+                        &.calculate_field_bottom { margin: 0.9rem 0 0 0; }
+                        &.calculate_field_left { width: 100%;  margin: 0.9rem 0; }
+                        &.calculate_field_right { width: 100%;  margin: 0.9rem 0; }
+                     }
+                }
+            }
+            .calculator_right{  
+                background:$blu1 url('../images/calculator/bg_mob.png') no-repeat; background-position: left 0 bottom -2px; background-size:100% auto;
+                section {
+                     width: 100%; padding:1.5rem; padding-bottom: 160px;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    /* ################## calculatorWrap ################## */
+    .calculatorWrap { 
+
+        /* container */ 
+        .calculator_container { 
+            .calculator_left{ 
+                section { 
+                    padding:1.5rem;  
+                }
+            }
+            .calculator_right{  
+                section {
+                    width: 100%; padding:1.5rem; padding-bottom: 130px;
+                     h3  {
+                        margin-bottom: 1.5rem;
+                        span { display: block;}
+                    }
+                    h2  {
+                        width: 100%; margin:0 0 1.6rem 0;
+                        span { display: block;}
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    /* ######################## serviceothers ######################## */
+    .calulatorothers {
+        padding:3rem 0 6rem 0;
+        .calulatorslider .slick-slide { margin: 0 15px 0 0; }
+    } 
+
+}

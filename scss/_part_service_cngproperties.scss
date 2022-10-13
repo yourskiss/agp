@@ -1,0 +1,176 @@
+.cngcompared { 
+    width: 100%; float: left; padding:5rem 0 0 0; text-align: center;
+    h2 { 
+        width: 100%; float: left; text-align: left; margin-bottom: 1.5rem;
+        span { display: inline; color:$blk1; font-size:26px; letter-spacing:normal; line-height: 37px; @include aBlack();  }
+        img { display: inline; margin:0 0 -2px 1px; max-width: 100%; }
+    }
+
+    .cngcomparetable { 
+        width: 100%;  float: left; padding: 0.5rem; background: $ong6; border-radius: 10px;
+
+        
+        section { 
+            float: left; 
+            ul { 
+                width: 100%;  float: left; 
+                li { 
+                    list-style: none; margin: 0.3rem 0; width: 100%; float: left; @include fBS(); 
+                    h3 { 
+                        width: 100%; float: left; text-align: left; margin: 0.8rem 0 0.4rem 0; color:$blu1; font-size:18px; letter-spacing:normal; line-height:22px; @include aBold(); 
+                        &.autoignitionWeb { opacity: 1; padding:0 0 0 10%; }
+                        &.autoignitionMobile { opacity: 0; padding: 0 0 0 0.5rem;  }
+                    }
+                    h4 {float: left; background: transparent; border-radius: 0; padding: 5px; text-align: center;  color:$blu1; font-size:18px; line-height:22px; @include aBold();  }
+                    p { float: left;  background: $wht1; border-radius: 4px; padding: 5px; text-align: center; color:$blk2; font-size:16px; line-height:22px; @include Arial();  }
+                }
+            }
+            &.tblleft { 
+                width: 40%; padding-right: 1%;
+                ul { 
+                    li { 
+                        h4 { width: 49%; }
+                        p {  width: 49%; }
+                    }
+                }
+            }
+            &.tblright { 
+            width: 60%;
+                ul { 
+                    li { 
+                        h4 { width: 24%; }
+                        p {  width: 24%; }
+                    }
+                }
+             } 
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+
+    .cngcompared { 
+        padding:3rem 0 0 0; 
+        h2 { 
+            margin-bottom: 1rem;
+            span {  font-size:22px;  }
+        }
+    
+        .cngcomparetable { 
+            section { 
+                ul { 
+                    li { 
+                        h3 { 
+                             font-size:18px; 
+                            &.autoignitionWeb { opacity:0; }
+                            &.autoignitionMobile { opacity:1; }
+                        }
+                        h4 { font-size:16px; }
+                        p { font-size:14px;  }
+                    }
+                }
+                &.tblleft { 
+                    width:40%; 
+                    h4 { 
+                        &:first-child { width: 65%; }
+                        &:last-child { width: 33%; }
+                    }
+                    p { 
+                        &:first-child { width: 65%; }
+                        &:last-child { width: 33%; }
+                    }
+                }
+                &.tblright { 
+                    width: 60%; overflow: hidden; overflow-x: scroll;
+                    ul { width:500px;}
+                } 
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:767px) 
+{
+    .cngcompared { 
+        .cngcomparetable { 
+            section { 
+                &.tblleft { 
+                    width:46%; 
+                }
+                &.tblright { 
+                    width: 54%;
+                } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:599px) 
+{
+    .cngcompared { 
+        .cngcomparetable { 
+            section { 
+                &.tblleft { 
+                    width:55%; 
+                }
+                &.tblright { 
+                    width: 45%;
+                } 
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    .cngcompared { 
+        .cngcomparetable { 
+            section { 
+                ul { 
+                    li { 
+                        h4 {  padding: 4px; }
+                        p {   padding: 4px; }
+                    }
+                }
+                &.tblleft { 
+                    width:75%; 
+                }
+                &.tblright { 
+                    width: 25%;
+                } 
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:359px) 
+{
+    .cngcompared { 
+        .cngcomparetable { 
+            section { 
+                ul { 
+                    li { 
+                        h4 { font-size:14px; padding: 3px; }
+                        p { font-size:12px; padding: 3px; }
+                    }
+                }
+                &.tblleft { 
+                    width:70%; 
+                }
+                &.tblright { 
+                    width: 30%;
+                } 
+            }
+        }
+    }
+}
+
+

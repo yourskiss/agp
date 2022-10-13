@@ -1,0 +1,756 @@
+/* ######################## healthsafetymain ######################## */
+.healthsafetymain { 
+    width: 100%; float: left; padding: 2rem 0 4rem 0; background-color:$wht1;
+        
+    .healthsafetyAbout {
+        width: 100%; float: left;  
+        article { 
+            width: 50%; float: left;
+            p { width:100%; float:left; text-align: left; color: $blk2; @include Arial(); font-size: 16px; line-height: 26px; }
+        }
+        section { 
+            width: 280px; float: right; padding:1.5rem; background: $ong1;
+            p { width:100%; float:left; text-align: left; color: $wht1; @include aBold(); font-size:20px; line-height:1; }
+            h2 { 
+                width:100%; float:left; text-align: left; color: $wht1; @include aBold(); font-size: 30px; line-height:1; margin: 0.7rem 0 0.9rem 0;            
+                i.fa { margin-right:3px; transform: rotate(29deg); font-size: 90%; }
+                a { 
+                    text-decoration: none; color: $wht1; @include outT();
+                    &:hover { color: $blk2; @include inT(); }
+                }
+            }
+            h3 { 
+                width:100%; float:left; text-align: left; 
+                span { 
+                    display: inline-block; cursor: pointer; border-bottom: solid 1px $wht1; padding-bottom: 3px; color: $wht1; @include aBold(); font-size: 16px; line-height: 1;  @include outT();
+                    &:hover { color: $blk2; border-bottom-color:$blk2; @include inT(); }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* ######################## emergencyWrap ######################## */
+.emergencyWrap { 
+    width: 100%; float: left; padding:4rem 0 4rem 0; background-color:$wht3;
+    .emergencyheading {
+        width: 100%; float: left;  padding:0 0 3rem 0; @include fBS();
+        h2 { 
+            width:50%; float: left; text-align: left;
+            span { display: inline; color: $blk1; @include aBlack(); font-size:26px; letter-spacing: 1.68px; line-height:35px; }
+            img { display: inline; margin-bottom: -2px; max-width: 100%; }
+        }
+        section { 
+            width:430px; float: right; padding:0; @include fBS(); flex-direction: row-reverse;
+            .emergencycontactsort {
+                width: 180px; float: left; text-align: left; 
+                select {  
+                    width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial(); border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/dd_contactus.png') no-repeat; background-position:right 5px center; 
+                    option { 
+                        color: $blu1;      
+                        &:disabled { user-select: none; pointer-events: none; }
+                    }
+                }
+                span { display: none; }
+            }
+            .emergencycontactsearch {
+                width: 220px; float: left; text-align: left; 
+                span { display: none; }
+                input[type='text'] { 
+                    background:transparent url('../Images/search-black.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;   border-bottom: solid 1px $blk7;  outline:none; padding:0.5rem 0;  font-size: 16px; line-height: 1; color: $blu1; @include Arial();
+                    &::placeholder { color: $blk7; opacity: 1; }      
+                    &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                    &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                } 
+            }
+        }
+    }
+
+
+    .emergencyAlphabetical {
+        width: 100%; float: left; margin-bottom: 2rem; text-align: center;
+        ul {
+            width: auto; margin:0 auto; float: none; display: inline-block; background:$wht8; 
+            li {
+                list-style: none; display: inline-block; padding:10px 0.3rem 5px 0.3rem; margin:0 0.5rem; text-decoration: none; @include outT();  border-bottom: solid 4px $wht8; color: $blk1; font-size: 18px; line-height: 24px; text-transform: uppercase; cursor: pointer;
+                &:hover { color: $ong1; @include inT(); }
+                &.active { border-bottom-color: $ong1; color: $ong1; user-select: none; pointer-events: none; @include aMedium(); }
+            }
+            &.disabled { user-select: none; pointer-events: none;  }
+        }
+    }
+    .emergencycontactlist {
+        width: 100%; float: left; height:395px; position: relative;
+        .emergencynoresult { 
+            display: none;  width: 100%; float: left; padding:2rem; text-align: center; background:none;  border-radius:0px;
+                section { 
+                    width: 100%; height: 100%; float: left; @include fCC();
+                    div { 
+                        aside { 
+                            width: 100%; float: left; text-align: center;
+                            img { width: 100%; max-width: 100px; display: inline-block; margin:0 auto; }
+                        }
+                        p { width: 100%; float: left; margin-top:1.5rem; text-align: center;  color: $blu1; font-size: 18px; line-height: 1.3; @include aBold(); }
+                    }                    
+                } 
+        }
+        .emergencyloader { 
+            display: none; z-index:1; position: absolute; left:0; top: 0; z-index:99; width: 100%;  height: 100%; margin: 0; padding: 0;  background-color:$wht3; text-align: center; 
+            i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
+        }
+        ul { 
+            width: 100%; float: left; @include fCS(); align-items: stretch; flex-wrap: wrap;
+            li { 
+                list-style: none; display: none; position: relative; width:24%; margin:10px 0.5%; padding:3rem 1.5rem 1.5rem 1.5rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px;
+                h2 { 
+                    position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  padding-top:12px; text-align: left; color: $blk1; font-size: 20px; line-height: 26px; @include aBold();  
+                    &:after { content: ''; position:absolute; left:0; top: -10px; height: 14px; width:14px; background: url('../images/icon3.png') no-repeat left top; background-size: 100% 100%; }
+                }
+                p { 
+                    width: 100%; margin-top: 0.1rem; float: left; text-align: left; @include fSC(); color: $blk2; font-size: 16px; line-height:28px; @include Arial(); 
+                    i.fa { padding: 0 5px 0 0; transform: rotate(22deg); }
+                    a { 
+                        text-decoration: none; color:$blk2;  @include outT();
+                        &:hover { color:$ong1; @include inT();}
+                    }
+                 }  
+            }
+        }
+    }      
+
+}
+
+
+
+
+
+/* ######################## hsfaqswrap ######################## */
+.hsfaqswrap { 
+    width: 100%; float: left; padding:4rem 0 0 0; background-color:$wht1;
+    .healthsafetyfaqs {
+        position: relative; width: 100%; float: left; margin:0;
+        div { 
+            width: 47%; float: left; padding:3rem 10% 3rem 3rem; background: $blu1;
+            h2 { 
+                width:100%; float: left; text-align: left; margin-bottom:1.5rem;
+                span { display: inline; color: $wht1; @include aBlack(); font-size:26px; letter-spacing: 1.68px; line-height:35px; }
+                img { display: inline; max-width: 100%; }
+            }
+            aside { 
+                position: relative;  background: $blu1; width: 100%; float: left; padding:1.2rem 2.5rem 1.2rem 1rem; border-bottom: solid 1px $wht1; text-align: left; color: $wht1; font-size:16px; line-height:21px; @include aBold(); cursor: pointer;
+                &:after { content: "\f105"; position:absolute; right:1rem; top:50%; transform: translateY(-50%); @include FA(); font-size: 170%; }
+                &.active {   background-color:$wht1; color: $blu1; user-select: none; pointer-events: none; }
+            }
+            section { 
+                display: none; position: absolute; top: 50%; transform: translateY(-50%); right:0; width:58%; max-height:100%; float: left; padding:2rem 3rem; background:$wht1; box-shadow: 0px 6px 12px #00000014;
+                p { 
+                    width:100%; float:left; text-align: left;   color: $blk2;  font-size: 16px; line-height:26px; @include Arial();
+                    b { @include aBold();  color: $blk1;  }
+                }
+                ul { 
+                    width:100%; float:left; margin:0 0 1rem 0;
+                    li { 
+                       list-style: decimal; margin: 0 0 0 20px;  color: $blk2;  font-size: 14px; line-height:24px; @include Arial();
+                    }
+                }
+            }
+            h3 { 
+                width:100%; float:left; text-align: left; padding:2rem 0 0 1rem;
+                a { 
+                    display: inline-block; text-decoration: none; color: $wht1; @include aBold(); font-size: 16px; line-height:26px;  @include outT();
+                    span { border-bottom: solid 1px $blu1;   @include outT(); }
+                    i.fa { padding: 0 5px; @include outT(); }
+                    &:hover {
+                        color: $wht1; @include inT();
+                        span { border-bottom-color:$wht1; @include inT(); }
+                        i.fa { padding: 0 0 0 10px;  @include inT(); }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* ######################## faqsWrap ######################## */
+.healthsafetyWrap { 
+    width: 100%; float: left; padding:4rem 0 4rem 0; background-color:$wht1;
+        
+    .hsdoanddontTabs{
+        width: 100%; float: left;  padding:0;  @include fCS(); flex-wrap: wrap; 
+        h2 { 
+            width:100%; float: left; text-align: left; margin-bottom:1rem;
+            span { display: inline; color: $blk1; @include aBlack(); font-size:26px; letter-spacing: 1.68px; line-height:48px; }
+            img { display: inline; max-width: 100%; margin-bottom: -2px; }
+        }
+        ul {
+            width: auto; padding: 0; @include fCC();  border-bottom: solid 1px $blk9;
+            &.disabled { user-select: none; pointer-events: none; }
+            li {
+                position: relative; list-style: none; cursor: pointer; padding: 0 2rem 5px 2rem; margin:0 2rem;  color: $blk9; font-size: 20px; line-height:48px; @include Arial(); @include outT(); cursor: pointer;
+                &:after { content: ''; position: absolute; bottom:0px; left:0; width: 100%; height:4px; background:transparent; line-height: 0; font-size: 1px; }
+                &.active {
+                    border-bottom-color:$blu1; color:$blu1;  @include aBold(); @include inT(); user-select: none; pointer-events: none;
+                    &:after { background: $blu1; }
+                }
+                &:first-child { margin-left: 0; }
+                &:last-child { margin-right: 0; }
+            }
+        }
+    }
+
+    .hsdoanddontBody {
+        width: 100%; float: left; padding:3rem 0 1rem 0;  
+        .hsdoanddontheader { display: none; }
+        .hsdoanddontsection { 
+            display: none; width: 100%; float: left;  position: relative; overflow: hidden; min-height: 100px;
+            .hsfaqloader { 
+                display: none; z-index:1; position: absolute; left:0; top: 0; z-index:99; width: 100%;  height: 100%; margin: 0; padding: 0;  background-color:transparent; text-align: center; 
+                i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
+            }
+            .hsdoanddontContainer {
+                width: 100%; float: left; @include fBS(); align-items: stretch;
+                
+                div {
+                    width: 33%; float: left; background: $wht3; padding: 1rem 1.5rem; border-radius:8px;
+                    &:nth-child(2) { background: none; padding: 0; border-radius:0; width: 28%; float: left; @include fCC();  flex-wrap: wrap; height: auto; }
+                    ul {
+                        width: 100%; float: left;
+                        li {
+                            list-style: disc; margin:0 0 1.2rem 1rem; text-align: left; color:$blk2; @include Arial(); font-size: 16px; line-height: 24px; 
+                            &:first-child { display: none;}
+                        }
+                    }
+                    section {
+                        width: 100%;  float: left;
+                        img { width: 100%;  float: left; }
+                        p { 
+                            margin-top: 1rem; width: 100%; float: left; 
+                            span { width: 50%; float: left; text-align: center; color: $blk1; @include aBold(); font-size:18px; line-height: 28px;  }
+                        }
+                    } 
+                }
+            } 
+        }
+        .hssafetyinstructions {
+            width: 100%; float: left; padding:3rem 9px 0 9px;
+            h2 { width:100%; float:left; padding-bottom:1rem; text-align: center; color: $blk1; @include aBold(); font-size: 16px; line-height: 6px; }
+            section {
+                width:100%; float:left; padding:1.5rem 1rem; box-shadow:0px 6px 12px #00000014;
+                ul {
+                    width:100%; float:left; @include fBS();
+                    li { 
+                        list-style: none; width:13%; 
+                        aside { 
+                            width: 100%; float:left; text-align: center;
+                            img { max-width:50px; }
+                        }
+                        p { 
+                           margin-top: 1rem; width: 100%; float:left; text-align: center; color:$blk2; @include Arial(); font-size: 14px; line-height: 22px; 
+                        }
+                    }
+                }
+                &.onlypng { 
+                    ul {
+                        li { 
+                            width: 23%;
+                        }
+                    }
+                }
+            }
+            h3 { 
+                width:100%; float:left; padding-top:1.5rem; text-align: center; color: $blu1; @include aBold(); font-size: 16px; line-height: 26px; 
+                a { 
+                    text-decoration: none; color:$blu1; @include outT(); 
+                   &:hover { text-decoration: underline; color: $ong1; @include inT(); } 
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+/* ######################## additionalguidancewrap ######################## */
+.additionalguidancewrap { 
+    width: 100%; float: left; padding:4rem 0 6rem 0; background-color:$wht3;
+    h2 { 
+        width:100%; float: left; text-align: left; margin-bottom:2rem;
+        span { display: inline; color: $blk1; @include aBlack(); font-size:26px; letter-spacing: 1.68px; line-height:37px; }
+        img { display: inline; max-width: 100%; }
+    }
+    section { 
+        width:100%; float: left; @include fBC();
+        .additionalguidancePoster { width:42%; border: solid 2px $ong1; padding: 5px;  }
+        ul { 
+            width: 50%; @include fSC(); flex-wrap: wrap;
+            li { 
+                list-style: none; width: 50%; margin:1rem 0; @include fSC();
+                img { display: inline; max-width: 100%; margin-right:0.7rem; }
+                a { 
+                    border-bottom: solid 1px $blu1; text-decoration:none; @include outT(); color: $blu1; @include Arial(); font-size: 18px; line-height: 1.2;
+                    &:hover {  @include inT(); color: $ong1; border-bottom-color:$ong1; }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1565px) 
+{
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:1300px) 
+{
+    /* ######################## hsfaqswrap ######################## */
+    .hsfaqswrap { 
+        .healthsafetyfaqs {
+            div { 
+                width: 50%; padding:2rem 8% 2rem 1.5rem; 
+                section { width:54%; padding:1.5rem;  }
+            }
+        }
+    }
+
+
+    /* ######################## hsfaqswrap ######################## */
+    .hsfaqswrap { 
+        .healthsafetyfaqs {
+            margin:3rem 0;
+            div { 
+                width: 100%; padding:1.5rem; 
+                h2 { 
+                    margin-bottom:1rem;
+                    span { font-size:22px; letter-spacing: 1.32px; line-height:36px; }
+                    img { margin-bottom: -2px; }
+                }
+                aside { 
+                    padding:1rem 2.5rem 1rem 0.5rem; font-size:16px; line-height:20px; 
+                    &:after { right: 0.5rem; font-size: 150%; }
+                    &.active { border-bottom-color:$blu1; padding-left: 1rem; }
+                }
+                section { 
+                    position: static; top:0; transform:none; right:0; width:100%; max-height:auto; padding:1rem;  
+                    p { font-size: 16px; line-height:26px;  }
+                }
+                h3 { 
+                     padding:1rem 0 0 0.5rem;
+                    a { font-size: 16px; line-height:20px; }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width:1255px) 
+{
+
+    /* ######################## healthsafetymain ######################## */
+    .healthsafetymain { 
+        .healthsafetyAbout {
+            article { 
+                width: 100%; margin-bottom: 2rem;
+                p { font-size: 16px; line-height: 26px; }
+            }
+            section { 
+                width: 100%; max-width: 265px; float:left; padding:1.5rem;  
+                p { font-size:20px;  }
+                h2 { font-size: 28px; margin: 0.7rem 0 0.6rem 0; }
+                h3 { 
+                    span {font-size: 14px;   }
+                }
+            }
+        }
+    }
+
+
+    /* ######################## emergencyWrap ######################## */
+    .emergencyWrap {
+        .emergencyheading {
+             flex-wrap: wrap;
+            h2 { 
+                width:100%; 
+                span { font-size:22px; letter-spacing: 1.32px; line-height:36px; }
+                img { margin-bottom: -4px; }
+            }
+            section { 
+                width:100%; padding: 1rem 0 0 0;
+                .emergencycontactsort { 
+                    width: 170px;
+                    select {  font-size: 16px;  }
+                }
+                .emergencycontactsearch {
+                    width: 220px;
+                    input[type='text'] {  font-size: 16px;  } 
+                }
+            }
+        }
+        .emergencyAlphabetical {
+            ul {
+                width: 100%; margin:0; padding:5px 10px 0 10px; float: left; 
+                li {padding:5px; margin:2px 5px; font-size: 18px; }
+            }
+        }
+        .emergencycontactlist {
+            width: 100%; float: left; height:360px;  
+            ul { 
+                li { 
+                    width:32.3%; margin:10px 0.5%; padding: 2rem 2rem 1rem 2rem;
+                    h2 { 
+                        padding-top:12px; font-size: 20px; line-height: 28px; 
+                        &:after { top:-4px; height: 12px; width:12px; }
+                    }
+                    p { 
+                        font-size: 16px; line-height:28px; 
+                     }  
+                }
+            }
+        } 
+    }
+
+
+
+
+
+
+    /* ######################## faqsWrap ######################## */
+    .healthsafetyWrap { 
+         
+        .hsdoanddontTabs{
+            h2 {
+                span {font-size:24px; line-height:30px; } 
+            }
+            ul {
+                li { padding: 0 1rem 5px 1rem; margin:0; font-size: 20px; line-height: 44px;  }
+            }
+        }
+    
+        .hsdoanddontBody {
+            width: 100%; float: left; padding:3rem 0 1rem 0;  
+            .hsdoanddontsection { 
+                .hsdoanddontContainer {
+                    div {
+                        ul {
+                            li {
+                                 margin:0 0 1rem 1rem;  font-size: 16px; line-height: 26px; 
+                            }
+                        }
+                        section {
+                            p { 
+                                span { font-size:18px; line-height: 28px;  }
+                            }
+                        } 
+                    }
+                } 
+            }
+            .hssafetyinstructions {
+                h2 { font-size: 16px; line-height: 26px; }
+                section {
+                    padding:1.5rem 1rem; overflow: hidden; overflow-x: scroll;
+                    ul {
+                        width:160%; float:left; @include fBS();
+                        li { 
+                            list-style: none; width:13%; 
+                            aside { 
+                                img { max-width:40px; }
+                            }
+                            p { 
+                                font-size: 14px; line-height: 22px; 
+                            }
+                        }
+                    }
+                    &.onlypng { 
+                        ul {
+                            width: 100%;
+                        }
+                    }
+                }
+                h3 { font-size: 16px; line-height: 26px; }
+            }
+        }
+    }
+
+
+    /* ######################## additionalguidancewrap ######################## */
+    .additionalguidancewrap { 
+        h2 { 
+             margin-bottom:1rem;
+            span {  font-size:22px; letter-spacing: 1.32px; line-height:36px; }
+            img { margin-bottom: -3px; }
+        }
+        section { 
+            .additionalguidancePoster { width:50%; }
+            ul { 
+                width: 45%; 
+                li { 
+                      width: 100%; margin:0.7rem 0; 
+                    img { margin-right:0.6rem; }
+                    a { font-size: 16px; }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    /* ######################## healthsafetymain ######################## */
+    .healthsafetymain { 
+        .healthsafetyAbout {
+            section { 
+                h2 { margin: 0.7rem 0 0 0; }
+                h3 {  display: none;   }
+            }
+        }
+    }
+
+    /* ######################## emergencyWrap ######################## */
+    .emergencyWrap {
+        .emergencycontactlist {
+            height:360px;  
+            ul { 
+                li { 
+                    width:46%; margin:10px 2%; padding: 2rem 2rem 1rem 2rem;
+                }
+            }
+        } 
+    }
+
+
+
+
+    /* ######################## faqsWrap ######################## */
+    .healthsafetyWrap { 
+        padding:3rem 0;
+    }
+
+
+    /* ######################## hsfaqswrap ######################## */
+    .hsfaqswrap { 
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:767px) 
+{
+
+    /* ######################## emergencyWrap ######################## */
+    .emergencyWrap {
+        .emergencyheading {padding: 0 0 1.5rem 0; }
+        .emergencyAlphabetical { margin-bottom: 1rem; }
+    }
+    /* ######################## faqsWrap ######################## */
+    .healthsafetyWrap { 
+        padding:3rem 0 2rem 0;
+
+        
+ 
+        .hsdoanddontTabs{
+            ul { display: none;  }
+        }
+
+        .hsdoanddontBody {
+            padding:0;  
+            .hsdoanddontheader { 
+                display: block; position: relative; width: 100%;  float: left; margin:0; list-style: none; cursor: pointer; padding:0.5rem 3rem 0.5rem 0; border-bottom: solid 1px $blk7;  color: $blk9; font-size: 20px; line-height: 45px; @include Arial(); @include outT(); cursor: pointer;
+                &:after { content: "\f107"; position: absolute; top:50%; right:0.6rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 28px; @include outT(); }
+                &.active {
+                     color:$blu1; border-bottom: none; @include aBold(); @include inT(); 
+                    &:after { content: "\f106"; color:$blu1; @include inT(); }
+                }
+                &.disabled { user-select: none; pointer-events: none; }
+            }
+            .hsdoanddontsection { 
+                margin-bottom: 2rem; padding-top:0.5rem;
+                .hsdoanddontContainer {
+                    padding:0; flex-direction: column;
+                    div {
+                        width: 100%;  padding: 0; border-radius: 0; background: none;
+                        &:nth-child(2) { display: none;}
+                        ul {
+                            li {
+                                margin:0 0 1rem 1rem; font-size: 16px; line-height: 26px; 
+                                &:first-child { display:block; list-style: none; margin-left: 0; }
+                                h2 { @include aBold(); font-size: 18px; line-height: 28px; margin-top: 0.5rem; }
+                            }
+                        }
+                    }
+                } 
+            }
+            .hssafetyinstructions {
+                section {
+                    ul {
+                        width:220%; 
+                    }
+                    &.onlypng { 
+                        ul {
+                            width: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+    /* ######################## additionalguidancewrap ######################## */
+    .additionalguidancewrap { 
+        padding: 2rem 0 3rem 0;
+        section { 
+            flex-wrap: wrap;
+            .additionalguidancePoster { width:100%; padding: 3px; }
+            ul { 
+                width: 100%; margin-top: 1rem;
+                li { width: 100%; margin:0.7rem 0; }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:599px) 
+{
+
+    
+    /* ######################## hsfaqswrap ######################## */
+    .hsfaqswrap {
+        .healthsafetyfaqs {
+            div { padding: 1rem; }
+        }
+    }
+
+    /* ######################## emergencyWrap ######################## */
+    .emergencyWrap {
+        .emergencycontactlist {
+            height:520px;  
+            ul { 
+                li { 
+                    width:97%; margin:10px 1.5%; padding: 2rem 2rem 1rem 2rem;
+                }
+            }
+        } 
+    }
+
+
+    /* ######################## faqsWrap ######################## */
+    .healthsafetyWrap { 
+
+        .hsdoanddontBody {
+            .hssafetyinstructions {
+                section {
+                    ul {
+                        width:270%; 
+                    }
+                    &.onlypng { 
+                        ul {
+                            width: 190%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+ 
+
+@media only screen and (max-width:479px) 
+{
+
+    /* ######################## emergencyWrap ######################## */
+    .emergencyWrap {
+        .emergencyheading {
+            section { 
+                position: relative;  overflow: hidden;  width: 96%; margin: 0.5rem 2% 0 2%; padding: 0;
+                .emergencycontactsort {
+                    width: 100%; @include fBC();
+                    select { width: 65%;}
+                    span { 
+                        display: block; font-size: 24px;color:$blu1; cursor: pointer; @include outT();
+                       &:hover { color: $blk1; @include inT(); }
+                   }    
+                }
+                .emergencycontactsearch {
+                    width: 100%;  position: absolute; top: 0; left: 100%; border-bottom: solid 1px #969696; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht3; 
+                    input[type='text'] { border-bottom: none; }
+                    span { 
+                        display:block; margin-right: 1rem; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
+                        &:hover { color: $blk1; @include inT(); }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* ######################## faqsWrap ######################## */
+    .healthsafetyWrap { 
+        padding:2rem 0 3rem 0;
+        .hsdoanddontTabs {padding-top: 0; }
+        .hsdoanddontBody {
+            .hssafetyinstructions {
+                section {
+                    ul {
+                        width:350%; 
+                    }
+                    &.onlypng { 
+                        ul {
+                            width: 220%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    /* ######################## additionalguidancewrap ######################## */
+    .additionalguidancewrap { 
+        padding: 2rem 0 5rem 0;
+    }
+
+}

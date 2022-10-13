@@ -1,0 +1,332 @@
+.rfc_oem_wrap { 
+    width: 100%; float: left; padding: 2rem 0 5rem 0; background-color:$wht1;
+}
+
+
+/* ######################## rfc_oem_about ######################## */
+.rfc_oem_about { 
+    width: 100%;  float: left; padding:0 0 2rem 0;
+    h2 { 
+        width: 100%; float: left; text-align: left; 
+        span { display: inline-block; color:$blk1; font-size:26px; letter-spacing:0; line-height: 37px; @include aBlack();  }
+        img { display: inline-block;  margin:0 0 -3px 0; max-width: 100%;}
+    }
+    p {  width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color:$blk6; @include Arial(); font-size:16px; line-height: 26px;  }
+
+}
+
+
+
+ /* ######################## rfc_oem_tabcontainer ######################## */
+.rfc_oem_tabcontainer { 
+        width: 100%; float: left; margin:0 0 5rem 0; position: relative; 
+        .rfc_oem_tabs { 
+            width: 50%; float: left; padding:3rem 10% 3rem 3rem; background: $blu1;
+            aside { 
+                position: relative;  background: $blu1; width: 100%; float: left; padding:1.2rem 2.5rem 1.2rem 1rem; border-bottom: solid 1px $wht1; text-align: left; color: $wht1; font-size:16px; line-height:21px; @include aBold(); cursor: pointer;
+                &:after { content: "\f105"; position:absolute; right:1rem; top:50%; transform: translateY(-50%); @include FA(); font-size: 170%; }
+                &.active {   background-color:$wht1; color: $blu1; user-select: none; pointer-events: none; }
+            }
+            section { 
+                display: none; position: absolute; top: 50%; transform: translateY(-50%); right:0; width:55%; max-height:100%; float: left; padding:3rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; text-align: center;
+                dl { 
+                    width: 100%; float: left; @include fCC(); flex-wrap: wrap;
+                    dt { 
+                        width: 30.3%; margin: 0.5rem 1.5%; text-align: center;
+                        img { width: 100%; max-width:160px; display: inline-block; border: 0; }
+                    }
+                }
+                h4 { 
+                    width: 100%; float: left; text-align: left;   color:$blk1; font-size:20px; letter-spacing:0; line-height: 30px; @include aBold();
+                }
+                ul { 
+                    width: 100%; margin:0.5rem 0 0 0; float: left; 
+                    li { 
+                       list-style: none; width: 100%; margin:0.4rem 0; padding: 0 0 0 20px; background: url('../images/icon2.png') no-repeat 0px 5px; float: left; text-align: left; color:$blk6; @include Arial(); font-size:16px; line-height:1.2;
+                    }
+                }   
+            }
+            &.paddingless { 
+                section { padding: 2rem; } 
+            }
+        }
+}
+
+
+/* ######################## rfc_oem_info ######################## */
+.rfc_oem_info { 
+    position: relative; width: 100%; float: left;  padding:0 0 1rem 0; 
+    .rfc_oem_info_right {
+        width:60%; float: left;  
+        img { width: 100%;}
+    }
+    .rfc_oem_info_left { 
+        width: 50%;  float: left;  background:$wht1; padding: 3rem 2rem; position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+        box-shadow: 0px 6px 12px #00000014;
+        h2 { 
+            width: 100%; float: left; text-align: left; 
+            span { display: inline; color:$blk1; font-size:26px; letter-spacing:0; line-height: 37px; @include aBlack(); text-transform: uppercase;  }
+            img { display: inline;  margin:0 0 -3px 0; max-width: 100%;}
+        }
+        p {  width: 100%; margin:0.7rem 0 0 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px;  }
+        h3 { 
+            width: 100%; margin:1rem 0 1.5rem 0; float: left; text-align: left;  
+            a { width:auto; float:left; padding:12px 25px; border:none; outline: 0; background: $ong1; text-decoration: none; text-align: left; color:$wht1; @include aMedium(); font-size:14px; line-height: 18px; text-transform: uppercase;  cursor: pointer; @include outT();
+                &:hover { background: $ong2; box-shadow: 4px 8px 12px #00000029; color:$wht1; @include inT(); }
+            }
+        }
+        aside { 
+            width: 100%;  float: left; text-align: left;  
+            a { 
+                display: inline-block; text-decoration: none; color: $blu1; font-size:14px; line-height:1;  @include aBold();  @include fSC();
+                span {  border-bottom: solid 2px $wht1; @include outT(); }
+                i.fa {margin-top: -3px; margin-left: 5px;  @include outT(); }
+                &:hover {
+                    span { border-bottom-color:$blu1;  @include inT(); }
+                    i.fa { margin-left: 10px;  @include inT(); }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1565px) 
+{
+    /* ######################## rfc_oem_about ######################## */
+    .rfc_oem_about { 
+        padding:0 0 1.5rem 0;
+        h2 { 
+            span { font-size:24px; }
+        }
+        p {  font-size:16px; line-height: 26px;  }
+    }
+
+
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+            .rfc_oem_tabs { 
+                padding:2rem 8% 2rem 2rem; 
+                aside { padding:1rem 2.2rem 1rem 1rem; font-size:16px; }
+                section { 
+                    padding:2rem;  
+                    dl { 
+                        dt { 
+                             margin: 0.5rem 1%; 
+                            img {  max-width:140px;  }
+                        }
+                    }
+                    h4 { 
+                        font-size:20px; line-height: 26px;
+                    }
+                    ul { 
+                        li { 
+                         margin:0.3rem 0; font-size:16px; 
+                        }
+                    }   
+                }
+                &.paddingless { 
+                    section { padding: 2rem; } 
+                }
+            }
+    }
+
+
+    /* ######################## rfc_oem_info ######################## */
+    .rfc_oem_info { 
+        .rfc_oem_info_left { 
+            padding:2rem;
+            h2 {
+                span { font-size: 24px;}
+            }
+            p { font-size:16px;  }
+        }
+    }
+
+}
+@media only screen and (max-width:1300px) 
+{
+    .rfc_oem_wrap { 
+        padding: 2rem 0 3rem 0; 
+    }
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+        margin:0 0 4rem 0;
+        .rfc_oem_tabs { 
+             padding:2rem 8% 2rem 2rem;  
+            section { 
+                width:54%; padding:2rem;  
+                h4 { font-size:20px; }
+                ul { 
+                    li {  font-size:16px;  }
+                }   
+            }
+            &.paddingless { 
+                section { padding:1.5rem; } 
+            }
+        }
+    }
+
+
+    /* ######################## rfc_oem_info ######################## */
+    .rfc_oem_info { 
+        .rfc_oem_info_left { 
+             padding:2rem 1.7rem; 
+            p { font-size:16px; line-height: 26px;  }
+        }
+    }
+
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+        .rfc_oem_tabs { 
+            section { 
+                dl { 
+                    dt { 
+                        img {  max-width:140px;  }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:1255px) 
+{
+    /* ######################## rfc_oem_about ######################## */
+    .rfc_oem_about { 
+        padding:0 0 1.5rem 0;
+        h2 { 
+            span { font-size:22px; letter-spacing: 1.32px; line-height:32px; }
+            img { margin: 0 0 -2px 0; } 
+        }
+        p {  font-size:16px; line-height: 26px;  }
+    }
+
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+            margin:0 0 3rem 0;
+            .rfc_oem_tabs { 
+                width: 100%; padding:1.5rem 1.5rem 2rem 1.5rem; 
+                aside { 
+                    padding:1rem 2.5rem 1rem 0.5rem; font-size:16px; line-height:20px; 
+                    &:after { right: 0.5rem; font-size: 150%; }
+                    &.active { border-bottom-color:$blu1; padding-left: 1rem; }
+                }
+                section { 
+                    position: static; top:0; transform:none; right:0; width:100%; max-height:auto; padding:1rem;  
+                    h4 {display: none; }
+                    ul { 
+                        margin: 0;
+                        li {  font-size:16px;  }
+                    } 
+                }
+                &.paddingless { 
+                    section { padding:1rem;  } 
+                }
+            }
+    }
+
+
+    /* ######################## rfc_oem_info ######################## */
+    .rfc_oem_info { 
+        .rfc_oem_info_right {
+            width:60%; float: left;  
+            img { width: 100%;}
+        }
+        .rfc_oem_info_left { 
+            padding:1.5rem;  
+            h2 {  
+                span { font-size:22px; line-height: 36px; }
+                img { margin:0 0 -2px 0; }
+            }
+            p { margin: 0.3rem 0 0 0; font-size:16px; line-height: 26px;  }
+            h3 { 
+                margin: 0.5rem 0 1rem 0;
+                a { padding:10px 20px; }
+            }
+            aside { 
+                a { font-size:16px; }
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+ 
+    
+    
+
+
+    /* ######################## rfc_oem_info ######################## */
+    .rfc_oem_info { 
+        .rfc_oem_info_right { width:100%;  }
+        .rfc_oem_info_left { position:static; left: 0; top: 0; transform: none; padding:2rem; width: 80%; margin: -10% 10% 0 10%; }
+    }
+}
+
+
+@media only screen and (max-width:599px) 
+{
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer {
+            .rfc_oem_tabs { padding: 1rem; }
+    }
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+        .rfc_oem_tabs { 
+            section { 
+                dl { 
+                    dt { 
+                        width: 44%;
+                        img {  max-width:160px;  }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width:479px) 
+{
+    
+
+    /* ######################## rfc_oem_info ######################## */
+    .rfc_oem_info { 
+        .rfc_oem_info_left { padding:1.5rem; width:90%; margin: -15% 5% 0 5%; }
+    }
+
+
+    /* ######################## rfc_oem_tabcontainer ######################## */
+    .rfc_oem_tabcontainer { 
+        .rfc_oem_tabs { 
+            section { 
+                dl { 
+                    dt { 
+                        width: 100%;
+                        img {  max-width:150px;  }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

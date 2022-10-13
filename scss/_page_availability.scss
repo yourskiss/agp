@@ -1,0 +1,435 @@
+.pngavailabilityWrap { 
+    width: 100%; float: left; background: $wht1;
+    .wrapper {  width: 100%; max-width: 100%; padding-left:7%; @include fSS(); align-items: stretch; }
+    .pngavailability {
+        width: 65%; float: left;  padding:2rem 2.5rem 0 0; background-color: #fff;    
+
+        .pnglocationHeading { 
+            width: 100%; float: left; @include fBC(); padding:0 1%; margin-bottom: 2rem;
+            h2 {
+                width: auto; float: left; text-align: left; color: $blk1; font-size:24px; line-height: 1; @include aBold();
+                span { @include Arial(); font-size: 14px; }
+            }
+            aside {
+                width: 200px; float: right; text-align: right; border-bottom: solid 1px $blk7; 
+                span { display: none; }
+                input[type='text'] { 
+                    background:transparent url('../Images/search2.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none;  outline:none; padding:0.5rem 0.5rem;  font-size: 16px; line-height: 1; color: $blk7; @include Arial();
+                    &::placeholder { color: $blk7; opacity: 1; }      
+                    &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                    &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                } 
+            }
+            p { display:none;}
+        }
+        .pnglocationfilter { 
+            width: 100%; float: left; padding:0 1%; margin-bottom: 2rem;
+            h2 { width: 100%; margin-bottom:1rem; float: left; text-align: left; color: $blk1; font-size:16px; line-height:26px; @include aBold(); }
+            ul { 
+                width: 100%; float: left; @include fSC(); 
+                li { 
+                    list-style: none; width: 22%; margin: 0 2.5% 0 0;
+                    &:nth-child(4) { width: auto;   }
+                    &:nth-child(5) { width:auto;  margin-right: 0; }
+                    .erromsg { display: none; width: 100%; float: left; margin-top: 5px; font-size: 12px; color:$ong1; @include Arial(); text-align: left; }
+                    a { 
+                        text-decoration: none; font-size: 22px; color: $blk1;
+                        i.fa.fa-refresh { line-height: 1; font-weight: 400; }
+                        &:hover { @include inT();  color: $ong1;}
+                    }
+                    input[type='text'] {  
+                        width: 100%; float: left; padding:0.5rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px; line-height: 1; color:$blk7; @include Arial();
+                        &::placeholder { color: $blk7; opacity: 1; }      
+                        &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                        &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+                    }
+                    select {  
+                        width: 100%; float: left; padding:0.4rem 0; background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial();  border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/dd_black.png') no-repeat; background-position:right 5px center; 
+                        option { 
+                            color: $blk1;      
+                            &:disabled { user-select: none; pointer-events: none; }
+                        }
+                    }
+                    input[type='submit'], input[type='button'] { 
+                        display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                        &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                    }
+                }
+            }
+        }
+        .pnglocationlist {
+            width: 100%; float: left; height: 660px;  
+            .pnglocationscrollContainer, .pnglocationscroll { overflow: visible; }
+            .pnglocationnoresult { 
+                display: none;  width: 100%; height: 100%; float: left; padding:2rem; text-align: center; background:$wht1; box-shadow: 0px 6px 12px #00000029; border-radius:0px;
+                section { 
+                    width: 100%; height: 100%; float: left; @include fCC(); 
+                    div { 
+                        aside { 
+                            width: 100%; float: left; text-align: center;
+                            img { width: 100%; max-width: 100px; display: inline-block; margin:0 auto; }
+                        }
+                        p { width: 100%; float: left; margin-top:1.5rem; text-align: center;  color: $blu1; font-size: 18px; line-height: 1.3; @include aBold(); }
+                    }                    
+                }
+            }
+            ul { 
+                width: 100%; float: left; @include fSS(); flex-wrap: wrap; align-items: stretch;
+                li { 
+                    list-style: none; width:48%; margin:10px 1%; padding:1.5rem 1.5rem 1.5rem  2rem; background:$wht1; box-shadow: 0px 6px 12px #00000014; border-radius: 0px 0px 8px 8px;
+                    h2 { 
+                        position: relative; width: 100%; float: left;  margin-bottom: 0.3rem;  text-align: left; color: $blk1; font-size: 16px; line-height: 26px; @include aBold();  
+                        &:after { content: ''; position:absolute; left: -15px; top: 7px; height: 12px; width: 8px; background: url('../images/icon2.png') no-repeat; background-position: left 0px top 0px; }
+                    }
+                    p { width: 100%; float: left; text-align: left;  color: $blk2; font-size: 14px; line-height: 24px; @include Arial();  }
+                    h3 { 
+                        width: 100%; float: left; text-align: left;  font-size: 14px; line-height: 24px; @include Arial(); 
+                        &::before { content: "\f017"; @include FA(); padding-right: 5px; }
+                        &.png_comingsoon {  color:#002293; }
+                        &.png_unavailable { color:#002293; }
+                        &.png_immediateavailability { color:#047704; }
+                        &.png_openforregistration { color:#002293; }
+                    }
+                    h4 { 
+                        width: 100%; float: left; margin-top: 0.3rem; text-align: left; font-size: 16px; line-height: 26px; color:$blu3; @include aBold();  
+                        a { 
+                            text-decoration: none; color:$blu3;  @include outT();
+                            i.fa { padding: 0 5px; @include outT(); }
+                            b { border-bottom:solid 1px transparent; padding-bottom: 1px; @include outT(); }
+                            &:hover { 
+                                color:$blk1; @include inT();
+                                i.fa { padding: 0  0 0 10px; @include inT(); }
+                                b { border-bottom-color:$blk1;  @include inT(); }
+                             }
+                        }
+                    }
+                }
+            }
+        }
+     
+            
+    }
+
+
+    .pnggetconnection {
+        width: 35%; float: left; background-color:$blu1;    
+        .pnggetconnection_desktop { display: block; width: 100%; float: left;  }
+        .pnggetconnection_mobile { display: none; width: 100%; float: left;  }
+        section { 
+            width: 100%; float: left; padding: 2rem;
+            h2 { width: 100%; float: left; margin-bottom:1rem; text-align: left; color: $wht1; font-size: 20px; line-height: 26px; @include aBold();  }
+            .getnewpngconnection_tab { 
+                width:auto; clear: both; float: left; margin-bottom:1.5rem; border-bottom: solid 1px $wht1;
+                span { 
+                  float: left; width: auto;  border-bottom: solid 2px transparent; margin: 0; padding:10px 15px;  text-align: left; color: $wht1; font-size: 16px; line-height: 1.2; @include Arial(); cursor: pointer; text-decoration: none;
+                   &.active { border-bottom-color:$wht1; @include aBold(); user-select: none; pointer-events: none; }
+                }
+            }
+            .getnewpngconnection_head { display: none; }
+            .getnewpngconnection_body { 
+                width: 100%; float: left; display: none;
+                dl { 
+                    width: 46%; float: left; @include fSS(); flex-wrap: wrap; padding:0 5px 0 17px;
+                    dt { 
+                        width: 100%; min-height: 60px; float: left; @include fSS(); border-left: solid 1px #fff;
+                        aside { margin-left: -17px; height:34px; width: 34px; border-radius: 50%; background: $wht1; @include fCC(); @include aBold(); font-size:21px; line-height: 1; color: $ong1; }
+                        p {  
+                            width: 85%; margin:0.1rem 0 0.5rem 1rem; text-align: left;  color: $wht1; font-size: 16px; line-height:1.2; @include Arial(); 
+                            span { display: block; }
+                         }
+                         &:last-child { border-left: none;}
+                    }
+                }
+            }
+            h4 { width: 100%; float: left; margin:2rem 0 0 0; text-align: left;  color: $wht1; font-size: 16px; line-height: 24px; @include aBold(); }
+                ul { 
+                    width: 100%; float: left; padding:0.6rem 0 1rem 0;
+                    li { 
+                       list-style:none; background: transparent url('../images/icon2.png') no-repeat; background-position: top 7px left 0px; padding:0 0 0 18px; margin: 5px 20px 5px 0; width:auto; float: left;  text-align: left;  color: $wht1; font-size: 16px; line-height: 24px; @include Arial(); 
+                    }
+                }
+            h5 { 
+                width: 100%; float: left; text-align: left;  color: $wht1; font-size: 14px; line-height: 22px; @include Arial(); 
+                a { 
+                    display: inline-block; text-decoration:underline; color:$wht1;  @include outT();
+                    &:hover {  color:$ong1;  @include inT(); }
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width:1700px) 
+{
+    .pngavailabilityWrap { 
+        .wrapper { padding-left: 2%; }
+    }
+}
+
+
+@media only screen and (max-width:1565px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            width: 63%;
+            padding:2rem 2rem 0 0;
+            .pnglocationHeading { 
+                h2 {
+                    font-size:22px; 
+                    span { font-size: 12px; }
+                }
+            }
+            .pnglocationfilter { 
+                h2 { font-size:16px; line-height:26px;   }
+                ul { 
+                    li { 
+                        input[type='text'] {   font-size: 16px;   }
+                        select {   font-size: 16px; }
+                    }
+                }
+            }
+            .pnglocationlist {
+               height: 590px;  
+                ul { 
+                    li { 
+                        width:48%; margin:10px 1%; padding:1rem 1rem 1rem  1.5rem;  
+                        h2 { 
+                           font-size:16px; line-height: 26px; 
+                            &:after { top: 5px;  }
+                        }
+                        p { font-size: 14px; line-height: 22px;  }
+                        h3 { font-size: 16px; line-height: 18px; margin-top: 0.3rem; }
+                        h4 { font-size: 16px; line-height: 28px; }
+                    }
+                }
+            }
+         
+                
+        }
+
+        .pnggetconnection {  
+            width: 37%;
+            section { 
+                padding:1.5rem;
+                ul { 
+                    li {  margin: 3px 15px 3px 0;   }
+                }
+                
+            }
+        }
+        
+    }
+
+
+
+
+}
+
+
+
+ 
+
+
+@media only screen and (max-width:1300px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            width: 62%;
+            .pnglocationlist {height: 580px;  }
+        }
+        .pnggetconnection {
+            width: 38%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+    .pngavailabilityWrap { 
+
+        .pngavailability {
+            width: 60%;
+            .pnglocationlist {height: 480px;  }
+        }
+        .pnggetconnection {
+            width: 40%;
+            section { 
+                 padding:1rem;
+                h2 { margin:1rem 0;  }
+                .getnewpngconnection_tab { 
+                    span { padding:10px 7px; font-size: 15px; }
+                }
+                .getnewpngconnection_body { 
+                    dl { 
+                        width: 46%; padding:0 5px 0 14px;
+                        dt { 
+                            aside { margin-left: -14px; height:28px; width: 28px; font-size:18px;  }
+                            p {  font-size: 14px;  }
+                        }
+                    }
+                }
+                h4 { margin:1.5rem 0 0 0;  }
+                    ul { 
+                        padding:0.5rem 0 1rem 0;
+                        li { background-position: top 4px left 0px; padding:0 0 0 18px; margin: 5px 20px 5px 0; font-size: 14px; line-height:18px;  }
+                    }
+                h5 {  font-size: 12px; line-height: 18px;  }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    .pngavailabilityWrap { 
+       
+        .wrapper { padding:0 2%;  flex-wrap: wrap; }
+
+        .pngavailability {
+            width: 100%;     padding: 1rem 0rem 0 0;
+            .pnglocationlist {
+                height: 425px; 
+                .pnglocationnoresult { 
+                    section { 
+                        div { 
+                            aside { 
+                                img { max-width:70px;  }
+                            }
+                            p { margin-top: 1rem; font-size: 16px; }
+                        }
+                    }
+                }
+             }
+        }
+        .pnggetconnection {
+            width: 98%; margin:3rem 1%;
+            section { 
+                padding: 2rem;
+                .getnewpngconnection_tab { 
+                    span { padding:10px 12px; font-size:16px; }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width:1023px) 
+{
+    .pngavailabilityWrap { 
+       
+        .pngavailability {
+            .pnglocationlist {height: 480px;  }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width:599px) 
+{
+    .pngavailabilityWrap { 
+        .pngavailability {
+            .pnglocationHeading { width: 96%; margin: 0 2% 1rem 2%;  padding:0 0 12px 0; position: relative; overflow: hidden;
+                h2 {
+                   font-size:24px;  
+                    span { font-size: 14px; }
+                }
+                aside {
+                    position: absolute; top: 0; left: 100%; @include fSC(); width: 100%;  padding: 0 0 1px 0; background: $wht1; 
+                    span { 
+                        display:block; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
+                        &:hover { color: $blk1; @include inT(); }
+                    }
+                    input[type='text'] {  padding: 0.5rem 3rem 0.5rem 1rem;} 
+                }
+                p { 
+                     display: block; font-size: 22px;color:$blu1; cursor: pointer; @include outT();
+                    &:hover { color: $blk1; @include inT(); }
+                }
+            }
+
+            .pnglocationfilter { 
+                margin-bottom: 1rem;
+                ul { 
+                    justify-content: space-between;  flex-wrap: wrap;
+                    li { 
+                        list-style: none; width: 46%; margin:5px 0;
+                        &:nth-of-type(3) { width: 55%; }
+                        &:nth-child(4) { width: auto;   }
+                        &:nth-child(5) { width:auto;  margin-right: 0; text-align: right; }
+                    }
+                }
+            }
+            .pnglocationlist {
+                height: 580px;  
+                ul {
+                     li {width: 96%;margin: 10px 2%;padding: 1rem 1.5rem 1rem 2rem;}
+                }
+            }
+         
+                
+        }
+    
+    
+        .pnggetconnection {
+            section { padding: 1rem;}
+        }
+    
+
+        
+    }
+
+
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    .pngavailabilityWrap { 
+        .pnggetconnection {  
+            .pnggetconnection_desktop { display: none; }
+            .pnggetconnection_mobile { display: block; }
+            section { 
+                padding:1.5rem;
+                h2 {margin: 0 0 1rem 0; font-size: 18px; line-height: 28px;}
+                .getnewpngconnection_tab { display: none; }
+                .getnewpngconnection_head { 
+                    display: block; position: relative; width: 100%;  float: left; margin:0 0 1rem 0; list-style: none; cursor: pointer; padding:0.3rem 2rem 0.5rem 0.5rem; border-bottom: solid 1px $wht1;  color: $wht1; font-size: 16px; line-height:34px; @include Arial(); @include outT(); cursor: pointer;
+                    &:after { content: "\f107"; position: absolute; top:50%; right:0.5rem; transform: translateY(-50%); @include FA(); color: $wht1;  font-size: 22px; @include outT(); }
+                    &.active {
+                         @include aBold(); @include inT();  
+                        &:after { content: "\f106"; @include inT(); }
+                    }
+                }
+                .getnewpngconnection_body { 
+                    flex-wrap: wrap;
+                    dl { 
+                        width: 100%;  
+                        dt {
+                            p {width: 90%;margin: 0.2rem 0 0.5rem 0.7rem; }
+                        }
+                        &:first-child { dt { &:last-child { border-left: solid 1px $wht1; } } }  
+                    }
+                }
+                ul {
+                    li {  width: 100%;}
+                }
+                h4 {margin: 1rem 0 0 0;}
+            }
+        }
+    }
+}

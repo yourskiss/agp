@@ -1,0 +1,28 @@
+.breadcrumbs { 
+        width: 100%; float: left; @include fSC(); flex-wrap: wrap; margin-bottom: 2rem;
+        li {
+            list-style: none; color: $blk7; @include Arial(); font-size: 16px; line-height: 34px;
+            a { 
+                text-decoration: none; color: $blk7; @include outT(); 
+                &:hover { color: $ong1; @include inT();  }
+            }
+            i.fa {  margin:0 1rem; font-weight: 400; }
+            span {  color: $blu2; padding-bottom: 1px; border-bottom: solid 1px $blu2; }
+        }
+        &.pngavailabilitybedc { padding-left: 1%; }
+        &.cngstationbedc { padding-left: 1%; margin-bottom: 1rem; }
+}
+
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    .breadcrumbs { 
+        li {
+            font-size: 14px; line-height: 28px;
+            i.fa {  margin:0 0.5rem; }
+        }
+        &.cngstationbedc { margin-bottom: 2rem; }
+    }
+}
