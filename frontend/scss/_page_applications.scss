@@ -1,0 +1,203 @@
+/* ######################## applicationWrap ######################## */
+.applicationWrap { 
+    width: 100%; float: left; padding:2rem 0 6rem 0; background: $wht1;
+
+    .applicationInfo {
+        position: relative; width: 100%; float: left;
+        h2 { 
+            width: 100%; float: left; text-align: left;  
+            span { display: inline; color:$blk1; font-size:26px; letter-spacing:0; line-height: 37px; @include aBlack();  }
+            img {display: inline; margin:0 0 -3px 0; max-width: 100%;}
+        }
+        p { 
+            width: 100%; float: left; margin: 1rem 0 0 0; text-align:left; color:$blk6; font-size:16px; line-height: 26px; @include Arial();  
+        }
+        aside { 
+           position: absolute; top: 0; right: 0;  width:250px; float:right; text-align: left; 
+            input[type='text'] { 
+                background:$wht1 url('../images/frontimage/search-blue.png') no-repeat; background-position:right 8px top 50%; margin:0; width:100%; float: right; border:none; border-bottom: solid 1px $blu1;  outline:none; padding:0.4rem 2rem 0.4rem 0.4rem;  font-size: 16px; line-height: 1; color: $blk2; @include Arial();
+                &::placeholder { color: $blk7; opacity: 1; }      
+                &:-ms-input-placeholder { color: $blk7; opacity: 1; }
+                &::-ms-input-placeholder { color: $blk7; opacity: 1;  }
+            } 
+        }
+    }
+    .application-not-found { 
+        display:none;  width: 100%; height:auto; float: left; padding:2rem; text-align: center; background:$wht1; border-radius:0px;
+        aside { 
+            width: 100%; float: left; text-align: center;
+            img { width: 100%; max-width:110px; display: inline-block; margin:0 auto; }
+        }
+        p { width: 100%; float: left; margin-top:2rem; text-align: center;  color: $blu1; font-size: 18px; line-height: 1.3; @include aBold(); }
+    }
+    .applicationList { 
+        width: 100%; float: left;  margin:1rem 0 0 0; @include fCS();  flex-wrap: wrap;
+        div { 
+            width: 12%; margin: 1rem 0.25%;
+            aside { 
+                width:100%; float: left; text-align: center;
+                img { width: 100%; max-width: 90px; }
+            }
+            p { 
+                width: 100%; float: left; margin:0.3rem 0 0 0; text-align:center; 
+                a {
+                    text-decoration: none; padding-bottom: 1px; border-bottom: solid 1px $blu1; @include outT();  color:$blu1; font-size:16px; line-height: 26px; @include Arial();  
+                    &:hover { @include inT(); border-bottom-color: $ong1; color:$ong1; }
+                }
+            }
+        }
+    }
+
+
+    .applicationDetails {
+        position: relative; width: 100%; float: left;
+        h2 { 
+            width: 100%; float: left; text-align: left;  
+            span { display: inline; color:$blk1; font-size:26px; letter-spacing:0; line-height: 37px; @include aBlack();  }
+            img {display: inline; margin:0 0 -3px 0; max-width: 100%;}
+        }
+        p { 
+            width: 100%; float: left; margin: 1rem 0 1rem 0; text-align:left; color:$blk6; font-size:16px; line-height: 26px; @include Arial();  
+        }
+        aside { 
+            width: 100%; float: left; margin:0 0 0.5rem 0;
+            .aplcn_web { display: block; width: 100%; float: left; }
+            .aplcn_mob { display: none; width: 100%; float: left; }
+        }
+        ul { 
+            width: 100%; float: left; margin: 1rem 0; 
+            li { 
+                list-style: disc; margin:0.4rem 0 0.4rem 1.2rem; text-align:left; color:$blk2; font-size:16px; line-height: 1.4; @include Arial();  
+                strong { @include aBold();  color:$blk1; }
+                span { @include aBold();  color:$blk1; }
+                &:first-child { list-style: none; margin-left:0.1rem; }
+            }
+        }
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:1300px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        .applicationInfo {
+            h2 {  
+                span { font-size:22px; letter-spacing:1.32px; line-height: 36px;   }
+                img { margin:0 0 -2px 0; }
+            }
+            p { font-size:16px; line-height: 26px; }
+            aside { width:220px;   }
+        }
+    
+        .applicationList { 
+            div { 
+                width: 16%; margin: 1rem 0.25%;
+                aside {  
+                    img {  max-width: 70px; }
+                }
+                p { 
+                    a {font-size:14px; line-height: 1.2;}
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1255px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        .applicationDetails {
+            h2 {  
+                span { font-size:22px; line-height: 36px; }
+                img { margin:0 0 -2px 0; }
+            }
+            p {  font-size:16px; line-height: 26px;   }
+            aside {  margin:0 0 0.7rem 0;}
+            ul { 
+                li {  margin:0.4rem 0 0.4rem 1.2rem; font-size:16px;  }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1023px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        padding:2rem 0 3rem 0;
+        .applicationInfo {
+            aside {
+                position: static; width:100%; margin-top: 1rem; 
+                input[type='text'] { padding: 0.6rem 2.5rem 0.6rem 0.6rem; }
+             }
+        }
+        .application-not-found { 
+            padding:1.5rem;
+            aside { 
+                img { max-width:70px;   }
+            }
+            p { margin-top:1rem; font-size:16px; }
+        }
+        .applicationList { 
+            div { 
+                width: 19%; margin: 1rem 0.25%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:767px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        .applicationList { 
+            div { 
+                width: 24%; margin: 1rem 0.25%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:479px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        padding:2rem 0 5rem 0;
+
+        .applicationList { 
+            div { 
+                width: 32.3%; margin: 1rem 0.5%;
+            }
+        }
+
+
+        .applicationDetails {
+            aside { 
+                .aplcn_web { display: none;   }
+                .aplcn_mob { display: block;   }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width:359px) 
+{
+    /* ######################## applicationWrap ######################## */
+    .applicationWrap { 
+        .applicationList { 
+            div { 
+                width: 49%; margin: 1rem 0.5%;
+            }
+        }
+    }
+}

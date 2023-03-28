@@ -1,0 +1,212 @@
+/* ######################## resultsWrap ######################## */
+.resultsWrap { 
+    width: 100%; float: left; padding:4rem 0 6rem 0; background-color:$wht1;
+}
+
+/* searchresults */
+.searchresult { 
+    width: 100%; max-width: 850px; float: left; 
+    h2 { 
+        width: 100%; float: left; margin-bottom: 2rem; text-align: left; font-size: 22px; line-height:1.4; letter-spacing: normal; color: $blu1; @include aBold();
+        span { display: inline-block; font-size: 110%; }
+    }
+    ul {
+        width: 100%; float: left;
+        li { 
+            width: 100%; float: left; padding: 1.5rem 0; list-style: none; border-bottom: solid 1px $blk11;
+            h3 { width: 100%; float: left; text-align: left; font-size: 16px; line-height: 1; color: $blk11; @include Arial();  }
+            p { width: 100%; float: left;  margin:0.5rem 0 0.8rem 0; text-align: left; font-size: 18px; line-height: 1.3; color: $blk1; @include aBold();}
+            h4 { 
+                width: 100%; float: left; @include fBC();
+                a { 
+                    text-decoration: none; color: $blu6; @include outT(); font-size: 16px; line-height: 1.3; @include Arial();
+                    b { border-bottom:solid 1px transparent; @include outT();  }
+                    i.fa { padding:0 5px; @include outT(); }
+                    &:hover { 
+                        color: $blu1; @include inT(); 
+                        b { border-bottom-color:$blu1;  @include inT();  }
+                        i.fa { padding:0 0 0 10px;  @include inT(); }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+
+/* searchnotfound */
+.searchnotfound { 
+    width: 100%; max-width: 550px; float: none; margin:3rem auto; padding:0; display: flow-root; 
+    aside { 
+        width: 100%; float: left;  text-align: center;
+        img { width: 100%; max-width: 150px; display: inline-block; margin: 0 auto; float:none; }
+    }
+    h2 { 
+        width: 100%; float: left; margin:2rem 0 1.5rem 0; text-align: left; font-size: 22px; line-height:1.4; letter-spacing: normal; color: $blu1; @include aBold();
+        span { display: inline-block; font-size: 110%;  }
+    }
+    ul {
+        width: 100%; float: left;
+        li { 
+             margin: 0rem 0 1rem 1.3rem; list-style: disc;  text-align: left;font-size: 18px; line-height: 1.3; color: $blk2; @include Arial();
+            a { 
+                text-decoration: none; color: $blu6; @include outT();  
+                &:hover { color: $blu1; @include inT(); }
+            }
+        }
+    }
+}
+
+ 
+/* commingsoon */
+.commingsoonWrap { 
+    position: relative; width: 100%; height: calc(100vh - 100px); float: left; overflow: hidden;
+    .comingsoongBG { width: 100%; height: auto; min-height: 100%; float: left; object-fit:cover;  }
+    .comingsoonContent {
+        z-index: 2; position: absolute; left:0%; top:15%; width:100%; float: left;  padding: 0 5%;
+            aside { 
+                width: 100%;  float: left; text-align: center;
+                img { width: 100%; max-width: 51px; }
+            }
+            h2 { width: 100%; float: left; margin-top: 1rem; text-align:center;  color:$wht1; font-size:48px; letter-spacing: normal; line-height:1.2;  text-transform: uppercase; @include aBold(); }
+            h3 { width: 100%; float: left;  margin-top:0.5rem; text-align: center; color:$wht1; font-size:20px;  line-height: 1.2; @include aMedium();  }
+            p {
+                width: 100%; float: left; margin-top: 1rem; text-align: center;
+                a { 
+                    display: inline-block; width:auto; text-align: center; text-decoration: none; @include outT(); margin: 0 auto; padding:10px 20px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing:normal; line-height:20px; text-transform: uppercase;
+                    &:hover {  @include inT(); background-color:$ong3;  color: $wht1;  box-shadow: 4px 8px 12px #00000029; }
+                }
+            }
+    }
+    .comingsoonfollowus { 
+        z-index: 2; position:absolute; left:0%; bottom:10%; width: 100%; float: left;
+        p { width: 100%; float: left; padding: 0; margin: 0; text-align: center; color:$wht1; font-size:16px;  line-height: 1; @include Arial();  }
+        ul {
+            width: 100%; float: left;  margin-top:1rem; @include fCC();
+            li { 
+                list-style: none; display: inline-block; margin:0 1rem; 
+                a { 
+                    text-decoration: none;@include outT(); color: $wht1; font-size: 24px; 
+                    &:hover {  @include inT(); color:$ong1; }
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+ 
+
+
+@media only screen and (max-width:1023px) 
+{
+    /* ######################## resultsWrap ######################## */
+    .resultsWrap { padding:3rem 0; }
+
+
+    /* searchresults */
+    .searchresult { 
+        h2 { 
+          margin-bottom: 1rem; font-size: 18px; line-height:26px; 
+        }
+        ul {
+            li { 
+                padding: 1rem 0; 
+                h3 { font-size: 14px;   }
+                p {  margin:0.3rem 0 0.5rem 0;  font-size: 16px;  }
+                h4 { 
+                    width: 100%; float: left; @include fBC();
+                    a { font-size: 16px; }
+                }
+            }
+        }
+    }
+
+    /* searchnotfound */
+    .searchnotfound { 
+         margin:1rem auto;  
+        aside { 
+            img { width: 100px; }
+        }
+        h2 { font-size: 18px;   }
+        ul {
+            li { font-size: 16px;  }
+        }
+    }
+
+    /* commingsoon */
+    .commingsoonWrap { 
+        .comingsoonContent {
+            top:10%;
+                aside { 
+                    img {  max-width: 45px; }
+                }
+                h2 { font-size:30px;  }
+                h3 { font-size:16px;  }
+                p {
+                    a { font-size:14px;}
+                }
+        }
+        .comingsoonfollowus { 
+            bottom:10%;  
+            p { font-size:14px;   }
+            ul {
+                li { 
+                    margin:0 0.5rem; 
+                    a { font-size: 21px; }
+                }
+                
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:479px) 
+{
+    /* ######################## resultsWrap ######################## */
+    .resultsWrap { padding:2rem 0 5rem 0; }
+
+
+    /* commingsoon */
+    .commingsoonWrap { 
+        .comingsoonContent {
+            top:12%;
+        }
+        .comingsoonfollowus { 
+            bottom:12%;  
+        }
+    }
+
+}
+
+
+
+@media only screen and (min-device-width :499px) and (max-device-width :999px) and (orientation : landscape)
+{
+     /* commingsoon */
+     .commingsoonWrap { 
+        .comingsoonContent {
+            top:3%;
+                aside { 
+                    img {  max-width: 30px; }
+                }
+                h2 { margin-top: 0.3rem; font-size:24px;  }
+                h3 { margin-top: 0.2rem; font-size:14px;  }
+                p { 
+                    margin-top: 0.5rem;
+                    a { padding: 7px 14px; }
+                 }
+        }
+        .comingsoonfollowus { 
+            bottom:3%;  
+            ul { margin-top: 0.5rem;}
+        }
+    }
+}

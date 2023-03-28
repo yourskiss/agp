@@ -1,0 +1,106 @@
+/* ######################## serviceothers ######################## */
+.serviceothers {
+    width: 100%; float: left; padding: 5rem 0 6rem 0; background-color:$wht3;
+    .serviceotherslider{
+        width: 100%; float: left; @include fBS();
+        .items { 
+            width: 49.5%; float: left; position: relative;
+            img { width: 100%; float: left; }
+            a.servicebutton {
+                position: absolute; bottom:0; right:0;  text-decoration: none; @include outT(); white-space:nowrap;
+                &:hover { background:$ong5; @include inT(); }
+            }
+        }
+    }
+    h3 { 
+        width: 100%; float: left; margin-top: 2rem; text-align: center; font-size:16px; line-height: 26px;  color:$blu1; @include aBold();
+        b { font-weight: normal; }
+        a { 
+            text-decoration: none;  color:$blu1; @include outT(); 
+            span { border-bottom: solid 1px transparent; @include outT();}
+            i.fa { padding:0 5px;  @include outT(); }
+            &:hover {
+                color:$blk1; @include inT();
+                i.fa { padding:0 0 0 10px; @include inT();}
+                span { border-bottom-color: $blk1;  @include inT();}
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:1255px) 
+{
+
+    /* ######################## serviceothers ######################## */
+    .serviceothers {
+        padding:3rem 0 5rem 0;
+        .serviceotherslider{
+            .items { 
+                a.servicebutton { padding: 8px 15px; font-size: 14px; letter-spacing: 0.35px;  }
+            }
+        }
+        h3 { margin-top: 1rem; font-size:16px; line-height: 24px;   }
+    } 
+
+}
+
+
+
+@media only screen and (max-width:1023px) 
+{
+    /* ######################## serviceothers ######################## */
+    .serviceothers {
+        padding: 3rem 0;
+    }
+}
+
+
+
+@media only screen and (max-width:767px) 
+{
+    /* ######################## serviceothers ######################## */
+    .serviceothers {
+        h3 { margin-top: 1rem; font-size:16px; line-height: 24px;   }
+    } 
+    .serviceotherslider .slick-list { overflow: hidden;  }
+    .serviceotherslider .slick-track { overflow: hidden; }
+    .serviceotherslider .slick-slide { margin: 0 10px 0 0; }
+
+}
+
+
+
+
+@media only screen and (max-width:479px) 
+{
+    /* ######################## serviceothers ######################## */
+    .serviceothers {
+        padding:3rem 0 6rem 0;
+        .serviceotherslider{
+            .items { 
+                h2 { top:15%; font-size:22px; letter-spacing:1.32px; line-height: 30px;  }
+            }
+        }
+        h3 { display: none;  }
+    } 
+
+}
+
+
+
+
+@media only screen and (max-width:359px) 
+{
+    
+    /* ######################## serviceothers ######################## */
+    .serviceothers {
+        .serviceotherslider{
+            .items { 
+                h2 { top:10%; font-size:16px; letter-spacing:0.65px; line-height:24px;  }
+            }
+        }
+    } 
+
+}

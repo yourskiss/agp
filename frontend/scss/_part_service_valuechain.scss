@@ -1,0 +1,75 @@
+/* #################### valuechain  #################### */
+.valuechainBG { 
+    display:none; z-index:8; position: fixed; left: 0; top: 0; height:100%; width: 100%;  background-color:$blk1; background: rgba(0,0,0,0.9); background-color: #00000099; 
+}
+.valuechainPopup { 
+    display: none;  z-index:9; position:fixed; left:50%; top:50%; transform: translate(-50%, -50%); width: 95%; max-width:1640px; height:auto;  background-color:$wht1;  border-radius:0px; margin:0 auto; padding:2rem;  
+    &.cng { max-height: 90%;}
+    &.png { max-height: 90%; }
+    aside { 
+         position:fixed; right:0px; top:-35px; width:auto; height:auto; border-radius:0; padding: 0; @include fCC(); line-height: 1; background:transparent; text-align: center; border: none; color: $wht1; cursor: pointer; @include outT();
+        img { max-width:32px; filter: brightness(0) invert(1);  @include outT(); }
+        &:hover { 
+            background:none;  @include inT();
+            img { filter: brightness(100%) invert(0); @include inT(); }
+        }
+    } 
+    h2 { width:100%; float:left;  padding: 0 0 2rem 5%; text-align: left; color: $blk1; @include aMedium(); font-size: 26px; line-height:1.2; }
+
+    .valuechain_cng { 
+        width:100%; float:left; text-align: center; 
+        h3 { width:100%; height: 8px; margin: 1.5rem 0;  float:left; background: $blu1; line-height: 0; font-size: 1px;   }
+        img { width: 90%; max-width: 800px; display: inline-block; margin: 0 auto; }
+    }
+    .valuechain_png { 
+        width:100%; float:left; text-align: center; 
+        .valuechain_web { display: inline-block;clear: both;  width: 90%; max-width: 1400px;  margin: 0 auto; }
+        .valuechain_mob { display: none; clear: both; width: 90%; max-width: 3600px;  margin: 0 auto; }
+    }
+}
+ 
+
+@media only screen and (max-width:1023px) 
+{
+    /* #################### valuechain  #################### */
+    .valuechainPopup { 
+        padding: 1rem;
+        &.png { max-width: 360px; max-height:80%; height: 80%; }
+        h2 { padding: 0 0 1rem 2%;  font-size:22px;  }
+        .valuechain_cng { 
+            h3 { height:5px; margin: 1rem 0;  }
+        }
+        .valuechain_png { 
+            z-index: 1; position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; overflow-y: scroll; padding:1rem;
+            .valuechain_web { display: none; }
+            .valuechain_mob { display:inline-block; }
+        }
+    }
+    
+
+}
+
+
+@media only screen and (max-width:599px) 
+{
+
+    
+
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1023px) and (orientation : landscape)
+{
+    /* #################### valuechain  #################### */
+    .valuechainPopup { 
+        &.cng { max-height: 80%; height:80%; }
+        aside {  z-index: 2; right:2px; top:2px;  
+            img { max-width: 27px; filter:  brightness(0%) invert(0); }
+            &:hover { 
+                img { filter: brightness(100%) invert(0);}
+            }
+        } 
+        .valuechain_cng { 
+            z-index: 1; position: absolute; top: 0; left: 0; height: 100%; overflow: hidden; overflow-y: scroll;  padding:1rem;
+        }
+    }
+}

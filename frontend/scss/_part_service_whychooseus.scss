@@ -1,0 +1,154 @@
+.serviceWhychoose { 
+    width: 100%; float: left; padding:5rem 0; text-align: center;
+    h2 { 
+        width: 100%; float: left; text-align: left; 
+        span { display: inline; color:$blk1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack();  }
+        img { display: inline; margin:0 0 -3px 5px; max-width: 100%; }
+    }
+    h3 {  width: 100%; margin:0.3rem 0 2rem 0; float: left; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 26px;  }
+    ul { 
+        width: 100%;  float: left;  
+        li { 
+            list-style: none; width: 100%; float: left;  
+            
+            div { 
+                width: 100%; float: left; @include fBC(); align-items: stretch;  
+                h4 { 
+                    position: relative;  width: 15%; float: left; background-color:$wht1; @include fSC();
+                     img { position: relative; z-index: 2; max-width: 56px; margin-right: 1rem; }
+                     span { text-align: left; color: $blu1; @include aBold(); font-size:18px; line-height: 24px;   }
+                     &:after { z-index: 1; content:''; position: absolute; top:-40%; left:28px; width: 1px; height:100%; background-color: $blu1; line-height: 1; font-size: 1px; }
+                }
+                dl {  
+                    width: 85%; padding:0.5rem 0; float: right;  @include fSC(); align-items: stretch; justify-content: space-evenly; background: $wht3;
+                    dd { background:transparent; border-radius: 0; padding:10px; text-align: center; color:$blu1; @include aBold(); font-size:18px; line-height: 22px; }
+                    dt { background:$wht1; border-radius: 8px; padding:10px; text-align: left; color: $blk2; @include Arial(); font-size:16px; line-height: 22px; }    
+                }
+                
+                h5 { 
+                    position: relative;  width: 15%; float: left; background-color:$wht1; 
+                }
+                h6 {  
+                    width: 85%; padding:1rem 0 1.5rem 0; float: right; text-align: center;  background: $wht3; padding:0.5rem 0 1rem 0;
+                    span { 
+                        cursor: pointer; color: $blu1; @include aBold(); font-size:18px; line-height: 28px;  @include outT();
+                        i.fa { margin-left: 5px; }
+                        &:hover { color:$ong1; @include inT(); }
+                     }
+                }
+            } 
+            &.whychoose_first { 
+                display: block;
+                div { 
+                    dl { border-radius: 10px 10px 0 0; padding-bottom: 0; } 
+                }
+               
+            }
+            &.whychoose_second { 
+                display: block;
+                div { 
+                    h4 { 
+                        &:after { display: none; }
+                    }
+                }
+            }
+            &.whychoose_block {  
+                display: block;
+            }
+            &.whychoose_hide {  
+                display: none;
+            }
+            &.whychoose_bottom { 
+                display: block;
+                div { 
+                    dl { border-radius:0 0 10px 10px; padding-bottom: 1rem; } 
+                }
+             }
+            &.whychoose_last { 
+                display: block;
+                div { 
+                    dl { border-radius:0 0 10px 10px; } 
+                }
+             }
+        }
+        &.col2  { li { dl { dd { width:48%; } dt { width:48%; padding: 20px; } } } }
+        &.col4 { li { dl { dd{ width:24%; } dt { width:24%; } } } }
+        &.col5 { li { dl { dd { width:19%; } dt { width:19%; } } } }
+    }
+}
+
+@media only screen and (max-width:1300px) 
+{
+    .serviceWhychoose { 
+         padding:4rem 0;  
+        h2 { 
+            span { font-size:22px; letter-spacing:1.32px; line-height: 36px; }
+            img { margin:0 0 -2px 1px;; }
+        }
+        h3 { margin:0.2rem 0 1.5rem 0; }
+        ul { 
+            li { 
+                div { 
+                    h4 { 
+                        width: 18%;
+                         img { max-width:40px; margin-right:0.5rem; }
+                         span {   font-size:16px; line-height: 22px;   }
+                         &:after { left:20px;  }
+                    }
+                    dl {  
+                        width: 82%;
+                        dd { padding:5px;font-size:16px; line-height: 22px; }
+                        dt { padding:5px; font-size:13px; line-height: 20px; }    
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1255px) 
+{
+    .serviceWhychoose { 
+         padding:3rem 0;  
+        ul { 
+            li {
+                display: block; 
+                &.whychoose_hide {  display: block; }
+               div { 
+                    @include fSS();  flex-wrap: wrap; padding-bottom: 1rem;
+                    h4 { 
+                        padding-bottom: 1rem; width: 100%; border-bottom: solid 1px $wht5;
+                        img {  max-width:40px; margin-right: 1rem; }
+                        span { font-size:18px; line-height: 22px; color: $blk6;  }
+                        &:after { content: "\f067"; @include FA(); color:$blk6; font-size: 16px; left: auto; bottom: auto; width:auto;height: auto; background: none; right: 5px; top: 25%;  }
+                        &.active { 
+                            border-bottom: none; color: $blu1;  @include aBold();
+                            &:after { content: "\f068"; color: $blu1; }
+                        }
+                    }
+                    dl {  
+                        width: 100%; padding:1rem; margin-bottom: 1rem; border-radius: 8px;  background: $wht3;  display: none;
+                        dd { display: none;}
+                        dt {  
+                            width:auto; position: relative; float: right; padding:5px; margin:5px 0; border-radius: 4px; font-size:14px; line-height: 20px; 
+                            &:after {  content:attr(data-title);position: absolute;  top: 50%;transform: translateY(-50%);  height:auto;  @include aBold(); font-size:15px; line-height:18px; color: $blu1; }
+                        }    
+                    }
+               }
+                &.whychoose_last, &.whychoose_first { display: none;  }
+                &.whychoose_second { 
+                    div { 
+                        h4 { 
+                            &:after { display: block; }
+                        }
+                    }
+                }
+            }
+            &.col2  { li { div { dl { dt { width: calc(100% - 65px); padding:0.5rem; &:after {  left: -65px; } } } } } }
+            &.col4 { li { div { dl { dt { width: calc(100% - 75px); padding: 0.5rem; &:after {  left: -75px;  } } } } } }
+            &.col5 { li { div { dl { dt { width: calc(100% - 95px); padding: 0.5rem;  &:after {  left: -95px;  } } } } } }
+        }
+    }
+}

@@ -1,0 +1,250 @@
+/* ######################## faqsWrap ######################## */
+.faqsWrap { 
+    width: 100%; float: left; padding: 2rem 0 5rem 0; background-color:$wht1;
+        
+    .faqsAbout {
+        width: 100%; float: left; 
+        h2 { 
+            width: 100%; float: left;  text-align: left; @include fSC(); 
+            span { text-transform: uppercase; color:$blk1; font-size:26px; letter-spacing:1.32px; line-height: 35px; @include aBlack();  }
+            img { margin-left:5px; max-width: 100%;}
+        }
+        p { width:100%; float:left; padding-top:1rem; text-align: left; color: $blk2; @include Arial(); font-size: 16px; line-height: 26px; }
+    }
+
+    .popularquestions { 
+        width: 100%; float: left;  padding:4rem 0 3rem 0; 
+        h2 {  width:100%; float:left; margin-bottom: 1rem; text-align: left; color:$blk1; font-size:20px; line-height: 28px; @include aBold();  }
+        .popularquestionsSlider {
+            width: 100%; float: left; 
+            .slick-list { 
+                margin:0px !important; 
+                .slick-track { 
+                    display: flex; justify-content: space-between; align-items: stretch; 
+                    .slick-slide { 
+                         margin:12px; padding: 0 !important; @include fCS(); height: inherit;
+                        background:$wht1; box-shadow: 0px 6px 12px #00000014;  border-radius: 0px 0px 8px 8px; 
+                        div {  width: 100%; float: left; @include fCS(); height:100%;  }
+                        .itmes { 
+                           display: block;  width: 100%; float: left;  padding:1.5rem 1rem;   cursor: pointer;
+                            aside { 
+                                width: 100%; float: left; 
+                                img { max-width: 100%; }
+                            }
+                            h5 { width: 100%; float: left; margin: 0.7rem 0; text-align: left; color:$blk7; font-size: 14px; line-height: 1; @include Arial(); }
+                            p { width: 100%; float: left; text-align: left; color: $blk2; font-size: 16px; line-height: 24px; @include aBold(); }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faqsTabs{
+        width: 100%; float: left;  padding:0 0 2rem 0;  @include fCS(); flex-wrap: wrap; 
+        h2 { 
+            width: 100%; float: left; text-align: left;  margin-bottom: 1.5rem;
+            span { display: inline; color:$blk1; font-size:26px; letter-spacing:0; line-height: 37px; @include aBlack(); text-transform: uppercase;  }
+            img {display: inline; margin:0 0 -3px 0; max-width: 100%;}
+        }
+        ul {
+            width: auto; padding: 0; @include fCC();  border-bottom: solid 1px $blk9; 
+            &.disabled { user-select: none; pointer-events: none; }
+            li {
+                list-style: none; cursor: pointer; padding: 0 2rem 5px 2rem;  color: $blk9; font-size: 20px; line-height:48px; @include Arial(); @include outT(); cursor: pointer;
+                &.active {
+                    border-bottom-color:$blu1; color:$blu1;  @include aBold(); @include inT(); position: relative; user-select: none; pointer-events: none;
+                    &:after { content: ''; position: absolute; bottom:-1px; left:0; width: 100%; height:4px; background: $blu1; line-height: 0; font-size: 1px; }
+                }
+            }
+        }
+    }
+
+    .faqsContainer {
+        width: 100%; float: left; 
+        .faqsnoresult { 
+            display: none;  width: 100%; float: left;  text-align: center; background:none;  border-radius:0px;
+                section { 
+                    width: 100%; height: 100%; float: left; @include fCC();
+                    div {  
+                        aside { 
+                            width: 100%; float: left; text-align: center;
+                            img { width: 100%; max-width: 100px; display: inline-block; margin:0 auto; }
+                        }
+                        p { width: 100%; float: left; margin-top:1.5rem; text-align: center;  color: $blu1; font-size: 18px; line-height: 1.3; @include aBold(); }
+                        h4 { 
+                            width: 100%; float: left; text-align: center; margin:2rem 0 0 0;
+                            span { 
+                                cursor: pointer; border-bottom: solid 2px $blk1; padding-bottom: 2px; display: inline-block; color:$blk1; font-size:16px; letter-spacing:0; line-height: 1.2; @include aMedium(); text-transform: uppercase;  @include outT(); 
+                                &:hover { border-bottom-color: $ong1; color:$ong1;  @include inT();  }
+                            }
+                        }
+                    }                    
+                } 
+        }
+        .faqsheader { display: none; }
+        .faqssection { 
+            display: none; width: 100%; float: left; margin:0; position: relative; overflow: hidden; 
+            .faqsloader { 
+                display: none; z-index:1; position: absolute; left:0; top: 0; z-index:99; width: 100%;  height: 100%; margin: 0; padding: 0; background-color:transparent; text-align: center; 
+                i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
+            }
+            ul {
+                width: 100%; float: left; 
+                li { 
+                   list-style: none;  width: 100%; margin:0; padding: 0;  border-bottom: solid 1px $wht4; float: left; 
+                   h4 { 
+                        width: 100%; float: left; padding: 1rem 2.5rem 1rem 1rem; cursor: pointer; text-align: left;  font-size: 16px; line-height: 26px; color: $blk1; @include Arial(); position: relative; 
+                        &:after { content: "\f067"; position: absolute; top:50%; right:0.7rem; transform: translateY(-50%); @include FA(); color: $ong1;  font-size:14px; @include outT(); }
+                    }
+                   P { 
+                    display: none; width: 100%; padding: 1rem 0.7rem; float: left; text-align: left;  font-size: 16px; line-height: 26px; color:$blk2; @include Arial(); 
+                    a {
+                         text-decoration: none; color: $ong1; @include outT(); 
+                         &:hover { text-decoration: underline; color: $blu1; @include inT(); }
+                    }
+                }
+                   &:last-child { border-bottom: none; }
+                   &.active {
+                        h4 { 
+                            background-color: $blu1;  color:$wht1; 
+                            &:after { content: "\f068"; color:$wht1; @include inT(); }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1300px) 
+{
+    /* ######################## faqsWrap ######################## */
+    .faqsWrap { 
+        .faqsAbout {
+            h2 { 
+                display: block;
+                span { display: inline;  font-size:22px; letter-spacing:1.32px; line-height: 36px;  }
+                img { display: inline; margin: 0 0 -3px 0; }
+            }
+            p { font-size: 16px; line-height: 26px; }
+        }
+
+        .popularquestions { 
+            padding: 2rem 0 2rem 0;
+            h2 { font-size:20px; line-height:28px;   }
+            .popularquestionsSlider {.slick-list {.slick-track {.slick-slide {.itmes 
+                p { font-size: 16px;line-height: 20px; }
+            }}}}
+        }
+
+        .faqsTabs{
+            h2 { 
+               span { font-size:22px; line-height:32px; }
+               img { margin-bottom: -2px; }
+            }
+            ul {
+                li {
+                    padding: 0 1.5rem 5px 1.5rem;  font-size: 18px; line-height: 42px;  
+                }
+            }
+        }
+
+        .faqsContainer {
+            .faqssection { 
+                ul {
+                    li { 
+                        h4 {  font-size: 16px; line-height: 22px;  }
+                        P { font-size: 16px; line-height: 22px;  }
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width:1023px) 
+{
+
+    /* ######################## faqsWrap ######################## */
+    .faqsWrap { 
+
+
+        .faqsAbout {
+            display: none;
+        }
+
+
+        .popularquestions { 
+            display: none;
+        }
+
+
+        .faqsTabs{ 
+            padding: 0;
+            h2 { margin-bottom:1rem;  }
+            ul { display: none; }
+         }
+
+        .faqsContainer {
+            .faqsheader { 
+                display: block; position: relative; width: 100%;  float: left; margin:0; list-style: none; cursor: pointer; padding:0.7rem 3rem 0.7rem 0.7rem; border-bottom: solid 2px $blk7;  color: $blk9; font-size: 20px; line-height: 45px; @include Arial(); @include outT(); cursor: pointer;
+                &:after { content: "\f107"; position: absolute; top:50%; right:0.6rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 28px; @include outT(); }
+                &.active {
+                    border-bottom:none;  color:$blu1;  @include aBold(); @include inT();
+                    &:after { content: "\f106"; color:$blu1; @include inT(); }
+                }
+                &.disabled { user-select: none; pointer-events: none; }
+            }
+            .faqssection { 
+                ul {
+                    li { 
+                        &:last-child { border-bottom: solid 1px $blk7; }
+
+                    }
+                }
+                
+            }
+        }
+        
+    }
+
+}
+
+
+
+@media only screen and (max-width:479px) 
+{
+
+    /* ######################## faqsWrap ######################## */
+    .faqsWrap { 
+
+
+        .popularquestions { 
+            padding: 2rem 0 2rem 0;
+            h2 { margin-bottom: 0.5rem; font-size:18px; line-height:26px;   }
+            .popularquestionsSlider {.slick-list {.slick-track {
+                .slick-slide {
+                    padding: 1rem; margin: 7px; box-shadow: 0px 2px 6px #00000014; 
+                    .itmes {
+                        h5 { margin: 0.4rem 0; font-size: 12px; }
+                        p { font-size: 14px; line-height: 18px; }
+                    }
+                    
+                }
+            }}}
+        }
+    }
+
+}
