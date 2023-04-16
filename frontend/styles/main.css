@@ -17878,6 +17878,7 @@ template {
 .servicewrap .servicePipelineAvailable .serviceAvailableLeft {
   width: 50%;
   float: right;
+  min-height: 400px;
   background: #FFFFFF;
   padding: 1.5rem 2rem;
   position: relative;
