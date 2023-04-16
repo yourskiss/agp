@@ -433,7 +433,7 @@
                 width: 100%; display: block; position: relative;
            }
             .serviceAvailableLeft { 
-                margin-top: -100px; padding: 1.5rem;transform: none; width: 86%; float: left;position: relative;top: auto; bottom: 0;left: 7%; 
+                margin-top: -100px; padding: 1.5rem;transform: none; width: 86%; float: left; min-height: auto; position: relative;top: auto; bottom: 0;left: 7%; 
                 h2 {
                     display: block;
                     span { display: inline; } 

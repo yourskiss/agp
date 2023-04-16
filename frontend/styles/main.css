@@ -18369,6 +18369,7 @@ template {
     transform: none;
     width: 86%;
     float: left;
+    min-height: auto;
     position: relative;
     top: auto;
     bottom: 0;
