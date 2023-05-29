@@ -109,26 +109,27 @@
                     &:hover { background: $ong2; box-shadow: 4px 8px 12px #00000029; color:$wht1; @include inT(); }
                 }
             }
-            section { 
-                width: 100%; float: left; @include fSC();
-                h3 { width:auto; margin-right:1rem; float: left; text-align: left; color:$blk7; @include Arial(); font-size:12px; line-height: 28px;  }
-                h4 { width:auto; padding:0 0.6rem; margin-right:1rem; float: left; border: solid 1px $ong1; text-align: left; color:$ong1; @include Arial(); font-size:14px; line-height: 28px; }
+            h3 { width:100%; margin:0 0 0.3rem 0; float: left; text-align: left; color:$blk7; @include Arial(); font-size:12px; line-height: 1;  }
                 .servicepinchange{ 
-                    width:135px; margin-right:1rem; float: left; display: none; 
-                    aside  { 
-                        @include fSS(); width:100%; float: left;
-                        input[type='text'] { width:90px; float:left; padding:0; border: solid 1px $ong3; outline: 0; background: $wht1; text-align: center; color:$blk1; @include Arial(); font-size:14px; line-height: 28px;  }
-                        input[type='submit'] { width:45px; float:left; padding:0; border: solid 1px $ong3; outline: 0; background: $ong1; text-align: center; color:$wht1; @include Arial(); font-size:14px; line-height: 28px; cursor: pointer;   @include outT();
-                            &:hover {  background: $blk1; color:$wht1;    @include inT(); }
+                    width:100%; float: left; @include fSC(); flex-wrap: wrap;
+                        .service_select_box {  
+                            width:220px; float: left; padding:0.4rem 1rem 0.4rem 0;  margin:0 1rem 0 0;  background:transparent; outline: none; border:none; border-bottom: solid 1px $blk8; text-align: left; font-size: 16px;  line-height: 24px; color: $blk7;  @include Arial();  border-radius: 0; text-indent:1px; text-overflow: ''; -webkit-appearance:none; appearance:none; background:transparent url('../images/frontimage/dd_black.png') no-repeat; background-position:right 5px center; 
+                            option { 
+                                color: $blk1;      
+                                &:disabled { user-select: none; pointer-events: none; }
+                            }
                         }
-                    }
-                    span { display: none; width: 100%; float:left; margin-top:3px; text-align: left; color:$ong1; @include Arial(); font-size:11px; line-height: 18px; }
+                        .service_refresh_btn { 
+                           text-decoration: none; font-size: 22px; color: $blk1;
+                            i.fa.fa-refresh { line-height: 1; font-weight: 400; }
+                            &:hover { @include inT();  color: $ong1;}
+                        }
+                        .service_submit_btn { 
+                            display: inline-block; width:auto; text-align: center;  margin:0 0 0 1rem;   text-decoration: none; @include outT(); padding:10px 25px; border:none; background-color:$ong1; color: $wht1; @include aMedium(); font-size:16px; letter-spacing: 0.4px; line-height: 20px; box-shadow:none; text-transform: uppercase; cursor: pointer;
+                            &:hover {  @include inT(); background-color:$ong1; box-shadow: 4px 8px 12px #00000029; color: $wht1; }
+                        }
                 }
-                img { 
-                    max-width: 100%; cursor: pointer; filter: grayscale(1); @include outT();
-                    &:hover { filter: grayscale(0); @include inT();}
-                }
-            }
+            h4.service_error_msg { display: none; width: 100%; float:left; margin-top:0.5rem; text-align: left; color:$ong1; @include Arial(); font-size:11px; line-height: 18px; }
             h5 { 
                 width: 100%; margin:1rem 0 0 0; float: left; text-align: left; color: $blk1; @include aMedium(); font-size:74px; line-height: 1.2; 
                 i.fa { margin-right: 5px; line-height: 1; font-size: 90%; font-weight: 300; }
@@ -670,12 +671,14 @@
                 h6 {  
                     a { font-size:14px; line-height: 22px; padding: 8px 20px; }
                 }
-                section { 
-                    flex-wrap: wrap;
+ 
                     h3 { width:100%; margin:0; font-size:11px; line-height: 28px;  }
                     h4 { width:auto; padding:0 1.5rem; margin:0 1rem 0 0; font-size:12px; line-height: 28px; }
-                    .servicepinchange{ margin:0;}
-                }
+                    .servicepinchange{ 
+                        margin:0; justify-content: center;
+                        .service_select_box {  width:100%; margin:0 0 0.5rem 0;    }
+                    }
+                
                 h5 { font-size:40px; }
             }
         }

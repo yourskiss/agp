@@ -731,28 +731,18 @@ function whychooseusmoreview()
     }
 }
 
-function changepincode()
+ 
+function shwopricebydistrict()
 {
-    $("#pinCurrent").slideUp(300);
-    $("#pinNew").slideDown(300);
-    $("#pinChange").hide();
-}
-function shwopincode()
-{
-    if($("#pinchangeInput").val() == '')
+    if($("#district").val() == null || $("#district").val() == 0)
     {
-        $("#pinChangeError").show().html("Enter Pincode");
-    }
-    else if($("#pinchangeInput").val().length != 6)
-    {
-        $("#pinChangeError").show().html("Invalide Pincode");
+        $("#districtError").show();
+        return false;
     }
     else 
     {
-        $("#pinCurrent").slideDown(300);
-        $("#pinNew").slideUp(300);
-        $("#pinChange").show();
-        $("#pinChangeError").hide();
+        $("#districtError").hide();
+        return true;
     }
 }
 
