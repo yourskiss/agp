@@ -403,18 +403,18 @@
                     <img src="frontend/images/frontimage/icon.png" alt="" />
                 </h2>
                 <p>We believe that it is our duty to bring safe pipeline connections to every household. Once you initiate the process, our team takes over from the next step. Share your details with us and sit back and relax while we connect the natural fuel supply to your gas stove.</p>
-                <section>
-                    <h3>Price in your area</h3>
-                    <h4 id="pinCurrent">Delhi - 110017</h4>
-                    <div class="servicepinchange" id="pinNew">
-                        <aside>
-                            <input type="text" name="pinchange" id="pinchangeInput" placeholder="PIN" maxlength="6" />
-                            <input type="submit" name="submit" id="pinchangeSubmit" value="Go" onclick="shwopincode()" />
-                        </aside>
-                        <span id="pinChangeError">Enter valid Pin</span>
-                    </div>
-                    <img onclick="changepincode()" id="pinChange" src="frontend/images/frontimage/service/edit.png" alt="edit" />
-                </section>
+                <h3>Price in your area</h3>
+                <div class="servicepinchange" id="pinNew">
+                    <select class="service_select_box" id="district" name="district">
+                        <option value="0" selected disabled>Select</option>
+                        <option>District 1</option>
+                        <option>District 2</option>
+                        <option>District 3</option>
+                    </select>
+                    <a class="service_refresh_btn" title="Reset Options" href="cng.html"><i class="fa fa-refresh"></i></a>
+                    <input class="service_submit_btn" type="submit" name="submit" id="pinchangeSubmit" value="Go" onclick="return shwopricebydistrict();" />
+                </div>
+                <h4 class="service_error_msg" id="districtError">Please Select District</h4>
                 <h5><i class="fa fa-inr" aria-hidden="true"></i>36.05</h5>
             </div>
         </div>
