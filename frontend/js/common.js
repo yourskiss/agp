@@ -364,7 +364,7 @@ $(function($)
              barClass: "cngstationscrollBar",
              wrapperClass: "cngstationscrollContainer",
              wheelStep: 1,
-             touchScrollStep: 1000,
+             touchScrollStep: 100,
              borderRadius: "5px",
              railBorderRadius: "5px"
          });
