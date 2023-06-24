@@ -363,7 +363,7 @@ $(function($)
              railClass: "cngstationscrollRail",
              barClass: "cngstationscrollBar",
              wrapperClass: "cngstationscrollContainer",
-             wheelStep: 5,
+             wheelStep: 1,
              touchScrollStep: 1000,
              borderRadius: "5px",
              railBorderRadius: "5px"
