@@ -344,30 +344,33 @@ $(function($)
      // cng stationl  list
      if($(".cngstationlist").length > 0)
      {
-         $('.cngstationscroll').slimScroll({ 
-             width: "100%",
-             height: "100%",
-             size: "4px",
-             color: "#F2662C",
-             position: "right",
-             distance: "0",
-             start: "top",
-             opacity: 0,
-             alwaysVisible: true,
-             disableFadeOut: true,
-             railVisible: true,
-             allowPageScroll: false,
-             railColor: "#000000",
-             railOpacity: 0,
-             railDraggable: true,
-             railClass: "cngstationscrollRail",
-             barClass: "cngstationscrollBar",
-             wrapperClass: "cngstationscrollContainer",
-            // wheelStep: 1,
-             touchScrollStep: 10,
-             borderRadius: "5px",
-             railBorderRadius: "5px"
-         });
+        if($(window).width() >= 1024)
+        {
+            $('.cngstationscroll').slimScroll({ 
+                width: "100%",
+                height: "100%",
+                size: "4px",
+                color: "#F2662C",
+                position: "right",
+                distance: "0",
+                start: "top",
+                opacity: 0,
+                alwaysVisible: true,
+                disableFadeOut: true,
+                railVisible: true,
+                allowPageScroll: false,
+                railColor: "#000000",
+                railOpacity: 0,
+                railDraggable: true,
+                railClass: "cngstationscrollRail",
+                barClass: "cngstationscrollBar",
+                wrapperClass: "cngstationscrollContainer",
+                wheelStep: 10,
+                touchScrollStep: 100,
+                borderRadius: "5px",
+                railBorderRadius: "5px"
+            });
+        } 
      }
 
 

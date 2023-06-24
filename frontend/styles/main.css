@@ -14125,7 +14125,7 @@ template {
 .cngstationWrap .cngstation .cngstationlist {
   width: 100%;
   float: left;
-  height: 565px;
+  height: 463px;
 }
 .cngstationWrap .cngstation .cngstationlist .cngstationnoresult {
   display: none;
@@ -14357,6 +14357,13 @@ template {
   filter: grayscale(0);
   transition: all 0.4s ease-in;
 }
+.cngstationWrap .cngstationscrollContainer, .cngstationWrap .cngstationscroll {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 .cngstationWrap .cngstationmap {
   z-index: 1;
   position: relative;
@@ -14398,7 +14405,7 @@ template {
     width: 39%;
   }
   .cngstationWrap .cngstation .cngstationlist {
-    height: 565px;
+    height: 463px;
   }
   .cngstationWrap .cngstationmap {
     width: 61%;
@@ -14410,7 +14417,7 @@ template {
     width: 43%;
   }
   .cngstationWrap .cngstation .cngstationlist {
-    height: 565px;
+    height: 463px;
   }
   .cngstationWrap .cngstationmap {
     width: 57%;
@@ -14422,7 +14429,7 @@ template {
     width: 54%;
   }
   .cngstationWrap .cngstation .cngstationlist {
-    height: 565px;
+    height: 463px;
   }
   .cngstationWrap .cngstationmap {
     width: 46%;
@@ -14439,7 +14446,9 @@ template {
     padding: 2rem 0 0 0;
   }
   .cngstationWrap .cngstation .cngstationlist {
-    height: 490px;
+    height: 480px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
   .cngstationWrap .cngstation .cngstationlist .cngstationnoresult section div aside img {
     max-width: 70px;
@@ -14453,10 +14462,13 @@ template {
     margin: 2rem 2% 3rem 2%;
     height: 300px;
   }
+  .cngstationscrollContainer, .cngstationscroll {
+    height: auto !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .cngstationWrap .cngstation .cngstationlist {
-    height: 570px;
+    height: 460px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -14522,7 +14534,7 @@ template {
     font-size: 16px;
   }
   .cngstationWrap .cngstation .cngstationlist {
-    height: 625px;
+    height: 450px;
   }
   .cngstationWrap .cngstation .cngstationlist ul li {
     width: 96%;
@@ -14570,7 +14582,7 @@ template {
 }
 @media only screen and (max-width: 479px) {
   .cngstationWrap .cngstation .cngstationlist {
-    height: 642px;
+    height: 600px;
   }
   .cngstationWrap .cngstationmap {
     height: 200px;
