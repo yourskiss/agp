@@ -5,7 +5,7 @@
 
     /* connection_tabs_head */
     .connection_tabs_head{
-        width: 100%; float: left; margin:0 0 2rem 0; text-align: center;
+        width: 100%; float: left; margin:5rem 0 2rem 0; text-align: center;
         h2 {
             width: 100%; float: left; text-align: left; 
             span {  display: inline;  color:$blk1; font-size:26px; letter-spacing:1.68px; line-height: 35px; @include aBlack(); text-transform: uppercase; }
@@ -37,7 +37,7 @@
 
     /* connection_tabs_container */ 
     .connection_tabs_container { 
-        width: 100%; float: left; margin:1rem 0 5rem 0; position: relative;
+        width: 100%; float: left;  position: relative;
         .conTabLoader { 
             display: none; z-index: 2; position:absolute; left: 0; top:0;  width: 100%;  height: 100%; float: left; margin: 0; padding: 0; background-color:$wht1; text-align: center; 
             i.fa.fa-spinner {  font-weight: 900; color:$ong1; font-size:72px; }
@@ -46,9 +46,9 @@
         .conTabBody {  
             display: none; width: 100%; float: left; 
             .connectioncontainer { 
-                width: 100%; float: left; position: relative;
+                width: 100%; float: left; position: relative;  @include fBC(); padding: 1rem 0;
                 .connectioncontainerleft { 
-                    width:55%; float: left; padding:3rem 7% 3rem 2rem; background:$blu5;
+                    width:55%; float: left; padding:3rem 2rem; background:$blu5;
                     .connectioncontainerWeb { display: block; width:100%; float: left; }
                     .connectioncontainerMob { display: none;  }
                     ul { 
@@ -60,7 +60,7 @@
                     }
                 }
                 .connectioncontainerright { 
-                    position: absolute; right: 0; top: 50%; transform: translateY(-50%); width:50%; float: left; padding:2rem; background: $wht1; box-shadow: 0px 6px 12px #00000014;
+                    width:45%; float: left; padding:2rem; background: $wht1; box-shadow: 0px 6px 12px #00000014;
                     h2 { 
                         width: 100%; float: left; margin: 0 0 1.5rem 0; text-align: left; color: $blk1; font-size:20px; line-height:26px; @include aBold();  
                     }
@@ -245,10 +245,10 @@
         .conTabBody {  
             .connectioncontainer { 
                 .connectioncontainerleft { 
-                    width:55%; padding:2rem 8% 2rem 1rem; 
+                    width:50%; padding:2rem 1rem; 
                 }
                 .connectioncontainerright { 
-                    width:52%; padding:1.5rem; 
+                    width:50%; padding:1.5rem; 
                     h2 { margin: 0 0 1rem 0; font-size:20px; line-height:30px; }
                     .connectioncontainerscroll { 
                         section { 
@@ -317,7 +317,7 @@
 {
     /* connection_tabs_head */
     .connection_tabs_head{
-        margin:0 0 1rem 0; 
+        margin:4rem 0 2rem 0; 
         h2 {
             span { font-size:22px; letter-spacing:0; line-height: 32px; }
             img { margin:0 0 -2px 0; }
@@ -335,6 +335,7 @@
     .connection_tabs_container { 
         .conTabBody {  
             .connectioncontainer { 
+                @include fCS(); flex-wrap: wrap; padding: 0;
                 .connectioncontainerleft { 
                     width:100%; padding:1rem 1rem 60px 1rem;  text-align: center;
                     .connectioncontainerWeb {display: flow-root; float: none;max-width: 600px;margin: 0 auto;}
@@ -343,7 +344,7 @@
                     }
                 }
                 .connectioncontainerright { 
-                    position: static;transform: none; width: 90%; margin: -50px 5% 0 5%; padding: 2rem;  
+                   width: 90%; margin: -50px 5% 0 5%; padding: 2rem;  
                 }
             }
         }
@@ -396,7 +397,6 @@
 {
     /* connection_tabs_head */
     .connection_tabs_head{
-        margin:0 0 0.5rem 0; 
         p { margin: 0.5rem 0 0 0; }
         ul { display: none; }
     }
@@ -404,7 +404,6 @@
 
     /* connection_tabs_container */ 
     .connection_tabs_container { 
-        margin:1rem 0 4rem 0; 
         .conTabHead { 
             display: block; position: relative; width: 100%;  float: left; margin:0; list-style: none; cursor: pointer; padding:1rem 3rem 1rem 0.7rem; border-bottom: solid 1.5px $blk7;  color: $blk9; font-size: 18px; line-height:1.5; @include Arial(); @include outT(); cursor: pointer;
                 &:after { content: "\f107"; position: absolute; top:50%; right:0.6rem; transform: translateY(-50%); @include FA(); color: $blk9;  font-size: 28px; @include outT(); }

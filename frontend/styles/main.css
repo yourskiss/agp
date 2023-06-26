@@ -12715,7 +12715,7 @@ template {
 .connection_tabs_head {
   width: 100%;
   float: left;
-  margin: 0 0 2rem 0;
+  margin: 5rem 0 2rem 0;
   text-align: center;
 }
 .connection_tabs_head h2 {
@@ -12812,7 +12812,6 @@ template {
 .connection_tabs_container {
   width: 100%;
   float: left;
-  margin: 1rem 0 5rem 0;
   position: relative;
 }
 .connection_tabs_container .conTabLoader {
@@ -12846,11 +12845,15 @@ template {
   width: 100%;
   float: left;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
 }
 .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerleft {
   width: 55%;
   float: left;
-  padding: 3rem 7% 3rem 2rem;
+  padding: 3rem 2rem;
   background: #f3f7f8;
 }
 .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerleft .connectioncontainerWeb {
@@ -12885,11 +12888,7 @@ template {
   font-weight: 700;
 }
 .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50%;
+  width: 45%;
   float: left;
   padding: 2rem;
   background: #FFFFFF;
@@ -13422,11 +13421,11 @@ template {
 @media only screen and (max-width: 1565px) {
   /* connection_tabs_container */
   .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerleft {
-    width: 55%;
-    padding: 2rem 8% 2rem 1rem;
+    width: 50%;
+    padding: 2rem 1rem;
   }
   .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright {
-    width: 52%;
+    width: 50%;
     padding: 1.5rem;
   }
   .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright h2 {
@@ -13499,7 +13498,7 @@ template {
 @media only screen and (max-width: 1255px) {
   /* connection_tabs_head */
   .connection_tabs_head {
-    margin: 0 0 1rem 0;
+    margin: 4rem 0 2rem 0;
   }
   .connection_tabs_head h2 span {
     font-size: 22px;
@@ -13520,6 +13519,13 @@ template {
     line-height: 36px;
   }
   /* connection_tabs_container */
+  .connection_tabs_container .conTabBody .connectioncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
   .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerleft {
     width: 100%;
     padding: 1rem 1rem 60px 1rem;
@@ -13537,8 +13543,6 @@ template {
     margin: 1rem auto;
   }
   .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright {
-    position: static;
-    transform: none;
     width: 90%;
     margin: -50px 5% 0 5%;
     padding: 2rem;
@@ -13586,9 +13590,6 @@ template {
 }
 @media only screen and (max-width: 1023px) {
   /* connection_tabs_head */
-  .connection_tabs_head {
-    margin: 0 0 0.5rem 0;
-  }
   .connection_tabs_head p {
     margin: 0.5rem 0 0 0;
   }
@@ -13596,9 +13597,6 @@ template {
     display: none;
   }
   /* connection_tabs_container */
-  .connection_tabs_container {
-    margin: 1rem 0 4rem 0;
-  }
   .connection_tabs_container .conTabHead {
     display: block;
     position: relative;
