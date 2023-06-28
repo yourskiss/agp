@@ -12920,6 +12920,12 @@ template {
   width: 33%;
   float: left;
 }
+.connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright .connectioncontainerscroll section ul.connection_proof_ui_33 {
+  width: 33%;
+}
+.connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright .connectioncontainerscroll section ul.connection_proof_ui_50 {
+  width: 50%;
+}
 .connection_tabs_container .conTabBody .connectioncontainer .connectioncontainerright .connectioncontainerscroll section ul li {
   margin: 0.5rem 0;
   padding-left: 20px;

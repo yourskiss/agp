@@ -70,6 +70,8 @@
                             width: 100%; float: left; @include fBS();
                             ul{
                                 width: 33%; float: left;
+                                &.connection_proof_ui_33 { width: 33%; }
+                                &.connection_proof_ui_50 { width: 50%; }
                                 li { margin: 0.5rem 0; padding-left: 20px; float: left; width: 100%; position: relative;
                                     list-style: none; text-align: left; color: $blk2; font-size:16px; line-height:1; @include Arial();  
                                     &:after { content:''; position: absolute; top:3px; left: 0; background:url('../images/frontimage/icon2.png') no-repeat center center; background-size: 100% 100%; width: 8px; height: 12px; float: left;  }
